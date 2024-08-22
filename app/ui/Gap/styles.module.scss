@@ -1,6 +1,5 @@
 .gap {
   display: flex;
-  align-items: center;
 }
 .small {
   gap: 0.5em;
@@ -10,4 +9,12 @@
 }
 .large {
   gap: 3.5em;
+}
+
+.horizontal {
+  flex-direction: row;
+  // align-items: center;
+}
+.vertical {
+  flex-direction: column;
 }

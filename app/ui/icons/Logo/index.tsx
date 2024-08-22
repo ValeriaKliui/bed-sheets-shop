@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import { IconProps } from "../interfaces";
 
 export default function Logo({ fill, opacity }: IconProps) {

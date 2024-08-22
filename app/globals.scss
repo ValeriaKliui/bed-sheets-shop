@@ -14,6 +14,10 @@ body {
   color: v.$color-text;
 }
 
+li {
+  margin-left: 20px;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +26,7 @@ h5,
 h6 {
   font-family: var(--font-orchidea-pro);
   text-transform: uppercase;
+  color: v.$color-text;
 }
 
 h1 {
@@ -52,12 +57,13 @@ h3 {
 
 h4,
 h5 {
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em;
 }
 
 a {
   color: v.$color-link;
   text-decoration: none;
+  line-height: 1;
 }
 
 .wrapper {
@@ -65,10 +71,6 @@ a {
   margin: 0 auto;
 }
 
-.flex-vertical {
-  display: flex;
-  align-items: center;
-}
 .text_secondary {
   color: v.$color-text-secondary;
 

@@ -1,4 +1,8 @@
+import colors from "@variables.module.scss";
+
 export default function defineHeaderTextColor(pathname: string) {
-  if (pathname === "/") return "black";
-  return "white";
+  const { text, text_light } = colors;
+
+  if (pathname === "/") return text_light;
+  return text;
 }

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em 2em;
+}
+.categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2em 0;
+}

@@ -1,11 +1,12 @@
+import { FOOTER_LINKS, NETWORKS } from "@lib/constants";
+import Gap from "@ui/Gap";
 import Logo from "@ui/icons/Logo";
 import colors from "@variables.module.scss";
 import clsx from "clsx";
-import styles from "./styles.module.scss";
-import { footerLinks, networks } from "@lib/constants";
-import Link from "next/link";
 import Image from "next/image";
-import Gap from "@ui/Gap";
+import Link from "next/link";
+
+import styles from "./styles.module.scss";
 
 export default function Footer() {
   const { text } = colors;
@@ -21,7 +22,7 @@ export default function Footer() {
           </div>
         </div>
 
-        {footerLinks.map((links, index) => (
+        {FOOTER_LINKS.map((links, index) => (
           <div className={styles.column} key={index}>
             {links.map(({ title, url }) => (
               <Link href={url} key={title} className="text_secondary">
@@ -37,13 +38,8 @@ export default function Footer() {
           <a href="tel:88002222222">Заказать звонок</a>
         </div>
         <Gap size="medium">
-          {networks.map(({ icon, link }) => (
-            <a
-              href={link}
-              target="_blank"
-              key={link}
-              className={styles.network_link}
-            >
+          {NETWORKS.map(({ icon, link }) => (
+            <a href={link} target="_blank" key={link}>
               <Image src={icon} alt={link} key={link} />
             </a>
           ))}

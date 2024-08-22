@@ -1,0 +1,35 @@
+@use "../../variables.module.scss" as v;
+
+.dot_item {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    .dot {
+      width: 90%;
+      height: 90%;
+    }
+  }
+}
+.dot_container {
+  width: 50px;
+  height: 50px;
+  background: rgba(v.$color-divider, 0.2);
+  margin-right: 1em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: v.$color-text-light;
+  transition: all 0.2s ease-in-out;
+}
+.title {
+  color: v.$color-text-light;
+}

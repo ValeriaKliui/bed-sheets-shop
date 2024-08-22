@@ -1,7 +1,22 @@
 import clsx from "clsx";
-import styles from "./styles.module.scss";
-import { GapProps } from "./interfaces";
 
-export default function Gap({ children, size }: GapProps) {
-  return <div className={clsx(styles.gap, styles[size])}>{children}</div>;
+import { GapProps } from "./interfaces";
+import styles from "./styles.module.scss";
+
+export default function Gap({
+  children,
+  size,
+  alignment = "center",
+  direction = "horizontal",
+}: GapProps) {
+  const alignmentEnd = direction ? "normal" : alignment;
+
+  return (
+    <div
+      className={clsx(styles.gap, styles[size], styles[direction])}
+      style={{ alignItems: alignmentEnd }}
+    >
+      {children}
+    </div>
+  );
 }

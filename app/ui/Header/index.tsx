@@ -1,14 +1,15 @@
 "use client";
 
-import styles from "./styles.module.scss";
 import defineHeaderTextColor from "@lib/utils/defineHeaderTextColor";
-import { usePathname } from "next/navigation";
+import Gap from "@ui/Gap";
+import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
 import clsx from "clsx";
-import BedIcon from "@ui/icons/BedIcon";
-import Gap from "@ui/Gap";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
+
+import styles from "./styles.module.scss";
 
 export default function Header() {
   const pathname = usePathname();
@@ -35,7 +36,12 @@ export default function Header() {
           </Gap>
         </Gap>
         <div className={styles.circled}>
-          <Image src="/bag.svg" width={20} height={20} alt="To shopping cart" />
+          <Image
+            src="/icons/bag.svg"
+            width={20}
+            height={20}
+            alt="To shopping cart"
+          />
         </div>
       </Gap>
     </header>

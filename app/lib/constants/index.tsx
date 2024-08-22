@@ -1,11 +1,11 @@
-import vk from "../../../public/icons/vk.svg";
+import fb from "../../../public/icons/fb.svg";
+import ig from "../../../public/icons/ig.svg";
 import pint from "../../../public/icons/pinterest.svg";
 import tg from "../../../public/icons/tg.svg";
-import fb from "../../../public/icons/fb.svg";
+import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
-import ig from "../../../public/icons/ig.svg";
 
-export const footerLinks = [
+export const FOOTER_LINKS = [
   [
     { title: "Постельное белье", url: "" },
     { title: "Одежда", url: "" },
@@ -20,7 +20,7 @@ export const footerLinks = [
   ],
 ];
 
-export const networks = [
+export const NETWORKS = [
   { icon: vk, link: "https://vk.com" },
   { icon: pint, link: "https://pinterest.com" },
   { icon: tg, link: "https://tg.com" },
@@ -28,3 +28,38 @@ export const networks = [
   { icon: yt, link: "https://yt.com" },
   { icon: ig, link: "https://ig.com" },
 ];
+
+export const PHOTO_LINKS = [
+  {
+    title: "одежда",
+    url: "",
+    x: 980,
+    y: 521,
+  },
+  {
+    title: "принты",
+    url: "",
+    x: 622,
+    y: 311,
+  },
+  {
+    title: "постельное белье",
+    url: "",
+    x: 270,
+    y: 557,
+  },
+  {
+    title: "комплекты",
+    url: "",
+    x: 329,
+    y: 810,
+  },
+  {
+    title: "ароматы",
+    url: "",
+    x: 1092,
+    y: 639,
+  },
+];
+
+export const CATEGORIES = PHOTO_LINKS.map(({ title, url }) => ({ title, url }));
