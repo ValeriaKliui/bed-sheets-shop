@@ -1,0 +1,17 @@
+$color-primary: #4e76c6;
+$light-lines: #eceae7;
+$color-bg: #f5f3f0;
+$hover: #426bbd;
+$click: #3e64b0;
+$press: #000000;
+$color-text: #1e1e1e;
+$color-text-secondary: #72716e;
+$color-link: #4e76c6;
+$color-icon: #2c2d2e;
+$color-icon-secondary: #bfc0c7;
+$color-divider: #eceae7;
+
+:export {
+  primary: #{$color-primary};
+  text: #{$color-text};
+}

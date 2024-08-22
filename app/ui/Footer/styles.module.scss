@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3em 0;
+}
+.links_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0 10em;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  justify-content: space-between;
+}
+.network_link {
+  line-height: 0;
+}
