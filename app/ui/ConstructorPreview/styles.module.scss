@@ -1,0 +1,15 @@
+.container {
+  position: relative;
+}
+.title {
+  max-width: 70%;
+  line-height: 1.5em;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+.button {
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+}

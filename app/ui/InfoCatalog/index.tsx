@@ -1,7 +1,8 @@
 import { CATEGORIES } from "@lib/constants";
-import styles from "./styles.module.scss";
-import Link from "next/link";
 import Gap from "@ui/Gap";
+import Link from "next/link";
+
+import styles from "./styles.module.scss";
 
 export default function InfoCatalog() {
   return (
@@ -19,11 +20,11 @@ export default function InfoCatalog() {
         </ul>
       </Gap>
       <Gap size="large" alignment="normal">
-        <p>
+        <p className="text_small">
           “При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера
           и передаёте ему сумму за товар в рублях.
         </p>
-        <p>
+        <p className="text_small">
           Курьер предоставляет товар, который можно осмотреть на предмет
           повреждений, соответствие указанным условиям.
         </p>

@@ -12,6 +12,8 @@ $color-icon: #2c2d2e;
 $color-icon-secondary: #bfc0c7;
 $color-divider: #eceae7;
 
+$transition: all 0.2s ease-in-out;
+
 :export {
   primary: #{$color-primary};
   text: #{$color-text};

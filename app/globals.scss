@@ -78,3 +78,10 @@ a {
     color: v.$color-text;
   }
 }
+.text_light {
+  color: v.$color-text-light;
+}
+.text_small {
+  font-size: 0.8em;
+  line-height: 0.9em;
+}

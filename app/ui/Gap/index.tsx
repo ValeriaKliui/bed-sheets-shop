@@ -8,13 +8,17 @@ export default function Gap({
   size,
   alignment = "center",
   direction = "horizontal",
+  justify = false,
 }: GapProps) {
-  const alignmentEnd = direction ? "normal" : alignment;
+  const alignmentEnd = direction === "horizontal" ? alignment : "normal";
 
   return (
     <div
       className={clsx(styles.gap, styles[size], styles[direction])}
-      style={{ alignItems: alignmentEnd }}
+      style={{
+        alignItems: alignmentEnd,
+        justifyContent: justify ? "space-between" : "normal",
+      }}
     >
       {children}
     </div>

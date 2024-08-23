@@ -12,5 +12,4 @@ export type ChildrenElement =
 
 export interface InfoPicBlockProps {
   children: [ChildrenElement, ChildrenElement];
-  isReverted?: boolean;
 }
