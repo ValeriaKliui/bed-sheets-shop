@@ -12,8 +12,8 @@ async function seedCatalogItems() {
       price INT NOT NULL,
       info VARCHAR(255) NOT NULL,
       title VARCHAR(255) NOT NULL,
-      photo VARCHAR(255) NOT NULL
-      article VARCHAR(255) NOT NULL,
+      photo VARCHAR(255) NOT NULL,
+      article VARCHAR(255) NOT NULL
     );
   `;
 
