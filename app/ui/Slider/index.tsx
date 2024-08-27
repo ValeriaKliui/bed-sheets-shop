@@ -1,9 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import styles from "./styles.module.scss";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
+import { useEffect, useRef } from "react";
+
+import styles from "./styles.module.scss";
 
 export default function Slider() {
   const containerRef = useRef<HTMLDivElement>(null);

@@ -7,10 +7,10 @@ import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.scss";
-import Link from "next/link";
 
 export default function Header() {
   const pathname = usePathname();

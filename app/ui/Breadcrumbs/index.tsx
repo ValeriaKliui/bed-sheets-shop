@@ -1,10 +1,11 @@
 "use client";
 
 import { PATHS, PATHS_KEYS } from "@lib/constants/paths";
-import { usePathname } from "next/navigation";
-import styles from "./styles.module.scss";
-import Link from "next/link";
 import Gap from "@ui/Gap";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+import styles from "./styles.module.scss";
 
 export default function Breadcrumbs() {
   const path = usePathname();
