@@ -23,7 +23,7 @@ export default function Slider() {
 
     if (track) {
       const move = ({ offsetX, pageX, target, clientX }: MouseEvent) => {
-        if (container?.contains(target)) track.style.left = -pageX + "px";
+        // if (container?.contains(target)) track.style.left = -pageX + "px";
       };
 
       track.onmousedown = () => {

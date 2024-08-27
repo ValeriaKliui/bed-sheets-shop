@@ -20,7 +20,12 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
 
     return (
       <div
-        className={clsx(styles.gap, styles[size], styles[direction], className)}
+        className={clsx(
+          styles.gap,
+          size && styles[size],
+          styles[direction],
+          className
+        )}
         style={{
           alignItems: alignmentEnd,
           justifyContent: justify ? "space-between" : "normal",
