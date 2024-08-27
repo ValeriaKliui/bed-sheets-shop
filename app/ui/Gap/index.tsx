@@ -1,26 +1,38 @@
 import clsx from "clsx";
+import { forwardRef } from "react";
 
 import { GapProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Gap({
-  children,
-  size,
-  alignment = "center",
-  direction = "horizontal",
-  justify = false,
-}: GapProps) {
-  const alignmentEnd = direction === "horizontal" ? alignment : "normal";
+const Gap = forwardRef<HTMLDivElement, GapProps>(
+  (
+    {
+      children,
+      size,
+      alignment = "center",
+      direction = "horizontal",
+      justify = false,
+      className,
+    },
+    ref
+  ) => {
+    const alignmentEnd = direction === "horizontal" ? alignment : "normal";
 
-  return (
-    <div
-      className={clsx(styles.gap, styles[size], styles[direction])}
-      style={{
-        alignItems: alignmentEnd,
-        justifyContent: justify ? "space-between" : "normal",
-      }}
-    >
-      {children}
-    </div>
-  );
-}
+    return (
+      <div
+        className={clsx(styles.gap, styles[size], styles[direction], className)}
+        style={{
+          alignItems: alignmentEnd,
+          justifyContent: justify ? "space-between" : "normal",
+        }}
+        ref={ref}
+      >
+        {children}
+      </div>
+    );
+  }
+);
+
+Gap.displayName = "Gap";
+
+export default Gap;

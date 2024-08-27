@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+}
+.breadcrumb {
+  display: flex;
+  &:not(:last-child)::after {
+    display: block;
+    content: "/";
+    margin-left: 0.7em;
+  }
+}

@@ -5,6 +5,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 1em 0;
+
+  h5 {
+    color: inherit;
+  }
 }
 .circled {
   background: v.$color-primary;

@@ -3,12 +3,16 @@
 .container {
   border: 1px solid v.$light-lines;
   transition: v.$transition;
+  height: 100%;
+  padding: 2em 2.5em;
+  cursor: pointer;
+  text-align: center;
 
   &:hover {
     box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);
   }
 }
 
-.title {
+.article {
   text-transform: uppercase;
 }

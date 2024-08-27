@@ -1,8 +1,10 @@
 import { CatalogItem } from "./types";
 
-export const catalogItems: CatalogItem[] = [
+export const CURRENCY = "BYN";
+
+export const CATALOG_ITEMS: CatalogItem[] = [
   {
-    price: "127.04",
+    price: 127.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -10,7 +12,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5589866723",
   },
   {
-    price: "243.08",
+    price: 243.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -18,7 +20,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1917209347",
   },
   {
-    price: "948.60",
+    price: 948.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -26,7 +28,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5011799301",
   },
   {
-    price: "910.75",
+    price: 910.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -34,7 +36,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1363846868",
   },
   {
-    price: "177.62",
+    price: 177.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -42,7 +44,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1845081072",
   },
   {
-    price: "763.09",
+    price: 763.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -50,7 +52,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6571977761",
   },
   {
-    price: "862.94",
+    price: 862.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -58,7 +60,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5084208184",
   },
   {
-    price: "635.18",
+    price: 635.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -66,7 +68,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4196007880",
   },
   {
-    price: "597.40",
+    price: 597.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -74,7 +76,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6428251744",
   },
   {
-    price: "371.41",
+    price: 371.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -82,7 +84,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9365850037",
   },
   {
-    price: "827.36",
+    price: 827.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -90,7 +92,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1414248792",
   },
   {
-    price: "851.02",
+    price: 851.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -98,7 +100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7118901156",
   },
   {
-    price: "859.08",
+    price: 859.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -106,7 +108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6548067304",
   },
   {
-    price: "10.73",
+    price: 10.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -114,7 +116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4647077535",
   },
   {
-    price: "956.28",
+    price: 956.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -122,7 +124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6494723586",
   },
   {
-    price: "932.80",
+    price: 932.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -130,7 +132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3362580904",
   },
   {
-    price: "481.61",
+    price: 481.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -138,7 +140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2751915825",
   },
   {
-    price: "931.47",
+    price: 931.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -146,7 +148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0112229417",
   },
   {
-    price: "474.60",
+    price: 474.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -154,7 +156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7760158203",
   },
   {
-    price: "457.70",
+    price: 457.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -162,7 +164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8438542263",
   },
   {
-    price: "537.31",
+    price: 537.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -170,7 +172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0363880224",
   },
   {
-    price: "14.43",
+    price: 14.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -178,7 +180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3984952104",
   },
   {
-    price: "670.63",
+    price: 670.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -186,7 +188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8544469450",
   },
   {
-    price: "347.32",
+    price: 347.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -194,7 +196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6858492445",
   },
   {
-    price: "265.80",
+    price: 265.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -202,7 +204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5099739695",
   },
   {
-    price: "728.91",
+    price: 728.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -210,7 +212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3607513449",
   },
   {
-    price: "389.46",
+    price: 389.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -218,7 +220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5378914728",
   },
   {
-    price: "715.54",
+    price: 715.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -226,7 +228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9226963185",
   },
   {
-    price: "31.39",
+    price: 31.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -234,7 +236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6376188478",
   },
   {
-    price: "936.44",
+    price: 936.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -242,7 +244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4656148474",
   },
   {
-    price: "189.30",
+    price: 189.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -250,7 +252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6663657860",
   },
   {
-    price: "925.13",
+    price: 925.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -258,7 +260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8153690124",
   },
   {
-    price: "946.14",
+    price: 946.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -266,7 +268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8272796988",
   },
   {
-    price: "497.66",
+    price: 497.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -274,7 +276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5889743546",
   },
   {
-    price: "761.60",
+    price: 761.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -282,7 +284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7728109839",
   },
   {
-    price: "7.50",
+    price: 7.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -290,7 +292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5615486287",
   },
   {
-    price: "284.46",
+    price: 284.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -298,7 +300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9681248937",
   },
   {
-    price: "395.50",
+    price: 395.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -306,7 +308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1505437334",
   },
   {
-    price: "851.77",
+    price: 851.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -314,7 +316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0499623126",
   },
   {
-    price: "398.04",
+    price: 398.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -322,7 +324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0086608428",
   },
   {
-    price: "964.86",
+    price: 964.86,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -330,7 +332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5959125986",
   },
   {
-    price: "941.77",
+    price: 941.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -338,7 +340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3643949553",
   },
   {
-    price: "593.93",
+    price: 593.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -346,7 +348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6867449298",
   },
   {
-    price: "633.54",
+    price: 633.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -354,7 +356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0912674490",
   },
   {
-    price: "340.31",
+    price: 340.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -362,7 +364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4293098429",
   },
   {
-    price: "119.08",
+    price: 119.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -370,7 +372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8541488810",
   },
   {
-    price: "545.02",
+    price: 545.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -378,7 +380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5939447074",
   },
   {
-    price: "486.08",
+    price: 486.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -386,7 +388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5311767227",
   },
   {
-    price: "587.35",
+    price: 587.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -394,7 +396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2441565346",
   },
   {
-    price: "170.46",
+    price: 170.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -402,7 +404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8456796360",
   },
   {
-    price: "695.50",
+    price: 695.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -410,7 +412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4792727898",
   },
   {
-    price: "840.94",
+    price: 840.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -418,7 +420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7735567146",
   },
   {
-    price: "837.87",
+    price: 837.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -426,7 +428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0609638564",
   },
   {
-    price: "151.42",
+    price: 151.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -434,7 +436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8646260739",
   },
   {
-    price: "249.05",
+    price: 249.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -442,7 +444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3181595780",
   },
   {
-    price: "27.32",
+    price: 27.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -450,7 +452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8695581691",
   },
   {
-    price: "740.33",
+    price: 740.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -458,7 +460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8270824275",
   },
   {
-    price: "775.68",
+    price: 775.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -466,7 +468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4983722513",
   },
   {
-    price: "581.52",
+    price: 581.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -474,7 +476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5365688996",
   },
   {
-    price: "535.52",
+    price: 535.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -482,7 +484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2869742444",
   },
   {
-    price: "358.94",
+    price: 358.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -490,7 +492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9178170656",
   },
   {
-    price: "273.95",
+    price: 273.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -498,7 +500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7551013784",
   },
   {
-    price: "235.10",
+    price: 235.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -506,7 +508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0344588432",
   },
   {
-    price: "581.26",
+    price: 581.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -514,7 +516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7628148301",
   },
   {
-    price: "62.60",
+    price: 62.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -522,7 +524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5055332646",
   },
   {
-    price: "179.74",
+    price: 179.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -530,7 +532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7044595162",
   },
   {
-    price: "17.25",
+    price: 17.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -538,7 +540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7656405917",
   },
   {
-    price: "602.54",
+    price: 602.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -546,7 +548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4706603552",
   },
   {
-    price: "705.56",
+    price: 705.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -554,7 +556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8356805120",
   },
   {
-    price: "256.71",
+    price: 256.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -562,7 +564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2807844405",
   },
   {
-    price: "701.84",
+    price: 701.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -570,7 +572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0498681955",
   },
   {
-    price: "985.83",
+    price: 985.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -578,7 +580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9900984285",
   },
   {
-    price: "589.02",
+    price: 589.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -586,7 +588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5156072488",
   },
   {
-    price: "463.32",
+    price: 463.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -594,7 +596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5637543771",
   },
   {
-    price: "717.60",
+    price: 717.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -602,7 +604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9526919432",
   },
   {
-    price: "217.99",
+    price: 217.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -610,7 +612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1888153563",
   },
   {
-    price: "995.53",
+    price: 995.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -618,7 +620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4351951915",
   },
   {
-    price: "476.71",
+    price: 476.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -626,7 +628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6752362165",
   },
   {
-    price: "291.99",
+    price: 291.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -634,7 +636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8568238971",
   },
   {
-    price: "213.95",
+    price: 213.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -642,7 +644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8826783136",
   },
   {
-    price: "346.10",
+    price: 346.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -650,7 +652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5344658737",
   },
   {
-    price: "204.82",
+    price: 204.82,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -658,7 +660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5208511002",
   },
   {
-    price: "546.74",
+    price: 546.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -666,7 +668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6981665956",
   },
   {
-    price: "272.14",
+    price: 272.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -674,7 +676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9021279479",
   },
   {
-    price: "9.50",
+    price: 9.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -682,7 +684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7513741654",
   },
   {
-    price: "387.11",
+    price: 387.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -690,7 +692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0019205791",
   },
   {
-    price: "554.47",
+    price: 554.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -698,7 +700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5507195684",
   },
   {
-    price: "840.28",
+    price: 840.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -706,7 +708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2321400722",
   },
   {
-    price: "378.78",
+    price: 378.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -714,7 +716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7375657173",
   },
   {
-    price: "543.79",
+    price: 543.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -722,7 +724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4296882147",
   },
   {
-    price: "697.64",
+    price: 697.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -730,7 +732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6210546455",
   },
   {
-    price: "556.35",
+    price: 556.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -738,7 +740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6419136113",
   },
   {
-    price: "333.58",
+    price: 333.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -746,7 +748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2817369874",
   },
   {
-    price: "598.03",
+    price: 598.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -754,7 +756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2474379819",
   },
   {
-    price: "665.77",
+    price: 665.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -762,7 +764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4207370250",
   },
   {
-    price: "440.76",
+    price: 440.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -770,7 +772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9704313594",
   },
   {
-    price: "854.68",
+    price: 854.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -778,7 +780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7753938045",
   },
   {
-    price: "23.08",
+    price: 23.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -786,7 +788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9722870726",
   },
   {
-    price: "827.12",
+    price: 827.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -794,7 +796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6791160438",
   },
   {
-    price: "109.95",
+    price: 109.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -802,7 +804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2892846234",
   },
   {
-    price: "123.27",
+    price: 123.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -810,7 +812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7420794561",
   },
   {
-    price: "574.21",
+    price: 574.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -818,7 +820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5307665474",
   },
   {
-    price: "540.40",
+    price: 540.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -826,7 +828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8418054069",
   },
   {
-    price: "13.30",
+    price: 13.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -834,7 +836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1880033070",
   },
   {
-    price: "299.90",
+    price: 299.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -842,7 +844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4242273452",
   },
   {
-    price: "402.41",
+    price: 402.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -850,7 +852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4512630783",
   },
   {
-    price: "258.78",
+    price: 258.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -858,7 +860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8165837222",
   },
   {
-    price: "844.31",
+    price: 844.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -866,7 +868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9659666845",
   },
   {
-    price: "207.77",
+    price: 207.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -874,7 +876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4741341100",
   },
   {
-    price: "258.42",
+    price: 258.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -882,7 +884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7251799162",
   },
   {
-    price: "321.44",
+    price: 321.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -890,7 +892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6510708434",
   },
   {
-    price: "555.28",
+    price: 555.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -898,7 +900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8139588210",
   },
   {
-    price: "858.26",
+    price: 858.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -906,7 +908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2775744907",
   },
   {
-    price: "241.78",
+    price: 241.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -914,7 +916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3322170829",
   },
   {
-    price: "869.10",
+    price: 869.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -922,7 +924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8976077385",
   },
   {
-    price: "692.46",
+    price: 692.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -930,7 +932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1524797421",
   },
   {
-    price: "523.29",
+    price: 523.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -938,7 +940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9626860243",
   },
   {
-    price: "917.11",
+    price: 917.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -946,7 +948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8329258149",
   },
   {
-    price: "568.93",
+    price: 568.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -954,7 +956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7029654838",
   },
   {
-    price: "728.66",
+    price: 728.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -962,7 +964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9055404381",
   },
   {
-    price: "735.60",
+    price: 735.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -970,7 +972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5662465665",
   },
   {
-    price: "429.35",
+    price: 429.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -978,7 +980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2024072542",
   },
   {
-    price: "626.50",
+    price: 626.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -986,7 +988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1290190135",
   },
   {
-    price: "485.20",
+    price: 485.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -994,7 +996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4897630304",
   },
   {
-    price: "107.80",
+    price: 107.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1002,7 +1004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9066302437",
   },
   {
-    price: "235.41",
+    price: 235.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1010,7 +1012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1428099336",
   },
   {
-    price: "883.30",
+    price: 883.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1018,7 +1020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9535286153",
   },
   {
-    price: "196.44",
+    price: 196.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1026,7 +1028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3351389981",
   },
   {
-    price: "933.61",
+    price: 933.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1034,7 +1036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6658364079",
   },
   {
-    price: "254.04",
+    price: 254.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1042,7 +1044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5735728180",
   },
   {
-    price: "254.65",
+    price: 254.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1050,7 +1052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7349965125",
   },
   {
-    price: "88.34",
+    price: 88.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1058,7 +1060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1268423033",
   },
   {
-    price: "424.99",
+    price: 424.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1066,7 +1068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6630129989",
   },
   {
-    price: "494.37",
+    price: 494.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1074,7 +1076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9168934645",
   },
   {
-    price: "376.33",
+    price: 376.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1082,7 +1084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0333010647",
   },
   {
-    price: "225.94",
+    price: 225.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1090,7 +1092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1483665038",
   },
   {
-    price: "32.46",
+    price: 32.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1098,7 +1100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1103424092",
   },
   {
-    price: "667.03",
+    price: 667.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1106,7 +1108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8429989692",
   },
   {
-    price: "180.98",
+    price: 180.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1114,7 +1116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9898884630",
   },
   {
-    price: "488.29",
+    price: 488.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1122,7 +1124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1348117893",
   },
   {
-    price: "126.80",
+    price: 126.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1130,7 +1132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3688150112",
   },
   {
-    price: "511.77",
+    price: 511.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1138,7 +1140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1966770502",
   },
   {
-    price: "578.88",
+    price: 578.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1146,7 +1148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2276032669",
   },
   {
-    price: "584.26",
+    price: 584.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1154,7 +1156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6139711002",
   },
   {
-    price: "107.77",
+    price: 107.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1162,7 +1164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6191279515",
   },
   {
-    price: "649.34",
+    price: 649.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1170,7 +1172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7932222575",
   },
   {
-    price: "755.58",
+    price: 755.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1178,7 +1180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3967972402",
   },
   {
-    price: "875.59",
+    price: 875.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1186,7 +1188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3853368719",
   },
   {
-    price: "420.27",
+    price: 420.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1194,7 +1196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8074307204",
   },
   {
-    price: "747.23",
+    price: 747.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1202,7 +1204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8302815667",
   },
   {
-    price: "59.55",
+    price: 59.55,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1210,7 +1212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0710204701",
   },
   {
-    price: "482.45",
+    price: 482.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1218,7 +1220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8935864226",
   },
   {
-    price: "392.89",
+    price: 392.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1226,7 +1228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0204537118",
   },
   {
-    price: "294.60",
+    price: 294.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1234,7 +1236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1987225031",
   },
   {
-    price: "253.66",
+    price: 253.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1242,7 +1244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6442152251",
   },
   {
-    price: "188.37",
+    price: 188.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1250,7 +1252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5869774861",
   },
   {
-    price: "876.67",
+    price: 876.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1258,7 +1260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0970803281",
   },
   {
-    price: "559.33",
+    price: 559.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1266,7 +1268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4067548710",
   },
   {
-    price: "100.22",
+    price: 100.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1274,7 +1276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8854839469",
   },
   {
-    price: "964.66",
+    price: 964.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1282,7 +1284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6281672925",
   },
   {
-    price: "491.23",
+    price: 491.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1290,7 +1292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6367894853",
   },
   {
-    price: "563.93",
+    price: 563.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1298,7 +1300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2965060774",
   },
   {
-    price: "627.87",
+    price: 627.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1306,7 +1308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4949121898",
   },
   {
-    price: "863.96",
+    price: 863.96,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1314,7 +1316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2990840257",
   },
   {
-    price: "383.03",
+    price: 383.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1322,7 +1324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1670212165",
   },
   {
-    price: "150.54",
+    price: 150.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1330,7 +1332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1490577084",
   },
   {
-    price: "506.83",
+    price: 506.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1338,7 +1340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6779769452",
   },
   {
-    price: "237.41",
+    price: 237.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1346,7 +1348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9797789144",
   },
   {
-    price: "656.20",
+    price: 656.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1354,7 +1356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2862805416",
   },
   {
-    price: "525.12",
+    price: 525.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1362,7 +1364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4658221713",
   },
   {
-    price: "311.48",
+    price: 311.48,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1370,7 +1372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6667579619",
   },
   {
-    price: "365.91",
+    price: 365.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1378,7 +1380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2741870780",
   },
   {
-    price: "572.50",
+    price: 572.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1386,7 +1388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6535540243",
   },
   {
-    price: "733.87",
+    price: 733.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1394,7 +1396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2729136916",
   },
   {
-    price: "179.58",
+    price: 179.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1402,7 +1404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7012239700",
   },
   {
-    price: "764.18",
+    price: 764.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1410,7 +1412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5081690902",
   },
   {
-    price: "860.80",
+    price: 860.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1418,7 +1420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9924111710",
   },
   {
-    price: "724.72",
+    price: 724.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1426,7 +1428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4958536450",
   },
   {
-    price: "353.54",
+    price: 353.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1434,7 +1436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5540447018",
   },
   {
-    price: "250.60",
+    price: 250.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1442,7 +1444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1766497233",
   },
   {
-    price: "924.61",
+    price: 924.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1450,7 +1452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6720132660",
   },
   {
-    price: "512.76",
+    price: 512.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1458,7 +1460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4190377856",
   },
   {
-    price: "105.44",
+    price: 105.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1466,7 +1468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0568801261",
   },
   {
-    price: "708.35",
+    price: 708.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1474,7 +1476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9551635191",
   },
   {
-    price: "287.91",
+    price: 287.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1482,7 +1484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3534104579",
   },
   {
-    price: "408.27",
+    price: 408.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1490,7 +1492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8193829808",
   },
   {
-    price: "965.36",
+    price: 965.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1498,7 +1500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3578173258",
   },
   {
-    price: "830.78",
+    price: 830.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1506,7 +1508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5911580918",
   },
   {
-    price: "490.38",
+    price: 490.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1514,7 +1516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6641939936",
   },
   {
-    price: "110.68",
+    price: 110.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1522,7 +1524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7747077017",
   },
   {
-    price: "437.26",
+    price: 437.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1530,7 +1532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8052822106",
   },
   {
-    price: "841.18",
+    price: 841.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1538,7 +1540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1697141668",
   },
   {
-    price: "325.21",
+    price: 325.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1546,7 +1548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3055665732",
   },
   {
-    price: "385.14",
+    price: 385.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1554,7 +1556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8033336137",
   },
   {
-    price: "766.33",
+    price: 766.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1562,7 +1564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2638470120",
   },
   {
-    price: "28.34",
+    price: 28.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1570,7 +1572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8001545873",
   },
   {
-    price: "878.60",
+    price: 878.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1578,7 +1580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0162259743",
   },
   {
-    price: "1.41",
+    price: 1.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1586,7 +1588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8176564621",
   },
   {
-    price: "40.55",
+    price: 40.55,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1594,7 +1596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8519404154",
   },
   {
-    price: "733.53",
+    price: 733.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1602,7 +1604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6178980329",
   },
   {
-    price: "168.13",
+    price: 168.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1610,7 +1612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4518782291",
   },
   {
-    price: "553.99",
+    price: 553.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1618,7 +1620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0753886065",
   },
   {
-    price: "915.34",
+    price: 915.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1626,7 +1628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2295076870",
   },
   {
-    price: "297.11",
+    price: 297.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1634,7 +1636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9945985086",
   },
   {
-    price: "750.96",
+    price: 750.96,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1642,7 +1644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5855763455",
   },
   {
-    price: "414.32",
+    price: 414.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1650,7 +1652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4904083172",
   },
   {
-    price: "410.60",
+    price: 410.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1658,7 +1660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5184791000",
   },
   {
-    price: "215.60",
+    price: 215.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1666,7 +1668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8967514425",
   },
   {
-    price: "172.06",
+    price: 172.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1674,7 +1676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7678415702",
   },
   {
-    price: "856.75",
+    price: 856.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1682,7 +1684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9202923337",
   },
   {
-    price: "598.37",
+    price: 598.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1690,7 +1692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3708058224",
   },
   {
-    price: "990.83",
+    price: 990.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1698,7 +1700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3599194750",
   },
   {
-    price: "577.77",
+    price: 577.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1706,7 +1708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2373937018",
   },
   {
-    price: "704.18",
+    price: 704.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1714,7 +1716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7133797070",
   },
   {
-    price: "181.57",
+    price: 181.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1722,7 +1724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7479240961",
   },
   {
-    price: "38.25",
+    price: 38.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1730,7 +1732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4172291902",
   },
   {
-    price: "227.44",
+    price: 227.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1738,7 +1740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5239245274",
   },
   {
-    price: "62.27",
+    price: 62.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1746,7 +1748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5015032471",
   },
   {
-    price: "385.88",
+    price: 385.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1754,7 +1756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2832586570",
   },
   {
-    price: "203.00",
+    price: 203,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1762,7 +1764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0284584606",
   },
   {
-    price: "603.50",
+    price: 603.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1770,7 +1772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2693939712",
   },
   {
-    price: "303.50",
+    price: 303.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1778,7 +1780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6518883596",
   },
   {
-    price: "315.81",
+    price: 315.81,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1786,7 +1788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8748958999",
   },
   {
-    price: "727.84",
+    price: 727.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1794,7 +1796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7038652966",
   },
   {
-    price: "735.78",
+    price: 735.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1802,7 +1804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0890240051",
   },
   {
-    price: "730.12",
+    price: 730.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1810,7 +1812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6847007664",
   },
   {
-    price: "373.44",
+    price: 373.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1818,7 +1820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2097369774",
   },
   {
-    price: "48.31",
+    price: 48.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1826,7 +1828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4685127862",
   },
   {
-    price: "113.32",
+    price: 113.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1834,7 +1836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4054525741",
   },
   {
-    price: "18.24",
+    price: 18.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1842,7 +1844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2654576116",
   },
   {
-    price: "210.49",
+    price: 210.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1850,7 +1852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9014092202",
   },
   {
-    price: "189.42",
+    price: 189.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1858,7 +1860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1026518423",
   },
   {
-    price: "945.51",
+    price: 945.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1866,7 +1868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7894026425",
   },
   {
-    price: "789.00",
+    price: 789,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1874,7 +1876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9800783725",
   },
   {
-    price: "797.73",
+    price: 797.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1882,7 +1884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7292119360",
   },
   {
-    price: "298.19",
+    price: 298.19,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1890,7 +1892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5805861607",
   },
   {
-    price: "751.24",
+    price: 751.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1898,7 +1900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4431820965",
   },
   {
-    price: "136.15",
+    price: 136.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1906,7 +1908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2861249757",
   },
   {
-    price: "680.98",
+    price: 680.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1914,7 +1916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7446996684",
   },
   {
-    price: "285.70",
+    price: 285.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1922,7 +1924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8544339115",
   },
   {
-    price: "328.60",
+    price: 328.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1930,7 +1932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7628041086",
   },
   {
-    price: "142.32",
+    price: 142.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1938,7 +1940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9531303584",
   },
   {
-    price: "284.22",
+    price: 284.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1946,7 +1948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6084557228",
   },
   {
-    price: "15.39",
+    price: 15.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1954,7 +1956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1926191161",
   },
   {
-    price: "196.63",
+    price: 196.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1962,7 +1964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5803681733",
   },
   {
-    price: "578.19",
+    price: 578.19,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1970,7 +1972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2486942785",
   },
   {
-    price: "999.08",
+    price: 999.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -1978,7 +1980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7192198668",
   },
   {
-    price: "396.24",
+    price: 396.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1986,7 +1988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6673940174",
   },
   {
-    price: "302.62",
+    price: 302.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -1994,7 +1996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6546861070",
   },
   {
-    price: "650.74",
+    price: 650.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2002,7 +2004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3968185447",
   },
   {
-    price: "327.76",
+    price: 327.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2010,7 +2012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3482385661",
   },
   {
-    price: "803.52",
+    price: 803.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2018,7 +2020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3686284677",
   },
   {
-    price: "464.43",
+    price: 464.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2026,7 +2028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3668517738",
   },
   {
-    price: "270.11",
+    price: 270.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2034,7 +2036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6988201246",
   },
   {
-    price: "953.31",
+    price: 953.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2042,7 +2044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2974934218",
   },
   {
-    price: "525.65",
+    price: 525.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2050,7 +2052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5311531894",
   },
   {
-    price: "826.95",
+    price: 826.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2058,7 +2060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7201045571",
   },
   {
-    price: "68.65",
+    price: 68.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2066,7 +2068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9559214217",
   },
   {
-    price: "602.51",
+    price: 602.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2074,7 +2076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7379072110",
   },
   {
-    price: "866.66",
+    price: 866.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2082,7 +2084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9270347362",
   },
   {
-    price: "290.13",
+    price: 290.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2090,7 +2092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6438483389",
   },
   {
-    price: "38.58",
+    price: 38.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2098,7 +2100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8608992949",
   },
   {
-    price: "696.07",
+    price: 696.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2106,7 +2108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4926522764",
   },
   {
-    price: "644.35",
+    price: 644.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2114,7 +2116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9660317816",
   },
   {
-    price: "594.26",
+    price: 594.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2122,7 +2124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1418772208",
   },
   {
-    price: "857.82",
+    price: 857.82,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2130,7 +2132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0033853347",
   },
   {
-    price: "955.13",
+    price: 955.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2138,7 +2140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7096639462",
   },
   {
-    price: "516.22",
+    price: 516.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2146,7 +2148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2603751611",
   },
   {
-    price: "773.00",
+    price: 773,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2154,7 +2156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8014279360",
   },
   {
-    price: "774.54",
+    price: 774.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2162,7 +2164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8489165610",
   },
   {
-    price: "464.66",
+    price: 464.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2170,7 +2172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9924578740",
   },
   {
-    price: "749.18",
+    price: 749.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2178,7 +2180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6925231954",
   },
   {
-    price: "83.65",
+    price: 83.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2186,7 +2188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5465688408",
   },
   {
-    price: "170.13",
+    price: 170.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2194,7 +2196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5531153481",
   },
   {
-    price: "207.08",
+    price: 207.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2202,7 +2204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2358812617",
   },
   {
-    price: "765.62",
+    price: 765.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2210,7 +2212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7434098163",
   },
   {
-    price: "913.21",
+    price: 913.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2218,7 +2220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5380459137",
   },
   {
-    price: "986.19",
+    price: 986.19,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2226,7 +2228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0175334439",
   },
   {
-    price: "783.22",
+    price: 783.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2234,7 +2236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5492256343",
   },
   {
-    price: "509.41",
+    price: 509.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2242,7 +2244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6477113910",
   },
   {
-    price: "299.92",
+    price: 299.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2250,7 +2252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8805302317",
   },
   {
-    price: "961.87",
+    price: 961.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2258,7 +2260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6891254183",
   },
   {
-    price: "814.23",
+    price: 814.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2266,7 +2268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7187764502",
   },
   {
-    price: "164.51",
+    price: 164.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2274,7 +2276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0610371347",
   },
   {
-    price: "303.99",
+    price: 303.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2282,7 +2284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7476050789",
   },
   {
-    price: "446.18",
+    price: 446.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2290,7 +2292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8817649724",
   },
   {
-    price: "409.08",
+    price: 409.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2298,7 +2300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2687690066",
   },
   {
-    price: "463.84",
+    price: 463.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2306,7 +2308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4221679425",
   },
   {
-    price: "38.09",
+    price: 38.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2314,7 +2316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0516126709",
   },
   {
-    price: "69.43",
+    price: 69.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2322,7 +2324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4645079565",
   },
   {
-    price: "840.67",
+    price: 840.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2330,7 +2332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4728239152",
   },
   {
-    price: "941.52",
+    price: 941.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2338,7 +2340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6018043580",
   },
   {
-    price: "330.28",
+    price: 330.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2346,7 +2348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4798045829",
   },
   {
-    price: "116.30",
+    price: 116.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2354,7 +2356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7402327272",
   },
   {
-    price: "269.01",
+    price: 269.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2362,7 +2364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8823418038",
   },
   {
-    price: "987.31",
+    price: 987.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2370,7 +2372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9900688759",
   },
   {
-    price: "160.00",
+    price: 160,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2378,7 +2380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0227261666",
   },
   {
-    price: "450.82",
+    price: 450.82,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2386,7 +2388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2152896866",
   },
   {
-    price: "981.64",
+    price: 981.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2394,7 +2396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2680926463",
   },
   {
-    price: "239.56",
+    price: 239.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2402,7 +2404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1382839391",
   },
   {
-    price: "507.66",
+    price: 507.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2410,7 +2412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8752087026",
   },
   {
-    price: "135.26",
+    price: 135.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2418,7 +2420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9310402415",
   },
   {
-    price: "260.11",
+    price: 260.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2426,7 +2428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0923017879",
   },
   {
-    price: "68.50",
+    price: 68.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2434,7 +2436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5405488240",
   },
   {
-    price: "324.42",
+    price: 324.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2442,7 +2444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8863737665",
   },
   {
-    price: "754.70",
+    price: 754.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2450,7 +2452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3946089011",
   },
   {
-    price: "660.91",
+    price: 660.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2458,7 +2460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1963043499",
   },
   {
-    price: "893.33",
+    price: 893.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2466,7 +2468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0234520221",
   },
   {
-    price: "35.32",
+    price: 35.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2474,7 +2476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7011532390",
   },
   {
-    price: "681.40",
+    price: 681.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2482,7 +2484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7310929489",
   },
   {
-    price: "106.89",
+    price: 106.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2490,7 +2492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7738367997",
   },
   {
-    price: "125.11",
+    price: 125.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2498,7 +2500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0511344856",
   },
   {
-    price: "145.90",
+    price: 145.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2506,7 +2508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0742871169",
   },
   {
-    price: "430.31",
+    price: 430.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2514,7 +2516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5843474569",
   },
   {
-    price: "757.01",
+    price: 757.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2522,7 +2524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6725202012",
   },
   {
-    price: "569.21",
+    price: 569.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2530,7 +2532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0648080633",
   },
   {
-    price: "964.00",
+    price: 964,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2538,7 +2540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2236900260",
   },
   {
-    price: "486.79",
+    price: 486.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2546,7 +2548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5742607970",
   },
   {
-    price: "519.70",
+    price: 519.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2554,7 +2556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8106345912",
   },
   {
-    price: "383.84",
+    price: 383.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2562,7 +2564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3537078706",
   },
   {
-    price: "111.33",
+    price: 111.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2570,7 +2572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8605766867",
   },
   {
-    price: "310.32",
+    price: 310.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2578,7 +2580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4037767716",
   },
   {
-    price: "793.43",
+    price: 793.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2586,7 +2588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1469495635",
   },
   {
-    price: "311.65",
+    price: 311.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2594,7 +2596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8042610750",
   },
   {
-    price: "293.65",
+    price: 293.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2602,7 +2604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7015536501",
   },
   {
-    price: "442.95",
+    price: 442.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2610,7 +2612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7837945379",
   },
   {
-    price: "563.57",
+    price: 563.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2618,7 +2620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8843681214",
   },
   {
-    price: "291.27",
+    price: 291.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2626,7 +2628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4728862356",
   },
   {
-    price: "701.24",
+    price: 701.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2634,7 +2636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2938117434",
   },
   {
-    price: "951.20",
+    price: 951.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2642,7 +2644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7601351270",
   },
   {
-    price: "366.21",
+    price: 366.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2650,7 +2652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7493465029",
   },
   {
-    price: "861.70",
+    price: 861.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2658,7 +2660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7383387392",
   },
   {
-    price: "335.98",
+    price: 335.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2666,7 +2668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1896863469",
   },
   {
-    price: "868.91",
+    price: 868.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2674,7 +2676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5547691321",
   },
   {
-    price: "79.21",
+    price: 79.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2682,7 +2684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0964581388",
   },
   {
-    price: "324.79",
+    price: 324.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2690,7 +2692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5557675604",
   },
   {
-    price: "448.45",
+    price: 448.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2698,7 +2700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3551176949",
   },
   {
-    price: "210.28",
+    price: 210.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2706,7 +2708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7897703088",
   },
   {
-    price: "544.11",
+    price: 544.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2714,7 +2716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7180097578",
   },
   {
-    price: "503.78",
+    price: 503.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2722,7 +2724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0023875992",
   },
   {
-    price: "304.89",
+    price: 304.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2730,7 +2732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7709503071",
   },
   {
-    price: "382.54",
+    price: 382.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2738,7 +2740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9457329392",
   },
   {
-    price: "923.40",
+    price: 923.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2746,7 +2748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5697169957",
   },
   {
-    price: "998.53",
+    price: 998.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2754,7 +2756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1183053789",
   },
   {
-    price: "876.69",
+    price: 876.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2762,7 +2764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6267527174",
   },
   {
-    price: "906.03",
+    price: 906.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2770,7 +2772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0757882919",
   },
   {
-    price: "259.15",
+    price: 259.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2778,7 +2780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0982086032",
   },
   {
-    price: "849.39",
+    price: 849.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2786,7 +2788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8377615150",
   },
   {
-    price: "266.35",
+    price: 266.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2794,7 +2796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4410719661",
   },
   {
-    price: "191.80",
+    price: 191.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2802,7 +2804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0042513979",
   },
   {
-    price: "367.07",
+    price: 367.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2810,7 +2812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7110487954",
   },
   {
-    price: "248.16",
+    price: 248.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2818,7 +2820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2923103793",
   },
   {
-    price: "768.35",
+    price: 768.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2826,7 +2828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7720455851",
   },
   {
-    price: "485.36",
+    price: 485.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2834,7 +2836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9094305585",
   },
   {
-    price: "716.88",
+    price: 716.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2842,7 +2844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5783637475",
   },
   {
-    price: "164.86",
+    price: 164.86,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2850,7 +2852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4977202732",
   },
   {
-    price: "838.78",
+    price: 838.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2858,7 +2860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8977473802",
   },
   {
-    price: "156.21",
+    price: 156.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2866,7 +2868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5432797186",
   },
   {
-    price: "997.85",
+    price: 997.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2874,7 +2876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8948529323",
   },
   {
-    price: "271.59",
+    price: 271.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2882,7 +2884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3372191854",
   },
   {
-    price: "794.70",
+    price: 794.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2890,7 +2892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9451649530",
   },
   {
-    price: "626.26",
+    price: 626.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2898,7 +2900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7647075306",
   },
   {
-    price: "782.21",
+    price: 782.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2906,7 +2908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9279332562",
   },
   {
-    price: "170.98",
+    price: 170.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2914,7 +2916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5946483579",
   },
   {
-    price: "467.38",
+    price: 467.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2922,7 +2924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8282179744",
   },
   {
-    price: "298.91",
+    price: 298.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2930,7 +2932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6208246121",
   },
   {
-    price: "896.14",
+    price: 896.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2938,7 +2940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0178654965",
   },
   {
-    price: "619.72",
+    price: 619.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2946,7 +2948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0986137170",
   },
   {
-    price: "833.18",
+    price: 833.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2954,7 +2956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9075870272",
   },
   {
-    price: "121.61",
+    price: 121.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2962,7 +2964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4618877642",
   },
   {
-    price: "522.20",
+    price: 522.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2970,7 +2972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9498282528",
   },
   {
-    price: "420.81",
+    price: 420.81,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2978,7 +2980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4935126000",
   },
   {
-    price: "964.57",
+    price: 964.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -2986,7 +2988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4041439949",
   },
   {
-    price: "784.29",
+    price: 784.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -2994,7 +2996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4805945745",
   },
   {
-    price: "130.34",
+    price: 130.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3002,7 +3004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6873254924",
   },
   {
-    price: "271.01",
+    price: 271.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3010,7 +3012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2676448935",
   },
   {
-    price: "358.16",
+    price: 358.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3018,7 +3020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1381701337",
   },
   {
-    price: "130.54",
+    price: 130.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3026,7 +3028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3108108360",
   },
   {
-    price: "984.50",
+    price: 984.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3034,7 +3036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0741113759",
   },
   {
-    price: "497.45",
+    price: 497.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3042,7 +3044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6843027202",
   },
   {
-    price: "504.89",
+    price: 504.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3050,7 +3052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2360182277",
   },
   {
-    price: "169.74",
+    price: 169.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3058,7 +3060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2285584733",
   },
   {
-    price: "416.10",
+    price: 416.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3066,7 +3068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2076952969",
   },
   {
-    price: "790.78",
+    price: 790.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3074,7 +3076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0026336014",
   },
   {
-    price: "635.52",
+    price: 635.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3082,7 +3084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7764482587",
   },
   {
-    price: "868.02",
+    price: 868.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3090,7 +3092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1531569064",
   },
   {
-    price: "128.41",
+    price: 128.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3098,7 +3100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0130403733",
   },
   {
-    price: "268.90",
+    price: 268.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3106,7 +3108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8011944576",
   },
   {
-    price: "472.34",
+    price: 472.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3114,7 +3116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9082891816",
   },
   {
-    price: "163.01",
+    price: 163.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3122,7 +3124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8410407868",
   },
   {
-    price: "149.44",
+    price: 149.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3130,7 +3132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5931399259",
   },
   {
-    price: "847.70",
+    price: 847.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3138,7 +3140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4642923799",
   },
   {
-    price: "31.45",
+    price: 31.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3146,7 +3148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1798418010",
   },
   {
-    price: "722.85",
+    price: 722.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3154,7 +3156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7298345567",
   },
   {
-    price: "700.29",
+    price: 700.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3162,7 +3164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3589813709",
   },
   {
-    price: "437.43",
+    price: 437.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3170,7 +3172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1858005159",
   },
   {
-    price: "609.39",
+    price: 609.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3178,7 +3180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1093707658",
   },
   {
-    price: "833.52",
+    price: 833.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3186,7 +3188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4631516771",
   },
   {
-    price: "908.37",
+    price: 908.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3194,7 +3196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3335624785",
   },
   {
-    price: "794.67",
+    price: 794.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3202,7 +3204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0483520845",
   },
   {
-    price: "365.38",
+    price: 365.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3210,7 +3212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9888439154",
   },
   {
-    price: "607.10",
+    price: 607.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3218,7 +3220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7837286979",
   },
   {
-    price: "34.05",
+    price: 34.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3226,7 +3228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9885797793",
   },
   {
-    price: "26.23",
+    price: 26.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3234,7 +3236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8109432093",
   },
   {
-    price: "577.23",
+    price: 577.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3242,7 +3244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4104439975",
   },
   {
-    price: "227.08",
+    price: 227.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3250,7 +3252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3173742702",
   },
   {
-    price: "248.01",
+    price: 248.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3258,7 +3260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4280065756",
   },
   {
-    price: "925.02",
+    price: 925.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3266,7 +3268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4216375790",
   },
   {
-    price: "363.02",
+    price: 363.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3274,7 +3276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8243936823",
   },
   {
-    price: "687.52",
+    price: 687.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3282,7 +3284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0509300936",
   },
   {
-    price: "325.34",
+    price: 325.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3290,7 +3292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6332081686",
   },
   {
-    price: "552.79",
+    price: 552.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3298,7 +3300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3520463024",
   },
   {
-    price: "793.32",
+    price: 793.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3306,7 +3308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7720410645",
   },
   {
-    price: "463.24",
+    price: 463.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3314,7 +3316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8016796974",
   },
   {
-    price: "367.33",
+    price: 367.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3322,7 +3324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5555126778",
   },
   {
-    price: "478.97",
+    price: 478.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3330,7 +3332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7413060183",
   },
   {
-    price: "981.87",
+    price: 981.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3338,7 +3340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8172393024",
   },
   {
-    price: "959.65",
+    price: 959.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3346,7 +3348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6276564087",
   },
   {
-    price: "416.06",
+    price: 416.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3354,7 +3356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0499815394",
   },
   {
-    price: "109.91",
+    price: 109.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3362,7 +3364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3681321949",
   },
   {
-    price: "287.58",
+    price: 287.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3370,7 +3372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7220482779",
   },
   {
-    price: "313.51",
+    price: 313.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3378,7 +3380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3541246030",
   },
   {
-    price: "861.50",
+    price: 861.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3386,7 +3388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5584247537",
   },
   {
-    price: "525.89",
+    price: 525.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3394,7 +3396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1220776521",
   },
   {
-    price: "458.87",
+    price: 458.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3402,7 +3404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1132506158",
   },
   {
-    price: "87.11",
+    price: 87.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3410,7 +3412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8748564788",
   },
   {
-    price: "721.84",
+    price: 721.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3418,7 +3420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7130133767",
   },
   {
-    price: "300.31",
+    price: 300.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3426,7 +3428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7439338359",
   },
   {
-    price: "169.74",
+    price: 169.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3434,7 +3436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3243151937",
   },
   {
-    price: "292.24",
+    price: 292.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3442,7 +3444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6594717987",
   },
   {
-    price: "101.92",
+    price: 101.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3450,7 +3452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7931852095",
   },
   {
-    price: "263.07",
+    price: 263.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3458,7 +3460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9866053601",
   },
   {
-    price: "165.10",
+    price: 165.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3466,7 +3468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6717387149",
   },
   {
-    price: "924.91",
+    price: 924.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3474,7 +3476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2576211518",
   },
   {
-    price: "406.53",
+    price: 406.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3482,7 +3484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1463958218",
   },
   {
-    price: "774.39",
+    price: 774.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3490,7 +3492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0623980894",
   },
   {
-    price: "34.84",
+    price: 34.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3498,7 +3500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5203202516",
   },
   {
-    price: "553.31",
+    price: 553.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3506,7 +3508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8757804214",
   },
   {
-    price: "166.72",
+    price: 166.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3514,7 +3516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2835329552",
   },
   {
-    price: "382.37",
+    price: 382.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3522,7 +3524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7943418336",
   },
   {
-    price: "114.44",
+    price: 114.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3530,7 +3532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9925592542",
   },
   {
-    price: "420.43",
+    price: 420.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3538,7 +3540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6762132871",
   },
   {
-    price: "222.08",
+    price: 222.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3546,7 +3548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2226086382",
   },
   {
-    price: "831.39",
+    price: 831.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3554,7 +3556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2659122318",
   },
   {
-    price: "960.92",
+    price: 960.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3562,7 +3564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8601769608",
   },
   {
-    price: "291.76",
+    price: 291.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3570,7 +3572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9477231983",
   },
   {
-    price: "101.44",
+    price: 101.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3578,7 +3580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4831590770",
   },
   {
-    price: "464.32",
+    price: 464.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3586,7 +3588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5755540578",
   },
   {
-    price: "625.07",
+    price: 625.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3594,7 +3596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8926416593",
   },
   {
-    price: "278.17",
+    price: 278.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3602,7 +3604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2309094986",
   },
   {
-    price: "3.46",
+    price: 3.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3610,7 +3612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8108062810",
   },
   {
-    price: "777.53",
+    price: 777.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3618,7 +3620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8864514007",
   },
   {
-    price: "458.11",
+    price: 458.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3626,7 +3628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6196360582",
   },
   {
-    price: "462.30",
+    price: 462.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3634,7 +3636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2927510350",
   },
   {
-    price: "456.25",
+    price: 456.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3642,7 +3644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4297938944",
   },
   {
-    price: "252.49",
+    price: 252.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3650,7 +3652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6952255095",
   },
   {
-    price: "133.89",
+    price: 133.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3658,7 +3660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6473309039",
   },
   {
-    price: "755.73",
+    price: 755.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3666,7 +3668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3893104348",
   },
   {
-    price: "922.77",
+    price: 922.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3674,7 +3676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2123799491",
   },
   {
-    price: "796.29",
+    price: 796.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3682,7 +3684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0246087153",
   },
   {
-    price: "865.52",
+    price: 865.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3690,7 +3692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8422628570",
   },
   {
-    price: "143.90",
+    price: 143.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3698,7 +3700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6723576314",
   },
   {
-    price: "629.31",
+    price: 629.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3706,7 +3708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8169860555",
   },
   {
-    price: "203.78",
+    price: 203.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3714,7 +3716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4201500934",
   },
   {
-    price: "637.15",
+    price: 637.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3722,7 +3724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9231312529",
   },
   {
-    price: "244.47",
+    price: 244.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3730,7 +3732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9542729081",
   },
   {
-    price: "415.59",
+    price: 415.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3738,7 +3740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8185177813",
   },
   {
-    price: "767.58",
+    price: 767.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3746,7 +3748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4607033723",
   },
   {
-    price: "686.89",
+    price: 686.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3754,7 +3756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5853015370",
   },
   {
-    price: "772.41",
+    price: 772.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3762,7 +3764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2347493582",
   },
   {
-    price: "673.77",
+    price: 673.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3770,7 +3772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0662896629",
   },
   {
-    price: "159.78",
+    price: 159.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3778,7 +3780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1181509866",
   },
   {
-    price: "721.25",
+    price: 721.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3786,7 +3788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0136339689",
   },
   {
-    price: "570.20",
+    price: 570.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3794,7 +3796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9532131329",
   },
   {
-    price: "323.53",
+    price: 323.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3802,7 +3804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1345747411",
   },
   {
-    price: "886.39",
+    price: 886.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3810,7 +3812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8865078723",
   },
   {
-    price: "958.71",
+    price: 958.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3818,7 +3820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6975132933",
   },
   {
-    price: "314.89",
+    price: 314.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3826,7 +3828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5780676054",
   },
   {
-    price: "476.14",
+    price: 476.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3834,7 +3836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6954855308",
   },
   {
-    price: "959.79",
+    price: 959.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3842,7 +3844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0664886787",
   },
   {
-    price: "925.56",
+    price: 925.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3850,7 +3852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7692258368",
   },
   {
-    price: "451.97",
+    price: 451.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3858,7 +3860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9241257466",
   },
   {
-    price: "779.89",
+    price: 779.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3866,7 +3868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1230679863",
   },
   {
-    price: "770.11",
+    price: 770.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3874,7 +3876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4985796514",
   },
   {
-    price: "603.53",
+    price: 603.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3882,7 +3884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7775327901",
   },
   {
-    price: "437.17",
+    price: 437.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3890,7 +3892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5862908846",
   },
   {
-    price: "75.85",
+    price: 75.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3898,7 +3900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1093860847",
   },
   {
-    price: "37.87",
+    price: 37.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3906,7 +3908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2047896681",
   },
   {
-    price: "1.90",
+    price: 1.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3914,7 +3916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0452327407",
   },
   {
-    price: "431.22",
+    price: 431.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3922,7 +3924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4217075162",
   },
   {
-    price: "926.02",
+    price: 926.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3930,7 +3932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1053316194",
   },
   {
-    price: "832.78",
+    price: 832.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3938,7 +3940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7730124963",
   },
   {
-    price: "180.91",
+    price: 180.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3946,7 +3948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4381085620",
   },
   {
-    price: "697.49",
+    price: 697.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3954,7 +3956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1464648565",
   },
   {
-    price: "957.00",
+    price: 957,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3962,7 +3964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9015337756",
   },
   {
-    price: "405.68",
+    price: 405.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3970,7 +3972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3038419516",
   },
   {
-    price: "402.61",
+    price: 402.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3978,7 +3980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1346143803",
   },
   {
-    price: "886.36",
+    price: 886.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -3986,7 +3988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8516358550",
   },
   {
-    price: "187.57",
+    price: 187.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -3994,7 +3996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9516461441",
   },
   {
-    price: "28.83",
+    price: 28.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4002,7 +4004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7782320844",
   },
   {
-    price: "745.21",
+    price: 745.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4010,7 +4012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6574861586",
   },
   {
-    price: "931.09",
+    price: 931.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4018,7 +4020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8740522601",
   },
   {
-    price: "539.05",
+    price: 539.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4026,7 +4028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2065578491",
   },
   {
-    price: "229.73",
+    price: 229.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4034,7 +4036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6682323727",
   },
   {
-    price: "801.98",
+    price: 801.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4042,7 +4044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3432148364",
   },
   {
-    price: "375.25",
+    price: 375.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4050,7 +4052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3636184989",
   },
   {
-    price: "806.85",
+    price: 806.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4058,7 +4060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8987609863",
   },
   {
-    price: "354.73",
+    price: 354.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4066,7 +4068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6820772114",
   },
   {
-    price: "807.61",
+    price: 807.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4074,7 +4076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5373107778",
   },
   {
-    price: "170.47",
+    price: 170.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4082,7 +4084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9140668576",
   },
   {
-    price: "925.18",
+    price: 925.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4090,7 +4092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5995382330",
   },
   {
-    price: "667.03",
+    price: 667.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4098,7 +4100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7747263597",
   },
   {
-    price: "419.27",
+    price: 419.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4106,7 +4108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2036910386",
   },
   {
-    price: "294.97",
+    price: 294.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4114,7 +4116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1180505336",
   },
   {
-    price: "502.52",
+    price: 502.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4122,7 +4124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5332314493",
   },
   {
-    price: "734.35",
+    price: 734.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4130,7 +4132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5723829572",
   },
   {
-    price: "731.47",
+    price: 731.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4138,7 +4140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5922730592",
   },
   {
-    price: "839.50",
+    price: 839.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4146,7 +4148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0753169452",
   },
   {
-    price: "596.70",
+    price: 596.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4154,7 +4156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5818593762",
   },
   {
-    price: "643.02",
+    price: 643.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4162,7 +4164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2916479511",
   },
   {
-    price: "219.78",
+    price: 219.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4170,7 +4172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2456719131",
   },
   {
-    price: "625.89",
+    price: 625.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4178,7 +4180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0994880499",
   },
   {
-    price: "902.63",
+    price: 902.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4186,7 +4188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1794568441",
   },
   {
-    price: "169.16",
+    price: 169.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4194,7 +4196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9336116126",
   },
   {
-    price: "495.18",
+    price: 495.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4202,7 +4204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0007622821",
   },
   {
-    price: "751.97",
+    price: 751.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4210,7 +4212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9265584033",
   },
   {
-    price: "183.17",
+    price: 183.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4218,7 +4220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3350881963",
   },
   {
-    price: "756.36",
+    price: 756.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4226,7 +4228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8520623204",
   },
   {
-    price: "327.27",
+    price: 327.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4234,7 +4236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8339292552",
   },
   {
-    price: "235.53",
+    price: 235.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4242,7 +4244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6404814528",
   },
   {
-    price: "593.67",
+    price: 593.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4250,7 +4252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2083825586",
   },
   {
-    price: "893.27",
+    price: 893.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4258,7 +4260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8122402178",
   },
   {
-    price: "416.30",
+    price: 416.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4266,7 +4268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4150321647",
   },
   {
-    price: "370.89",
+    price: 370.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4274,7 +4276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5239325642",
   },
   {
-    price: "904.07",
+    price: 904.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4282,7 +4284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7139799504",
   },
   {
-    price: "301.88",
+    price: 301.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4290,7 +4292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2039620095",
   },
   {
-    price: "647.83",
+    price: 647.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4298,7 +4300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5787677730",
   },
   {
-    price: "450.45",
+    price: 450.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4306,7 +4308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6763719914",
   },
   {
-    price: "130.92",
+    price: 130.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4314,7 +4316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1013887166",
   },
   {
-    price: "492.14",
+    price: 492.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4322,7 +4324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0050387146",
   },
   {
-    price: "223.58",
+    price: 223.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4330,7 +4332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4371298516",
   },
   {
-    price: "593.09",
+    price: 593.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4338,7 +4340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0398467323",
   },
   {
-    price: "645.06",
+    price: 645.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4346,7 +4348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5901154533",
   },
   {
-    price: "898.85",
+    price: 898.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4354,7 +4356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2429335972",
   },
   {
-    price: "454.09",
+    price: 454.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4362,7 +4364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6776370303",
   },
   {
-    price: "480.98",
+    price: 480.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4370,7 +4372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5506354231",
   },
   {
-    price: "229.43",
+    price: 229.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4378,7 +4380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7932735491",
   },
   {
-    price: "771.02",
+    price: 771.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4386,7 +4388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4207116648",
   },
   {
-    price: "201.38",
+    price: 201.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4394,7 +4396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4655860820",
   },
   {
-    price: "705.52",
+    price: 705.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4402,7 +4404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3677119138",
   },
   {
-    price: "669.62",
+    price: 669.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4410,7 +4412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0902296140",
   },
   {
-    price: "689.23",
+    price: 689.23,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4418,7 +4420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4324109664",
   },
   {
-    price: "769.33",
+    price: 769.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4426,7 +4428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1035323133",
   },
   {
-    price: "622.21",
+    price: 622.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4434,7 +4436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2452499439",
   },
   {
-    price: "523.69",
+    price: 523.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4442,7 +4444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9323821535",
   },
   {
-    price: "738.01",
+    price: 738.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4450,7 +4452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5473868525",
   },
   {
-    price: "986.56",
+    price: 986.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4458,7 +4460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6715798419",
   },
   {
-    price: "414.64",
+    price: 414.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4466,7 +4468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0303345292",
   },
   {
-    price: "673.99",
+    price: 673.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4474,7 +4476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3736787200",
   },
   {
-    price: "923.47",
+    price: 923.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4482,7 +4484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5906446052",
   },
   {
-    price: "55.85",
+    price: 55.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4490,7 +4492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4274776441",
   },
   {
-    price: "155.59",
+    price: 155.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4498,7 +4500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9382816313",
   },
   {
-    price: "691.67",
+    price: 691.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4506,7 +4508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6001823677",
   },
   {
-    price: "622.76",
+    price: 622.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4514,7 +4516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1530521815",
   },
   {
-    price: "760.98",
+    price: 760.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4522,7 +4524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7614247493",
   },
   {
-    price: "27.56",
+    price: 27.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4530,7 +4532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3625971399",
   },
   {
-    price: "356.10",
+    price: 356.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4538,7 +4540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8084737368",
   },
   {
-    price: "594.16",
+    price: 594.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4546,7 +4548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9505891016",
   },
   {
-    price: "134.92",
+    price: 134.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4554,7 +4556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3192314990",
   },
   {
-    price: "525.61",
+    price: 525.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4562,7 +4564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8359337071",
   },
   {
-    price: "430.84",
+    price: 430.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4570,7 +4572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1087182476",
   },
   {
-    price: "271.98",
+    price: 271.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4578,7 +4580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3131430907",
   },
   {
-    price: "148.70",
+    price: 148.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4586,7 +4588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9465084948",
   },
   {
-    price: "180.30",
+    price: 180.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4594,7 +4596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1777204623",
   },
   {
-    price: "289.24",
+    price: 289.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4602,7 +4604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0930879678",
   },
   {
-    price: "735.20",
+    price: 735.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4610,7 +4612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3848148285",
   },
   {
-    price: "473.13",
+    price: 473.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4618,7 +4620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5687310584",
   },
   {
-    price: "141.53",
+    price: 141.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4626,7 +4628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8443016159",
   },
   {
-    price: "754.10",
+    price: 754.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4634,7 +4636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9291487589",
   },
   {
-    price: "645.96",
+    price: 645.96,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4642,7 +4644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4745956142",
   },
   {
-    price: "330.81",
+    price: 330.81,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4650,7 +4652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3771191351",
   },
   {
-    price: "901.51",
+    price: 901.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4658,7 +4660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5387263076",
   },
   {
-    price: "237.86",
+    price: 237.86,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4666,7 +4668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2002928401",
   },
   {
-    price: "969.28",
+    price: 969.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4674,7 +4676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3868961011",
   },
   {
-    price: "431.37",
+    price: 431.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4682,7 +4684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4025607514",
   },
   {
-    price: "359.69",
+    price: 359.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4690,7 +4692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9295224183",
   },
   {
-    price: "924.76",
+    price: 924.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4698,7 +4700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0306657597",
   },
   {
-    price: "978.10",
+    price: 978.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4706,7 +4708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5966005389",
   },
   {
-    price: "674.58",
+    price: 674.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4714,7 +4716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3914652810",
   },
   {
-    price: "769.92",
+    price: 769.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4722,7 +4724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8998566613",
   },
   {
-    price: "593.53",
+    price: 593.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4730,7 +4732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9239978119",
   },
   {
-    price: "579.60",
+    price: 579.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4738,7 +4740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4199356622",
   },
   {
-    price: "178.56",
+    price: 178.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4746,7 +4748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7863723531",
   },
   {
-    price: "336.72",
+    price: 336.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4754,7 +4756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1123215820",
   },
   {
-    price: "523.82",
+    price: 523.82,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4762,7 +4764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6376804799",
   },
   {
-    price: "357.69",
+    price: 357.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4770,7 +4772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7885943844",
   },
   {
-    price: "790.88",
+    price: 790.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4778,7 +4780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2539207723",
   },
   {
-    price: "745.17",
+    price: 745.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4786,7 +4788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8137345671",
   },
   {
-    price: "308.54",
+    price: 308.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4794,7 +4796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6830806356",
   },
   {
-    price: "266.69",
+    price: 266.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4802,7 +4804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9887967602",
   },
   {
-    price: "76.05",
+    price: 76.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4810,7 +4812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4705821165",
   },
   {
-    price: "313.37",
+    price: 313.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4818,7 +4820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7110374270",
   },
   {
-    price: "978.61",
+    price: 978.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4826,7 +4828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3109388243",
   },
   {
-    price: "640.37",
+    price: 640.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4834,7 +4836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0051790602",
   },
   {
-    price: "467.12",
+    price: 467.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4842,7 +4844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5606501945",
   },
   {
-    price: "866.73",
+    price: 866.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4850,7 +4852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2291581821",
   },
   {
-    price: "527.48",
+    price: 527.48,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4858,7 +4860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7484333212",
   },
   {
-    price: "781.27",
+    price: 781.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4866,7 +4868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5184461914",
   },
   {
-    price: "234.68",
+    price: 234.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4874,7 +4876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5197608978",
   },
   {
-    price: "47.77",
+    price: 47.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4882,7 +4884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7864611710",
   },
   {
-    price: "284.84",
+    price: 284.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4890,7 +4892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3866974493",
   },
   {
-    price: "320.93",
+    price: 320.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4898,7 +4900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1530492610",
   },
   {
-    price: "974.83",
+    price: 974.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4906,7 +4908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9446392438",
   },
   {
-    price: "444.92",
+    price: 444.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4914,7 +4916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2574209508",
   },
   {
-    price: "763.73",
+    price: 763.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4922,7 +4924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0969703244",
   },
   {
-    price: "824.60",
+    price: 824.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4930,7 +4932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3947776020",
   },
   {
-    price: "822.96",
+    price: 822.96,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4938,7 +4940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6708165996",
   },
   {
-    price: "906.44",
+    price: 906.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4946,7 +4948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3682237607",
   },
   {
-    price: "261.89",
+    price: 261.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4954,7 +4956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9059407717",
   },
   {
-    price: "571.60",
+    price: 571.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4962,7 +4964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3034627653",
   },
   {
-    price: "51.77",
+    price: 51.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4970,7 +4972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5320840993",
   },
   {
-    price: "628.30",
+    price: 628.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -4978,7 +4980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2795606755",
   },
   {
-    price: "499.49",
+    price: 499.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4986,7 +4988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9789887116",
   },
   {
-    price: "314.29",
+    price: 314.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -4994,7 +4996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6579547391",
   },
   {
-    price: "481.13",
+    price: 481.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5002,7 +5004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5686259232",
   },
   {
-    price: "472.26",
+    price: 472.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5010,7 +5012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4186854440",
   },
   {
-    price: "272.49",
+    price: 272.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5018,7 +5020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8720885911",
   },
   {
-    price: "261.09",
+    price: 261.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5026,7 +5028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0360940447",
   },
   {
-    price: "466.29",
+    price: 466.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5034,7 +5036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5338077167",
   },
   {
-    price: "2.79",
+    price: 2.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5042,7 +5044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5453801301",
   },
   {
-    price: "923.39",
+    price: 923.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5050,7 +5052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1963419065",
   },
   {
-    price: "759.35",
+    price: 759.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5058,7 +5060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5453762659",
   },
   {
-    price: "450.74",
+    price: 450.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5066,7 +5068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3058861729",
   },
   {
-    price: "672.06",
+    price: 672.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5074,7 +5076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4425423720",
   },
   {
-    price: "703.24",
+    price: 703.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5082,7 +5084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5593349312",
   },
   {
-    price: "453.28",
+    price: 453.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5090,7 +5092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9787001919",
   },
   {
-    price: "710.42",
+    price: 710.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5098,7 +5100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6601395234",
   },
   {
-    price: "380.58",
+    price: 380.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5106,7 +5108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1978470495",
   },
   {
-    price: "276.00",
+    price: 276,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5114,7 +5116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2385527499",
   },
   {
-    price: "708.14",
+    price: 708.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5122,7 +5124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2073596088",
   },
   {
-    price: "78.83",
+    price: 78.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5130,7 +5132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2364386179",
   },
   {
-    price: "918.00",
+    price: 918,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5138,7 +5140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1844907546",
   },
   {
-    price: "951.98",
+    price: 951.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5146,7 +5148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9650731245",
   },
   {
-    price: "496.06",
+    price: 496.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5154,7 +5156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2395351342",
   },
   {
-    price: "56.40",
+    price: 56.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5162,7 +5164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8679869988",
   },
   {
-    price: "755.04",
+    price: 755.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5170,7 +5172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8353202743",
   },
   {
-    price: "302.72",
+    price: 302.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5178,7 +5180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0563067934",
   },
   {
-    price: "430.42",
+    price: 430.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5186,7 +5188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9487170235",
   },
   {
-    price: "145.24",
+    price: 145.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5194,7 +5196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3537378661",
   },
   {
-    price: "548.63",
+    price: 548.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5202,7 +5204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6969190528",
   },
   {
-    price: "114.80",
+    price: 114.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5210,7 +5212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5426008353",
   },
   {
-    price: "936.51",
+    price: 936.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5218,7 +5220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1441016880",
   },
   {
-    price: "790.53",
+    price: 790.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5226,7 +5228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0779601106",
   },
   {
-    price: "54.37",
+    price: 54.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5234,7 +5236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4810986578",
   },
   {
-    price: "670.13",
+    price: 670.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5242,7 +5244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6256786157",
   },
   {
-    price: "650.37",
+    price: 650.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5250,7 +5252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5263889348",
   },
   {
-    price: "407.15",
+    price: 407.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5258,7 +5260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1086743253",
   },
   {
-    price: "329.22",
+    price: 329.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5266,7 +5268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3403868710",
   },
   {
-    price: "975.49",
+    price: 975.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5274,7 +5276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0680623450",
   },
   {
-    price: "916.90",
+    price: 916.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5282,7 +5284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3404910303",
   },
   {
-    price: "296.42",
+    price: 296.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5290,7 +5292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2888740907",
   },
   {
-    price: "915.46",
+    price: 915.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5298,7 +5300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1396605010",
   },
   {
-    price: "295.79",
+    price: 295.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5306,7 +5308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9515083419",
   },
   {
-    price: "484.99",
+    price: 484.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5314,7 +5316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5214180209",
   },
   {
-    price: "124.75",
+    price: 124.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5322,7 +5324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1730193668",
   },
   {
-    price: "844.07",
+    price: 844.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5330,7 +5332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4363498455",
   },
   {
-    price: "825.75",
+    price: 825.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5338,7 +5340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8761933325",
   },
   {
-    price: "790.29",
+    price: 790.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5346,7 +5348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7184400704",
   },
   {
-    price: "923.21",
+    price: 923.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5354,7 +5356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6591603395",
   },
   {
-    price: "759.38",
+    price: 759.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5362,7 +5364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0562431586",
   },
   {
-    price: "895.43",
+    price: 895.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5370,7 +5372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9018869643",
   },
   {
-    price: "395.72",
+    price: 395.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5378,7 +5380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0515418129",
   },
   {
-    price: "529.47",
+    price: 529.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5386,7 +5388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0312843410",
   },
   {
-    price: "553.03",
+    price: 553.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5394,7 +5396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0234957786",
   },
   {
-    price: "538.66",
+    price: 538.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5402,7 +5404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6128083439",
   },
   {
-    price: "824.51",
+    price: 824.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5410,7 +5412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6807001657",
   },
   {
-    price: "687.49",
+    price: 687.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5418,7 +5420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8390517698",
   },
   {
-    price: "736.84",
+    price: 736.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5426,7 +5428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2242079794",
   },
   {
-    price: "276.76",
+    price: 276.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5434,7 +5436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9700161935",
   },
   {
-    price: "634.31",
+    price: 634.31,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5442,7 +5444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0017881390",
   },
   {
-    price: "185.88",
+    price: 185.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5450,7 +5452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0187587469",
   },
   {
-    price: "698.01",
+    price: 698.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5458,7 +5460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9860835330",
   },
   {
-    price: "160.15",
+    price: 160.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5466,7 +5468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8388065831",
   },
   {
-    price: "250.71",
+    price: 250.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5474,7 +5476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3828125093",
   },
   {
-    price: "240.38",
+    price: 240.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5482,7 +5484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1507871864",
   },
   {
-    price: "49.89",
+    price: 49.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5490,7 +5492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8910921242",
   },
   {
-    price: "139.35",
+    price: 139.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5498,7 +5500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8141028693",
   },
   {
-    price: "616.42",
+    price: 616.42,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5506,7 +5508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6064508795",
   },
   {
-    price: "854.73",
+    price: 854.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5514,7 +5516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5027782233",
   },
   {
-    price: "111.18",
+    price: 111.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5522,7 +5524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5141460819",
   },
   {
-    price: "335.67",
+    price: 335.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5530,7 +5532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7584838464",
   },
   {
-    price: "403.47",
+    price: 403.47,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5538,7 +5540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3364788839",
   },
   {
-    price: "722.32",
+    price: 722.32,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5546,7 +5548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3690063698",
   },
   {
-    price: "641.06",
+    price: 641.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5554,7 +5556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8802326622",
   },
   {
-    price: "458.76",
+    price: 458.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5562,7 +5564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5250469906",
   },
   {
-    price: "165.78",
+    price: 165.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5570,7 +5572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7883206397",
   },
   {
-    price: "619.74",
+    price: 619.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5578,7 +5580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1443141607",
   },
   {
-    price: "887.49",
+    price: 887.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5586,7 +5588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1009669087",
   },
   {
-    price: "252.62",
+    price: 252.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5594,7 +5596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3949828206",
   },
   {
-    price: "387.21",
+    price: 387.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5602,7 +5604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0945264224",
   },
   {
-    price: "507.18",
+    price: 507.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5610,7 +5612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6113338746",
   },
   {
-    price: "107.51",
+    price: 107.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5618,7 +5620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2079111728",
   },
   {
-    price: "457.40",
+    price: 457.4,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5626,7 +5628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3498620096",
   },
   {
-    price: "189.70",
+    price: 189.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5634,7 +5636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7224248274",
   },
   {
-    price: "907.37",
+    price: 907.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5642,7 +5644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3233739249",
   },
   {
-    price: "973.44",
+    price: 973.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5650,7 +5652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4300708118",
   },
   {
-    price: "601.45",
+    price: 601.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5658,7 +5660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7160318188",
   },
   {
-    price: "733.03",
+    price: 733.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5666,7 +5668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1297066170",
   },
   {
-    price: "649.80",
+    price: 649.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5674,7 +5676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2743565594",
   },
   {
-    price: "123.09",
+    price: 123.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5682,7 +5684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7338974160",
   },
   {
-    price: "934.34",
+    price: 934.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5690,7 +5692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3555992112",
   },
   {
-    price: "739.14",
+    price: 739.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5698,7 +5700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1981353593",
   },
   {
-    price: "589.13",
+    price: 589.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5706,7 +5708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3049477342",
   },
   {
-    price: "689.75",
+    price: 689.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5714,7 +5716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9500287560",
   },
   {
-    price: "972.07",
+    price: 972.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5722,7 +5724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9404474649",
   },
   {
-    price: "660.36",
+    price: 660.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5730,7 +5732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0813377617",
   },
   {
-    price: "729.54",
+    price: 729.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5738,7 +5740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0051198487",
   },
   {
-    price: "947.06",
+    price: 947.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5746,7 +5748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9111794011",
   },
   {
-    price: "827.91",
+    price: 827.91,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5754,7 +5756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8710037586",
   },
   {
-    price: "85.90",
+    price: 85.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5762,7 +5764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9930717501",
   },
   {
-    price: "469.97",
+    price: 469.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5770,7 +5772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3441906217",
   },
   {
-    price: "42.10",
+    price: 42.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5778,7 +5780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8329925765",
   },
   {
-    price: "796.76",
+    price: 796.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5786,7 +5788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1672457777",
   },
   {
-    price: "704.97",
+    price: 704.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5794,7 +5796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7435623709",
   },
   {
-    price: "771.46",
+    price: 771.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5802,7 +5804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1218938757",
   },
   {
-    price: "0.71",
+    price: 0.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5810,7 +5812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1101273402",
   },
   {
-    price: "13.03",
+    price: 13.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5818,7 +5820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7053149250",
   },
   {
-    price: "830.29",
+    price: 830.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5826,7 +5828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3055919580",
   },
   {
-    price: "301.12",
+    price: 301.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5834,7 +5836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9879390393",
   },
   {
-    price: "945.82",
+    price: 945.82,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5842,7 +5844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7471873183",
   },
   {
-    price: "674.02",
+    price: 674.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5850,7 +5852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6073754779",
   },
   {
-    price: "405.21",
+    price: 405.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5858,7 +5860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9216560851",
   },
   {
-    price: "183.88",
+    price: 183.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5866,7 +5868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9292933558",
   },
   {
-    price: "157.93",
+    price: 157.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5874,7 +5876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0342863487",
   },
   {
-    price: "417.38",
+    price: 417.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5882,7 +5884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8854664855",
   },
   {
-    price: "308.02",
+    price: 308.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5890,7 +5892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4864067147",
   },
   {
-    price: "126.63",
+    price: 126.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5898,7 +5900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1783733136",
   },
   {
-    price: "78.93",
+    price: 78.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5906,7 +5908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1071797360",
   },
   {
-    price: "151.73",
+    price: 151.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5914,7 +5916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9197078158",
   },
   {
-    price: "82.39",
+    price: 82.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5922,7 +5924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9104895363",
   },
   {
-    price: "680.83",
+    price: 680.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5930,7 +5932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2125718391",
   },
   {
-    price: "48.21",
+    price: 48.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5938,7 +5940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4946299238",
   },
   {
-    price: "745.27",
+    price: 745.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5946,7 +5948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7460109495",
   },
   {
-    price: "645.16",
+    price: 645.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5954,7 +5956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7221213054",
   },
   {
-    price: "625.04",
+    price: 625.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5962,7 +5964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5874377859",
   },
   {
-    price: "236.48",
+    price: 236.48,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5970,7 +5972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5221222817",
   },
   {
-    price: "2.62",
+    price: 2.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5978,7 +5980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0084154292",
   },
   {
-    price: "147.04",
+    price: 147.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -5986,7 +5988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2949284647",
   },
   {
-    price: "258.68",
+    price: 258.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -5994,7 +5996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5094211773",
   },
   {
-    price: "726.62",
+    price: 726.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6002,7 +6004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7234957170",
   },
   {
-    price: "636.73",
+    price: 636.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6010,7 +6012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0695067915",
   },
   {
-    price: "4.46",
+    price: 4.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6018,7 +6020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1138035009",
   },
   {
-    price: "7.66",
+    price: 7.66,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6026,7 +6028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4673803825",
   },
   {
-    price: "360.50",
+    price: 360.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6034,7 +6036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3325181651",
   },
   {
-    price: "735.35",
+    price: 735.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6042,7 +6044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7122212122",
   },
   {
-    price: "463.35",
+    price: 463.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6050,7 +6052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2078753777",
   },
   {
-    price: "116.33",
+    price: 116.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6058,7 +6060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2626171050",
   },
   {
-    price: "923.77",
+    price: 923.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6066,7 +6068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9279841696",
   },
   {
-    price: "633.55",
+    price: 633.55,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6074,7 +6076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2242283731",
   },
   {
-    price: "466.64",
+    price: 466.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6082,7 +6084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7928830639",
   },
   {
-    price: "274.03",
+    price: 274.03,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6090,7 +6092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0227124251",
   },
   {
-    price: "79.61",
+    price: 79.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6098,7 +6100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6571591448",
   },
   {
-    price: "618.64",
+    price: 618.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6106,7 +6108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9342419607",
   },
   {
-    price: "201.53",
+    price: 201.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6114,7 +6116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2486260501",
   },
   {
-    price: "687.63",
+    price: 687.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6122,7 +6124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2401507442",
   },
   {
-    price: "831.45",
+    price: 831.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6130,7 +6132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0308269632",
   },
   {
-    price: "126.52",
+    price: 126.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6138,7 +6140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4748925221",
   },
   {
-    price: "232.18",
+    price: 232.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6146,7 +6148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5848008981",
   },
   {
-    price: "5.06",
+    price: 5.06,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6154,7 +6156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6764882037",
   },
   {
-    price: "581.17",
+    price: 581.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6162,7 +6164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3736979649",
   },
   {
-    price: "365.14",
+    price: 365.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6170,7 +6172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9487548874",
   },
   {
-    price: "244.11",
+    price: 244.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6178,7 +6180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5262174779",
   },
   {
-    price: "846.73",
+    price: 846.73,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6186,7 +6188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2400459746",
   },
   {
-    price: "741.54",
+    price: 741.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6194,7 +6196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4458809075",
   },
   {
-    price: "291.62",
+    price: 291.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6202,7 +6204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6916812508",
   },
   {
-    price: "406.79",
+    price: 406.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6210,7 +6212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9230924059",
   },
   {
-    price: "401.02",
+    price: 401.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6218,7 +6220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9834110413",
   },
   {
-    price: "405.52",
+    price: 405.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6226,7 +6228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6149869547",
   },
   {
-    price: "126.36",
+    price: 126.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6234,7 +6236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7897766756",
   },
   {
-    price: "303.01",
+    price: 303.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6242,7 +6244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9203729488",
   },
   {
-    price: "406.24",
+    price: 406.24,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6250,7 +6252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6050617635",
   },
   {
-    price: "571.70",
+    price: 571.7,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6258,7 +6260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6980970984",
   },
   {
-    price: "724.54",
+    price: 724.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6266,7 +6268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7021475543",
   },
   {
-    price: "549.84",
+    price: 549.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6274,7 +6276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2055077767",
   },
   {
-    price: "498.01",
+    price: 498.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6282,7 +6284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7336328792",
   },
   {
-    price: "477.80",
+    price: 477.8,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6290,7 +6292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0877220174",
   },
   {
-    price: "186.67",
+    price: 186.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6298,7 +6300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1574793071",
   },
   {
-    price: "790.10",
+    price: 790.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6306,7 +6308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7057745761",
   },
   {
-    price: "871.65",
+    price: 871.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6314,7 +6316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5053551405",
   },
   {
-    price: "430.50",
+    price: 430.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6322,7 +6324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3328107436",
   },
   {
-    price: "993.85",
+    price: 993.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6330,7 +6332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4389571109",
   },
   {
-    price: "73.01",
+    price: 73.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6338,7 +6340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3235715312",
   },
   {
-    price: "972.95",
+    price: 972.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6346,7 +6348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3701747849",
   },
   {
-    price: "310.17",
+    price: 310.17,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6354,7 +6356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4421074292",
   },
   {
-    price: "340.35",
+    price: 340.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6362,7 +6364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1712810081",
   },
   {
-    price: "832.20",
+    price: 832.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6370,7 +6372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8375562653",
   },
   {
-    price: "237.26",
+    price: 237.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6378,7 +6380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9591469195",
   },
   {
-    price: "18.87",
+    price: 18.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6386,7 +6388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9395648309",
   },
   {
-    price: "948.75",
+    price: 948.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6394,7 +6396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0686817818",
   },
   {
-    price: "721.93",
+    price: 721.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6402,7 +6404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1217576320",
   },
   {
-    price: "883.75",
+    price: 883.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6410,7 +6412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9118408125",
   },
   {
-    price: "148.95",
+    price: 148.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6418,7 +6420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7661549530",
   },
   {
-    price: "222.08",
+    price: 222.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6426,7 +6428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7993672562",
   },
   {
-    price: "655.26",
+    price: 655.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6434,7 +6436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9205147125",
   },
   {
-    price: "765.64",
+    price: 765.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6442,7 +6444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4980193021",
   },
   {
-    price: "2.63",
+    price: 2.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6450,7 +6452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1854114883",
   },
   {
-    price: "751.14",
+    price: 751.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6458,7 +6460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7075753134",
   },
   {
-    price: "372.10",
+    price: 372.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6466,7 +6468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2014299315",
   },
   {
-    price: "335.01",
+    price: 335.01,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6474,7 +6476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7416846242",
   },
   {
-    price: "50.89",
+    price: 50.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6482,7 +6484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5361855006",
   },
   {
-    price: "425.16",
+    price: 425.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6490,7 +6492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6281369114",
   },
   {
-    price: "15.02",
+    price: 15.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6498,7 +6500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9391578373",
   },
   {
-    price: "586.88",
+    price: 586.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6506,7 +6508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1754625789",
   },
   {
-    price: "367.08",
+    price: 367.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6514,7 +6516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1606068830",
   },
   {
-    price: "317.85",
+    price: 317.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6522,7 +6524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2810524467",
   },
   {
-    price: "131.44",
+    price: 131.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6530,7 +6532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5868960130",
   },
   {
-    price: "550.41",
+    price: 550.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6538,7 +6540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7199025971",
   },
   {
-    price: "29.97",
+    price: 29.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6546,7 +6548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4823398513",
   },
   {
-    price: "991.44",
+    price: 991.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6554,7 +6556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9519908412",
   },
   {
-    price: "398.72",
+    price: 398.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6562,7 +6564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7584585086",
   },
   {
-    price: "454.53",
+    price: 454.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6570,7 +6572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1652409645",
   },
   {
-    price: "12.98",
+    price: 12.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6578,7 +6580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8335190186",
   },
   {
-    price: "796.51",
+    price: 796.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6586,7 +6588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5137657905",
   },
   {
-    price: "988.00",
+    price: 988,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6594,7 +6596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9391465935",
   },
   {
-    price: "159.13",
+    price: 159.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6602,7 +6604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1265001316",
   },
   {
-    price: "541.50",
+    price: 541.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6610,7 +6612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7659929372",
   },
   {
-    price: "858.98",
+    price: 858.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6618,7 +6620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2859469834",
   },
   {
-    price: "312.12",
+    price: 312.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6626,7 +6628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8910912294",
   },
   {
-    price: "892.43",
+    price: 892.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6634,7 +6636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9501893839",
   },
   {
-    price: "550.68",
+    price: 550.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6642,7 +6644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9669235839",
   },
   {
-    price: "835.07",
+    price: 835.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6650,7 +6652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7269028710",
   },
   {
-    price: "209.11",
+    price: 209.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6658,7 +6660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9435268145",
   },
   {
-    price: "424.13",
+    price: 424.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6666,7 +6668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5423046807",
   },
   {
-    price: "283.62",
+    price: 283.62,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6674,7 +6676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2537062167",
   },
   {
-    price: "669.10",
+    price: 669.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6682,7 +6684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2035551978",
   },
   {
-    price: "390.14",
+    price: 390.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6690,7 +6692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7098135534",
   },
   {
-    price: "781.56",
+    price: 781.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6698,7 +6700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8020085920",
   },
   {
-    price: "535.04",
+    price: 535.04,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6706,7 +6708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3447223391",
   },
   {
-    price: "358.12",
+    price: 358.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6714,7 +6716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4003641752",
   },
   {
-    price: "304.58",
+    price: 304.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6722,7 +6724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7600909359",
   },
   {
-    price: "607.11",
+    price: 607.11,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6730,7 +6732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2000699189",
   },
   {
-    price: "624.22",
+    price: 624.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6738,7 +6740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9480462621",
   },
   {
-    price: "485.60",
+    price: 485.6,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6746,7 +6748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5469945170",
   },
   {
-    price: "665.00",
+    price: 665,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6754,7 +6756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1793699321",
   },
   {
-    price: "914.45",
+    price: 914.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6762,7 +6764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2126199932",
   },
   {
-    price: "805.50",
+    price: 805.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6770,7 +6772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7352129804",
   },
   {
-    price: "776.52",
+    price: 776.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6778,7 +6780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7434654376",
   },
   {
-    price: "764.64",
+    price: 764.64,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6786,7 +6788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9682774950",
   },
   {
-    price: "200.79",
+    price: 200.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6794,7 +6796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7593350320",
   },
   {
-    price: "107.65",
+    price: 107.65,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6802,7 +6804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4603675410",
   },
   {
-    price: "915.88",
+    price: 915.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6810,7 +6812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4241735541",
   },
   {
-    price: "538.59",
+    price: 538.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6818,7 +6820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0448991683",
   },
   {
-    price: "609.27",
+    price: 609.27,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6826,7 +6828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5842228556",
   },
   {
-    price: "826.55",
+    price: 826.55,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6834,7 +6836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8081669876",
   },
   {
-    price: "532.76",
+    price: 532.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6842,7 +6844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8750155636",
   },
   {
-    price: "787.46",
+    price: 787.46,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6850,7 +6852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6457624316",
   },
   {
-    price: "876.05",
+    price: 876.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6858,7 +6860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9388698444",
   },
   {
-    price: "434.72",
+    price: 434.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6866,7 +6868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6237409149",
   },
   {
-    price: "993.08",
+    price: 993.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6874,7 +6876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9340483154",
   },
   {
-    price: "733.43",
+    price: 733.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6882,7 +6884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7917076148",
   },
   {
-    price: "574.57",
+    price: 574.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6890,7 +6892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4589865300",
   },
   {
-    price: "421.44",
+    price: 421.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6898,7 +6900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2119292566",
   },
   {
-    price: "845.94",
+    price: 845.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6906,7 +6908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7360775256",
   },
   {
-    price: "701.95",
+    price: 701.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6914,7 +6916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9162845047",
   },
   {
-    price: "639.68",
+    price: 639.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6922,7 +6924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6798892213",
   },
   {
-    price: "641.41",
+    price: 641.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6930,7 +6932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5541921147",
   },
   {
-    price: "80.15",
+    price: 80.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6938,7 +6940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7418412622",
   },
   {
-    price: "864.59",
+    price: 864.59,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6946,7 +6948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2087180601",
   },
   {
-    price: "831.68",
+    price: 831.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6954,7 +6956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0119197820",
   },
   {
-    price: "266.90",
+    price: 266.9,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6962,7 +6964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9637964991",
   },
   {
-    price: "542.18",
+    price: 542.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6970,7 +6972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5737591557",
   },
   {
-    price: "537.98",
+    price: 537.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6978,7 +6980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5603613238",
   },
   {
-    price: "769.18",
+    price: 769.18,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -6986,7 +6988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0168179547",
   },
   {
-    price: "42.29",
+    price: 42.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -6994,7 +6996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9663235551",
   },
   {
-    price: "816.77",
+    price: 816.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7002,7 +7004,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0756780152",
   },
   {
-    price: "696.38",
+    price: 696.38,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7010,7 +7012,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8927457293",
   },
   {
-    price: "465.63",
+    price: 465.63,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7018,7 +7020,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4749434957",
   },
   {
-    price: "313.14",
+    price: 313.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7026,7 +7028,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8421310127",
   },
   {
-    price: "270.33",
+    price: 270.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7034,7 +7036,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2434555179",
   },
   {
-    price: "623.12",
+    price: 623.12,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7042,7 +7044,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6611500626",
   },
   {
-    price: "332.09",
+    price: 332.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7050,7 +7052,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4544051312",
   },
   {
-    price: "977.92",
+    price: 977.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7058,7 +7060,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2136963260",
   },
   {
-    price: "972.74",
+    price: 972.74,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7066,7 +7068,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9593077537",
   },
   {
-    price: "677.26",
+    price: 677.26,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7074,7 +7076,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5840153842",
   },
   {
-    price: "858.88",
+    price: 858.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7082,7 +7084,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2949998917",
   },
   {
-    price: "137.95",
+    price: 137.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7090,7 +7092,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7079934370",
   },
   {
-    price: "157.33",
+    price: 157.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7098,7 +7100,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3063177997",
   },
   {
-    price: "968.19",
+    price: 968.19,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7106,7 +7108,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7036904801",
   },
   {
-    price: "502.35",
+    price: 502.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7114,7 +7116,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3597118631",
   },
   {
-    price: "449.89",
+    price: 449.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7122,7 +7124,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9102738449",
   },
   {
-    price: "486.89",
+    price: 486.89,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7130,7 +7132,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2854330749",
   },
   {
-    price: "547.29",
+    price: 547.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7138,7 +7140,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4592837134",
   },
   {
-    price: "585.30",
+    price: 585.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7146,7 +7148,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6602590081",
   },
   {
-    price: "521.52",
+    price: 521.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7154,7 +7156,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5124692413",
   },
   {
-    price: "179.61",
+    price: 179.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7162,7 +7164,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7607036970",
   },
   {
-    price: "940.30",
+    price: 940.3,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7170,7 +7172,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8178251582",
   },
   {
-    price: "889.77",
+    price: 889.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7178,7 +7180,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6033166043",
   },
   {
-    price: "211.09",
+    price: 211.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7186,7 +7188,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5227646074",
   },
   {
-    price: "216.92",
+    price: 216.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7194,7 +7196,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8463033725",
   },
   {
-    price: "561.29",
+    price: 561.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7202,7 +7204,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5549239086",
   },
   {
-    price: "480.85",
+    price: 480.85,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7210,7 +7212,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4912951382",
   },
   {
-    price: "653.19",
+    price: 653.19,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7218,7 +7220,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4634388952",
   },
   {
-    price: "255.36",
+    price: 255.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7226,7 +7228,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6750675700",
   },
   {
-    price: "748.54",
+    price: 748.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7234,7 +7236,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3706180030",
   },
   {
-    price: "797.61",
+    price: 797.61,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7242,7 +7244,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0774701102",
   },
   {
-    price: "311.05",
+    price: 311.05,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7250,7 +7252,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5926764645",
   },
   {
-    price: "973.75",
+    price: 973.75,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7258,7 +7260,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9647115725",
   },
   {
-    price: "441.35",
+    price: 441.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7266,7 +7268,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2842756835",
   },
   {
-    price: "365.29",
+    price: 365.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7274,7 +7276,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6943187228",
   },
   {
-    price: "85.56",
+    price: 85.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7282,7 +7284,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6679280397",
   },
   {
-    price: "75.83",
+    price: 75.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7290,7 +7292,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0658287508",
   },
   {
-    price: "120.52",
+    price: 120.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7298,7 +7300,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2051955492",
   },
   {
-    price: "496.07",
+    price: 496.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7306,7 +7308,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3979108317",
   },
   {
-    price: "781.10",
+    price: 781.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7314,7 +7316,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6615453193",
   },
   {
-    price: "853.15",
+    price: 853.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7322,7 +7324,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9390171407",
   },
   {
-    price: "999.93",
+    price: 999.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7330,7 +7332,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9497550243",
   },
   {
-    price: "494.87",
+    price: 494.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7338,7 +7340,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6191891644",
   },
   {
-    price: "986.77",
+    price: 986.77,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7346,7 +7348,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9887121398",
   },
   {
-    price: "833.54",
+    price: 833.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7354,7 +7356,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7829829195",
   },
   {
-    price: "999.10",
+    price: 999.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7362,7 +7364,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2983428591",
   },
   {
-    price: "587.69",
+    price: 587.69,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7370,7 +7372,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5959173166",
   },
   {
-    price: "393.41",
+    price: 393.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7378,7 +7380,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8953301564",
   },
   {
-    price: "669.10",
+    price: 669.1,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7386,7 +7388,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2417551667",
   },
   {
-    price: "54.41",
+    price: 54.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7394,7 +7396,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9748127389",
   },
   {
-    price: "671.98",
+    price: 671.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7402,7 +7404,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7085597186",
   },
   {
-    price: "676.71",
+    price: 676.71,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7410,7 +7412,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2589529880",
   },
   {
-    price: "614.79",
+    price: 614.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7418,7 +7420,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8158058353",
   },
   {
-    price: "380.95",
+    price: 380.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7426,7 +7428,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4345884470",
   },
   {
-    price: "204.92",
+    price: 204.92,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7434,7 +7436,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6955719653",
   },
   {
-    price: "272.67",
+    price: 272.67,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7442,7 +7444,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9553154263",
   },
   {
-    price: "63.56",
+    price: 63.56,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7450,7 +7452,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5710468444",
   },
   {
-    price: "850.33",
+    price: 850.33,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7458,7 +7460,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0861841948",
   },
   {
-    price: "389.41",
+    price: 389.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7466,7 +7468,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6512312155",
   },
   {
-    price: "490.53",
+    price: 490.53,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7474,7 +7476,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0357602803",
   },
   {
-    price: "286.48",
+    price: 286.48,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7482,7 +7484,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2870402732",
   },
   {
-    price: "40.37",
+    price: 40.37,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7490,7 +7492,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4530761959",
   },
   {
-    price: "309.84",
+    price: 309.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7498,7 +7500,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7476452496",
   },
   {
-    price: "795.93",
+    price: 795.93,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7506,7 +7508,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2328561845",
   },
   {
-    price: "896.54",
+    price: 896.54,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7514,7 +7516,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2686302062",
   },
   {
-    price: "661.36",
+    price: 661.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7522,7 +7524,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0234498242",
   },
   {
-    price: "46.95",
+    price: 46.95,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7530,7 +7532,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3574624522",
   },
   {
-    price: "926.50",
+    price: 926.5,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7538,7 +7540,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9752202241",
   },
   {
-    price: "226.08",
+    price: 226.08,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7546,7 +7548,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1735835013",
   },
   {
-    price: "129.98",
+    price: 129.98,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7554,7 +7556,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8292370641",
   },
   {
-    price: "543.81",
+    price: 543.81,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7562,7 +7564,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0570157536",
   },
   {
-    price: "434.79",
+    price: 434.79,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7570,7 +7572,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2526325919",
   },
   {
-    price: "491.99",
+    price: 491.99,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7578,7 +7580,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3534823710",
   },
   {
-    price: "784.41",
+    price: 784.41,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7586,7 +7588,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8923351385",
   },
   {
-    price: "139.57",
+    price: 139.57,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7594,7 +7596,7 @@ export const catalogItems: CatalogItem[] = [
     id: "2922361241",
   },
   {
-    price: "822.51",
+    price: 822.51,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7602,7 +7604,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5217884843",
   },
   {
-    price: "778.55",
+    price: 778.55,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7610,7 +7612,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0959669612",
   },
   {
-    price: "179.09",
+    price: 179.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7618,7 +7620,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4498411099",
   },
   {
-    price: "920.58",
+    price: 920.58,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7626,7 +7628,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0658479121",
   },
   {
-    price: "987.00",
+    price: 987,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7634,7 +7636,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3913162100",
   },
   {
-    price: "854.25",
+    price: 854.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7642,7 +7644,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8244585838",
   },
   {
-    price: "166.52",
+    price: 166.52,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7650,7 +7652,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3488174638",
   },
   {
-    price: "456.29",
+    price: 456.29,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7658,7 +7660,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8951068234",
   },
   {
-    price: "681.13",
+    price: 681.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7666,7 +7668,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7392252739",
   },
   {
-    price: "964.16",
+    price: 964.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7674,7 +7676,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6056284220",
   },
   {
-    price: "792.76",
+    price: 792.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7682,7 +7684,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1569526990",
   },
   {
-    price: "10.35",
+    price: 10.35,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7690,7 +7692,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9684107498",
   },
   {
-    price: "302.39",
+    price: 302.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7698,7 +7700,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8701227297",
   },
   {
-    price: "725.97",
+    price: 725.97,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7706,7 +7708,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7102603819",
   },
   {
-    price: "648.48",
+    price: 648.48,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7714,7 +7716,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7947654603",
   },
   {
-    price: "199.21",
+    price: 199.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7722,7 +7724,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9612727686",
   },
   {
-    price: "660.36",
+    price: 660.36,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7730,7 +7732,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3465184076",
   },
   {
-    price: "812.15",
+    price: 812.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7738,7 +7740,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1436235235",
   },
   {
-    price: "444.49",
+    price: 444.49,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7746,7 +7748,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6607946925",
   },
   {
-    price: "159.76",
+    price: 159.76,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7754,7 +7756,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1007969008",
   },
   {
-    price: "234.87",
+    price: 234.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7762,7 +7764,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7380968440",
   },
   {
-    price: "547.14",
+    price: 547.14,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7770,7 +7772,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8368165636",
   },
   {
-    price: "928.78",
+    price: 928.78,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7778,7 +7780,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7720576411",
   },
   {
-    price: "36.34",
+    price: 36.34,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7786,7 +7788,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9840453386",
   },
   {
-    price: "312.87",
+    price: 312.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7794,7 +7796,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5053734119",
   },
   {
-    price: "743.87",
+    price: 743.87,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7802,7 +7804,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3246071829",
   },
   {
-    price: "330.21",
+    price: 330.21,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7810,7 +7812,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9540408490",
   },
   {
-    price: "335.02",
+    price: 335.02,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7818,7 +7820,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3308960990",
   },
   {
-    price: "459.16",
+    price: 459.16,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7826,7 +7828,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9459006221",
   },
   {
-    price: "298.22",
+    price: 298.22,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7834,7 +7836,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3092994515",
   },
   {
-    price: "659.07",
+    price: 659.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7842,7 +7844,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9172746599",
   },
   {
-    price: "226.13",
+    price: 226.13,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7850,7 +7852,7 @@ export const catalogItems: CatalogItem[] = [
     id: "6429553167",
   },
   {
-    price: "367.84",
+    price: 367.84,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7858,7 +7860,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3460279168",
   },
   {
-    price: "479.68",
+    price: 479.68,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7866,7 +7868,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4761980478",
   },
   {
-    price: "945.39",
+    price: 945.39,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7874,7 +7876,7 @@ export const catalogItems: CatalogItem[] = [
     id: "5875758457",
   },
   {
-    price: "560.88",
+    price: 560.88,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7882,7 +7884,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3423960078",
   },
   {
-    price: "410.83",
+    price: 410.83,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7890,7 +7892,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1579195660",
   },
   {
-    price: "507.45",
+    price: 507.45,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7898,7 +7900,7 @@ export const catalogItems: CatalogItem[] = [
     id: "4880946184",
   },
   {
-    price: "289.72",
+    price: 289.72,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7906,7 +7908,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3992847098",
   },
   {
-    price: "478.94",
+    price: 478.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7914,7 +7916,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8490912300",
   },
   {
-    price: "804.44",
+    price: 804.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7922,7 +7924,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8457008102",
   },
   {
-    price: "500.43",
+    price: 500.43,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7930,7 +7932,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9108211620",
   },
   {
-    price: "790.09",
+    price: 790.09,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7938,7 +7940,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9230976172",
   },
   {
-    price: "145.25",
+    price: 145.25,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7946,7 +7948,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1787383504",
   },
   {
-    price: "605.94",
+    price: 605.94,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7954,7 +7956,7 @@ export const catalogItems: CatalogItem[] = [
     id: "9065785426",
   },
   {
-    price: "166.07",
+    price: 166.07,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7962,7 +7964,7 @@ export const catalogItems: CatalogItem[] = [
     id: "8556282571",
   },
   {
-    price: "837.20",
+    price: 837.2,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7970,7 +7972,7 @@ export const catalogItems: CatalogItem[] = [
     id: "1471164608",
   },
   {
-    price: "719.15",
+    price: 719.15,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",
@@ -7978,7 +7980,7 @@ export const catalogItems: CatalogItem[] = [
     id: "7449416573",
   },
   {
-    price: "531.44",
+    price: 531.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7986,7 +7988,7 @@ export const catalogItems: CatalogItem[] = [
     id: "3116711445",
   },
   {
-    price: "239.44",
+    price: 239.44,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "в наличии",
@@ -7994,7 +7996,7 @@ export const catalogItems: CatalogItem[] = [
     id: "0990724778",
   },
   {
-    price: "414.28",
+    price: 414.28,
     photo: "/images/sofa.png",
     title: "название комплекта в две строки",
     info: "нет в наличии",

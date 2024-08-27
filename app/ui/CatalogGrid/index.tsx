@@ -1,9 +1,9 @@
 import Card from "@ui/Card";
+import Image from "next/image";
+import Link from "next/link";
 
 import { CatalogGridProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function CatalogGrid({
   columns,
@@ -16,7 +16,7 @@ export default function CatalogGrid({
       className={styles.grid}
     >
       {cards.map(({ title, price, article, photo, info, id }) => (
-        <Link href={id} key={id}>
+        <Link href={id} key={id} passHref legacyBehavior>
           <Card
             isShowcase={isShowcase}
             title={title}

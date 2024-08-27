@@ -10,6 +10,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 export default function Header() {
   const pathname = usePathname();
@@ -22,7 +23,9 @@ export default function Header() {
     >
       <Gap size="medium">
         <Logo fill={textColor} />
-        <h5>Каталог</h5>
+        <Link href="catalog" style={{ color: textColor }}>
+          <h5>Каталог</h5>
+        </Link>
       </Gap>
       <Gap size="large">
         <Gap size="medium">

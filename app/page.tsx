@@ -1,18 +1,20 @@
-import { catalogItems } from "@lib/constants/catalogItems";
+import { CATALOG_ITEMS } from "@lib/constants/catalogItems";
 import getAvailableItems from "@lib/utils/getAvailableItems";
 import CatalogGrid from "@ui/CatalogGrid";
 import ConstructorPreview from "@ui/ConstructorPreview";
 import InfoCatalog from "@ui/InfoCatalog";
 import InfoPicBlock from "@ui/InfoPicBlock";
 import PhotoScreen from "@ui/PhotoScreen";
+import Slider from "@ui/Slider";
 import Image from "next/image";
 
 export default function Home() {
-  const availableItems = getAvailableItems(catalogItems, 4);
+  const availableItems = getAvailableItems(CATALOG_ITEMS, 4);
 
   return (
     <main>
       <PhotoScreen />
+      <Slider />
       <InfoPicBlock>
         <ConstructorPreview />
         <CatalogGrid columns={2} cards={availableItems} isShowcase />

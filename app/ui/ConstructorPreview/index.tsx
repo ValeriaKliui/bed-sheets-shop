@@ -16,8 +16,9 @@ export default function ConstructorPreview() {
         width={0}
         height={0}
         sizes="100vw"
-        style={{ width: "100%", height: "auto" }}
+        style={{ width: "100%", height: "100%" }}
         alt="complect constructor"
+        priority
       />
       <div className={styles.button}>
         <LinkButton href={""}>собрать</LinkButton>

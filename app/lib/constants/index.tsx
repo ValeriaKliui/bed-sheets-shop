@@ -5,13 +5,15 @@ import tg from "../../../public/icons/tg.svg";
 import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
+export const CATEGORIES = [
+  { title: "Постельное белье", value: "sheet", url: "" },
+  { title: "Одежда", value: "clothes", url: "" },
+  { title: "Ароматы", value: "aromas", url: "" },
+  { title: "Аксессуары", value: "accessories", url: "" },
+];
+
 export const FOOTER_LINKS = [
-  [
-    { title: "Постельное белье", url: "" },
-    { title: "Одежда", url: "" },
-    { title: "Ароматы", url: "" },
-    { title: "Аксессуары", url: "" },
-  ],
+  CATEGORIES,
   [
     { title: "Размерный гид", url: "" },
     { title: "Доставка и оплата", url: "" },
@@ -61,5 +63,3 @@ export const PHOTO_LINKS = [
     y: 639,
   },
 ];
-
-export const CATEGORIES = PHOTO_LINKS.map(({ title, url }) => ({ title, url }));

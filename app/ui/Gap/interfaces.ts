@@ -6,4 +6,5 @@ export interface GapProps {
   alignment?: "center" | "normal";
   direction?: "vertical" | "horizontal";
   justify?: boolean;
+  className?: string;
 }

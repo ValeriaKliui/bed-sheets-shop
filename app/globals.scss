@@ -64,6 +64,15 @@ a {
   color: v.$color-link;
   text-decoration: none;
   line-height: 1;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    color: v.$color-text;
+  }
 }
 
 .wrapper {
@@ -84,4 +93,7 @@ a {
 .text_small {
   font-size: 0.8em;
   line-height: 0.9em;
+}
+.text_primary {
+  color: v.$color-primary;
 }

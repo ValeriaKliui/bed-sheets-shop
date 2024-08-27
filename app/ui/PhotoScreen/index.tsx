@@ -1,22 +1,40 @@
+"use client";
+
 import DotsLinks from "@ui/DotsLinks";
 import Image from "next/image";
+import { useEffect, useRef, useState } from "react";
 
+import ImageSrc from "../../../public/images/big_screen.png";
 import styles from "./styles.module.scss";
 
 export default function PhotoScreen() {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const [imgHeight, setImgHeight] = useState(0);
+
+  useEffect(() => {
+    if (!imgRef.current) return;
+    const resizeObserver = new ResizeObserver(() => {
+      if (imgRef.current?.offsetHeight)
+        setImgHeight(imgRef.current?.offsetHeight);
+    });
+    resizeObserver.observe(imgRef.current);
+    return () => resizeObserver.disconnect();
+  }, []);
+
   return (
     <div>
       <Image
-        src="/images/big_screen.png"
+        src={ImageSrc}
         width={0}
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "auto", objectFit: "contain" }}
         alt="preview photo"
         className={styles.photo}
-        useMap="click-area"
+        priority
+        ref={imgRef}
       />
-      <DotsLinks />
+      <DotsLinks imgHeight={imgHeight} />
     </div>
   );
 }

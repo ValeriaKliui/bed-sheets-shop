@@ -1,36 +1,61 @@
+import { CURRENCY } from "@lib/constants/catalogItems";
 import { CatalogItem } from "@lib/constants/types";
+import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
+import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
+import { forwardRef } from "react";
 
-import styles from "./styles.module.scss";
 import { CardProps } from "./interfaces";
-import Gap from "@ui/Gap";
+import styles from "./styles.module.scss";
 
-export default function Card({
-  article,
-  info,
-  photo,
-  price,
-  title,
-  id,
-  isShowcase,
-  actionButton,
-}: CardProps) {
-  const articleShowed = isShowcase ? "" : article;
-  const infoShowed = isShowcase ? "комплект" : info;
+const Card = forwardRef<HTMLDivElement, CardProps>(
+  (
+    {
+      article,
+      info,
+      photo,
+      price,
+      title,
+      id,
+      isShowcase,
+      actionButton,
+    }: CardProps,
+    ref
+  ) => {
+    const articleShowed = isShowcase ? "" : article;
+    const infoShowed = isShowcase ? "комплект" : info;
+    const discountInfo = getDiscountInfo(price);
 
-  return (
-    <div className={styles.container}>
-      <Gap justify>
-        <div>
-          <p className="text_small">{articleShowed}</p>
-          <p className={clsx("text_small", styles.title)}>{infoShowed}</p>
-        </div>
-        {actionButton}
+    return (
+      <Gap
+        className={styles.container}
+        direction="vertical"
+        justify={true}
+        ref={ref}
+      >
+        <Gap justify>
+          <div>
+            <p className="text_small">{infoShowed}</p>
+            <p className={clsx("text_small", styles.article)}>
+              {articleShowed}
+            </p>
+          </div>
+          {actionButton}
+        </Gap>
+        <Image src={photo} alt={title} width={220} height={150} />
+        <h5>{title}</h5>
+        <Gap size="small" direction="vertical">
+          <p>{discountInfo}</p>
+          <h5 className="text_primary">
+            {price.toFixed(1)} {CURRENCY}
+          </h5>
+        </Gap>
       </Gap>
-      <Image src={photo} alt={title} width={20} height={20} />
-      <p>{id}</p>
-      <p>{price}</p>
-    </div>
-  );
-}
+    );
+  }
+);
+
+Card.displayName = "Card";
+
+export default Card;
