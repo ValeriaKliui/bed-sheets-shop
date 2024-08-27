@@ -1,4 +1,5 @@
 import { CATALOG_ITEMS } from "@lib/constants/catalogItems";
+import { fetchLatestCatalogItems } from "@lib/data";
 import getAvailableItems from "@lib/utils/getAvailableItems";
 import CatalogGrid from "@ui/CatalogGrid";
 import ConstructorPreview from "@ui/ConstructorPreview";
@@ -8,8 +9,8 @@ import PhotoScreen from "@ui/PhotoScreen";
 import Slider from "@ui/Slider";
 import Image from "next/image";
 
-export default function Home() {
-  const availableItems = getAvailableItems(CATALOG_ITEMS, 4);
+export default async function Home() {
+  const availableItems = await fetchLatestCatalogItems();
 
   return (
     <main>

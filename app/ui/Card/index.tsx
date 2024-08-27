@@ -48,7 +48,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         <Gap size="small" direction="vertical">
           <p>{discountInfo}</p>
           <h5 className="text_primary">
-            {price.toFixed(1)} {CURRENCY}
+            {/* {price.toFixed(1)} {CURRENCY} */}
           </h5>
         </Gap>
       </Gap>

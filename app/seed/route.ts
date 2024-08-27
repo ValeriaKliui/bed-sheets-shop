@@ -8,26 +8,24 @@ async function seedCatalogItems() {
 
   await client.sql`
     CREATE TABLE IF NOT EXISTS catalog_items (
-      id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
-      price INT NOT NULL,
-      info VARCHAR(255) NOT NULL,
-      title VARCHAR(255) NOT NULL,
-      photo VARCHAR(255) NOT NULL,
-      article VARCHAR(255) NOT NULL
+    id VARCHAR(255) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    price NUMERIC NOT NULL,
+    info VARCHAR(255) NOT NULL,
+    article VARCHAR(255) NOT NULL,
+    photo VARCHAR(255) NOT NULL
     );
   `;
 
-  const insertedCatalogItems = await Promise.all(
+  const insertedInvoices = await Promise.all(
     CATALOG_ITEMS.map(
-      (catalogItem) => client.sql`
-        INSERT INTO catalog_items (id, price, info, title, photo, article)
-        VALUES (${catalogItem.id}, ${catalogItem.price}, ${catalogItem.info}, ${catalogItem.title}, ${catalogItem.photo}, ${catalogItem.article})
-        ON CONFLICT (id) DO NOTHING;
+      ({ id, price, title, info, article, photo }) => client.sql`
+        INSERT INTO catalog_items (id, title, price, info, article, photo)
+        VALUES (${id}, ${title}, ${price}, ${info}, ${article}, ${photo})
       `
     )
   );
-
-  return insertedCatalogItems;
+  return insertedInvoices;
 }
 
 export async function GET() {
