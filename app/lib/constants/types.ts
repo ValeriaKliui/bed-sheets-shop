@@ -12,3 +12,4 @@ export interface CatalogItem {
   info: string;
   category: string;
 }
+export type Nullable<T> = { [K in keyof T]: T[K] | null };

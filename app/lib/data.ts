@@ -19,16 +19,20 @@ export async function fetchLatestCatalogItems() {
 }
 
 export async function fetchFilteredCatalogItems({
-  currentPage,
-  category = `${DB_ITEMS_NAME}.category`,
+  currentPage = 1,
+  category,
 }: FilterParams) {
   try {
+    let categoryWithDefault = category
+      ? `'${category}'`
+      : `${DB_ITEMS_NAME}.category`;
+
     const offset = (currentPage - 1) * ITEMS_PER_PAGE;
 
     const data = await sql.query(
       `
       SELECT * FROM ${DB_ITEMS_NAME}
-      WHERE ${DB_ITEMS_NAME}.category = ${category}
+      WHERE ${DB_ITEMS_NAME}.category = ${categoryWithDefault}
       ORDER BY ${DB_ITEMS_NAME}.id DESC
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `

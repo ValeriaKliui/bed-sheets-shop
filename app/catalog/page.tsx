@@ -1,17 +1,12 @@
-import { fetchFilteredCatalogItems } from "@lib/data";
 import Breadcrumbs from "@ui/Breadcrumbs";
-import CatalogGrid from "@ui/CatalogGrid";
+import FullCatalog from "@ui/FullCatalog";
 
-export default async function Page() {
-  const cards = await fetchFilteredCatalogItems({
-    currentPage: 1,
-    category: "'aromas'",
-  });
-
+export default function Page({ params, searchParams }) {
   return (
     <div>
       <Breadcrumbs />
-      <CatalogGrid columns={3} cards={cards} />
+      <FullCatalog searchParams={searchParams} />
+      {/* <CatalogGrid columns={3} cards={cards} /> */}
     </div>
   );
 }
