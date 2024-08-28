@@ -1,7 +1,5 @@
-import { CATALOG_ITEMS } from "@lib/constants/catalogItems";
 import { fetchLatestCatalogItems } from "@lib/data";
-import getAvailableItems from "@lib/utils/getAvailableItems";
-import CatalogGrid from "@ui/CatalogGrid";
+import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
 import ConstructorPreview from "@ui/ConstructorPreview";
 import InfoCatalog from "@ui/InfoCatalog";
 import InfoPicBlock from "@ui/InfoPicBlock";
@@ -10,7 +8,7 @@ import Slider from "@ui/Slider";
 import Image from "next/image";
 
 export default async function Home() {
-  const availableItems = await fetchLatestCatalogItems();
+  const fetchLatestItems = async () => await fetchLatestCatalogItems();
 
   return (
     <main>
@@ -18,7 +16,7 @@ export default async function Home() {
       <Slider />
       <InfoPicBlock>
         <ConstructorPreview />
-        <CatalogGrid columns={2} cards={availableItems} isShowcase />
+        <CatalogGridWithSuspense fetch={fetchLatestItems} columns={2} />
       </InfoPicBlock>
       <InfoPicBlock>
         <InfoCatalog />

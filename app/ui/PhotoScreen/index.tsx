@@ -1,5 +1,6 @@
 "use client";
 
+import { CATALOG_ITEMS } from "@lib/constants/catalogItems";
 import DotsLinks from "@ui/DotsLinks";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";

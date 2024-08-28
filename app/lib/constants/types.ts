@@ -6,8 +6,9 @@ export enum Availability {
 export interface CatalogItem {
   article: string;
   photo: string;
-  price: string;
+  price: string | number;
   title: string;
   id: string;
   info: string;
+  category: string;
 }

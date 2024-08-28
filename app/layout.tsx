@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description: "Интернет-магазин Mollen - постельное белье",
   icons: { icon: "/icons/logo.svg" },
 };
+export const experimental_ppr = true;
 
 export default function RootLayout({
   children,

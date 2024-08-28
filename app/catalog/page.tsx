@@ -3,7 +3,10 @@ import Breadcrumbs from "@ui/Breadcrumbs";
 import CatalogGrid from "@ui/CatalogGrid";
 
 export default async function Page() {
-  const cards = await fetchFilteredCatalogItems({ currentPage: 1 });
+  const cards = await fetchFilteredCatalogItems({
+    currentPage: 1,
+    category: "'aromas'",
+  });
 
   return (
     <div>
