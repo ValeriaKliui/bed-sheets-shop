@@ -31,6 +31,7 @@ export default function CatalogGrid({
                 alt="to catalog"
                 width={30}
                 height={30}
+                priority
               />
             }
           />

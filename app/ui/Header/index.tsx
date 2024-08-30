@@ -29,11 +29,11 @@ export default function Header() {
       </Gap>
       <Gap size="large">
         <Gap size="medium">
-          <Gap size="small">
+          <Gap>
             <SearchIcon fill={textColor} />
             <h5>Поиск</h5>
           </Gap>
-          <Gap size="small">
+          <Gap>
             <BedIcon fill={textColor} />
             <h5>Конструктор</h5>
           </Gap>

@@ -1,13 +1,15 @@
-import { fetchLatestCatalogItems } from "@lib/data";
-import CatalogGrid from "@ui/CatalogGrid";
 import { Suspense } from "react";
 
 import CatalogGridFetching from "../CatalogGridFetching";
+import { CatalogGridWithSuspenseProps } from "./interfaces";
 
-export default async function CatalogGridWithSuspense({ fetch, columns }) {
+export default async function CatalogGridWithSuspense({
+  fetch,
+  columns,
+}: CatalogGridWithSuspenseProps) {
   return (
     <Suspense fallback="loading">
-      <CatalogGridFetching fetch={fetch} columns={columns} />;
+      <CatalogGridFetching fetch={fetch} columns={columns} />
     </Suspense>
   );
 }

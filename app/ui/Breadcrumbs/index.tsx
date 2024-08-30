@@ -17,7 +17,7 @@ export default function Breadcrumbs() {
   return (
     <Gap className={styles.container} size="small">
       {paths.map((path) => (
-        <Link href={path} key={path} className={styles.breadcrumb}>
+        <Link href={"/" + path} key={path} className={styles.breadcrumb}>
           <p key={path}>{PATHS[path]}</p>
         </Link>
       ))}

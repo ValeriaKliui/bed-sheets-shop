@@ -1,8 +1,6 @@
-import { Nullable } from "@lib/constants/types";
+import { fetchFilteredCatalogItems } from "@lib/data";
 import { FilterParams } from "@lib/interfaces";
-import CatalogGrid from "@ui/CatalogGrid";
 import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
-import { fetchFilteredCatalogItems, fetchLatestCatalogItems } from "@lib/data";
 
 export default async function CatalogCategorized({
   category,

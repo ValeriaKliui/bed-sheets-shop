@@ -5,15 +5,22 @@ import tg from "../../../public/icons/tg.svg";
 import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
+export const DB_ITEMS_NAME = "catalog_items";
+
 export const CATEGORIES = [
-  { title: "Постельное белье", value: "sheet", url: "" },
-  { title: "Одежда", value: "clothes", url: "" },
-  { title: "Ароматы", value: "aromas", url: "" },
-  { title: "Аксессуары", value: "accessories", url: "" },
+  { title: "Постельное белье", category: "sheet" },
+  { title: "Одежда", category: "clothes" },
+  { title: "Ароматы", category: "aromas" },
+  { title: "Аксессуары", category: "accessories" },
 ];
 
+const CATEGORIES_LINKS = CATEGORIES.map((category) => ({
+  ...category,
+  url: `catalog/${category.category}`,
+}));
+
 export const FOOTER_LINKS = [
-  CATEGORIES,
+  CATEGORIES_LINKS,
   [
     { title: "Размерный гид", url: "" },
     { title: "Доставка и оплата", url: "" },

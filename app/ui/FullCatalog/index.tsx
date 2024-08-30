@@ -1,19 +1,20 @@
 import { CATEGORIES } from "@lib/constants";
-import { useSearchParams } from "next/navigation";
-import CatalogCategorized from "./CatalogCategorized";
 
-export default function FullCatalog({ searchParams }) {
-  const category = searchParams.category;
-  const hasCategory = !!category;
+import CatalogCategorized from "./CatalogCategorized";
+import { FullCatalogParams } from "./interfaces";
+
+export default function FullCatalog({ searchParams }: FullCatalogParams) {
+  const URLcategory = searchParams.category;
+  const hasCategory = !!URLcategory;
 
   const title = hasCategory
-    ? CATEGORIES.find(({ value }) => value === category)?.title
+    ? CATEGORIES.find(({ category }) => category === URLcategory)?.title
     : "Популярные товары";
 
   return (
     <div>
       <h2>{title}</h2>
-      <CatalogCategorized category={category} />
+      <CatalogCategorized category={URLcategory} />
     </div>
   );
 }

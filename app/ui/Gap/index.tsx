@@ -8,16 +8,14 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
   (
     {
       children,
-      size,
-      alignment = "center",
+      size = "small",
+      // alignment = "center",
       direction = "horizontal",
       justify = false,
       className,
     },
     ref
   ) => {
-    const alignmentEnd = direction === "horizontal" ? alignment : "normal";
-
     return (
       <div
         className={clsx(
@@ -26,10 +24,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
           styles[direction],
           className
         )}
-        style={{
-          alignItems: alignmentEnd,
-          justifyContent: justify ? "space-between" : "normal",
-        }}
+        style={{ justifyContent: justify ? "space-between" : "normal" }}
         ref={ref}
       >
         {children}

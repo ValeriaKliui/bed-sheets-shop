@@ -10,9 +10,9 @@ export default function InfoCatalog() {
       <Gap size="large" direction="vertical">
         <h2>Каталог Mollen</h2>
         <ul className={styles.categories}>
-          {CATEGORIES.map(({ title, url }) => (
+          {CATEGORIES.map(({ title, category }) => (
             <li key={title}>
-              <Link href={url}>
+              <Link href={{ pathname: "/catalog", query: { category } }}>
                 <h5>{title}</h5>
               </Link>
             </li>
