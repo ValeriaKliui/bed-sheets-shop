@@ -1,12 +1,13 @@
 "use client";
 
 import defineHeaderTextColor from "@lib/utils/defineHeaderTextColor";
+import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
+import colors from "@variables.module.scss";
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -15,6 +16,7 @@ import styles from "./styles.module.scss";
 export default function Header() {
   const pathname = usePathname();
   const textColor = defineHeaderTextColor(pathname);
+  const { primary } = colors;
 
   return (
     <header
@@ -38,14 +40,11 @@ export default function Header() {
             <h5>Конструктор</h5>
           </Gap>
         </Gap>
-        <div className={styles.circled}>
-          <Image
-            src="/icons/bag.svg"
-            width={20}
-            height={20}
-            alt="To shopping cart"
-          />
-        </div>
+        <CircledIcon
+          src="/icons/bag.svg"
+          alt={"To shopping cart"}
+          color={primary}
+        />
       </Gap>
     </header>
   );

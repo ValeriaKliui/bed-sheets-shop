@@ -8,7 +8,6 @@ import styles from "./styles.module.scss";
 export default function Layout({ children }: PropsWithChildren) {
   return (
     <>
-      <Slider />
       <div className={clsx(styles.layout, "wrapper")}>
         <SidebarFilters />
         {children}

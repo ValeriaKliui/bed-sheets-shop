@@ -1,9 +1,15 @@
 .container {
   display: flex;
-  background: red;
-  overflow: hidden;
   position: relative;
+  margin-bottom: 4em;
+  user-select: none;
+
+  &:hover {
+    cursor: grabbing;
+  }
 }
 .track {
   position: relative;
+  pointer-events: none;
+  align-items: normal;
 }

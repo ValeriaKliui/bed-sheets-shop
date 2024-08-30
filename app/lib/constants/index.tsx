@@ -5,7 +5,24 @@ import tg from "../../../public/icons/tg.svg";
 import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
+export const DEFAULT_PAGES = 3;
+
 export const DB_ITEMS_NAME = "catalog_items";
+
+export const SLIDER_MAIN = [
+  {
+    src: "/images/slider/girl.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+  {
+    src: "/images/slider/man.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+  {
+    src: "/images/slider/hotel.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+];
 
 export const CATEGORIES = [
   { title: "Постельное белье", category: "sheet" },
