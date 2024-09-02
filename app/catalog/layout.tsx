@@ -1,5 +1,4 @@
 import SidebarFilters from "@ui/SidebarFilters";
-import Slider from "@ui/Slider";
 import clsx from "clsx";
 import { PropsWithChildren } from "react";
 

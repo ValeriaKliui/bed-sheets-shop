@@ -1,4 +1,5 @@
 "use client";
+
 import { PHOTO_LINKS } from "@lib/constants";
 import Dot from "@ui/Dot";
 import NoSSR from "@ui/NoSSR";
@@ -12,12 +13,18 @@ export default function DotsLinks({ imgHeight }: DotsLinksProps) {
 
   return (
     <NoSSR>
-      {PHOTO_LINKS.map(({ title, x, y, url }) => {
+      {PHOTO_LINKS.map(({ title, x, y, category }) => {
         const xResized = Math.round((width * x) / BASE_WIDTH);
         const yResized = Math.round((imgHeight * y) / BASE_WIDTH);
 
         return (
-          <Dot title={title} x={xResized} y={yResized} url={url} key={title} />
+          <Dot
+            title={title}
+            x={xResized}
+            y={yResized}
+            url={{ pathname: "/catalog", query: { category } }}
+            key={title}
+          />
         );
       })}
     </NoSSR>

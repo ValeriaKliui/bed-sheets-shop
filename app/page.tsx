@@ -1,5 +1,6 @@
 import { SLIDER_MAIN } from "@lib/constants";
 import { fetchLatestCatalogItems } from "@lib/data";
+import getAvailableItems from "@lib/utils/getAvailableItems";
 import repeatArray from "@lib/utils/repeatArray";
 import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
 import ConstructorPreview from "@ui/ConstructorPreview";

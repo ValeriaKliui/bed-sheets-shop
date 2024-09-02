@@ -13,3 +13,7 @@
   pointer-events: none;
   align-items: normal;
 }
+.controls {
+  display: flex;
+  justify-content: space-between;
+}

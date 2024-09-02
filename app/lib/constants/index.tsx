@@ -58,31 +58,25 @@ export const NETWORKS = [
 export const PHOTO_LINKS = [
   {
     title: "одежда",
-    url: "",
+    category: "clothes",
     x: 980,
     y: 521,
   },
   {
-    title: "принты",
-    url: "",
-    x: 622,
-    y: 311,
-  },
-  {
     title: "постельное белье",
-    url: "",
+    category: "sheets",
     x: 270,
     y: 557,
   },
   {
-    title: "комплекты",
-    url: "",
+    title: "аксессуары",
+    category: "accessories",
     x: 329,
     y: 810,
   },
   {
     title: "ароматы",
-    url: "",
+    category: "aromas",
     x: 1092,
     y: 639,
   },

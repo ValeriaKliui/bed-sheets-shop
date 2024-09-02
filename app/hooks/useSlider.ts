@@ -1,8 +1,24 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
-import { UseSliderProps } from "./interfaces";
+export default function useSlider() {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
+  const cardRef = useRef<HTMLDivElement>(null);
 
-export default function useSlider({ containerRef, sliderRef }: UseSliderProps) {
+  const onArrowClick = ({ left, right }) => {
+    const slider = sliderRef.current;
+    const card = cardRef.current;
+
+    if (slider && card) {
+      if (left) slider.style.left = `${card.offsetWidth + slider.offsetLeft}px`;
+      if (right)
+        slider.style.left = `-${card.offsetWidth - slider.offsetLeft}px`;
+    }
+  };
+
+  const onLeftArrowClick = () => onArrowClick({ left: true });
+  const onRightArrowClick = () => onArrowClick({ right: true });
+
   useEffect(() => {
     const container = containerRef.current;
     const slider = sliderRef.current;
@@ -44,5 +60,13 @@ export default function useSlider({ containerRef, sliderRef }: UseSliderProps) {
         isPressed = false;
       });
     }
-  }, [containerRef, sliderRef]);
+  }, []);
+
+  return {
+    onLeftArrowClick,
+    onRightArrowClick,
+    containerRef,
+    sliderRef,
+    cardRef,
+  };
 }
