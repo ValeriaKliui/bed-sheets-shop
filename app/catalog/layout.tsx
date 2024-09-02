@@ -4,11 +4,12 @@ import { PropsWithChildren } from "react";
 
 import styles from "./styles.module.scss";
 
-export default function Layout({ children }: PropsWithChildren) {
+export default function Layout({ children, }: PropsWithChildren) {
   return (
     <>
       <div className={clsx(styles.layout, "wrapper")}>
-        <SidebarFilters />
+        {/* {filters} */}
+        {/* <SidebarFilters /> */}
         {children}
       </div>
     </>

@@ -1,12 +1,12 @@
 "use client";
 
 import useSlider from "@hooks/useSlider";
+import Button from "@ui/Button";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 
 import { SliderProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import Button from "@ui/Button";
 
 export default function Slider({ cards, overflowed = false }: SliderProps) {
   const {

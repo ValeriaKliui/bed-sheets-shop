@@ -1,5 +1,7 @@
 "use client";
 
+import { PricesNum } from "@lib/interfaces";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
   ChangeEvent,
   ChangeEventHandler,
@@ -8,10 +10,10 @@ import {
   useRef,
   useState,
 } from "react";
-import styles from "./styles.module.scss";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
-export default function PriceRange({ min, max }) {
+import styles from "./styles.module.scss";
+
+export default function PriceRange({ min, max }: PricesNum) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const { replace } = useRouter();

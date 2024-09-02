@@ -1,18 +1,25 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef } from 'react';
+
+import { OnArrowProps } from './interfaces';
 
 export default function useSlider() {
   const containerRef = useRef<HTMLDivElement>(null);
   const sliderRef = useRef<HTMLDivElement>(null);
   const cardRef = useRef<HTMLDivElement>(null);
 
-  const onArrowClick = ({ left, right }) => {
+  const onArrowClick = ({ left, right }: OnArrowProps) => {
     const slider = sliderRef.current;
     const card = cardRef.current;
 
     if (slider && card) {
-      if (left) slider.style.left = `${card.offsetWidth + slider.offsetLeft}px`;
+      if (left)
+        slider.style.left = `${
+          card.offsetWidth + slider.offsetLeft
+        }px`;
       if (right)
-        slider.style.left = `-${card.offsetWidth - slider.offsetLeft}px`;
+        slider.style.left = `-${
+          card.offsetWidth - slider.offsetLeft
+        }px`;
     }
   };
 
@@ -31,7 +38,7 @@ export default function useSlider() {
 
       if (slider && sliderRect && containerRect) {
         if (parseInt(slider.style.left) > 0) {
-          slider.style.left = "0";
+          slider.style.left = '0';
         } else if (sliderRect.right < containerRect.right) {
           slider.style.left = `-${
             sliderRect.width - containerRect.width + leftOffset
@@ -44,19 +51,19 @@ export default function useSlider() {
     let totalOffsetOfTrack = 0;
 
     if (container && slider) {
-      container.addEventListener("mousedown", ({ offsetX }) => {
+      container.addEventListener('mousedown', ({ offsetX }) => {
         isPressed = true;
         totalOffsetOfTrack = offsetX - slider.offsetLeft;
       });
 
-      container.addEventListener("mousemove", (e) => {
+      container.addEventListener('mousemove', (e) => {
         if (!isPressed) return;
         e.preventDefault();
         slider.style.left = `${e.offsetX - totalOffsetOfTrack}px`;
         boundSlides();
       });
 
-      window.addEventListener("mouseup", () => {
+      window.addEventListener('mouseup', () => {
         isPressed = false;
       });
     }
