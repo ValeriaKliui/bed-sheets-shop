@@ -4,9 +4,11 @@ import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
 
 export default async function CatalogCategorized({
   category,
-}: Pick<FilterParams, "category">) {
+  minPrice,
+  maxPrice,
+}: FilterParams) {
   const fetchByCategory = async () =>
-    await fetchFilteredCatalogItems({ category });
+    await fetchFilteredCatalogItems({ category, minPrice, maxPrice });
 
   return <CatalogGridWithSuspense columns={3} fetch={fetchByCategory} />;
 }

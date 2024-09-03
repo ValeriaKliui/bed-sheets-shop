@@ -2,21 +2,15 @@
 
 .container {
   position: relative;
+  margin-bottom: 1.8em;
 }
 .slider {
-  height: 5px;
+  height: 2px;
   position: relative;
-  background: red;
+  background: v.$light-lines;
   border-radius: 5px;
 }
-.progress {
-  height: 100%;
-  left: 25%;
-  right: 25%;
-  position: absolute;
-  border-radius: 5px;
-  background: #17a2b8;
-}
+
 .range_input {
   position: relative;
 }
@@ -24,20 +18,31 @@
   position: absolute;
   width: 100%;
   height: 5px;
-  top: -5px;
+  top: -3px;
   background: none;
   pointer-events: none;
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
 }
 .range_input input::-webkit-slider-thumb {
-  height: 17px;
-  width: 17px;
+  height: 13px;
+  width: 13px;
   border-radius: 50%;
   border: 1px solid v.$color-text;
-  background: v.$light-lines;
+  background: v.$color-bg;
   pointer-events: auto;
   -webkit-appearance: none;
   appearance: none;
+}
+.price {
+  position: absolute;
+  top: 1.5em;
+  max-width: 4em;
+  padding: 0.2em 0.5em;
+  border-radius: 1em;
+  border: 1px solid v.$light-lines;
+  display: flex;
+  text-align: center;
 }

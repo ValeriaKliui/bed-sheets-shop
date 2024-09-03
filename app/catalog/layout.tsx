@@ -1,15 +1,13 @@
-import SidebarFilters from "@ui/SidebarFilters";
 import clsx from "clsx";
-import { PropsWithChildren } from "react";
 
+import { LayoutProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Layout({ children, }: PropsWithChildren) {
+export default function Layout({ children, filters }: LayoutProps) {
   return (
     <>
       <div className={clsx(styles.layout, "wrapper")}>
-        {/* {filters} */}
-        {/* <SidebarFilters /> */}
+        {filters}
         {children}
       </div>
     </>

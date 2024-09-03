@@ -1,6 +1,8 @@
 export interface FilterParams {
   currentPage?: number;
   category?: string;
+  minPrice?: number;
+  maxPrice?: number;
 }
 
 export interface Prices {

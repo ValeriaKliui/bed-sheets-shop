@@ -11,5 +11,6 @@ export interface CatalogItem {
   id: string;
   info: string;
   category: string;
+  sizes?: string[] | null;
 }
 export type Nullable<T> = { [K in keyof T]: T[K] | null };

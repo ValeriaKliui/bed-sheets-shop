@@ -7,7 +7,6 @@ import { PageParams } from "./interfaces";
 
 export default async function Page({ searchParams }: PageParams) {
   const totalPages = await fetchCatalogPages(searchParams);
-
   const currentPage = Number(searchParams?.page) || 1;
 
   return (
