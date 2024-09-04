@@ -6,9 +6,17 @@ export default async function CatalogCategorized({
   category,
   minPrice,
   maxPrice,
+  page,
+  size,
 }: FilterParams) {
   const fetchByCategory = async () =>
-    await fetchFilteredCatalogItems({ category, minPrice, maxPrice });
+    await fetchFilteredCatalogItems({
+      category,
+      minPrice,
+      maxPrice,
+      page,
+      size,
+    });
 
   return <CatalogGridWithSuspense columns={3} fetch={fetchByCategory} />;
 }

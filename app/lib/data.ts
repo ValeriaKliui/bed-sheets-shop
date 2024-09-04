@@ -2,16 +2,18 @@ import { sql } from "@vercel/postgres";
 
 import { DB_ITEMS_NAME } from "./constants";
 import { Availability } from "./constants/types";
-import { FilterParams, Prices } from "./interfaces";
+import { FilterParams, Prices, SizesArray } from "./interfaces";
 import getDefaultField from "./utils/getDefaulttField";
+import sortSizes from "./utils/sortSizes";
 
 const ITEMS_PER_PAGE = 9;
 
 export async function fetchLatestCatalogItems() {
   try {
     const data = await sql.query(`
-        SELECT * FROM ${DB_ITEMS_NAME}
-      `);
+      SELECT * FROM ${DB_ITEMS_NAME}
+       WHERE info = '${Availability.available}'
+      LIMIT 4`);
 
     return data.rows;
   } catch (error) {
@@ -21,22 +23,27 @@ export async function fetchLatestCatalogItems() {
 }
 
 export async function fetchFilteredCatalogItems({
-  currentPage = 1,
+  page = 1,
   category,
   minPrice,
   maxPrice,
+  size,
 }: FilterParams) {
   try {
-    const offset = (currentPage - 1) * ITEMS_PER_PAGE;
+    const offset = (page - 1) * ITEMS_PER_PAGE;
+
     const categoryWithDefault = getDefaultField("category", category);
     const minPriceWithDefault = getDefaultField("price", minPrice);
     const maxPriceWithDefault = getDefaultField("price", maxPrice);
+
+    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
 
     const data = await sql.query(
       `
       SELECT * FROM ${DB_ITEMS_NAME}
       WHERE category = ${categoryWithDefault}
       AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
+     ${addSizes}
       ORDER BY CASE WHEN info = '${Availability.available}' then 0 else 1 end, title desc
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `
@@ -66,6 +73,7 @@ export async function fetchCatalogPages({
         AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
     `);
 
+    console.log(count);
     return Number(count.rows[0].count);
   } catch (error) {
     console.error("Database Error:", error);
@@ -73,7 +81,7 @@ export async function fetchCatalogPages({
   }
 }
 
-export async function getMinMaxPrices({ category }: FilterParams) {
+export async function fetchMinMaxPrices({ category }: FilterParams) {
   try {
     const categoryWithDefault = getDefaultField("category", category);
 
@@ -92,4 +100,27 @@ export async function getMinMaxPrices({ category }: FilterParams) {
   }
 }
 
-("select array(select distinct unnest (sizes )from catalog_items order by unnest)");
+export async function fetchAvailableSizes({
+  category,
+  minPrice,
+  maxPrice,
+}: FilterParams) {
+  try {
+    const categoryWithDefault = getDefaultField("category", category);
+    const minPriceWithDefault = getDefaultField("price", minPrice);
+    const maxPriceWithDefault = getDefaultField("price", maxPrice);
+
+    const sizes = await sql.query<SizesArray>(
+      `SELECT ARRAY(SELECT DISTINCT unnest (sizes) 
+       FROM ${DB_ITEMS_NAME}
+       WHERE category = ${categoryWithDefault}
+          AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
+       ORDER BY unnest)`
+    );
+
+    return sortSizes(sizes.rows[0].array);
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch the prices.");
+  }
+}

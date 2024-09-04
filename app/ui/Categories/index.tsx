@@ -16,6 +16,7 @@ export default function FilterCategories() {
 
     if (category) {
       params.set("category", category);
+      params.delete("size");
     } else {
       params.delete("category");
     }

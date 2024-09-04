@@ -16,8 +16,6 @@ export default function Pagination({
   totalPages,
   currentPage = 1,
 }: PaginationParams) {
-  const { text } = colors;
-
   const pathname = usePathname();
   const searchParams = useSearchParams();
 

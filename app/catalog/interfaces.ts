@@ -6,6 +6,7 @@ export interface PageParams {
     page?: number;
     minPrice?: number;
     maxPrice?: number;
+    size: string;
   };
 }
 export interface LayoutProps {

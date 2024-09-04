@@ -1,0 +1,7 @@
+@use "../../../variables.module.scss" as v;
+
+.size {
+  padding: 0.1em 0.8em;
+  border: 1px solid v.$light-lines;
+  cursor: pointer;
+}

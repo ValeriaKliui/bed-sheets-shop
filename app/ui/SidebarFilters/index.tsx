@@ -13,7 +13,7 @@ export default function SidebarFilters({ searchParams }: PageParams) {
         <h5>Категории</h5>
         <Suspense>
           <FilterCategories />
-          <FilterSizes />
+          <FilterSizes searchParams={searchParams} />
           <FilterPrice searchParams={searchParams} />
           <ButtonClearFilters />
         </Suspense>

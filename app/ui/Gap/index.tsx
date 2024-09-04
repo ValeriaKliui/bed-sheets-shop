@@ -9,10 +9,10 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
     {
       children,
       size = "small",
-      // alignment = "center",
       direction = "horizontal",
       justify = false,
       className,
+      wrap = false,
     },
     ref
   ) => {
@@ -24,7 +24,10 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
           styles[direction],
           className
         )}
-        style={{ justifyContent: justify ? "space-between" : "normal" }}
+        style={{
+          justifyContent: justify ? "space-between" : "normal",
+          flexWrap: wrap ? "wrap" : "nowrap",
+        }}
         ref={ref}
       >
         {children}

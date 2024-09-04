@@ -26,6 +26,7 @@ export default function PriceRange({ min, max }: PricesNum) {
         style={{ left: `${leftTextOffset}px` }}
         className={styles.price}
         type="number"
+        name="minPrice"
         min={min}
       />
       <input
@@ -34,6 +35,7 @@ export default function PriceRange({ min, max }: PricesNum) {
         style={{ left: `${rightTextOffset}px` }}
         type="number"
         max={max}
+        name="maxPrice"
         className={styles.price}
       />
       <div className={styles.slider} />
