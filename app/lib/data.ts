@@ -1,8 +1,13 @@
 import { sql } from "@vercel/postgres";
 
 import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
-import { Availability } from "./constants/types";
-import { FilterParams, Prices, SizesArray } from "./interfaces";
+import { Availability, CatalogItem } from "./constants/types";
+import {
+  FetchByIDParams,
+  FilterParams,
+  Prices,
+  SizesArray,
+} from "./interfaces";
 import getDefaultField from "./utils/getDefaulttField";
 import sortSizes from "./utils/sortSizes";
 
@@ -122,9 +127,9 @@ export async function fetchAvailableSizes({
   }
 }
 
-export async function fetchItemByID({ id }) {
+export async function fetchItemByID({ id }: FetchByIDParams) {
   try {
-    const item = await sql.query(
+    const item = await sql.query<CatalogItem>(
       `SELECT *
        FROM ${DB_ITEMS_NAME}
        WHERE id = '${id}'`

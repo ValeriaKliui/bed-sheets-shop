@@ -23,5 +23,5 @@ export interface PageProps {
     maxPrice?: number;
     size: string;
   };
-  params: { id?: number };
+  params: { id?: string; category?: string };
 }

@@ -6,8 +6,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 import styles from "./styles.module.scss";
+import { BreadcrumbsProps } from "./interfaces";
 
-export default function Breadcrumbs() {
+export default function Breadcrumbs({ extraLinks }: BreadcrumbsProps) {
   const path = usePathname();
   const paths = path
     .split("/")
@@ -19,6 +20,11 @@ export default function Breadcrumbs() {
       {paths.map((path) => (
         <Link href={"/" + path} key={path} className={styles.breadcrumb}>
           <p key={path}>{PATHS[path]}</p>
+        </Link>
+      ))}
+      {extraLinks?.map(({ path, title }) => (
+        <Link href={"/" + path} key={path} className={styles.breadcrumb}>
+          <p key={path}>{title}</p>
         </Link>
       ))}
     </Gap>

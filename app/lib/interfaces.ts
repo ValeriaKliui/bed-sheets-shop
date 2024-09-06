@@ -17,3 +17,6 @@ export type PricesNum = {
 export interface SizesArray {
   array: string[];
 }
+export interface FetchByIDParams {
+  id?: string;
+}
