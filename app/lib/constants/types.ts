@@ -14,3 +14,14 @@ export interface CatalogItem {
   sizes?: string[] | null;
 }
 export type Nullable<T> = { [K in keyof T]: T[K] | null };
+
+export interface PageProps {
+  searchParams: {
+    category?: string;
+    page?: number;
+    minPrice?: number;
+    maxPrice?: number;
+    size: string;
+  };
+  params: { id?: number };
+}

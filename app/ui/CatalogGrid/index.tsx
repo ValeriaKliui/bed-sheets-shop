@@ -1,3 +1,5 @@
+"use client";
+
 import Card from "@ui/Card";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,8 +17,8 @@ export default function CatalogGrid({
       style={{ gridTemplateColumns: `repeat(${columns},1fr)` }}
       className={styles.grid}
     >
-      {cards.map(({ title, price, article, photo, info, id }) => (
-        <Link href={id} key={id} passHref legacyBehavior>
+      {cards.map(({ title, price, article, photo, info, id, category }) => (
+        <Link href={`catalog/${category}/${id}`} key={id} passHref>
           <Card
             isShowcase={isShowcase}
             title={title}

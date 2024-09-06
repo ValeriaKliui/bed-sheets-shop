@@ -1,3 +1,3 @@
-import { PageParams } from "@catalog/interfaces";
+import { PageProps } from "@lib/constants/types";
 
-export interface FullCatalogParams extends PageParams {}
+export interface FullCatalogParams extends PageProps {}

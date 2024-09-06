@@ -1,9 +1,9 @@
-import { PageParams } from "@catalog/interfaces";
+import { PageProps } from "@lib/constants/types";
 import { fetchAvailableSizes } from "@lib/data";
 
 import Sizes from "./Sizes";
 
-export default async function FilterSizes({ searchParams }: PageParams) {
+export default async function FilterSizes({ searchParams }: PageProps) {
   const sizes = await fetchAvailableSizes(searchParams);
 
   if (!searchParams.category || !sizes.length) return;

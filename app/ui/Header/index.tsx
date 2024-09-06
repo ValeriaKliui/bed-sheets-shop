@@ -25,7 +25,7 @@ export default function Header() {
     >
       <Gap size="medium">
         <Logo fill={textColor} />
-        <Link href="catalog" style={{ color: textColor }}>
+        <Link href="/catalog" replace style={{ color: textColor }}>
           <h5>Каталог</h5>
         </Link>
       </Gap>

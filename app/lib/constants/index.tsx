@@ -6,6 +6,7 @@ import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
 export const DEFAULT_PAGES = 3;
+export const ITEMS_PER_PAGE = 9;
 
 export const DB_ITEMS_NAME = "catalog_items";
 

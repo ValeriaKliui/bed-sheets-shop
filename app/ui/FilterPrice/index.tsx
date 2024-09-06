@@ -1,10 +1,10 @@
-import { PageParams } from "@catalog/interfaces";
 import { CURRENCY } from "@lib/constants/catalogItems";
+import { PageProps } from "@lib/constants/types";
 import { fetchMinMaxPrices } from "@lib/data";
 import Gap from "@ui/Gap";
 import PriceRange from "@ui/PriceRange";
 
-export default async function FilterPrice({ searchParams }: PageParams) {
+export default async function FilterPrice({ searchParams }: PageProps) {
   const { min, max } = await fetchMinMaxPrices(searchParams);
 
   return (

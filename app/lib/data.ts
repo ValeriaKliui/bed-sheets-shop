@@ -1,12 +1,10 @@
 import { sql } from "@vercel/postgres";
 
-import { DB_ITEMS_NAME } from "./constants";
+import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
 import { Availability } from "./constants/types";
 import { FilterParams, Prices, SizesArray } from "./interfaces";
 import getDefaultField from "./utils/getDefaulttField";
 import sortSizes from "./utils/sortSizes";
-
-const ITEMS_PER_PAGE = 9;
 
 export async function fetchLatestCatalogItems() {
   try {
@@ -73,7 +71,6 @@ export async function fetchCatalogPages({
         AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
     `);
 
-    console.log(count);
     return Number(count.rows[0].count);
   } catch (error) {
     console.error("Database Error:", error);
@@ -122,5 +119,19 @@ export async function fetchAvailableSizes({
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch the prices.");
+  }
+}
+
+export async function fetchItemByID({ id }) {
+  try {
+    const item = await sql.query(
+      `SELECT *
+       FROM ${DB_ITEMS_NAME}
+       WHERE id = '${id}'`
+    );
+    return item.rows[0];
+  } catch (error) {
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch catalog item.");
   }
 }

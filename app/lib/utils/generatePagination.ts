@@ -1,9 +1,10 @@
-import { DEFAULT_PAGES } from "@lib/constants";
+import { DEFAULT_PAGES, ITEMS_PER_PAGE } from "@lib/constants";
 
 export default function generatePagination(
-  totalPages: number,
+  totalItems: number,
   currentPage: number
 ) {
+  const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
   const firstPage = currentPage === 1;
   const fewPages = totalPages <= DEFAULT_PAGES;
   const lastPage = totalPages <= currentPage;

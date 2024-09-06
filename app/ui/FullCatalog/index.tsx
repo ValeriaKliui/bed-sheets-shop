@@ -4,8 +4,10 @@ import CatalogCategorized from "./CatalogCategorized";
 import { FullCatalogParams } from "./interfaces";
 
 export default function FullCatalog({
-  searchParams: { category, minPrice, maxPrice, page, size },
+  searchParams: { minPrice, maxPrice, page, size },
+  params,
 }: FullCatalogParams) {
+  const category = params?.category;
   const URLcategory = category;
   const hasCategory = !!URLcategory;
 

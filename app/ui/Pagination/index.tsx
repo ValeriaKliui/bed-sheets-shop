@@ -13,15 +13,15 @@ import { PaginationParams } from "./interfaces";
 import styles from "./styles.module.scss";
 
 export default function Pagination({
-  totalPages,
+  totalItems,
   currentPage = 1,
 }: PaginationParams) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
-  if (!totalPages) return;
+  if (!totalItems) return;
   const { pages, isLeftArrow, isRightArrow } = generatePagination(
-    totalPages,
+    totalItems,
     currentPage
   );
 

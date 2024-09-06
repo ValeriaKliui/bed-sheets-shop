@@ -2,11 +2,13 @@
 
 import { CATEGORIES } from "@lib/constants";
 import Gap from "@ui/Gap";
+import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export default function FilterCategories() {
   const searchParams = useSearchParams();
-  const pathname = usePathname();
+  const pathnames = usePathname().split("/");
+  const pathCategory = pathnames[pathnames.length - 1];
   const { replace } = useRouter();
 
   const handleSearch = (category: string) => {
@@ -15,29 +17,33 @@ export default function FilterCategories() {
     params.set("page", "1");
 
     if (category) {
-      params.set("category", category);
+      // replace(`${pathname}/${category}?${params.toString()}`);
       params.delete("size");
-    } else {
-      params.delete("category");
     }
-    replace(`${pathname}?${params.toString()}`);
   };
 
   return (
     <Gap direction="vertical">
       {CATEGORIES.map(({ title, category }) => (
-        <Gap key={category}>
-          <input
-            type="radio"
-            name="category"
-            id={category}
-            onChange={() => {
-              handleSearch(category);
-            }}
-            checked={searchParams.get("category")?.toString() === category}
-          />
-          <label htmlFor={category}>{title}</label>
-        </Gap>
+        <Link
+          href={{
+            pathname: `/catalog/${category}`,
+          }}
+          key={category}
+        >
+          <Gap>
+            <input
+              type="radio"
+              name="category"
+              id={category}
+              onChange={() => {
+                // handleSearch(category);
+              }}
+              checked={pathCategory === category}
+            />
+            <label htmlFor={category}>{title}</label>
+          </Gap>
+        </Link>
       ))}
     </Gap>
   );
