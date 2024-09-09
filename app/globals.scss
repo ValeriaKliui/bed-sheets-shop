@@ -24,7 +24,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.text_big {
   font-family: var(--font-orchidea-pro);
   text-transform: uppercase;
   color: v.$color-text;
@@ -34,7 +35,8 @@ h1 {
   font-size: 3.3em;
   line-height: 3.8em;
 }
-h2 {
+h2,
+.text_big {
   font-size: 2.3em;
   line-height: 2.8em;
 }
@@ -99,6 +101,10 @@ label {
 .text_small {
   font-size: 0.8em;
   line-height: 0.9em;
+}
+.text_big {
+  font-weight: 400;
+  text-transform: uppercase;
 }
 .text_primary {
   color: v.$color-primary;

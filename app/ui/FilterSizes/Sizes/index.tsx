@@ -1,10 +1,9 @@
 "use client";
 
-import sortSizes from "@lib/utils/sortSizes";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { SizesParams } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -19,11 +18,13 @@ export default function Sizes({ sizes }: SizesParams) {
 
   const onClick = (size: string) => {
     const params = new URLSearchParams(searchParams);
-
     params.set("size", size);
-    setChoosenSize(size);
     replace(`${pathname}?${params.toString()}`);
   };
+
+  useEffect(() => {
+    setChoosenSize(searchParams.get("size"));
+  }, [searchParams]);
 
   return (
     <Gap wrap>

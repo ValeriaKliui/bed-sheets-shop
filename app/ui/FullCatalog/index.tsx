@@ -17,7 +17,7 @@ export default function FullCatalog({
 
   return (
     <div>
-      <h2>{title}</h2>
+      <p className="text_big">{title}</p>
       <CatalogCategorized
         category={URLcategory}
         minPrice={minPrice}

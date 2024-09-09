@@ -4,7 +4,9 @@ import { fetchMinMaxPrices } from "@lib/data";
 import Gap from "@ui/Gap";
 import PriceRange from "@ui/PriceRange";
 
-export default async function FilterPrice({ searchParams }: PageProps) {
+export default async function FilterPrice({
+  searchParams,
+}: Pick<PageProps, "searchParams">) {
   const { min, max } = await fetchMinMaxPrices(searchParams);
 
   return (

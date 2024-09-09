@@ -5,8 +5,8 @@ import Gap from "@ui/Gap";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import styles from "./styles.module.scss";
 import { BreadcrumbsProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 export default function Breadcrumbs({ extraLinks }: BreadcrumbsProps) {
   const path = usePathname();

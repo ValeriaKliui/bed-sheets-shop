@@ -1,14 +1,24 @@
 import { PageProps } from "@lib/constants/types";
 import { fetchItemByID } from "@lib/data";
-import Breadcrumbs from "@ui/Breadcrumbs";
+import ItemBlock from "@ui/ItemBlock";
 
-export default async function Page({ params: { id, category } }: PageProps) {
-  const { title } = await fetchItemByID({ id });
+export default async function Page({ params: { id } }: PageProps) {
+  const {
+    title,
+    article,
+    price,
+    id: itemID,
+    category,
+  } = await fetchItemByID({ id });
 
   return (
     <div>
-      <Breadcrumbs
-        extraLinks={[{ title, path: `catalog/${category}/${id}` }]}
+      <ItemBlock
+        title={title}
+        article={article}
+        price={price}
+        id={itemID}
+        category={category}
       />
     </div>
   );
