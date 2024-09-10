@@ -1,15 +1,16 @@
-import { sql } from "@vercel/postgres";
+import { sql } from '@vercel/postgres';
 
-import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
-import { Availability, CatalogItem } from "./constants/types";
+import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from './constants';
+import { Availability, CatalogItem } from './constants/types';
 import {
   FetchByIDParams,
   FilterParams,
   Prices,
   SizesArray,
-} from "./interfaces";
-import getDefaultField from "./utils/getDefaulttField";
-import sortSizes from "./utils/sortSizes";
+} from './interfaces';
+import getAvailibilityParam from './utils/getAvailibilityParam';
+import getDefaultField from './utils/getDefaulttField';
+import sortSizes from './utils/sortSizes';
 
 export async function fetchLatestCatalogItems() {
   try {
@@ -20,8 +21,8 @@ export async function fetchLatestCatalogItems() {
 
     return data.rows;
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch the latest catalog items.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the latest catalog items.');
   }
 }
 
@@ -31,21 +32,24 @@ export async function fetchFilteredCatalogItems({
   minPrice,
   maxPrice,
   size,
+  inStock,
 }: FilterParams) {
   try {
     const offset = (page - 1) * ITEMS_PER_PAGE;
 
-    const categoryWithDefault = getDefaultField("category", category);
-    const minPriceWithDefault = getDefaultField("price", minPrice);
-    const maxPriceWithDefault = getDefaultField("price", maxPrice);
+    const categoryWithDefault = getDefaultField('category', category);
+    const minPriceWithDefault = getDefaultField('price', minPrice);
+    const maxPriceWithDefault = getDefaultField('price', maxPrice);
+    const availability = getAvailibilityParam(inStock);
 
-    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
+    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : '';
 
     const data = await sql.query(
       `
       SELECT * FROM ${DB_ITEMS_NAME}
       WHERE category = ${categoryWithDefault}
       AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
+      AND info = ${availability}
      ${addSizes}
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `
@@ -53,8 +57,8 @@ export async function fetchFilteredCatalogItems({
 
     return data.rows;
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch the latest filtered items.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the latest filtered items.');
   }
 }
 
@@ -65,11 +69,11 @@ export async function fetchCatalogPages({
   size,
 }: FilterParams) {
   try {
-    const categoryWithDefault = getDefaultField("category", category);
-    const minPriceWithDefault = getDefaultField("price", minPrice);
-    const maxPriceWithDefault = getDefaultField("price", maxPrice);
+    const categoryWithDefault = getDefaultField('category', category);
+    const minPriceWithDefault = getDefaultField('price', minPrice);
+    const maxPriceWithDefault = getDefaultField('price', maxPrice);
 
-    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
+    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : '';
 
     const count = await sql.query(`SELECT COUNT(*)
       FROM ${DB_ITEMS_NAME}
@@ -81,16 +85,17 @@ export async function fetchCatalogPages({
 
     return Number(count.rows[0].count);
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch the catalog pages.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the catalog pages.');
   }
 }
 
 export async function fetchMinMaxPrices({ category }: FilterParams) {
   try {
-    const categoryWithDefault = getDefaultField("category", category);
+    const categoryWithDefault = getDefaultField('category', category);
 
-    const prices = await sql.query<Prices>(`SELECT MIN(price), MAX(price) 
+    const prices =
+      await sql.query<Prices>(`SELECT MIN(price), MAX(price) 
       FROM ${DB_ITEMS_NAME}
       WHERE category = ${categoryWithDefault}
  `);
@@ -100,8 +105,8 @@ export async function fetchMinMaxPrices({ category }: FilterParams) {
       max: Math.ceil(Number(max)),
     }))[0];
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch the prices.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the prices.');
   }
 }
 
@@ -111,9 +116,9 @@ export async function fetchAvailableSizes({
   maxPrice,
 }: FilterParams) {
   try {
-    const categoryWithDefault = getDefaultField("category", category);
-    const minPriceWithDefault = getDefaultField("price", minPrice);
-    const maxPriceWithDefault = getDefaultField("price", maxPrice);
+    const categoryWithDefault = getDefaultField('category', category);
+    const minPriceWithDefault = getDefaultField('price', minPrice);
+    const maxPriceWithDefault = getDefaultField('price', maxPrice);
 
     const sizes = await sql.query<SizesArray>(
       `SELECT ARRAY(SELECT DISTINCT unnest (sizes) 
@@ -125,8 +130,8 @@ export async function fetchAvailableSizes({
 
     return sortSizes(sizes.rows[0].array);
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch the prices.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch the prices.');
   }
 }
 
@@ -139,7 +144,7 @@ export async function fetchItemByID({ id }: FetchByIDParams) {
     );
     return item.rows[0];
   } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch catalog item.");
+    console.error('Database Error:', error);
+    throw new Error('Failed to fetch catalog item.');
   }
 }

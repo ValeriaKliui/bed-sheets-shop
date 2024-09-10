@@ -1,10 +1,11 @@
 import { CATEGORIES } from "@lib/constants";
+import Sorts from "@ui/Sorts";
 
 import CatalogCategorized from "./CatalogCategorized";
 import { FullCatalogParams } from "./interfaces";
 
 export default function FullCatalog({
-  searchParams: { minPrice, maxPrice, page, size },
+  searchParams: { minPrice, maxPrice, page, size, inStock },
   params,
 }: FullCatalogParams) {
   const category = params?.category;
@@ -18,12 +19,14 @@ export default function FullCatalog({
   return (
     <div>
       <p className="text_big">{title}</p>
+      <Sorts />
       <CatalogCategorized
         category={URLcategory}
         minPrice={minPrice}
         maxPrice={maxPrice}
         page={page}
         size={size}
+        inStock={inStock}
       />
     </div>
   );

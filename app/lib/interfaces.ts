@@ -1,9 +1,12 @@
+import { Availability } from './constants/types';
+
 export interface FilterParams {
   page?: number;
   category?: string;
   minPrice?: number;
   maxPrice?: number;
   size?: string;
+  inStock?: 'false' | 'true';
 }
 
 export interface Prices {
