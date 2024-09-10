@@ -15,37 +15,40 @@ import styles from "./styles.module.scss";
 
 export default function Header() {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const textColor = defineHeaderTextColor(pathname);
   const { primary } = colors;
 
   return (
     <header
-      className={clsx("wrapper", styles.header)}
+      className={clsx(!isHomePage && styles.border)}
       style={{ color: textColor }}
     >
-      <Gap size="medium">
-        <Logo fill={textColor} />
-        <Link href="/catalog" replace style={{ color: textColor }}>
-          <h5>Каталог</h5>
-        </Link>
-      </Gap>
-      <Gap size="large">
+      <div className={clsx("wrapper", styles.header)}>
         <Gap size="medium">
-          <Gap>
-            <SearchIcon fill={textColor} />
-            <h5>Поиск</h5>
-          </Gap>
-          <Gap>
-            <BedIcon fill={textColor} />
-            <h5>Конструктор</h5>
-          </Gap>
+          <Logo fill={textColor} />
+          <Link href="/catalog" replace style={{ color: textColor }}>
+            <h5>Каталог</h5>
+          </Link>
         </Gap>
-        <CircledIcon
-          src="/icons/bag.svg"
-          alt={"To shopping cart"}
-          color={primary}
-        />
-      </Gap>
+        <Gap size="large">
+          <Gap size="medium">
+            <Gap>
+              <SearchIcon fill={textColor} />
+              <h5>Поиск</h5>
+            </Gap>
+            <Gap>
+              <BedIcon fill={textColor} />
+              <h5>Конструктор</h5>
+            </Gap>
+          </Gap>
+          <CircledIcon
+            src="/icons/bag.svg"
+            alt={"To shopping cart"}
+            color={primary}
+          />
+        </Gap>
+      </div>
     </header>
   );
 }

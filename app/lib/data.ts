@@ -63,17 +63,21 @@ export async function fetchCatalogPages({
   category,
   minPrice,
   maxPrice,
+  size,
 }: FilterParams) {
   try {
     const categoryWithDefault = getDefaultField("category", category);
     const minPriceWithDefault = getDefaultField("price", minPrice);
     const maxPriceWithDefault = getDefaultField("price", maxPrice);
 
+    const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
+
     const count = await sql.query(`SELECT COUNT(*)
       FROM ${DB_ITEMS_NAME}
       WHERE
        category = ${categoryWithDefault}
         AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
+        ${addSizes}
     `);
 
     return Number(count.rows[0].count);

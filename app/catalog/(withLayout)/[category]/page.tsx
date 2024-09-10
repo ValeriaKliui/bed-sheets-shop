@@ -1,23 +1,3 @@
-import { PageProps } from "@lib/constants/types";
-import { fetchCatalogPages } from "@lib/data";
-import FullCatalog from "@ui/FullCatalog";
-import Pagination from "@ui/Pagination";
-import SidebarFilters from "@ui/SidebarFilters";
-import clsx from "clsx";
+import CatalogPage from "@catalog/catalogPage";
 
-import styles from "../styles.module.scss";
-
-export default async function Page({ params, searchParams }: PageProps) {
-  const totalItems = await fetchCatalogPages({ ...searchParams, ...params });
-  const currentPage = Number(searchParams?.page) || 1;
-
-  return (
-    <div className={clsx(styles.layout, "wrapper")}>
-      <SidebarFilters params={params} searchParams={searchParams} />
-      <div>
-        <FullCatalog searchParams={searchParams} params={params} />
-        <Pagination totalItems={totalItems} currentPage={currentPage} />
-      </div>
-    </div>
-  );
-}
+export default CatalogPage;

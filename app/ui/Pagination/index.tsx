@@ -20,6 +20,7 @@ export default function Pagination({
   const searchParams = useSearchParams();
 
   if (!totalItems) return;
+
   const { pages, isLeftArrow, isRightArrow } = generatePagination(
     totalItems,
     currentPage

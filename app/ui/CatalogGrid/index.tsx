@@ -3,10 +3,10 @@
 import Card from "@ui/Card";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { CatalogGridProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import { usePathname } from "next/navigation";
 
 export default function CatalogGrid({
   columns,

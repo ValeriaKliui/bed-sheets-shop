@@ -1,12 +1,10 @@
 "use client";
 
-import Gap from "@ui/Gap";
-import clsx from "clsx";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { SizesParams } from "./interfaces";
-import styles from "./styles.module.scss";
+import Options from "@ui/Options";
 
 export default function Sizes({ sizes }: SizesParams) {
   const searchParams = useSearchParams();
@@ -18,7 +16,10 @@ export default function Sizes({ sizes }: SizesParams) {
 
   const onClick = (size: string) => {
     const params = new URLSearchParams(searchParams);
+
     params.set("size", size);
+    if (size === choosenSize) params.delete("size");
+
     replace(`${pathname}?${params.toString()}`);
   };
 
@@ -27,16 +28,6 @@ export default function Sizes({ sizes }: SizesParams) {
   }, [searchParams]);
 
   return (
-    <Gap wrap>
-      {sizes.map((size) => (
-        <div
-          onClick={() => onClick(size)}
-          className={clsx(styles.size, choosenSize === size && styles.choosen)}
-          key={size}
-        >
-          {size}
-        </div>
-      ))}
-    </Gap>
+    <Options options={sizes} onClick={onClick} choosenOption={choosenSize} />
   );
 }

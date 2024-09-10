@@ -5,26 +5,42 @@ import Gap from "@ui/Gap";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import { BreadcrumbsProps } from "./interfaces";
+import { BreadcrumbsProps, LinksArray } from "./interfaces";
 import styles from "./styles.module.scss";
 
 export default function Breadcrumbs({ extraLinks }: BreadcrumbsProps) {
-  const path = usePathname();
-  const paths = path
-    .split("/")
-    .filter((path) => path) as unknown[] as PATHS_KEYS[];
-  paths.unshift("/");
+  const pathname = usePathname();
+  const linksElements: LinksArray = [];
+  const pathnames = pathname.split("/") as [];
+
+  pathnames.reduce((path, currPath: PATHS_KEYS & "") => {
+    const titleExists = PATHS[currPath];
+    const isHomePath = currPath === "";
+
+    if (isHomePath) {
+      linksElements.push({ path: `/`, title: PATHS["/"] });
+      return "";
+    }
+
+    if (titleExists)
+      linksElements.push({
+        path: `${path}/${currPath}`,
+        title: PATHS[currPath],
+      });
+
+    return `${path}/${currPath}`;
+  }, "");
 
   return (
     <Gap className={styles.container} size="small">
-      {paths.map((path) => (
-        <Link href={"/" + path} key={path} className={styles.breadcrumb}>
-          <p key={path}>{PATHS[path]}</p>
+      {linksElements.map(({ path, title }) => (
+        <Link href={path} key={path} className={styles.breadcrumb}>
+          <p key={path}>{title}</p>
         </Link>
       ))}
       {extraLinks?.map(({ path, title }) => (
         <Link href={"/" + path} key={path} className={styles.breadcrumb}>
-          <p key={path}>{title}</p>
+          <p key={path}>{title[0].toUpperCase() + title.slice(1)}</p>
         </Link>
       ))}
     </Gap>

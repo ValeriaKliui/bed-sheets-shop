@@ -45,15 +45,15 @@ export default function PriceRange({ min, max }: PricesNum) {
           name="minPrice"
           min={min}
           max={max}
-          defaultValue={currMin || min}
+          value={currMin}
           onChange={onRangeChange}
         />
         <input
           type="range"
+          value={currMax}
           name="maxPrice"
           min={min}
           max={max}
-          defaultValue={currMax || max}
           onChange={onRangeChange}
         />
       </div>

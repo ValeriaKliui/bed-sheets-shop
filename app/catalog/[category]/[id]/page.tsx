@@ -9,6 +9,7 @@ export default async function Page({ params: { id } }: PageProps) {
     price,
     id: itemID,
     category,
+    sizes,
   } = await fetchItemByID({ id });
 
   return (
@@ -19,6 +20,7 @@ export default async function Page({ params: { id } }: PageProps) {
         price={price}
         id={itemID}
         category={category}
+        sizes={sizes}
       />
     </div>
   );
