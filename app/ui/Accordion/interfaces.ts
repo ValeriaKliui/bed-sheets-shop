@@ -1,5 +1,5 @@
-import { AccordionItem } from "./AccordionItem/interaces";
+import { AccItem } from "./AccordionItem/interaces";
 
 export interface AccordionProps {
-  items: AccordionItem[];
+  items: AccItem[];
 }

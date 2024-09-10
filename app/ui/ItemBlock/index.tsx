@@ -6,9 +6,10 @@ import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
 
-import styles from "./styles.module.scss";
 import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
+import { CatalogItemProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 export default function ItemBlock({
   title,
@@ -17,7 +18,7 @@ export default function ItemBlock({
   id,
   category,
   sizes,
-}: CatalogItem) {
+}: CatalogItemProps) {
   const characteristics = [
     {
       header: <CharacteristicHeader title="Размер" />,

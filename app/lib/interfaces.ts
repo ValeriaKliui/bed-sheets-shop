@@ -3,7 +3,7 @@ export interface FilterParams {
   category?: string;
   minPrice?: number;
   maxPrice?: number;
-  size: string;
+  size?: string;
 }
 
 export interface Prices {

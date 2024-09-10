@@ -47,7 +47,6 @@ export async function fetchFilteredCatalogItems({
       WHERE category = ${categoryWithDefault}
       AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
      ${addSizes}
-      ORDER BY CASE WHEN info = '${Availability.available}' then 0 else 1 end, title desc
       LIMIT ${ITEMS_PER_PAGE} OFFSET ${offset}
     `
     );

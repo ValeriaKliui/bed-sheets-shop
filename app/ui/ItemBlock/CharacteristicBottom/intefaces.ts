@@ -1,3 +1,3 @@
 export interface CharacteristicBottomProps {
-  options?: string[];
+  options?: string[] | null;
 }

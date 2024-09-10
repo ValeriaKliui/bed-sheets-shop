@@ -1,7 +1,8 @@
 import Gap from "@ui/Gap";
 import clsx from "clsx";
-import styles from "./styles.module.scss";
+
 import { OptionsProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 export default function Options({
   options,
@@ -19,7 +20,7 @@ export default function Options({
           )}
           key={option}
         >
-          {option}
+          <p>{option}</p>
         </div>
       ))}
     </Gap>

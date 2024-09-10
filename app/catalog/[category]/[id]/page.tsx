@@ -13,15 +13,13 @@ export default async function Page({ params: { id } }: PageProps) {
   } = await fetchItemByID({ id });
 
   return (
-    <div>
-      <ItemBlock
-        title={title}
-        article={article}
-        price={price}
-        id={itemID}
-        category={category}
-        sizes={sizes}
-      />
-    </div>
+    <ItemBlock
+      title={title}
+      article={article}
+      price={price}
+      id={itemID}
+      category={category}
+      sizes={sizes}
+    />
   );
 }

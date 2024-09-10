@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-export interface AccordionItem {
+export interface AccItem {
   header: ReactNode;
   bottom: ReactNode;
 }

@@ -1,8 +1,9 @@
 "use client";
 
 import Options from "@ui/Options";
-import { CharacteristicBottomProps } from "./intefaces";
 import { useState } from "react";
+
+import { CharacteristicBottomProps } from "./intefaces";
 
 export default function CharacteristicBottom({
   options,

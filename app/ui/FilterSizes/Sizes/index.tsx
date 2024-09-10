@@ -1,10 +1,10 @@
 "use client";
 
+import Options from "@ui/Options";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import { SizesParams } from "./interfaces";
-import Options from "@ui/Options";
 
 export default function Sizes({ sizes }: SizesParams) {
   const searchParams = useSearchParams();

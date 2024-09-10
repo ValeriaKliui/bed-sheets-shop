@@ -1,13 +1,13 @@
 "use client";
 
+import clsx from "clsx";
+import Image from "next/image";
 import { useState } from "react";
 
+import { AccItem } from "./interaces";
 import styles from "./styles.module.scss";
-import Image from "next/image";
-import clsx from "clsx";
-import { AccordionItem } from "./interaces";
 
-export default function AccordionItem({ header, bottom }: AccordionItem) {
+export default function AccordionItem({ header, bottom }: AccItem) {
   const [isOpen, open] = useState(false);
 
   return (
