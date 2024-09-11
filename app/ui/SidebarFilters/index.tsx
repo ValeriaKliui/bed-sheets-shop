@@ -4,6 +4,7 @@ import FilterCategories from "@ui/Categories";
 import FilterPrice from "@ui/FilterPrice";
 import FilterSizes from "@ui/FilterSizes";
 import Gap from "@ui/Gap";
+import Loader from "@ui/Loader";
 import { Suspense } from "react";
 
 export default function SidebarFilters({ searchParams, params }: PageProps) {
@@ -11,7 +12,7 @@ export default function SidebarFilters({ searchParams, params }: PageProps) {
     <aside>
       <Gap direction="vertical" size="medium">
         <h5>Категории</h5>
-        <Suspense>
+        <Suspense fallback={<Loader />}>
           <FilterCategories />
           <FilterSizes searchParams={{ ...searchParams, ...params }} />
           <FilterPrice searchParams={{ ...searchParams, ...params }} />

@@ -17,10 +17,13 @@ export default function PhotoCard({ info }: PhotoCardProps) {
         width={300}
         height={0}
         sizes="100vw"
-        style={{ height: "auto" }}
-        alt={title}
+        style={{
+          height: title ? "auto" : 300,
+          objectFit: !title ? "cover" : "initial",
+        }}
+        alt={title ?? src}
       />
-      <h5>{title}</h5>
+      {title && <h5>{title}</h5>}
     </Gap>
   );
 }

@@ -4,4 +4,5 @@ export interface CatalogGridProps {
   columns: number;
   cards: CatalogItem[];
   isShowcase?: boolean;
+  rows?: number | null;
 }

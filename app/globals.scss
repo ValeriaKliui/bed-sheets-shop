@@ -20,6 +20,16 @@ body {
   overflow-x: hidden;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
+}
+
 li {
   margin-left: 20px;
 }
@@ -82,6 +92,10 @@ a {
   h6,
   p {
     color: v.$color-text;
+  }
+
+  &:hover {
+    color: v.$color-primary;
   }
 }
 

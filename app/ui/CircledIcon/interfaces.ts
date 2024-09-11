@@ -8,4 +8,6 @@ type RequiredImageProps = Required<ImageProps> &
 
 export interface CircledIconProps extends RequiredImageProps {
   color?: string;
+  onClick?: () => void;
+  imgClassName?: string;
 }

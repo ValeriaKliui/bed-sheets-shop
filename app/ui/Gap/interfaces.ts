@@ -1,9 +1,12 @@
 import { ReactNode } from "react";
 
+type Direction = "vertical" | "horizontal";
+type Size = "small" | "medium" | "large";
+
 export interface GapProps {
   children: ReactNode;
-  size?: "small" | "medium" | "large";
-  direction?: "vertical" | "horizontal";
+  size?: Size;
+  direction?: Direction;
   justify?: boolean;
   className?: string;
   wrap?: boolean;

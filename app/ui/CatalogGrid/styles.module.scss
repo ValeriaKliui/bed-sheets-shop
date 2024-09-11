@@ -1,3 +1,7 @@
 .grid {
   display: grid;
 }
+.rows {
+  grid-auto-rows: 0;
+  overflow-y: hidden;
+}

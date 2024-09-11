@@ -14,7 +14,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
   const currentPage = Number(searchParams?.page) || 1;
 
   return (
-    <div className={clsx(styles.layout, "wrapper")}>
+    <main className={clsx(styles.layout, "wrapper")}>
       <SidebarFilters params={params} searchParams={searchParams} />
       <div>
         <Breadcrumbs />
@@ -23,6 +23,6 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
           <Pagination totalItems={totalItems} currentPage={currentPage} />
         </Gap>
       </div>
-    </div>
+    </main>
   );
 }

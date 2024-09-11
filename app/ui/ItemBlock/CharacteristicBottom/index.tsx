@@ -10,7 +10,7 @@ export default function CharacteristicBottom({
 }: CharacteristicBottomProps) {
   const [choosenOption, chooseOption] = useState(options ? options[0] : null);
 
-  if (!options?.length) return null;
+  if (!options) return false;
 
   return (
     <div>

@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import Image from "next/image";
-import { ImgHTMLAttributes } from "react";
 
 import { CircledIconProps } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -10,13 +9,22 @@ export default function CircledIcon({
   src,
   alt,
   className,
+  onClick,
+  imgClassName,
 }: CircledIconProps) {
   return (
     <div
       className={clsx(styles.circled, className)}
       style={{ background: color }}
+      onClick={onClick}
     >
-      <Image src={src} width={20} height={20} alt={alt} />
+      <Image
+        src={src}
+        width={20}
+        height={20}
+        alt={alt}
+        className={imgClassName}
+      />
     </div>
   );
 }

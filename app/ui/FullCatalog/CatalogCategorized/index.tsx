@@ -1,6 +1,7 @@
 import { fetchFilteredCatalogItems } from "@lib/data";
-import { FilterParams } from "@lib/interfaces";
 import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
+
+import { CatalogCategorizedProps } from "./interfaces";
 
 export default async function CatalogCategorized({
   category,
@@ -10,7 +11,9 @@ export default async function CatalogCategorized({
   size,
   inStock,
   sort,
-}: FilterParams) {
+  columns = 3,
+  rows = null,
+}: CatalogCategorizedProps) {
   const fetchByCategory = async () =>
     await fetchFilteredCatalogItems({
       category,
@@ -22,5 +25,11 @@ export default async function CatalogCategorized({
       sort,
     });
 
-  return <CatalogGridWithSuspense columns={3} fetch={fetchByCategory} />;
+  return (
+    <CatalogGridWithSuspense
+      columns={columns}
+      fetch={fetchByCategory}
+      rows={rows}
+    />
+  );
 }
