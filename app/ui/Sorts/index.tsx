@@ -1,21 +1,14 @@
-'use client'
+import Gap from "@ui/Gap";
 
-import { usePathname, useRouter, useSearchParams } from "next/navigation"
-import { useState } from "react"
+import Availibility from "./Availability";
+import ByDirection from "./ByDirection";
+import styles from "./styles.module.scss";
 
 export default function Sorts() {
-    const searchParams = useSearchParams()
-    const [availability, toggleAvailability] = useState<null | boolean>(null ?? searchParams.get('inStock') === 'true')
-    const pathname = usePathname();
-    const { replace } = useRouter();
-
-    const onSortAvailable = () => {
-        const params = new URLSearchParams(searchParams)
-        params.set('inStock', String(!availability))
-        toggleAvailability(!availability)
-
-        replace(`${pathname}?${params.toString()}`);
-    }
-
-    return <div><p onClick={onSortAvailable}>{availability?.toString()} в наличии</p></div>
+  return (
+    <Gap justify className={styles.container}>
+      <ByDirection title="по цене" value="price" />
+      <Availibility />
+    </Gap>
+  );
 }

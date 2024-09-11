@@ -2,6 +2,7 @@ import { PageProps } from "@lib/constants/types";
 import { fetchCatalogPages } from "@lib/data";
 import Breadcrumbs from "@ui/Breadcrumbs";
 import FullCatalog from "@ui/FullCatalog";
+import Gap from "@ui/Gap";
 import Pagination from "@ui/Pagination";
 import SidebarFilters from "@ui/SidebarFilters";
 import clsx from "clsx";
@@ -17,8 +18,10 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
       <SidebarFilters params={params} searchParams={searchParams} />
       <div>
         <Breadcrumbs />
-        <FullCatalog searchParams={searchParams} params={params} />
-        <Pagination totalItems={totalItems} currentPage={currentPage} />
+        <Gap direction="vertical" size="large">
+          <FullCatalog searchParams={searchParams} params={params} />
+          <Pagination totalItems={totalItems} currentPage={currentPage} />
+        </Gap>
       </div>
     </div>
   );

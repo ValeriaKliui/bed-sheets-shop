@@ -13,6 +13,8 @@ export default function CatalogGrid({
   cards,
   isShowcase = false,
 }: CatalogGridProps) {
+  if (!cards.length) return <p>Items weren&apos;t found</p>;
+
   return (
     <div
       style={{ gridTemplateColumns: `repeat(${columns},1fr)` }}

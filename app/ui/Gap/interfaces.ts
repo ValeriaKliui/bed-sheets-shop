@@ -7,4 +7,5 @@ export interface GapProps {
   justify?: boolean;
   className?: string;
   wrap?: boolean;
+  onClick?: () => void;
 }

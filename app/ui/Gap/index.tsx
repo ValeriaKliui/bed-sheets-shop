@@ -13,6 +13,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
       justify = false,
       className,
       wrap = false,
+      onClick,
     },
     ref
   ) => {
@@ -28,6 +29,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
           justifyContent: justify ? "space-between" : "normal",
           flexWrap: wrap ? "wrap" : "nowrap",
         }}
+        onClick={onClick}
         ref={ref}
       >
         {children}

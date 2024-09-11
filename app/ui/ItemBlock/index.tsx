@@ -18,14 +18,11 @@ export default function ItemBlock({
   id,
   category,
   sizes,
+  photo,
 }: CatalogItemProps) {
   const characteristics = [
     {
       header: <CharacteristicHeader title="Размер" />,
-      bottom: <CharacteristicBottom options={sizes} />,
-    },
-    {
-      header: <CharacteristicHeader title="Цвета" />,
       bottom: <CharacteristicBottom options={sizes} />,
     },
   ];
@@ -33,14 +30,14 @@ export default function ItemBlock({
   return (
     <div className={clsx("wrapper", styles.layout)}>
       <Image
-        src="/images/bed.png"
+        src={photo}
         alt={title}
         width={0}
         height={0}
         sizes="100vw"
         style={{ width: "100%", height: "100%" }}
       />
-      <Gap direction="vertical">
+      <Gap direction="vertical" size="medium">
         <Breadcrumbs
           extraLinks={[{ title, path: `catalog/${category}/${id}` }]}
         />

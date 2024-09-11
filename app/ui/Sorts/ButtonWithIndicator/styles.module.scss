@@ -1,0 +1,19 @@
+@use "../../../variables.module.scss" as v;
+
+.button {
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+.dot {
+  display: block;
+  width: 6px;
+  height: 6px;
+  background: v.$light-lines;
+  border-radius: 50%;
+}
+.active {
+  background: v.$color-primary;
+}

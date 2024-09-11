@@ -5,7 +5,7 @@ import CatalogCategorized from "./CatalogCategorized";
 import { FullCatalogParams } from "./interfaces";
 
 export default function FullCatalog({
-  searchParams: { minPrice, maxPrice, page, size, inStock },
+  searchParams: { minPrice, maxPrice, page, size, inStock, sort },
   params,
 }: FullCatalogParams) {
   const category = params?.category;
@@ -27,6 +27,7 @@ export default function FullCatalog({
         page={page}
         size={size}
         inStock={inStock}
+        sort={sort}
       />
     </div>
   );

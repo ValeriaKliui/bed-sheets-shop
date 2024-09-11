@@ -1,6 +1,6 @@
 export enum Availability {
-  unavailable = 'нет в наличии',
-  available = 'в наличии',
+  unavailable = "нет в наличии",
+  available = "в наличии",
 }
 
 export interface CatalogItem {
@@ -22,7 +22,8 @@ export interface PageProps {
     minPrice?: number;
     maxPrice?: number;
     size?: string;
-    inStock?: 'false' | 'true';
+    inStock?: "false" | "true";
+    sort?: string;
   };
   params: { id?: string; category?: string };
 }

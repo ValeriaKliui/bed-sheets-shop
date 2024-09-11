@@ -1,4 +1,4 @@
-import { Availability } from './constants/types';
+import { Availability } from "./constants/types";
 
 export interface FilterParams {
   page?: number;
@@ -6,7 +6,8 @@ export interface FilterParams {
   minPrice?: number;
   maxPrice?: number;
   size?: string;
-  inStock?: 'false' | 'true';
+  inStock?: "false" | "true";
+  sort?: string;
 }
 
 export interface Prices {
