@@ -25,6 +25,18 @@ export const SLIDER_MAIN = [
   },
 ];
 
+export const SLIDER_ITEM = [
+  {
+    src: "/images/slider/bed1.png",
+  },
+  {
+    src: "/images/slider/bed2.png",
+  },
+  {
+    src: "/images/slider/bed3.png",
+  },
+];
+
 export const CATEGORIES = [
   { title: "Постельное белье", category: "sheet" },
   { title: "Одежда", category: "clothes" },

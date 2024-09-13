@@ -23,9 +23,7 @@ export default async function Home() {
       <Gap direction="vertical" size="large">
         <Slider
           cards={sliderCards.map(({ src, title }, index) => (
-            <Link href={title} key={index}>
-              <PhotoCard info={{ src, title }} />
-            </Link>
+            <PhotoCard info={{ src, title }} key={index} />
           ))}
           overflowed
           withArrows
@@ -53,9 +51,8 @@ export default async function Home() {
         </span>
         <Slider
           cards={sliderCards.map(({ src }, index) => (
-            <PhotoCard info={{ src }} key={index} />
+            <PhotoCard info={{ src }} key={index} equal />
           ))}
-          overflowed
         />
       </Gap>
     </main>

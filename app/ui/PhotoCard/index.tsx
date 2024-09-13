@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { PhotoCardProps } from "./interfaces";
 
-export default function PhotoCard({ info }: PhotoCardProps) {
+export default function PhotoCard({ info, equal = false }: PhotoCardProps) {
   if (typeof info === "string") {
     return <Image src={info} width={40} height={40} alt="info" />;
   }
@@ -18,8 +18,10 @@ export default function PhotoCard({ info }: PhotoCardProps) {
         height={0}
         sizes="100vw"
         style={{
-          height: title ? "auto" : 300,
-          objectFit: !title ? "cover" : "initial",
+          height: !equal ? "auto" : 300,
+          objectFit: equal ? "cover" : "initial",
+          alignSelf: equal ? "flex-start" : "inherit",
+          pointerEvents: "none",
         }}
         alt={title ?? src}
       />

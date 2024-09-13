@@ -10,4 +10,5 @@ export interface CircledIconProps extends RequiredImageProps {
   color?: string;
   onClick?: () => void;
   imgClassName?: string;
+  borderColor?: string;
 }

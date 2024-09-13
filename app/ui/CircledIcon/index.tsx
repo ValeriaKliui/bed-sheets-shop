@@ -11,19 +11,21 @@ export default function CircledIcon({
   className,
   onClick,
   imgClassName,
+  borderColor,
 }: CircledIconProps) {
   return (
     <div
       className={clsx(styles.circled, className)}
-      style={{ background: color }}
       onClick={onClick}
+      style={{ background: color }}
     >
       <Image
         src={src}
         width={20}
         height={20}
         alt={alt}
-        className={imgClassName}
+        className={clsx(imgClassName, borderColor && styles.bordered)}
+        style={{ border: borderColor && `1px solid ${borderColor}` }}
       />
     </div>
   );

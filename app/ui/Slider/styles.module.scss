@@ -1,26 +1,7 @@
-.container {
-  display: flex;
-  position: relative;
-  margin-bottom: 4em;
-  user-select: none;
-
-  &:hover {
-    cursor: grabbing;
-  }
+.overflowed {
+  overflow: unset;
 }
-.track {
-  position: relative;
-  pointer-events: none;
-  align-items: normal;
-  transition: left ease-in-out 0.3s;
-
-  & a {
-  }
-}
-.controls {
-  display: flex;
-  justify-content: space-between;
-}
-.rightArrow {
-  transform: rotate(180deg);
+.withArrows {
+  height: 650px;
+  align-items: flex-start;
 }

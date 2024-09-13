@@ -1,58 +1,48 @@
 "use client";
 
-import useSlider from "@hooks/useSlider";
-import Button from "@ui/Button";
-import CircledIcon from "@ui/CircledIcon";
-import Gap from "@ui/Gap";
-import clsx from "clsx";
+import "react-multi-carousel/lib/styles.css";
 
+import CircledIcon from "@ui/CircledIcon";
+import clsx from "clsx";
+import Carousel, { ArrowProps } from "react-multi-carousel";
+
+import CustomArrow from "./CustomArrow";
 import { SliderProps } from "./interfaces";
 import styles from "./styles.module.scss";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 9000, min: 0 },
+    items: 4,
+    partialVisibilityGutter: 40,
+  },
+};
 
 export default function Slider({
   cards,
   overflowed = false,
   withArrows = false,
 }: SliderProps) {
-  const {
-    onLeftArrowClick,
-    onRightArrowClick,
-    containerRef,
-    sliderRef,
-    cardRef,
-  } = useSlider();
-
   return (
-    <div className="wrapper">
-      <div
-        ref={containerRef}
-        className={clsx(styles.container)}
-        style={{ overflow: overflowed ? "" : "hidden" }}
+    <div>
+      <Carousel
+        responsive={responsive}
+        draggable
+        arrows={withArrows}
+        partialVisible
+        containerClass={clsx(
+          "wrapper",
+          overflowed && styles.overflowed,
+          withArrows && styles.withArrows
+        )}
+        rewindWithAnimation
+        renderArrowsWhenDisabled
+        slidesToSlide={2}
+        customRightArrow={<CustomArrow direction="right" />}
+        customLeftArrow={<CustomArrow direction="left" />}
       >
-        <Gap size="large" ref={sliderRef} className={styles.track}>
-          {cards &&
-            cards.map((card, index) => (
-              <div key={index} ref={cardRef}>
-                {card}
-              </div>
-            ))}
-        </Gap>
-      </div>
-      {withArrows && (
-        <div className={styles.controls}>
-          <CircledIcon
-            alt="slider to left"
-            src="/icons/arrow.svg"
-            onClick={onLeftArrowClick}
-          />
-          <CircledIcon
-            alt="slider to left"
-            src="/icons/arrow.svg"
-            onClick={onRightArrowClick}
-            imgClassName={styles.rightArrow}
-          />
-        </div>
-      )}
+        {cards}
+      </Carousel>
     </div>
   );
 }
