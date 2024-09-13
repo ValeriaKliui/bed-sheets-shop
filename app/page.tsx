@@ -9,8 +9,8 @@ import InfoPicBlock from "@ui/InfoPicBlock";
 import PhotoCard from "@ui/PhotoCard";
 import PhotoScreen from "@ui/PhotoScreen";
 import Slider from "@ui/Slider";
+import SliderWithLinks from "@ui/SliderWithLinks";
 import Image from "next/image";
-import Link from "next/link";
 
 export default async function Home() {
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
@@ -21,13 +21,7 @@ export default async function Home() {
     <main>
       <PhotoScreen />
       <Gap direction="vertical" size="large">
-        <Slider
-          cards={sliderCards.map(({ src, title }, index) => (
-            <PhotoCard info={{ src, title }} key={index} />
-          ))}
-          overflowed
-          withArrows
-        />
+        <SliderWithLinks sliderCards={sliderCards} overflowed withArrows />
         <span>
           <InfoPicBlock>
             <ConstructorPreview
@@ -51,7 +45,7 @@ export default async function Home() {
         </span>
         <Slider
           cards={sliderCards.map(({ src }, index) => (
-            <PhotoCard info={{ src }} key={index} equal />
+            <PhotoCard info={{ src }} equal key={index} />
           ))}
         />
       </Gap>

@@ -1,6 +1,6 @@
 import { PricesNum } from "@lib/interfaces";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ChangeEvent, useEffect, useRef, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 import useRangeLabels from "./useRangeLabels";
 

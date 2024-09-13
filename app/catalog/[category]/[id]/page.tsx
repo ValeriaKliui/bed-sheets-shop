@@ -11,7 +11,6 @@ import ItemBlock from "@ui/ItemBlock";
 import PhotoCard from "@ui/PhotoCard";
 import RecentItems from "@ui/RecentItems";
 import Slider from "@ui/Slider";
-import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
