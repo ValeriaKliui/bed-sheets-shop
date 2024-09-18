@@ -1,4 +1,4 @@
-import { SLIDER_ITEM, SLIDER_VERTICAL } from "@lib/constants";
+import { SLIDER_VERTICAL } from "@lib/constants";
 import { CURRENCY } from "@lib/constants/catalogItems";
 import repeatArray from "@lib/utils/repeatArray";
 import Accordion from "@ui/Accordion";

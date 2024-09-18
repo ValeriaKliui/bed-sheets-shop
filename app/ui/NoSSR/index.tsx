@@ -1,4 +1,3 @@
-import PropTypes from "prop-types";
 import { useEffect, useLayoutEffect, useState } from "react";
 
 import { NoSSRProps } from "./interfaces";

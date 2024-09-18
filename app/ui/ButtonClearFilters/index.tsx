@@ -1,7 +1,7 @@
 "use client";
 
 import LinkButton from "@ui/LinkButton";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function ButtonClearFilters() {
   const searchParams = useSearchParams();

@@ -22,7 +22,6 @@ export default function VerticalSlider({ cards, dots }: SliderProps) {
     <Carousel
       arrows
       customDot={<CustomDot items={dots} />}
-      draggable={false}
       infinite
       containerClass={clsx(styles.container, !dots && "wrapper")}
       responsive={responsive}
