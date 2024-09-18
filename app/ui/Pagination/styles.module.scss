@@ -1,0 +1,22 @@
+@use "../../variables.module.scss" as v;
+
+.page {
+  border: 1px solid v.$light-lines;
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  h5 {
+    color: v.$color-text-secondary;
+  }
+}
+
+.current {
+  border: 1px solid v.$color-text;
+}
+
+.rightArrow {
+  transform: rotate(180deg);
+}

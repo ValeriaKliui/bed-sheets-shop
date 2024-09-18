@@ -1,0 +1,16 @@
+.container {
+  li {
+    margin: 0;
+  }
+}
+.dots {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.8em;
+}
+.inter {
+  padding: 0 0 0 80px;
+}
+.centeredDot {
+  left: 13%;
+}

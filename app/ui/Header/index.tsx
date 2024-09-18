@@ -1,12 +1,13 @@
 "use client";
 
 import defineHeaderTextColor from "@lib/utils/defineHeaderTextColor";
+import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
+import colors from "@variables.module.scss";
 import clsx from "clsx";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -14,39 +15,40 @@ import styles from "./styles.module.scss";
 
 export default function Header() {
   const pathname = usePathname();
+  const isHomePage = pathname === "/";
   const textColor = defineHeaderTextColor(pathname);
+  const { primary } = colors;
 
   return (
     <header
-      className={clsx("wrapper", styles.header)}
+      className={clsx(!isHomePage && styles.border)}
       style={{ color: textColor }}
     >
-      <Gap size="medium">
-        <Logo fill={textColor} />
-        <Link href="catalog" style={{ color: textColor }}>
-          <h5>Каталог</h5>
-        </Link>
-      </Gap>
-      <Gap size="large">
+      <div className={clsx("wrapper", styles.header)}>
         <Gap size="medium">
-          <Gap size="small">
-            <SearchIcon fill={textColor} />
-            <h5>Поиск</h5>
-          </Gap>
-          <Gap size="small">
-            <BedIcon fill={textColor} />
-            <h5>Конструктор</h5>
-          </Gap>
+          <Logo fill={textColor} />
+          <Link href="/catalog" replace style={{ color: textColor }}>
+            <h5>Каталог</h5>
+          </Link>
         </Gap>
-        <div className={styles.circled}>
-          <Image
+        <Gap size="large">
+          <Gap size="medium">
+            <Gap>
+              <SearchIcon fill={textColor} />
+              <h5>Поиск</h5>
+            </Gap>
+            <Gap>
+              <BedIcon fill={textColor} />
+              <h5>Конструктор</h5>
+            </Gap>
+          </Gap>
+          <CircledIcon
             src="/icons/bag.svg"
-            width={20}
-            height={20}
-            alt="To shopping cart"
+            alt={"To shopping cart"}
+            color={primary}
           />
-        </div>
-      </Gap>
+        </Gap>
+      </div>
     </header>
   );
 }

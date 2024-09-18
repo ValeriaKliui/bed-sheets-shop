@@ -1,0 +1,12 @@
+.arrow {
+  position: absolute;
+  left: 0;
+}
+.rightArrow {
+  transform: rotate(180deg);
+  left: 0;
+  top: 4em;
+}
+.leftArrow {
+  top: 0;
+}

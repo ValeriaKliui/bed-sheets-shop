@@ -6,8 +6,24 @@ export enum Availability {
 export interface CatalogItem {
   article: string;
   photo: string;
-  price: number;
+  price: string | number;
   title: string;
   id: string;
   info: string;
+  category: string;
+  sizes?: string[] | null;
+}
+export type Nullable<T> = { [K in keyof T]: T[K] | null };
+
+export interface PageProps {
+  searchParams: {
+    category?: string;
+    page?: number;
+    minPrice?: number;
+    maxPrice?: number;
+    size?: string;
+    inStock?: "false" | "true";
+    sort?: string;
+  };
+  params: { id?: string; category?: string };
 }

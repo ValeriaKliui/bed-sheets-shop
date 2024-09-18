@@ -5,15 +5,79 @@ import tg from "../../../public/icons/tg.svg";
 import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
-export const CATEGORIES = [
-  { title: "Постельное белье", value: "sheet", url: "" },
-  { title: "Одежда", value: "clothes", url: "" },
-  { title: "Ароматы", value: "aromas", url: "" },
-  { title: "Аксессуары", value: "accessories", url: "" },
+export const DEFAULT_PAGES = 3;
+export const ITEMS_PER_PAGE = 9;
+
+export const DB_ITEMS_NAME = "catalog_items";
+
+export const SLIDER_MAIN = [
+  {
+    src: "/images/slider/girl.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+  {
+    src: "/images/slider/man.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+  {
+    src: "/images/slider/hotel.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
 ];
 
+export const SLIDER_ITEM = [
+  {
+    src: "/images/slider/bed1.png",
+  },
+  {
+    src: "/images/slider/bed2.png",
+  },
+  {
+    src: "/images/slider/bed3.png",
+  },
+];
+
+export const SLIDER_VERTICAL = [
+  {
+    src: "/images/room.png",
+  },
+  {
+    src: "/images/girl_on_sheets.png",
+  },
+];
+
+export const SLIDER_PERSONS = [
+  {
+    src: "/images/slider/woman.png",
+    title: "Имя Фамилия",
+    text: "В незапамятные времена наши предки-славяне называли лазоревыми цветами то купавку, то шиповник, то дикий пион. Лазоревый — не значит «голубой», лазоревый — это цвет зари.",
+  },
+  {
+    src: "/images/slider/man.png",
+    title: "Фамилия Имя",
+    text: "В незапамятные времена наши предки-славяне называли лазоревыми цветами то купавку, то шиповник, то дикий пион. Лазоревый — не значит «голубой», лазоревый — это цвет зари.",
+  },
+  {
+    src: "/images/slider/woman2.jpg",
+    title: "Новая Фамилия",
+    text: "В незапамятные времена наши предки-славяне называли лазоревыми цветами то купавку, то шиповник, то дикий пион. Лазоревый — не значит «голубой», лазоревый — это цвет зари.",
+  },
+];
+
+export const CATEGORIES = [
+  { title: "Постельное белье", category: "sheet" },
+  { title: "Одежда", category: "clothes" },
+  { title: "Ароматы", category: "aromas" },
+  { title: "Аксессуары", category: "accessories" },
+];
+
+const CATEGORIES_LINKS = CATEGORIES.map((category) => ({
+  ...category,
+  url: `catalog/${category.category}`,
+}));
+
 export const FOOTER_LINKS = [
-  CATEGORIES,
+  CATEGORIES_LINKS,
   [
     { title: "Размерный гид", url: "" },
     { title: "Доставка и оплата", url: "" },
@@ -34,31 +98,25 @@ export const NETWORKS = [
 export const PHOTO_LINKS = [
   {
     title: "одежда",
-    url: "",
+    category: "clothes",
     x: 980,
     y: 521,
   },
   {
-    title: "принты",
-    url: "",
-    x: 622,
-    y: 311,
-  },
-  {
     title: "постельное белье",
-    url: "",
+    category: "sheets",
     x: 270,
     y: 557,
   },
   {
-    title: "комплекты",
-    url: "",
+    title: "аксессуары",
+    category: "accessories",
     x: 329,
     y: 810,
   },
   {
     title: "ароматы",
-    url: "",
+    category: "aromas",
     x: 1092,
     y: 639,
   },

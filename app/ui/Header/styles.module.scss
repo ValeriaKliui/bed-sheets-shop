@@ -10,11 +10,6 @@
     color: inherit;
   }
 }
-.circled {
-  background: v.$color-primary;
-  border-radius: 50%;
-  padding: 0.7em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.border {
+  border: 1px solid v.$light-lines;
 }

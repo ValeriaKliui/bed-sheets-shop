@@ -1,0 +1,48 @@
+@use "../../../variables.module.scss" as v;
+
+.container {
+  border-bottom: 1px solid v.$light-lines;
+  padding: 1em 0;
+  cursor: pointer;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.bottom {
+  padding: 1em 0 0 0;
+}
+
+.arrow {
+  transform: rotate(-90deg);
+  transition: 0.1s ease-in-out all;
+}
+.arrow_opened {
+  transform: rotate(90deg);
+}
+
+.opened {
+  display: block;
+  animation: fadeInFromNone 0.2s ease;
+}
+.closed {
+  opacity: 0;
+  display: none;
+}
+
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+
+  0.001% {
+    display: block;
+    opacity: 0;
+  }
+
+  100% {
+    display: block;
+    opacity: 1;
+  }
+}

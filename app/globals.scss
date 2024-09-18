@@ -7,11 +7,27 @@
 }
 
 html,
-body {
+body,
+button {
   font-family: var(--font-circe);
   font-size: 18px;
   line-height: 1.3em;
   color: v.$color-text;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex-grow: 1;
 }
 
 li {
@@ -23,7 +39,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+.text_big {
   font-family: var(--font-orchidea-pro);
   text-transform: uppercase;
   color: v.$color-text;
@@ -33,8 +50,11 @@ h1 {
   font-size: 3.3em;
   line-height: 3.8em;
 }
-h2 {
+h2,
+.text_big {
   font-size: 2.3em;
+}
+h2 {
   line-height: 2.8em;
 }
 h3 {
@@ -73,10 +93,27 @@ a {
   p {
     color: v.$color-text;
   }
+
+  &:hover {
+    color: v.$color-primary;
+  }
+}
+
+label {
+  color: v.$color-primary;
+}
+button,
+label {
+  cursor: pointer;
 }
 
 .wrapper {
   max-width: 1360px;
+  margin: 0 auto;
+}
+
+.wrapper_small {
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -93,6 +130,11 @@ a {
 .text_small {
   font-size: 0.8em;
   line-height: 0.9em;
+}
+.text_big {
+  font-weight: 400;
+  line-height: 1.5em;
+  text-transform: uppercase;
 }
 .text_primary {
   color: v.$color-primary;
