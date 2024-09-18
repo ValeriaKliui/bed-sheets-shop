@@ -1,4 +1,4 @@
-import { SLIDER_ITEM } from "@lib/constants";
+import { SLIDER_ITEM, SLIDER_PERSONS } from "@lib/constants";
 import { PageProps } from "@lib/constants/types";
 import { fetchItemByID, fetchLatestCatalogItems } from "@lib/data";
 import repeatArray from "@lib/utils/repeatArray";
@@ -8,9 +8,12 @@ import CatalogCategorized from "@ui/FullCatalog/CatalogCategorized";
 import Gap from "@ui/Gap";
 import InfoPicBlock from "@ui/InfoPicBlock";
 import ItemBlock from "@ui/ItemBlock";
+import PersonBlock from "@ui/PersonBlock";
 import PhotoCard from "@ui/PhotoCard";
 import RecentItems from "@ui/RecentItems";
-import Slider from "@ui/Slider";
+import Slider from "@ui/Sliders/DefaultSlider";
+import VerticalSlider from "@ui/Sliders/VerticalSlider";
+import clsx from "clsx";
 
 import styles from "./styles.module.scss";
 
@@ -28,9 +31,13 @@ export default async function Page({ params: { id } }: PageProps) {
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
   const sliderCards = repeatArray(SLIDER_ITEM, 5);
 
+  const persons = SLIDER_PERSONS.map(({ src, title, text }) => (
+    <PersonBlock src={src} key={src} title={title} text={text} />
+  ));
+
   return (
     <main>
-      <Gap direction="vertical" size="large" className={styles.layout}>
+      <Gap direction="vertical" size="huge" className={styles.layout}>
         <ItemBlock
           title={title}
           article={article}
@@ -46,6 +53,18 @@ export default async function Page({ params: { id } }: PageProps) {
           ))}
           overflowed
         />
+        <VerticalSlider cards={persons} />
+        <div className={clsx("wrapper_small", styles.info)}>
+          <p>
+            При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера
+            и передаёте ему сумму за товар в рублях. Курьер предоставляет товар,
+            который можно осмотреть на предмет повреждений, соответствие
+            указанным условиям. Покупатель подписывает товаросопроводительные
+            документы, вносит денежные средства и получает чек. Также оплата
+            наличными доступна при самовывозе из магазина, оплаты по почте или
+            использовании постамата.
+          </p>
+        </div>{" "}
         <InfoPicBlock>
           <ConstructorPreview
             title="С этим товаром покупают"
@@ -58,10 +77,7 @@ export default async function Page({ params: { id } }: PageProps) {
           <h5>Другие товары</h5>
           <CatalogCategorized columns={4} rows={1} />
         </Gap>
-        <Gap direction="vertical" className="wrapper">
-          <h5>Недавно смотрели</h5>
-          <RecentItems />
-        </Gap>
+        <RecentItems />
       </Gap>
     </main>
   );

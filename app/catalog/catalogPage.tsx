@@ -4,6 +4,7 @@ import Breadcrumbs from "@ui/Breadcrumbs";
 import FullCatalog from "@ui/FullCatalog";
 import Gap from "@ui/Gap";
 import Pagination from "@ui/Pagination";
+import RecentItems from "@ui/RecentItems";
 import SidebarFilters from "@ui/SidebarFilters";
 import clsx from "clsx";
 
@@ -21,6 +22,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
         <Gap direction="vertical" size="large">
           <FullCatalog searchParams={searchParams} params={params} />
           <Pagination totalItems={totalItems} currentPage={currentPage} />
+          <RecentItems />
         </Gap>
       </div>
     </main>

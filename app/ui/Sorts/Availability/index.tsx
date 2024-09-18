@@ -9,7 +9,7 @@ import ButtonWithIndicator from "../ButtonWithIndicator";
 export default function Availability() {
   const searchParams = useSearchParams();
   const [availability, toggleAvailability] = useState<null | boolean>(
-    null ?? searchParams.get("inStock") === "true"
+    searchParams.get("inStock") === "true"
   );
   const [isPressed, setIsPressed] = useState(availability);
 

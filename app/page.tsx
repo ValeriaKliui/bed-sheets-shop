@@ -8,8 +8,8 @@ import InfoCatalog from "@ui/InfoCatalog";
 import InfoPicBlock from "@ui/InfoPicBlock";
 import PhotoCard from "@ui/PhotoCard";
 import PhotoScreen from "@ui/PhotoScreen";
-import Slider from "@ui/Slider";
-import SliderWithLinks from "@ui/SliderWithLinks";
+import Slider from "@ui/Sliders/DefaultSlider";
+import SliderWithLinks from "@ui/Sliders/SliderWithLinks";
 import Image from "next/image";
 
 export default async function Home() {

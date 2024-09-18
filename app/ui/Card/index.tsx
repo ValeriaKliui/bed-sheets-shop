@@ -1,5 +1,4 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
-import { CatalogItem } from "@lib/constants/types";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
@@ -10,10 +9,7 @@ import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  (
-    { article, info, photo, price, title, id, actionButton }: CardProps,
-    ref
-  ) => {
+  ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
 

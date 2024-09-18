@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { CarouselProps } from "react-multi-carousel";
 
 interface CustomSliderProps {
@@ -7,4 +8,6 @@ interface CustomSliderProps {
 }
 
 export type SliderProps = CustomSliderProps &
-  Pick<CarouselProps, "beforeChange" | "afterChange">;
+  Partial<Pick<CarouselProps, "beforeChange" | "afterChange">> & {
+    dots?: ReactNode[];
+  };

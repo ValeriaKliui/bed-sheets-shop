@@ -1,0 +1,12 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  align-items: center;
+  gap: 1em;
+  justify-items: center;
+  text-align: unset;
+}
+.title {
+  justify-self: flex-start;
+}

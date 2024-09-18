@@ -1,9 +1,9 @@
 "use client";
 
 import PhotoCard from "@ui/PhotoCard";
-import Slider from "@ui/Slider";
 import { useState } from "react";
 
+import Slider from "../DefaultSlider";
 import { SliderWithLinksProps } from "./interfaces";
 
 export default function SliderWithLinks({
