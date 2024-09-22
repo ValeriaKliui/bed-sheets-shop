@@ -1,17 +1,26 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
+import { useAppDispatch, } from "@lib/hooks";
+import { addToCard } from "@lib/slices/cardSlice";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
+import Button from "@ui/Button";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
-import { forwardRef } from "react";
+import { forwardRef, MouseEvent, } from "react";
 
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {
+  ({ article, info, photo, price, title, actionButton, id }: CardProps, ref) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
+    const dispatch = useAppDispatch()
+
+    const onClick = (e: MouseEvent<HTMLButtonElement>) => {
+      e.preventDefault()
+      dispatch(addToCard([id]))
+    }
 
     return (
       <Gap className={styles.container} direction="vertical" justify ref={ref}>
@@ -29,6 +38,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           <h4>
             {priceNum.toFixed(1)} {CURRENCY}
           </h4>
+          <Button className={styles.button} onClick={onClick}>в корзину</Button>
         </Gap>
       </Gap>
     );

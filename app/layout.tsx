@@ -1,5 +1,6 @@
 import "./globals.scss";
 
+import StoreProvider from "@StoreProvider";
 import { fontCirce, fontOrchidea } from "@ui/fonts";
 import Footer from "@ui/Footer";
 import Header from "@ui/Header";
@@ -15,18 +16,20 @@ export const metadata: Metadata = {
 };
 export const experimental_ppr = true;
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={fontsClassName}>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <StoreProvider >
+      <html lang="ru">
+        <body className={fontsClassName}>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </StoreProvider>
   );
 }
