@@ -1,4 +1,5 @@
-@use '../../variables.module.scss' as v;
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .container {
   border: 1px solid v.$light-lines;
@@ -16,6 +17,14 @@
       display: block;
     }
   }
+
+  @include xs {
+    padding: 1em;
+  }
+
+  @include xs {
+    padding: 1em;
+  }
 }
 
 .article {
@@ -25,5 +34,5 @@
   width: 100%;
 }
 .button {
-  display: none;
+  // display: none;
 }

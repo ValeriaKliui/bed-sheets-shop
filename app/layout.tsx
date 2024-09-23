@@ -1,6 +1,5 @@
 import "./globals.scss";
 
-import StoreProvider from "@StoreProvider";
 import { fontCirce, fontOrchidea } from "@ui/fonts";
 import Footer from "@ui/Footer";
 import Header from "@ui/Header";
@@ -22,14 +21,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <StoreProvider >
-      <html lang="ru">
-        <body className={fontsClassName}>
-          <Header />
-          {children}
-          <Footer />
-        </body>
-      </html>
-    </StoreProvider>
+    <html lang="ru">
+      <body className={fontsClassName}>
+        <Header />
+        {children}
+        <Footer />
+      </body>
+    </html>
   );
 }

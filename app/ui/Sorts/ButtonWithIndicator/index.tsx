@@ -15,12 +15,9 @@ export default function ButtonWithIndicator({
   };
 
   return (
-    <button
-      onClick={togglePressed}
-      className={clsx(isPressed && "text_primary", styles.button)}
-    >
-      <span className={clsx(styles.dot, isPressed && styles.active)}></span>
-      {children}
+    <button onClick={togglePressed} className={clsx(styles.button)}>
+      <span className={clsx(styles.dot, isPressed && styles.active)} />
+      <span className={clsx(isPressed && "text_primary")}>{children}</span>
     </button>
   );
 }

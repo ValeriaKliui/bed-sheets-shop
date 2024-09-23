@@ -1,3 +1,5 @@
+@import "../../breakpoints.module.scss";
+
 .gap {
   display: flex;
 }
@@ -9,6 +11,9 @@
 }
 .large {
   gap: 3.5em;
+  @include xs {
+    gap: 1.5em;
+  }
 }
 .huge {
   gap: 6em;

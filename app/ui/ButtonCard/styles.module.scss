@@ -1,0 +1,23 @@
+@use "../../variables.module.scss" as v;
+
+.container {
+  background: v.$color-primary;
+  padding: 1.2em;
+  border-radius: 50px;
+  color: v.$color-text-light;
+  gap: 1.3em;
+  width: 14em;
+}
+.container_buttons {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+.buttons {
+  background: transparent;
+  border: none;
+  user-select: none;
+}
+.amount {
+  font-weight: 400;
+}

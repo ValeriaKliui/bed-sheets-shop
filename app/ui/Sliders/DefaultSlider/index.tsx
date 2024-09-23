@@ -20,10 +20,10 @@ const responsive: ResponsiveType = {
     items: 2,
     partialVisibilityGutter: 50,
   },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
+  xs: {
+    breakpoint: { max: 576, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30,
+    partialVisibilityGutter: 60,
   },
 };
 

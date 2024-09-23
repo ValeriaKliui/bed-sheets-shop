@@ -10,7 +10,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
       children,
       size = "small",
       direction = "horizontal",
-      justify = false,
+      justifyContent = "normal",
       className,
       wrap = false,
       onClick,
@@ -26,7 +26,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
           className
         )}
         style={{
-          justifyContent: justify ? "space-between" : "normal",
+          justifyContent,
           flexWrap: wrap ? "wrap" : "nowrap",
         }}
         onClick={onClick}

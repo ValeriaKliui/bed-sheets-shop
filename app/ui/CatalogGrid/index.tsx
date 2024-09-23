@@ -1,5 +1,3 @@
-"use client";
-
 import Card from "@ui/Card";
 import clsx from "clsx";
 import Image from "next/image";

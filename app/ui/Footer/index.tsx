@@ -23,7 +23,7 @@ export default function Footer() {
         </div>
 
         {FOOTER_LINKS.map((links, index) => (
-          <div className={styles.column} key={index}>
+          <div className={clsx(styles.column, styles.links)} key={index}>
             {links.map(({ title, url }) => (
               <Link href={url} key={title} className="text_secondary">
                 {title}
@@ -35,9 +35,11 @@ export default function Footer() {
       <div className={styles.column}>
         <div className={styles.column}>
           <h4>8 800 222 22 22</h4>
-          <a href="tel:88002222222">Заказать звонок</a>
+          <a href="tel:88002222222" className="link">
+            Заказать звонок
+          </a>
         </div>
-        <Gap size="medium">
+        <Gap size="medium" className={clsx(styles.links)}>
           {NETWORKS.map(({ icon, link }) => (
             <a href={link} target="_blank" key={link}>
               <Image src={icon} alt={link} key={link} />

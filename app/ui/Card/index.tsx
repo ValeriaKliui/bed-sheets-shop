@@ -1,30 +1,30 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
-import { useAppDispatch, } from "@lib/hooks";
-import { addToCard } from "@lib/slices/cardSlice";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
-import Button from "@ui/Button";
+import ButtonWithCardActions from "@ui/ButtonWithCardActions";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
-import { forwardRef, MouseEvent, } from "react";
+import { forwardRef } from "react";
 
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  ({ article, info, photo, price, title, actionButton, id }: CardProps, ref) => {
+  (
+    { article, info, photo, price, title, actionButton, id }: CardProps,
+    ref
+  ) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
-    const dispatch = useAppDispatch()
-
-    const onClick = (e: MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault()
-      dispatch(addToCard([id]))
-    }
 
     return (
-      <Gap className={styles.container} direction="vertical" justify ref={ref}>
-        <Gap className={styles.top} justify>
+      <Gap
+        className={styles.container}
+        direction="vertical"
+        justifyContent="space-between"
+        ref={ref}
+      >
+        <Gap className={styles.top} justifyContent="space-between">
           <Gap direction="vertical">
             <p className={clsx("text_small", styles.article)}>{article}</p>
             <p className="text_small">{info}</p>
@@ -38,7 +38,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           <h4>
             {priceNum.toFixed(1)} {CURRENCY}
           </h4>
-          <Button className={styles.button} onClick={onClick}>в корзину</Button>
+          <ButtonWithCardActions id={id} />
         </Gap>
       </Gap>
     );
