@@ -1,3 +1,5 @@
+@import "../../../breakpoints.module.scss";
+
 .container {
   cursor: grabbing;
 }
@@ -5,6 +7,15 @@
   overflow: unset;
 }
 .withArrows {
-  height: 600px;
   align-items: flex-start;
+
+  @include xs {
+    height: 400px;
+  }
+  @include md {
+    height: 500px;
+  }
+  @include lg {
+    height: 550px;
+  }
 }

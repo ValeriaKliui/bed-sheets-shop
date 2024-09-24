@@ -31,14 +31,21 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           </Gap>
           {actionButton}
         </Gap>
-        <Image src={photo} alt={title} width={220} height={150} />
+        <Image
+          src={photo}
+          alt={title}
+          width={220}
+          height={150}
+          layout="responsive"
+          sizes="(min-width: 0) 30vw"
+        />
         <h5>{title}</h5>
         <Gap direction="vertical">
           <p>{discountInfo}</p>
           <h4>
             {priceNum.toFixed(1)} {CURRENCY}
           </h4>
-          <ButtonWithCardActions id={id} />
+          <ButtonWithCardActions id={id} className={styles.button} />
         </Gap>
       </Gap>
     );

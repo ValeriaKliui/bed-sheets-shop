@@ -1,0 +1,14 @@
+@import "../../breakpoints.module.scss";
+
+.photo {
+  pointer-events: none;
+  @include xs {
+    width: 210px;
+  }
+  @include md {
+    width: 300px;
+  }
+  @include xl {
+    width: 400px;
+  }
+}

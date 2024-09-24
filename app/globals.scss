@@ -10,8 +10,16 @@
 html,
 body,
 button {
-  font-size: 18px;
   line-height: 1.3em;
+  @include xs {
+    font-size: 12px;
+  }
+  @include md {
+    font-size: 14px;
+  }
+  @include xl {
+    font-size: 18px;
+  }
 }
 
 html,
@@ -112,12 +120,30 @@ label {
 }
 
 .wrapper {
-  max-width: 1360px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
-  // @include xl {
-  //   max-width: 1100px;
-  // }
+  @include xs {
+    max-width: 380px;
+  }
+  @include sm {
+    max-width: map-get($breakpoints, "sm");
+  }
+  @include md {
+    max-width: calc(map-get($breakpoints, "md") - 5%);
+  }
+  @include lg {
+    max-width: calc(map-get($breakpoints, "lg") - 5%);
+  }
+  @include xl {
+    max-width: calc(map-get($breakpoints, "xl") - 10%);
+  }
+  @include xxl {
+    max-width: calc(map-get($breakpoints, "xxl") - 10%);
+  }
 }
 
 .wrapper_small {

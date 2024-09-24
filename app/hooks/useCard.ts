@@ -14,6 +14,15 @@ export default function useCard() {
     setCardInfo(getInitialCard());
   }, []);
 
+  useEffect(() => {
+    window.dispatchEvent(
+      new StorageEvent("storage", {
+        key: "card",
+        newValue: JSON.stringify(cardInfo),
+      })
+    );
+  }, [cardInfo]);
+
   const onIncreaseInCard = useCallback(
     (clickedID: string) => {
       const itemInCardAmount = cardInfo?.[clickedID] ?? 0;
@@ -22,6 +31,7 @@ export default function useCard() {
         const newCard = { ...prev, [clickedID]: itemInCardAmount + 1 };
 
         localStorage.setItem("card", JSON.stringify(newCard));
+
         return newCard;
       });
     },
@@ -47,5 +57,5 @@ export default function useCard() {
     return itemInCardAmount;
   };
 
-  return { onIncreaseInCard, getAmountInCard, onDecreaseInCard };
+  return { onIncreaseInCard, getAmountInCard, onDecreaseInCard, cardInfo };
 }

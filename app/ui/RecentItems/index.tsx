@@ -9,7 +9,6 @@ import styles from "./styles.module.scss";
 
 export default function RecentItems() {
   const { isLoading, recentItems } = useRecentItems();
-
   if (isLoading) return <Loader />;
   if (!recentItems?.length) return <></>;
 

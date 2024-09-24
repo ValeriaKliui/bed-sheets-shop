@@ -5,4 +5,5 @@ export interface ButtonCardProps {
   amountInCard: number;
   onIncreaseClick: () => void;
   onDecreaseClick: () => void;
+  className?: string;
 }

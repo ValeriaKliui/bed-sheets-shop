@@ -64,7 +64,7 @@ export default async function Page({ params: { id } }: PageProps) {
             наличными доступна при самовывозе из магазина, оплаты по почте или
             использовании постамата.
           </p>
-        </div>{" "}
+        </div>
         <InfoPicBlock>
           <ConstructorPreview
             title="С этим товаром покупают"

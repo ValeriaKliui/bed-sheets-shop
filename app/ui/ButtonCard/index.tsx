@@ -1,4 +1,5 @@
 import Gap from "@ui/Gap";
+import clsx from "clsx";
 import { MouseEvent } from "react";
 
 import { ButtonCardProps } from "./interface";
@@ -9,13 +10,14 @@ export default function ButtonCard({
   amountInCard,
   onIncreaseClick,
   onDecreaseClick,
+  className,
 }: ButtonCardProps) {
   const onClick = (e?: MouseEvent<HTMLDivElement>) => e?.preventDefault();
 
   return (
-    <Gap className={styles.container} justifyContent="center">
+    <Gap className={clsx(styles.container, className)} justifyContent="center">
       {amountInCard ? (
-        <Gap onClick={onClick} className={styles.container_buttons}>
+        <Gap onClick={onClick}>
           <button onClick={onDecreaseClick} className={styles.buttons}>
             -
           </button>
@@ -28,7 +30,9 @@ export default function ButtonCard({
         false
       )}
 
-      <button className={styles.buttons}>{children}</button>
+      <button className={styles.buttons} onClick={onIncreaseClick}>
+        {children}
+      </button>
     </Gap>
   );
 }

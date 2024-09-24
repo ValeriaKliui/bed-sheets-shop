@@ -1,0 +1,12 @@
+@import "../breakpoints.module.scss";
+
+.photo {
+  @include xs {
+    display: none;
+  }
+  @include md {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}

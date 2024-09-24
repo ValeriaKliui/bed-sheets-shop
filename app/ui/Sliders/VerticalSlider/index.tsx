@@ -5,8 +5,8 @@ import "react-multi-carousel/lib/styles.css";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowTop from "../CustomArrowTop";
-import CustomDot from "../CustomDot";
+import CustomArrowTop from "../Addons/CustomArrowTop";
+import CustomDot from "../Addons/CustomDot";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
 

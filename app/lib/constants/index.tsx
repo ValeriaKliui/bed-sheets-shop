@@ -12,15 +12,15 @@ export const DB_ITEMS_NAME = "catalog_items";
 
 export const SLIDER_MAIN = [
   {
-    src: "/images/slider/girl.png",
-    title: "В незапамятные времена наши предки-славяне называли ",
-  },
-  {
     src: "/images/slider/man.png",
     title: "В незапамятные времена наши предки-славяне называли ",
   },
   {
     src: "/images/slider/hotel.png",
+    title: "В незапамятные времена наши предки-славяне называли ",
+  },
+  {
+    src: "/images/slider/girl.png",
     title: "В незапамятные времена наши предки-славяне называли ",
   },
 ];
@@ -99,8 +99,8 @@ export const PHOTO_LINKS = [
   {
     title: "одежда",
     category: "clothes",
-    x: 980,
-    y: 521,
+    x: 780,
+    y: 1021,
   },
   {
     title: "постельное белье",
@@ -117,7 +117,7 @@ export const PHOTO_LINKS = [
   {
     title: "ароматы",
     category: "aromas",
-    x: 1092,
-    y: 639,
+    x: 702,
+    y: 239,
   },
 ];

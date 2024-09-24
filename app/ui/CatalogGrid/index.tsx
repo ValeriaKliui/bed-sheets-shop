@@ -36,9 +36,10 @@ export default function CatalogGrid({
               <Image
                 src="/icons/logo.svg"
                 alt="to catalog"
-                width={30}
-                height={30}
+                width={0}
+                height={0}
                 priority
+                className={styles.icon}
               />
             }
           />

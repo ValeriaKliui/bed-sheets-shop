@@ -1,10 +1,14 @@
 "use client";
 
 import useCard from "@hooks/useCard";
-import { CatalogItem } from "@lib/constants/types";
 import ButtonCard from "@ui/ButtonCard";
 
-export default function ButtonWithCardActions({ id }: Pick<CatalogItem, "id">) {
+import { ButtonWithCardActionsProps } from "./interfaces";
+
+export default function ButtonWithCardActions({
+  id,
+  className,
+}: ButtonWithCardActionsProps) {
   const { onIncreaseInCard, getAmountInCard, onDecreaseInCard } = useCard();
 
   const onIncreaseClick = () => onIncreaseInCard(id);
@@ -15,6 +19,7 @@ export default function ButtonWithCardActions({ id }: Pick<CatalogItem, "id">) {
       onIncreaseClick={onIncreaseClick}
       onDecreaseClick={onDecreaseClick}
       amountInCard={getAmountInCard(id)}
+      className={className}
     >
       в корзину
     </ButtonCard>

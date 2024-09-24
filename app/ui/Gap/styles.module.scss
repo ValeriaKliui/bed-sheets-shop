@@ -10,9 +10,14 @@
   gap: 2em;
 }
 .large {
-  gap: 3.5em;
   @include xs {
     gap: 1.5em;
+  }
+  @include md {
+    gap: 2.5em;
+  }
+  @include lg {
+    gap: 3.5em;
   }
 }
 .huge {
