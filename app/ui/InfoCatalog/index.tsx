@@ -19,7 +19,7 @@ export default function InfoCatalog() {
           ))}
         </ul>
       </Gap>
-      <Gap size="large">
+      <Gap size="large" className={styles.info}>
         <p className="text_small">
           “При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера
           и передаёте ему сумму за товар в рублях.

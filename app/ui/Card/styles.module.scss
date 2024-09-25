@@ -1,16 +1,27 @@
 @use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .container {
   border: 1px solid v.$light-lines;
   transition: v.$transition;
   height: 100%;
-  padding: 2em 2.5em;
   cursor: pointer;
   text-align: center;
   align-items: center;
 
   &:hover {
     box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);
+
+    button {
+      display: block;
+    }
+  }
+
+  @include xs {
+    padding: 1em;
+  }
+  @include lg {
+    padding: 2em 2.5em;
   }
 }
 
@@ -19,4 +30,12 @@
 }
 .top {
   width: 100%;
+}
+.button {
+  @include xs {
+    display: none;
+  }
+  @include lg {
+    display: flex;
+  }
 }

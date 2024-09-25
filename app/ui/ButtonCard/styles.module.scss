@@ -1,0 +1,23 @@
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
+
+.container {
+  background: v.$color-primary;
+  padding: 1.2em;
+  border-radius: 50px;
+  color: v.$color-text-light;
+  gap: 1.3em;
+  width: 14em;
+}
+
+.buttons {
+  background: transparent;
+  border: none;
+  user-select: none;
+  &:hover {
+    font-weight: 700;
+  }
+}
+.amount {
+  font-weight: 400;
+}

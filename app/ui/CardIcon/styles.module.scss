@@ -1,0 +1,22 @@
+@use "../../variables.module.scss" as v;
+
+.container {
+  position: relative;
+}
+.amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background: v.$color-text-light;
+  border-radius: 50%;
+  border: 1px solid v.$press;
+  width: 18px;
+  height: 18px;
+  padding: 8px;
+  font-size: 0.6em;
+  font-weight: 700;
+  color: v.$color-text;
+}

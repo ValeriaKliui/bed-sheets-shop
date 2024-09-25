@@ -12,6 +12,8 @@ import Slider from "@ui/Sliders/DefaultSlider";
 import SliderWithLinks from "@ui/Sliders/SliderWithLinks";
 import Image from "next/image";
 
+import styles from "./styles.module.scss";
+
 export default async function Home() {
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
 
@@ -38,8 +40,8 @@ export default async function Home() {
               width={0}
               height={0}
               sizes="100vw"
-              style={{ width: "100%", height: "auto" }}
               alt="girl on sheets"
+              className={styles.photo}
             />
           </InfoPicBlock>
         </span>

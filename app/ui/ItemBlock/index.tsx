@@ -3,6 +3,7 @@ import { CURRENCY } from "@lib/constants/catalogItems";
 import repeatArray from "@lib/utils/repeatArray";
 import Accordion from "@ui/Accordion";
 import Breadcrumbs from "@ui/Breadcrumbs";
+import ButtonWithCardActions from "@ui/ButtonWithCardActions";
 import Gap from "@ui/Gap";
 import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
@@ -70,6 +71,7 @@ export default function ItemBlock({
         <p className={clsx("text_big", "text_primary")}>
           {price} {CURRENCY}
         </p>
+        <ButtonWithCardActions id={id} />
         <Accordion items={characteristics} />
       </Gap>
     </div>

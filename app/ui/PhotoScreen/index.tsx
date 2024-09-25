@@ -28,7 +28,6 @@ export default function PhotoScreen() {
         width={0}
         height={0}
         sizes="100vw"
-        style={{ width: "100%", height: "auto", objectFit: "contain" }}
         alt="preview photo"
         className={styles.photo}
         priority

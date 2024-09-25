@@ -5,25 +5,28 @@ import "react-multi-carousel/lib/styles.css";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowBottom from "../CustomArrowBottom";
+import CustomArrowBottom from "../Addons/CustomArrowBottom";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
 
 const responsive: ResponsiveType = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
+  lg: {
+    breakpoint: { max: 10000, min: 992 },
     items: 3,
-    partialVisibilityGutter: 60,
+    partialVisibilityGutter: 10,
+    slidesToSlide: 2,
   },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
+  md: {
+    breakpoint: { max: 991, min: 576 },
     items: 2,
     partialVisibilityGutter: 50,
+    slidesToSlide: 2,
   },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
+  xs: {
+    breakpoint: { max: 575, min: 0 },
     items: 1,
-    partialVisibilityGutter: 30,
+    partialVisibilityGutter: 100,
+    slidesToSlide: 1,
   },
 };
 
@@ -49,7 +52,6 @@ export default function Slider({
         )}
         rewindWithAnimation
         renderArrowsWhenDisabled
-        slidesToSlide={2}
         beforeChange={beforeChange}
         afterChange={afterChange}
         customRightArrow={<CustomArrowBottom direction="right" />}

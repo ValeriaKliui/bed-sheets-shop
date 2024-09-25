@@ -2,6 +2,7 @@ import Gap from "@ui/Gap";
 import Image from "next/image";
 
 import { PhotoCardProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 export default function PhotoCard({ info, equal = false }: PhotoCardProps) {
   if (typeof info === "string") {
@@ -14,16 +15,16 @@ export default function PhotoCard({ info, equal = false }: PhotoCardProps) {
     <Gap direction="vertical">
       <Image
         src={src}
-        width={300}
+        width={0}
         height={0}
         sizes="100vw"
         style={{
           height: !equal ? "auto" : 300,
           objectFit: equal ? "cover" : "initial",
           alignSelf: equal ? "flex-start" : "inherit",
-          pointerEvents: "none",
         }}
         alt={title ?? src}
+        className={styles.photo}
       />
       {title && <h5>{title}</h5>}
     </Gap>

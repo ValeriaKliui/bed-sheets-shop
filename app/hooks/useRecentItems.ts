@@ -1,44 +1,55 @@
 import { CatalogItem } from "@lib/constants/types";
 import { fetchRecentItems } from "@lib/fetchRecentItems";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
-const getPrevSavedItems = () => {
-  const prevSaved = localStorage.getItem("recent");
-  if (prevSaved) return JSON.parse(prevSaved);
+const getRecent = () => {
+  if (typeof window !== "undefined") {
+    const recentLS = localStorage.getItem("recent");
+    if (recentLS) return JSON.parse(recentLS);
+  }
   return [];
 };
 
 export default function useRecentItems() {
   const pathname = usePathname();
   const pathnames = pathname.split("/");
-  const itemID = pathnames[pathnames.length - 1];
-  const [IDs, setIDs] = useState([]);
+  const itemID = Number(pathnames[pathnames.length - 1]);
+
+  const recentIDs = useRef<number[]>(getRecent());
+
   const [recentItems, setRecentItems] = useState<CatalogItem[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
-    const prevIDs = getPrevSavedItems();
+    const isLastVisited = itemID === recentIDs.current[0];
 
-    if (itemID !== prevIDs[0] && Number(itemID)) {
-      prevIDs.unshift(itemID);
+    if (itemID && !isLastVisited) {
+      if (!recentIDs.current.includes(itemID)) {
+        localStorage.setItem(
+          "recent",
+          JSON.stringify([...recentIDs.current, itemID].reverse().slice(0, 4))
+        );
+      } else {
+        const seenIDs = recentIDs.current.filter((id) => id !== itemID);
+        seenIDs.unshift(itemID);
+
+        localStorage.setItem("recent", JSON.stringify(seenIDs.slice(0, 5)));
+      }
     }
-    setIDs(prevIDs);
-
-    localStorage.setItem("recent", JSON.stringify(prevIDs));
-  }, [itemID]);
+  }, [recentIDs, itemID]);
 
   useEffect(() => {
     const fetchItemsData = async () => {
       setIsLoading(true);
-      if (IDs.length > 0) {
-        const recentItems = await fetchRecentItems(IDs);
+      if (recentIDs.current.length > 0) {
+        const recentItems = await fetchRecentItems(recentIDs.current);
         setRecentItems(recentItems);
       }
       setIsLoading(false);
     };
     fetchItemsData();
-  }, [IDs]);
+  }, [recentIDs]);
 
   return { isLoading, recentItems };
 }

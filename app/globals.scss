@@ -1,4 +1,5 @@
 @use "variables.module.scss" as v;
+@import "./breakpoints.module.scss";
 
 * {
   box-sizing: border-box;
@@ -9,15 +10,23 @@
 html,
 body,
 button {
-  font-family: var(--font-circe);
-  font-size: 18px;
   line-height: 1.3em;
-  color: v.$color-text;
+  @include xs {
+    font-size: 12px;
+  }
+  @include md {
+    font-size: 14px;
+  }
+  @include xl {
+    font-size: 18px;
+  }
 }
 
 html,
 body {
+  font-family: var(--font-circe);
   overflow-x: hidden;
+  color: v.$color-text;
 }
 
 body {
@@ -32,6 +41,11 @@ main {
 
 li {
   margin-left: 20px;
+}
+button {
+  color: v.$color-text-light;
+  text-transform: uppercase;
+  font-family: var(--font-orchidea-pro);
 }
 
 h1,
@@ -56,6 +70,9 @@ h2,
 }
 h2 {
   line-height: 2.8em;
+  @include xs {
+    line-height: 1.5em;
+  }
 }
 h3 {
   font-size: 1.5em;
@@ -81,18 +98,13 @@ h5 {
 }
 
 a {
-  color: v.$color-link;
   text-decoration: none;
+  color: inherit;
+}
+
+.link {
+  color: v.$color-link;
   line-height: 1;
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    color: v.$color-text;
-  }
 
   &:hover {
     color: v.$color-primary;
@@ -108,8 +120,30 @@ label {
 }
 
 .wrapper {
-  max-width: 1360px;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @include xs {
+    max-width: 380px;
+  }
+  @include sm {
+    max-width: map-get($breakpoints, "sm");
+  }
+  @include md {
+    max-width: calc(map-get($breakpoints, "md") - 5%);
+  }
+  @include lg {
+    max-width: calc(map-get($breakpoints, "lg") - 5%);
+  }
+  @include xl {
+    max-width: calc(map-get($breakpoints, "xl") - 10%);
+  }
+  @include xxl {
+    max-width: calc(map-get($breakpoints, "xxl") - 10%);
+  }
 }
 
 .wrapper_small {

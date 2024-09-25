@@ -1,16 +1,56 @@
+@import "../../breakpoints.module.scss";
+
 .footer {
   display: flex;
   justify-content: space-between;
   padding: 3em 0;
+
+  @include xs {
+    flex-direction: column;
+    gap: 1em;
+  }
+  @include md {
+    flex-direction: row;
+    gap: 5em;
+  }
+  @include lg {
+    gap: 2em;
+  }
 }
+
 .links_grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 0 10em;
+  @include xs {
+    display: block;
+  }
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 10em;
+  }
+  @include lg {
+    gap: 0 7em;
+  }
 }
 .column {
   display: flex;
   flex-direction: column;
   gap: 1.5em;
   justify-content: space-between;
+
+  @include xs {
+    align-items: center;
+    text-align: center;
+  }
+  @include md {
+    align-items: unset;
+    text-align: unset;
+  }
+}
+.links {
+  @include xs {
+    display: none;
+  }
+  @include md {
+    display: grid;
+  }
 }

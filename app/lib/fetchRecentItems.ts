@@ -4,7 +4,7 @@ import { DB_ITEMS_NAME } from "@lib/constants";
 import { CatalogItem } from "@lib/constants/types";
 import { sql } from "@vercel/postgres";
 
-export async function fetchRecentItems(ids: string[] | null) {
+export async function fetchRecentItems(ids: string[] | number[] | null) {
   try {
     const itemsIDsStr = ids && ids.map((id) => `'${id}'`).join(",");
 
