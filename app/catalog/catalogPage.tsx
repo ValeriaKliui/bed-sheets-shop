@@ -21,7 +21,11 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
         <Breadcrumbs />
         <Gap direction="vertical" size="large">
           <FullCatalog searchParams={searchParams} params={params} />
-          <Pagination totalItems={totalItems} currentPage={currentPage} />
+          <Pagination
+            totalItems={totalItems}
+            currentPage={currentPage}
+            className={styles.pagination}
+          />
           <RecentItems />
         </Gap>
       </div>

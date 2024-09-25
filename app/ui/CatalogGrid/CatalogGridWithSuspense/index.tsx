@@ -1,17 +1,17 @@
+import { CatalogProps } from "@ui/Catalog/interfaces";
 import Loader from "@ui/Loader";
 import { Suspense } from "react";
 
 import CatalogGridFetching from "../CatalogGridFetching";
-import { CatalogGridWithSuspenseProps } from "./interfaces";
 
 export default async function CatalogGridWithSuspense({
   fetch,
-  columns,
-  rows,
-}: CatalogGridWithSuspenseProps) {
+  dimensions,
+  Card,
+}: CatalogProps) {
   return (
     <Suspense fallback={<Loader />}>
-      <CatalogGridFetching fetch={fetch} columns={columns} rows={rows} />
+      <CatalogGridFetching fetch={fetch} dimensions={dimensions} Card={Card} />
     </Suspense>
   );
 }

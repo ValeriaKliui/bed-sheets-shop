@@ -1,12 +1,16 @@
-import CatalogGrid from "..";
+import CATALOGDFD from "@ui/CATALOGDFD";
+
 import { CatalogGridWithSuspenseProps } from "../CatalogGridWithSuspense/interfaces";
 
 export default async function CatalogGridFetching({
   fetch,
-  columns,
-  rows,
+  dimensions,
+  Card,
 }: CatalogGridWithSuspenseProps) {
   const cards = await fetch();
+  const cardItems = cards.map(({ ...props, id }) => (
+    <Card {...props} key={id} id={id} />
+  ));
 
-  return <CatalogGrid columns={columns} cards={cards} rows={rows} isShowcase />;
+  return <CATALOGDFD dimensions={dimensions} cardItems={cardItems} />;
 }

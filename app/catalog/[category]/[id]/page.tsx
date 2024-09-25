@@ -2,6 +2,7 @@ import { SLIDER_ITEM, SLIDER_PERSONS } from "@lib/constants";
 import { PageProps } from "@lib/constants/types";
 import { fetchItemByID, fetchLatestCatalogItems } from "@lib/data";
 import repeatArray from "@lib/utils/repeatArray";
+import Catalog from "@ui/Catalog";
 import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
 import ConstructorPreview from "@ui/ConstructorPreview";
 import CatalogCategorized from "@ui/FullCatalog/CatalogCategorized";
@@ -77,6 +78,7 @@ export default async function Page({ params: { id } }: PageProps) {
           <h5>Другие товары</h5>
           <CatalogCategorized columns={4} rows={1} />
         </Gap>
+        <Catalog />
         <RecentItems />
       </Gap>
     </main>

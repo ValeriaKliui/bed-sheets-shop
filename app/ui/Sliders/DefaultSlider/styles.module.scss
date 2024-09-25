@@ -18,4 +18,12 @@
   @include lg {
     height: 550px;
   }
+  @include xl {
+    height: 700px;
+  }
+}
+.track {
+  @include xl {
+    gap: 200px;
+  }
 }

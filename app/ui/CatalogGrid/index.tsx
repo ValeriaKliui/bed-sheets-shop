@@ -9,7 +9,6 @@ import styles from "./styles.module.scss";
 export default function CatalogGrid({
   columns,
   cards,
-  isShowcase = false,
   rows,
 }: CatalogGridProps) {
   if (!cards.length) return <p>Items weren&apos;t found</p>;
@@ -25,7 +24,6 @@ export default function CatalogGrid({
       {cards.map(({ title, price, article, photo, info, id, category }) => (
         <Link href={`/catalog/${category}/${id}`} key={id}>
           <Card
-            isShowcase={isShowcase}
             title={title}
             price={price}
             photo={photo}

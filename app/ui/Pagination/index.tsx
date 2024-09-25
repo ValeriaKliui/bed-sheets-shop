@@ -13,6 +13,7 @@ import styles from "./styles.module.scss";
 export default function Pagination({
   totalItems,
   currentPage = 1,
+  className,
 }: PaginationParams) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -32,7 +33,7 @@ export default function Pagination({
   };
 
   return (
-    <Gap>
+    <Gap className={className}>
       {isLeftArrow && (
         <Link href={getUrlForPage(currentPage - 1)}>
           <CircledIcon src="/icons/arrow.svg" alt="to previous page" />

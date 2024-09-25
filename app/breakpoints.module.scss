@@ -1,5 +1,5 @@
 $breakpoints: (
-  "xs": 0,
+  "xs": 0px,
   "sm": 576px,
   "md": 768px,
   "lg": 992px,
@@ -41,5 +41,10 @@ $breakpoints: (
 @mixin breakpoint($bp: 0) {
   @media (max-width: $bp) {
     @content;
+  }
+}
+:export {
+  @each $size, $sizeInPx in $breakpoints {
+    #{$size}: $sizeInPx;
   }
 }

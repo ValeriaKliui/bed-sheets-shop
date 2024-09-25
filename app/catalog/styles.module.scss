@@ -1,6 +1,17 @@
+@import "../breakpoints.module.scss";
+
 .layout {
   display: grid;
   grid-template-columns: 0.5fr 3fr;
   gap: 4em;
   padding: 4em 0;
+
+  @include xs {
+    grid-template-columns: 1fr;
+  }
+}
+.pagination {
+  @include xs {
+    align-self: center;
+  }
 }
