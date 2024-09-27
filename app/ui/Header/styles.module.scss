@@ -1,5 +1,8 @@
 @use "../../variables.module.scss" as v;
 
+.container {
+  position: relative;
+}
 .header {
   display: flex;
   justify-content: space-between;

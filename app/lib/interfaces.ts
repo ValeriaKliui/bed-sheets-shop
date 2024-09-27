@@ -1,3 +1,5 @@
+import { CatalogItem } from "./constants/types";
+
 export interface FilterParams {
   page?: number;
   category?: string;
@@ -21,4 +23,8 @@ export interface SizesArray {
 }
 export interface FetchByIDParams {
   id?: string;
+}
+export interface FetchByTitleParams extends Pick<CatalogItem, "title"> {
+  limit?: number | null;
+  page?: number;
 }

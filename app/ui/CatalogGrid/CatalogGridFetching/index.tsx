@@ -8,7 +8,7 @@ export default async function CatalogGridFetching({
   Card,
 }: CatalogGridWithSuspenseProps) {
   const cards = await fetch();
-  const cardItems = cards.map(({ ...props, id }) => (
+  const cardItems = cards.map(({ id, ...props }) => (
     <Card {...props} key={id} id={id} />
   ));
 

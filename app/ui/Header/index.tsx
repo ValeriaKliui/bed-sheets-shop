@@ -19,7 +19,7 @@ export default function Header() {
 
   return (
     <header
-      className={clsx(!isHomePage && styles.border)}
+      className={clsx(styles.container, !isHomePage && styles.border)}
       style={{ color: textColor }}
     >
       <div className={clsx("wrapper", styles.header)}>
@@ -31,10 +31,12 @@ export default function Header() {
         </Gap>
         <Gap size="large">
           <Gap size="medium">
-            <Gap>
-              <SearchIcon fill={textColor} />
-              <h5>Поиск</h5>
-            </Gap>
+            <Link href={"catalog/search"}>
+              <Gap>
+                <SearchIcon fill={textColor} />
+                <h5>Поиск</h5>
+              </Gap>
+            </Link>
             <Gap>
               <BedIcon fill={textColor} />
               <h5>Конструктор</h5>
