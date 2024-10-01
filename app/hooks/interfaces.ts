@@ -7,3 +7,4 @@ export interface RangeLabelsProps extends Pick<PricesNum, "max"> {
   currMin: number;
   currMax: number;
 }
+export type CardInfo = null | { [key: string]: number };

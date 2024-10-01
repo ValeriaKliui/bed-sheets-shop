@@ -51,7 +51,7 @@ export default function Slider({
         arrows={withArrows}
         partialVisible
         containerClass={clsx(
-          "wrapper",
+          "wrapper_small",
           styles.container,
           overflowed && styles.overflowed,
           withArrows && styles.withArrows
@@ -62,7 +62,7 @@ export default function Slider({
         afterChange={afterChange}
         customRightArrow={<CustomArrowBottom direction="right" />}
         customLeftArrow={<CustomArrowBottom direction="left" />}
-        sliderClass={styles.track}
+        itemClass={styles.item}
       >
         {cards}
       </Carousel>

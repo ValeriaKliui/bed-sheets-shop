@@ -3,7 +3,7 @@
 .container {
   display: grid;
 
-  @include xs {
+  @include xxs {
     grid-template-columns: repeat(2, minmax(0, 360px));
     grid-template-rows: repeat(2, 1fr);
   }

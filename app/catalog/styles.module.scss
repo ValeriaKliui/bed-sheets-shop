@@ -6,12 +6,12 @@
   gap: 4em;
   padding: 4em 0;
 
-  @include xs {
+  @include xxs {
     grid-template-columns: 1fr;
   }
 }
 .pagination {
-  @include xs {
+  @include xxs {
     align-self: center;
   }
 }

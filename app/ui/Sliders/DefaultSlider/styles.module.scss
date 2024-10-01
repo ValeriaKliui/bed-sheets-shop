@@ -9,7 +9,7 @@
 .withArrows {
   align-items: flex-start;
 
-  @include xs {
+  @include xxs {
     height: 400px;
   }
   @include md {
@@ -22,8 +22,13 @@
     height: 700px;
   }
 }
-.track {
+.item {
+  @include md {
+    max-width: 330px;
+    min-width: 330px;
+  }
   @include xl {
-    gap: 200px;
+    max-width: 430px;
+    min-width: 430px;
   }
 }

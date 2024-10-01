@@ -15,15 +15,17 @@ export interface CatalogItem {
 }
 export type Nullable<T> = { [K in keyof T]: T[K] | null };
 
+export interface SearchParams {
+  category?: string;
+  page?: number;
+  minPrice?: number;
+  maxPrice?: number;
+  size?: string;
+  inStock?: "false" | "true";
+  sort?: string;
+  search?: string;
+}
 export interface PageProps {
-  searchParams: {
-    category?: string;
-    page?: number;
-    minPrice?: number;
-    maxPrice?: number;
-    size?: string;
-    inStock?: "false" | "true";
-    sort?: string;
-  };
+  searchParams: SearchParams;
   params: { id?: string; category?: string };
 }

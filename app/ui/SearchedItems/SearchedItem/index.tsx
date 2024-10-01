@@ -1,16 +1,14 @@
-import { CardShortProps } from "@ui/Card/interfaces";
 import Gap from "@ui/Gap";
 import Image from "next/image";
 
+import { SearchedItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 export default function SearchedItem({
   title,
-  id,
   photo,
-  category,
   article,
-}: CardShortProps) {
+}: SearchedItemProps) {
   return (
     <div className={styles.container}>
       <Gap>

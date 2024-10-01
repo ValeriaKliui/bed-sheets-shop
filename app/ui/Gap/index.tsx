@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import { forwardRef } from "react";
+import { CSSProperties, forwardRef } from "react";
 
 import { GapProps } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -11,12 +11,19 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
       size = "small",
       direction = "horizontal",
       justifyContent = "normal",
+      alignItems = "center",
       className,
       wrap = false,
       onClick,
     },
     ref
   ) => {
+    const style = {
+      justifyContent,
+      alignItems,
+      flexWrap: wrap ? "wrap" : "nowrap",
+    } as CSSProperties;
+
     return (
       <div
         className={clsx(
@@ -25,10 +32,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
           styles[direction],
           className
         )}
-        style={{
-          justifyContent,
-          flexWrap: wrap ? "wrap" : "nowrap",
-        }}
+        style={style}
         onClick={onClick}
         ref={ref}
       >

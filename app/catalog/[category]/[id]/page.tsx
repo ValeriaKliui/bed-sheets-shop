@@ -2,10 +2,11 @@ import { SLIDER_ITEM, SLIDER_PERSONS } from "@lib/constants";
 import { PageProps } from "@lib/constants/types";
 import { fetchItemByID, fetchLatestCatalogItems } from "@lib/data";
 import repeatArray from "@lib/utils/repeatArray";
+import Card from "@ui/Card";
+import CardShort from "@ui/Card/CardShort";
+import { CardProps, CardShortProps } from "@ui/Card/interfaces";
 import Catalog from "@ui/Catalog";
-import CatalogGridWithSuspense from "@ui/CatalogGrid/CatalogGridWithSuspense";
 import ConstructorPreview from "@ui/ConstructorPreview";
-import CatalogCategorized from "@ui/FullCatalog/CatalogCategorized";
 import Gap from "@ui/Gap";
 import InfoPicBlock from "@ui/InfoPicBlock";
 import ItemBlock from "@ui/ItemBlock";
@@ -15,6 +16,8 @@ import RecentItems from "@ui/RecentItems";
 import Slider from "@ui/Sliders/DefaultSlider";
 import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
@@ -72,13 +75,53 @@ export default async function Page({ params: { id } }: PageProps) {
             imageSrc={"/images/room.png"}
             buttonLink=""
           />
-          <CatalogGridWithSuspense fetch={fetchLatestItems} columns={2} />
+          <Catalog<CardShortProps>
+            fetch={fetchLatestItems}
+            Card={({ id, title, category, photo }) => (
+              <CardShort
+                id={id}
+                title={title}
+                category={category}
+                photo={photo}
+              />
+            )}
+            dimensions={{
+              xs: { slider: true },
+              md: {
+                columns: 2,
+              },
+            }}
+          />
         </InfoPicBlock>
         <Gap direction="vertical" className="wrapper">
           <h5>Другие товары</h5>
-          <CatalogCategorized columns={4} rows={1} />
+          <Catalog<CardProps>
+            fetch={fetchLatestItems}
+            dimensions={{ xs: { slider: true }, sm: { columns: 4 } }}
+            Card={({ category, id, title, price, photo, article, info }) => (
+              <Link href={`/catalog/${category}/${id}`} key={id}>
+                <Card
+                  title={title}
+                  price={price}
+                  photo={photo}
+                  article={article}
+                  info={info}
+                  id={id}
+                  actionButton={
+                    <Image
+                      src="/icons/logo.svg"
+                      alt="to catalog"
+                      width={0}
+                      height={0}
+                      priority
+                      className={styles.icon}
+                    />
+                  }
+                />
+              </Link>
+            )}
+          />
         </Gap>
-        <Catalog />
         <RecentItems />
       </Gap>
     </main>

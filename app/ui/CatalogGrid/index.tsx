@@ -1,48 +1,26 @@
-import Card from "@ui/Card";
-import clsx from "clsx";
-import Image from "next/image";
-import Link from "next/link";
+"use client";
 
-import { CatalogGridProps } from "./interfaces";
+import useCatalog from "@hooks/useCatalog";
+import Slider from "@ui/Sliders/DefaultSlider";
+
+import { CatalogGridProps } from "./interaces";
 import styles from "./styles.module.scss";
 
-export default function CatalogGrid({
-  columns,
-  cards,
-  rows,
-}: CatalogGridProps) {
-  if (!cards.length) return <p>Items weren&apos;t found</p>;
+export default function CatalogGrid<T>({
+  cardItems,
+  dimensions,
+}: CatalogGridProps<T>) {
+  const { currStyles, gridStyle } = useCatalog(dimensions);
 
   return (
-    <div
-      style={{
-        gridTemplateColumns: `repeat(${columns},1fr)`,
-        gridTemplateRows: rows ? `repeat(${rows},1fr)` : "unset",
-      }}
-      className={clsx(styles.grid, rows && styles.rows)}
-    >
-      {cards.map(({ title, price, article, photo, info, id, category }) => (
-        <Link href={`/catalog/${category}/${id}`} key={id}>
-          <Card
-            title={title}
-            price={price}
-            photo={photo}
-            article={article}
-            info={info}
-            id={id}
-            actionButton={
-              <Image
-                src="/icons/logo.svg"
-                alt="to catalog"
-                width={0}
-                height={0}
-                priority
-                className={styles.icon}
-              />
-            }
-          />
-        </Link>
-      ))}
-    </div>
+    <>
+      {currStyles && currStyles.slider ? (
+        <Slider cards={cardItems} />
+      ) : (
+        <div className={styles.container} style={gridStyle}>
+          {cardItems}
+        </div>
+      )}
+    </>
   );
 }

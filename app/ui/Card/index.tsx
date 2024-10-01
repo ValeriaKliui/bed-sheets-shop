@@ -4,7 +4,7 @@ import ButtonWithCardActions from "@ui/ButtonWithCardActions";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
-import { forwardRef } from "react";
+import { CSSProperties, forwardRef } from "react";
 
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -21,10 +21,13 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       <Gap
         className={styles.container}
         direction="vertical"
-        justifyContent="space-between"
+        justifyContent={"space-between" as CSSProperties}
         ref={ref}
       >
-        <Gap className={styles.top} justifyContent="space-between">
+        <Gap
+          className={styles.top}
+          justifyContent={"space-between" as CSSProperties}
+        >
           <Gap direction="vertical">
             <p className={clsx("text_small", styles.article)}>{article}</p>
             <p className="text_small">{info}</p>

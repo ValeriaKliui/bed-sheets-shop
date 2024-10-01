@@ -10,7 +10,7 @@ import SearchIcon from "@ui/icons/SearchIcon";
 import colors from "@variables.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { ChangeEvent, useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 
@@ -24,7 +24,7 @@ export default function SearchWindow() {
 
   const makeFullSearch = () => setIsFullSearch(true);
 
-  const onSearch = (e) => {
+  const onSearch = (e: ChangeEvent<HTMLInputElement>) => {
     setIsFullSearch(false);
     onChange(e);
   };
@@ -40,6 +40,8 @@ export default function SearchWindow() {
     };
     fetchItemsData();
   }, [search]);
+
+  console.log(isLoading);
 
   return (
     <div className="wrapper">
@@ -65,7 +67,7 @@ export default function SearchWindow() {
       </Gap>
       {!isFullSearch && (
         <FoundItems
-          items={foundItems}
+          items={foundItems ?? []}
           search={search}
           makeFullSearch={makeFullSearch}
         />

@@ -1,9 +1,14 @@
 import { fetchItemsByTitle } from "@lib/fetchItemsByTitle";
 import Link from "next/link";
 
+import { SearchedItemsProps } from "./interfaces";
 import SearchedItem from "./SearchedItem";
 
-export default async function SearchedItems({ search, page }) {
+export default async function SearchedItems({
+  search,
+  page,
+  pagesAmount,
+}: SearchedItemsProps) {
   const searchedItems = await fetchItemsByTitle({
     title: search,
     limit: 4,
@@ -16,6 +21,10 @@ export default async function SearchedItems({ search, page }) {
         <p>ничего не найдено</p>
       ) : (
         <>
+          <h2>Результаты поиска</h2>
+          <p>
+            По запросу &quot;{search}&quot; нашлось {pagesAmount} страниц
+          </p>
           {searchedItems.map(({ title, id, photo, category, article }) => (
             <Link href={`/catalog/${category}/${id}`} key={id}>
               <SearchedItem

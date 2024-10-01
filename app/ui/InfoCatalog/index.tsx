@@ -1,13 +1,18 @@
 import { CATEGORIES } from "@lib/constants";
 import Gap from "@ui/Gap";
 import Link from "next/link";
+import { CSSProperties } from "react";
 
 import styles from "./styles.module.scss";
 
 export default function InfoCatalog() {
   return (
     <div className={styles.container}>
-      <Gap size="large" direction="vertical">
+      <Gap
+        size="large"
+        direction="vertical"
+        alignItems={"normal" as CSSProperties}
+      >
         <h2>Каталог Mollen</h2>
         <ul className={styles.categories}>
           {CATEGORIES.map(({ title, category }) => (

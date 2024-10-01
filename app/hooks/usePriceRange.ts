@@ -1,6 +1,6 @@
 import { PricesNum } from "@lib/interfaces";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useCallback, useEffect, useState } from "react";
 
 import useRangeLabels from "./useRangeLabels";
 
@@ -21,17 +21,20 @@ export default function usePriceRange({ min, max }: PricesNum) {
     max,
   });
 
-  const onRangeChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = target;
-    const valueNum = Number(value);
-    const params = new URLSearchParams(searchParams);
+  const onRangeChange = useCallback(
+    ({ target }: ChangeEvent<HTMLInputElement>) => {
+      const { name, value } = target;
+      const valueNum = Number(value);
+      const params = new URLSearchParams(searchParams);
 
-    if (name === "minPrice") setCurrMin(valueNum);
-    else setCurrMax(valueNum);
+      if (name === "minPrice") setCurrMin(valueNum);
+      else setCurrMax(valueNum);
 
-    params.set(name, value);
-    replace(`${pathname}?${params.toString()}`);
-  };
+      params.set(name, value);
+      replace(`${pathname}?${params.toString()}`);
+    },
+    [pathname, replace, searchParams]
+  );
 
   useEffect(() => {
     if (minPriceFromParams === 0) setCurrMin(min);

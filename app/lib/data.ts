@@ -4,7 +4,6 @@ import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
 import { Availability, CatalogItem } from "./constants/types";
 import {
   FetchByIDParams,
-  FetchByTitleParams,
   FilterParams,
   Prices,
   SizesArray,

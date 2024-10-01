@@ -26,7 +26,7 @@ export default function Header() {
         <Gap size="medium">
           <Logo fill={textColor} />
           <Link href="/catalog" replace style={{ color: textColor }}>
-            <h5>Каталог</h5>
+            <h5 className={styles.notMobile}>Каталог</h5>
           </Link>
         </Gap>
         <Gap size="large">
@@ -34,12 +34,12 @@ export default function Header() {
             <Link href={"catalog/search"}>
               <Gap>
                 <SearchIcon fill={textColor} />
-                <h5>Поиск</h5>
+                <h5 className={styles.notMobile}>Поиск</h5>
               </Gap>
             </Link>
             <Gap>
               <BedIcon fill={textColor} />
-              <h5>Конструктор</h5>
+              <h5 className={styles.notMobile}>Конструктор</h5>
             </Gap>
           </Gap>
           <CardIcon />

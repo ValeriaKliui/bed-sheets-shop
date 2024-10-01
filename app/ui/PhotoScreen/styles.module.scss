@@ -7,7 +7,7 @@
   z-index: -1000;
   width: 100%;
   object-fit: contain;
-  @include xs {
+  @include xxs {
     height: 573px;
     object-fit: cover;
     object-position: 70% bottom;

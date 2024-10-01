@@ -1,18 +1,18 @@
 import { useSearchParams } from "next/navigation";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useCallback, useState } from "react";
 
 export default function useSearch() {
   const searchParams = useSearchParams();
   const [search, setSearch] = useState(searchParams.get("search") || "");
 
-  const onChange = ({ target }: ChangeEvent<HTMLInputElement>) => {
+  const onChange = useCallback(({ target }: ChangeEvent<HTMLInputElement>) => {
     const searchQ = target.value;
     setSearch(searchQ);
-  };
+  }, []);
 
-  const onClear = () => {
+  const onClear = useCallback(() => {
     setSearch("");
-  };
+  }, []);
 
   return { search, onChange, onClear };
 }

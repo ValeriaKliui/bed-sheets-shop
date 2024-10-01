@@ -11,7 +11,7 @@ html,
 body,
 button {
   line-height: 1.3em;
-  @include xs {
+  @include xxs {
     font-size: 12px;
   }
   @include md {
@@ -71,7 +71,7 @@ h2,
 }
 h2 {
   line-height: 2.8em;
-  @include xs {
+  @include xxs {
     line-height: 1.5em;
   }
 }
@@ -130,6 +130,9 @@ input {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 
+  @include xxs {
+    max-width: 320px;
+  }
   @include xs {
     max-width: 380px;
   }
@@ -151,8 +154,29 @@ input {
 }
 
 .wrapper_small {
-  max-width: 1000px;
   margin: 0 auto;
+  width: 100%;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+
+  @include xxs {
+    max-width: 320px;
+  }
+  @include sm {
+    max-width: map-get($breakpoints, "sm");
+  }
+  @include md {
+    max-width: map-get($breakpoints, "md");
+  }
+  @include lg {
+    max-width: map-get($breakpoints, "lg");
+  }
+  @include xl {
+    max-width: map-get($breakpoints, "xl");
+  }
+  @include xxl {
+    max-width: map-get($breakpoints, "xxl");
+  }
 }
 
 .text_secondary {

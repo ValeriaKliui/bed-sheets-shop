@@ -1,7 +1,7 @@
 import { CatalogItem } from "@lib/constants/types";
 import { fetchRecentItems } from "@lib/fetchRecentItems";
 import { usePathname } from "next/navigation";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const getRecent = () => {
   if (typeof window !== "undefined") {
@@ -20,6 +20,7 @@ export default function useRecentItems() {
 
   const [recentItems, setRecentItems] = useState<CatalogItem[] | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+  const memoizedRecentItems = useMemo(() => recentItems, [recentItems]);
 
   useEffect(() => {
     const isLastVisited = itemID === recentIDs.current[0];
@@ -51,5 +52,5 @@ export default function useRecentItems() {
     fetchItemsData();
   }, [recentIDs]);
 
-  return { isLoading, recentItems };
+  return { isLoading, recentItems: memoizedRecentItems };
 }
