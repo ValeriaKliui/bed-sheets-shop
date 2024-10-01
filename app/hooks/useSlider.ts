@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 import { OnArrowProps } from "./interfaces";
 
@@ -22,7 +22,7 @@ export default function useSlider() {
     }
   };
 
-  const onArrowClick = ({ left }: OnArrowProps) => {
+  const onArrowClick = useCallback(({ left }: OnArrowProps) => {
     const slider = sliderRef.current;
     const card = cardRef.current;
 
@@ -33,10 +33,16 @@ export default function useSlider() {
 
       boundSlides();
     }
-  };
+  }, []);
 
-  const onLeftArrowClick = () => onArrowClick({ left: true });
-  const onRightArrowClick = () => onArrowClick({ left: false });
+  const onLeftArrowClick = useCallback(
+    () => onArrowClick({ left: true }),
+    [onArrowClick]
+  );
+  const onRightArrowClick = useCallback(
+    () => onArrowClick({ left: false }),
+    [onArrowClick]
+  );
 
   useEffect(() => {
     const container = containerRef.current;

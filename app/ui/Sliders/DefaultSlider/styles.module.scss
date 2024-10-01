@@ -9,7 +9,7 @@
 .withArrows {
   align-items: flex-start;
 
-  @include xs {
+  @include xxs {
     height: 400px;
   }
   @include md {
@@ -17,5 +17,18 @@
   }
   @include lg {
     height: 550px;
+  }
+  @include xl {
+    height: 700px;
+  }
+}
+.item {
+  @include md {
+    max-width: 330px;
+    min-width: 330px;
+  }
+  @include xl {
+    max-width: 430px;
+    min-width: 430px;
   }
 }

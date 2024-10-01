@@ -1,14 +1,14 @@
 import { useCallback, useEffect, useState } from "react";
 
+import { CardInfo } from "./interfaces";
+
 const getInitialCard = () => {
   const savedCard = localStorage.getItem("card");
   if (savedCard) return JSON.parse(savedCard);
 };
 
 export default function useCard() {
-  const [cardInfo, setCardInfo] = useState<null | { [key: string]: number }>(
-    {}
-  );
+  const [cardInfo, setCardInfo] = useState<CardInfo>({});
 
   useEffect(() => {
     setCardInfo(getInitialCard());
@@ -51,11 +51,14 @@ export default function useCard() {
     [cardInfo]
   );
 
-  const getAmountInCard = (id: string) => {
-    const itemInCardAmount = cardInfo?.[id] ?? 0;
+  const getAmountInCard = useCallback(
+    (id: string) => {
+      const itemInCardAmount = cardInfo?.[id] ?? 0;
 
-    return itemInCardAmount;
-  };
+      return itemInCardAmount;
+    },
+    [cardInfo]
+  );
 
   return { onIncreaseInCard, getAmountInCard, onDecreaseInCard, cardInfo };
 }

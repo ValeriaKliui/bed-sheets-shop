@@ -1,12 +1,31 @@
 @import "../breakpoints.module.scss";
 
 .photo {
-  @include xs {
+  @include xxs {
     display: none;
   }
   @include md {
     display: block;
     height: 100%;
     width: 100%;
+  }
+}
+.container {
+  display: grid;
+  @include xxs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.icon {
+  @include xxs {
+    width: 16px;
+    height: 16px;
+  }
+  @include lg {
+    width: 30px;
+    height: 30px;
   }
 }

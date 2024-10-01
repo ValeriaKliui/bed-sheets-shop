@@ -1,5 +1,9 @@
 @use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
+.container {
+  position: relative;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -12,4 +16,9 @@
 }
 .border {
   border: 1px solid v.$light-lines;
+}
+.notMobile {
+  @include xxs {
+    display: none;
+  }
 }

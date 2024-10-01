@@ -1,3 +1,5 @@
+import { CatalogItem } from "./constants/types";
+
 export interface FilterParams {
   page?: number;
   category?: string;
@@ -6,6 +8,7 @@ export interface FilterParams {
   size?: string;
   inStock?: "false" | "true";
   sort?: string;
+  title?: string;
 }
 
 export interface Prices {
@@ -21,4 +24,9 @@ export interface SizesArray {
 }
 export interface FetchByIDParams {
   id?: string;
+}
+export interface FetchByTitleParams
+  extends Partial<Pick<CatalogItem, "title">> {
+  limit?: number | null;
+  page?: number;
 }

@@ -1,0 +1,6 @@
+@use "../../../variables.module.scss" as v;
+
+.container {
+  border-top: 1px solid v.$light-lines;
+  padding: 2em 0;
+}

@@ -10,8 +10,14 @@ import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
 
 const responsive: ResponsiveType = {
+  xsl: {
+    breakpoint: { max: 10000, min: 1200 },
+    items: 3,
+    partialVisibilityGutter: 0,
+    slidesToSlide: 2,
+  },
   lg: {
-    breakpoint: { max: 10000, min: 992 },
+    breakpoint: { max: 1199, min: 992 },
     items: 3,
     partialVisibilityGutter: 10,
     slidesToSlide: 2,
@@ -45,7 +51,7 @@ export default function Slider({
         arrows={withArrows}
         partialVisible
         containerClass={clsx(
-          "wrapper",
+          "wrapper_small",
           styles.container,
           overflowed && styles.overflowed,
           withArrows && styles.withArrows
@@ -56,6 +62,7 @@ export default function Slider({
         afterChange={afterChange}
         customRightArrow={<CustomArrowBottom direction="right" />}
         customLeftArrow={<CustomArrowBottom direction="left" />}
+        itemClass={styles.item}
       >
         {cards}
       </Carousel>

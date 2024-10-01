@@ -6,7 +6,7 @@ export default function SearchIcon({ fill }: IconProps) {
       width="19"
       height="17"
       viewBox="0 0 19 17"
-      fill="none"
+      fill={"none"}
       xmlns="http://www.w3.org/2000/svg"
     >
       <path

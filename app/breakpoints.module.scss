@@ -1,5 +1,6 @@
 $breakpoints: (
-  "xs": 0,
+  "xxs": 0px,
+  "xs": 380px,
   "sm": 576px,
   "md": 768px,
   "lg": 992px,
@@ -7,6 +8,11 @@ $breakpoints: (
   "xxl": 1600px,
 );
 
+@mixin xxs {
+  @media (min-width: map-get($breakpoints, "xxs")) {
+    @content;
+  }
+}
 @mixin xs {
   @media (min-width: map-get($breakpoints, "xs")) {
     @content;
@@ -41,5 +47,10 @@ $breakpoints: (
 @mixin breakpoint($bp: 0) {
   @media (max-width: $bp) {
     @content;
+  }
+}
+:export {
+  @each $size, $sizeInPx in $breakpoints {
+    #{$size}: $sizeInPx;
   }
 }

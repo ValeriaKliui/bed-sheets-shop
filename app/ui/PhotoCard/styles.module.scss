@@ -2,7 +2,7 @@
 
 .photo {
   pointer-events: none;
-  @include xs {
+  @include xxs {
     width: 210px;
   }
   @include md {

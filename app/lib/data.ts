@@ -10,6 +10,7 @@ import {
 } from "./interfaces";
 import getAvailabilityParam from "./utils/getAvailabilityParam";
 import getDefaultField from "./utils/getDefaulttField";
+import getDefaultTitle from "./utils/getDefaultTitle";
 import getSortCondition from "./utils/getSortCondition";
 import sortSizes from "./utils/sortSizes";
 
@@ -72,11 +73,13 @@ export async function fetchCatalogPages({
   maxPrice,
   size,
   inStock,
+  title,
 }: FilterParams) {
   try {
     const categoryWithDefault = getDefaultField("category", category);
     const minPriceWithDefault = getDefaultField("price", minPrice);
     const maxPriceWithDefault = getDefaultField("price", maxPrice);
+    const titleWithDefault = getDefaultTitle(title);
     const availability = getAvailabilityParam(inStock);
 
     const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
@@ -87,6 +90,7 @@ export async function fetchCatalogPages({
        category = ${categoryWithDefault}
         AND price between ${minPriceWithDefault} and ${maxPriceWithDefault}
         AND info = ${availability}
+        AND title like ${titleWithDefault}
         ${addSizes}
     `);
 
