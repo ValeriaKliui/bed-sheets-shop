@@ -1,0 +1,10 @@
+@import "../../breakpoints.module.scss";
+
+.links {
+  @include xxs {
+    display: none;
+  }
+  @include md {
+    display: flex;
+  }
+}

@@ -1,8 +1,16 @@
-import { ButtonHTMLAttributes } from "react";
+import Link from "next/link";
 
-export default function Button({
-  children,
-  ...props
-}: ButtonHTMLAttributes<HTMLButtonElement>) {
-  return <button {...props}>{children}</button>;
+import { ButtonProps } from "./interfaces";
+import styles from "./styles.module.scss";
+
+export default function Button({ children, href, ...props }: ButtonProps) {
+  const Button = (
+    <button className={styles.button} {...props}>
+      {children}
+    </button>
+  );
+
+  if (href) return <Link href={href}>{Button}</Link>;
+
+  return Button;
 }

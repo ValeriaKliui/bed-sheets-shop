@@ -1,7 +1,6 @@
 @import "../../breakpoints.module.scss";
 
 .photo {
-  transform: translateY(-10%);
   background: #343a45;
   position: relative;
   z-index: -1000;
@@ -11,8 +10,10 @@
     height: 573px;
     object-fit: cover;
     object-position: 70% bottom;
+    transform: translateY(-20%);
   }
   @include md {
     height: auto;
+    transform: translateY(-10%);
   }
 }

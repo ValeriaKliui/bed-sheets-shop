@@ -7,11 +7,11 @@ import styles from "./styles.module.scss";
 
 export default function Layout({ children }: PropsWithChildren) {
   return (
-    <main className={clsx("wrapper", styles.layout)}>
+    <div className={clsx("wrapper", styles.layout)}>
       <Gap direction="vertical" size="medium">
         <Breadcrumbs />
         {children}
       </Gap>
-    </main>
+    </div>
   );
 }

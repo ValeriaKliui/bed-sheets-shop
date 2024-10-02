@@ -40,7 +40,7 @@ export default async function Page({ params: { id } }: PageProps) {
   ));
 
   return (
-    <main>
+    <div>
       <Gap direction="vertical" size="huge" className={styles.layout}>
         <ItemBlock
           title={title}
@@ -124,6 +124,6 @@ export default async function Page({ params: { id } }: PageProps) {
         </Gap>
         <RecentItems />
       </Gap>
-    </main>
+    </div>
   );
 }

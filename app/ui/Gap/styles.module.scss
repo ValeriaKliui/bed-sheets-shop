@@ -7,7 +7,15 @@
   gap: 0.8em;
 }
 .medium {
-  gap: 2em;
+  @include xxs {
+    gap: 1em;
+  }
+  @include md {
+    gap: 1.5em;
+  }
+  @include lg {
+    gap: 2em;
+  }
 }
 .large {
   @include xxs {
@@ -21,7 +29,15 @@
   }
 }
 .huge {
-  gap: 6em;
+  @include xxs {
+    gap: 4em;
+  }
+  @include md {
+    gap: 5em;
+  }
+  @include lg {
+    gap: 6em;
+  }
 }
 
 .horizontal {

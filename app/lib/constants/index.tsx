@@ -71,20 +71,18 @@ export const CATEGORIES = [
   { title: "Аксессуары", category: "accessories" },
 ];
 
-const CATEGORIES_LINKS = CATEGORIES.map((category) => ({
+export const CATEGORIES_LINKS = CATEGORIES.map((category) => ({
   ...category,
   url: `catalog/${category.category}`,
 }));
-
-export const FOOTER_LINKS = [
-  CATEGORIES_LINKS,
-  [
-    { title: "Размерный гид", url: "" },
-    { title: "Доставка и оплата", url: "" },
-    { title: "Гарантия и возврат ", url: "" },
-    { title: "Частые вопросы", url: "" },
-  ],
+export const OTHER_LINKS = [
+  { title: "Размерный гид", url: "" },
+  { title: "Доставка и оплата", url: "" },
+  { title: "Гарантия и возврат ", url: "" },
+  { title: "Частые вопросы", url: "" },
 ];
+
+export const LINKS = [CATEGORIES_LINKS, OTHER_LINKS];
 
 export const NETWORKS = [
   { icon: vk, link: "https://vk.com" },

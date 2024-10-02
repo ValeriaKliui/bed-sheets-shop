@@ -2,9 +2,9 @@ import Link from "next/link";
 
 import { IconProps } from "../interfaces";
 
-export default function Logo({ fill, opacity }: IconProps) {
+export default function Logo({ fill, opacity, className, onClick }: IconProps) {
   return (
-    <Link href="/">
+    <Link href="/" onClick={onClick}>
       <svg
         width="103"
         height="18"
@@ -12,6 +12,7 @@ export default function Logo({ fill, opacity }: IconProps) {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         opacity={opacity}
+        className={className}
       >
         <path
           fillRule="evenodd"

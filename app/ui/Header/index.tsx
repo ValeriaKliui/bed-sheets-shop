@@ -1,11 +1,13 @@
 "use client";
 
+import useMobileMenu from "@hooks/useMobileMenu";
 import defineHeaderTextColor from "@lib/utils/defineHeaderTextColor";
 import CardIcon from "@ui/CardIcon";
 import Gap from "@ui/Gap";
 import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
+import MobileMenu from "@ui/MobileMenu";
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -16,6 +18,7 @@ export default function Header() {
   const pathname = usePathname();
   const isHomePage = pathname === "/";
   const textColor = defineHeaderTextColor(pathname);
+  const { isMenuOpened, closeMenu, toggleMenu } = useMobileMenu();
 
   return (
     <header
@@ -23,8 +26,17 @@ export default function Header() {
       style={{ color: textColor }}
     >
       <div className={clsx("wrapper", styles.header)}>
-        <Gap size="medium">
-          <Logo fill={textColor} />
+        <Gap size="large">
+          <MobileMenu
+            color={textColor}
+            isOpened={isMenuOpened}
+            toggleMenu={toggleMenu}
+          />
+          <Logo
+            fill={textColor}
+            className={clsx(isMenuOpened && styles.logo_opened)}
+            onClick={closeMenu}
+          />
           <Link href="/catalog" replace style={{ color: textColor }}>
             <h5 className={styles.notMobile}>Каталог</h5>
           </Link>

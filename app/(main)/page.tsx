@@ -23,7 +23,7 @@ export default async function Home() {
   const sliderCards = repeatArray(SLIDER_MAIN, 5);
 
   return (
-    <main>
+    <div>
       <PhotoScreen />
       <Gap direction="vertical" size="large">
         <SliderWithLinks sliderCards={sliderCards} overflowed withArrows />
@@ -75,6 +75,6 @@ export default async function Home() {
           ))}
         />
       </Gap>
-    </main>
+    </div>
   );
 }

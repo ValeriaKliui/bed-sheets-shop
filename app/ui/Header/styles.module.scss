@@ -3,12 +3,18 @@
 
 .container {
   position: relative;
+
+  @include xxs {
+    padding: 2em 0;
+  }
+  @include sm {
+    padding: 1em 0;
+  }
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 0;
 
   h5 {
     color: inherit;
@@ -20,5 +26,20 @@
 .notMobile {
   @include xxs {
     display: none;
+  }
+  @include sm {
+    display: block;
+  }
+}
+.logo_opened {
+  @include xxs {
+    z-index: 1000;
+    position: relative;
+    path {
+      fill: black;
+    }
+  }
+  @include sm {
+    display: block;
   }
 }

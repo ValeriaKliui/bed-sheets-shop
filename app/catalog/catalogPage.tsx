@@ -31,7 +31,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
     });
 
   return (
-    <main className={clsx(styles.layout, "wrapper")}>
+    <div className={clsx(styles.layout, "wrapper")}>
       <SidebarFilters params={params} searchParams={searchParams} />
       <div>
         <Breadcrumbs />
@@ -73,6 +73,6 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
           <RecentItems />
         </Gap>
       </div>
-    </main>
+    </div>
   );
 }
