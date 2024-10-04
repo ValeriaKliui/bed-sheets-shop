@@ -1,23 +1,14 @@
 import { PageProps } from "@lib/constants/types";
-import ButtonClearFilters from "@ui/ButtonClearFilters";
-import FilterCategories from "@ui/Categories";
-import FilterPrice from "@ui/FilterPrice";
-import FilterSizes from "@ui/FilterSizes";
+import Filters from "@ui/Filters";
 import Gap from "@ui/Gap";
-import Loader from "@ui/Loader";
-import { Suspense } from "react";
+
+import styles from "./styles.module.scss";
 
 export default function SidebarFilters({ searchParams, params }: PageProps) {
   return (
-    <aside>
-      <Gap direction="vertical" size="medium">
-        <h5>Категории</h5>
-        <Suspense fallback={<Loader />}>
-          <FilterCategories />
-          <FilterSizes searchParams={{ ...searchParams, ...params }} />
-          <FilterPrice searchParams={{ ...searchParams, ...params }} />
-          <ButtonClearFilters />
-        </Suspense>
+    <aside className={styles.aside}>
+      <Gap direction="vertical" size="medium" alignItems={"flex-start"}>
+        <Filters searchParams={searchParams} params={params} />
       </Gap>
     </aside>
   );

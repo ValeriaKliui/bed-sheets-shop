@@ -5,9 +5,6 @@
   position: relative;
 
   @include xxs {
-    padding: 2em 0;
-  }
-  @include sm {
     padding: 1em 0;
   }
 }
@@ -18,6 +15,9 @@
 
   h5 {
     color: inherit;
+  }
+  @include xxs {
+    max-width: 300px;
   }
 }
 .border {
@@ -31,6 +31,7 @@
     display: block;
   }
 }
+
 .logo_opened {
   @include xxs {
     z-index: 1000;

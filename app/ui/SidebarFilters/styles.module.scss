@@ -1,0 +1,11 @@
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
+
+.aside {
+  @include xxs {
+    display: none;
+  }
+  @include sm {
+    display: block;
+  }
+}

@@ -1,6 +1,6 @@
 import Gap from "@ui/Gap";
 import clsx from "clsx";
-import { CSSProperties, MouseEvent } from "react";
+import { MouseEvent } from "react";
 
 import { ButtonCardProps } from "./interface";
 import styles from "./styles.module.scss";
@@ -17,7 +17,7 @@ export default function ButtonCard({
   return (
     <Gap
       className={clsx(styles.container, className)}
-      justifyContent={"center" as CSSProperties}
+      justifyContent={"center"}
     >
       {amountInCard ? (
         <Gap onClick={onClick}>

@@ -2,7 +2,7 @@
 
 .container {
   position: relative;
-  margin-bottom: 1.8em;
+  margin-bottom: 5em;
 }
 .slider {
   height: 2px;
@@ -24,6 +24,7 @@
   cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
+  padding: 0;
   -moz-appearance: none;
 }
 .range_input input::-webkit-slider-thumb {

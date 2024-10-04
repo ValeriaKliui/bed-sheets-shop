@@ -24,7 +24,8 @@ export default async function RootLayout({
     <html lang="ru">
       <body className={fontsClassName}>
         <Header />
-        <main>{children}</main> <Footer />
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

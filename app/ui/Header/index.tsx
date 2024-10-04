@@ -37,10 +37,10 @@ export default function Header() {
             className={clsx(isMenuOpened && styles.logo_opened)}
             onClick={closeMenu}
           />
-          <Link href="/catalog" replace style={{ color: textColor }}>
-            <h5 className={styles.notMobile}>Каталог</h5>
-          </Link>
         </Gap>
+        <Link href="/catalog" replace style={{ color: textColor }}>
+          <h5 className={styles.notMobile}>Каталог</h5>
+        </Link>
         <Gap size="large">
           <Gap size="medium">
             <Link href={"catalog/search"}>

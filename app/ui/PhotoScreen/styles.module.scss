@@ -7,13 +7,12 @@
   width: 100%;
   object-fit: contain;
   @include xxs {
-    height: 573px;
+    height: 545px;
     object-fit: cover;
     object-position: 70% bottom;
-    transform: translateY(-20%);
+    transform: translateY(-12%);
   }
   @include md {
     height: auto;
-    transform: translateY(-10%);
   }
 }

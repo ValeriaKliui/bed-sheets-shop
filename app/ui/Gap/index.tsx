@@ -15,6 +15,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
       className,
       wrap = false,
       onClick,
+      alignSelf,
     },
     ref
   ) => {
@@ -22,6 +23,7 @@ const Gap = forwardRef<HTMLDivElement, GapProps>(
       justifyContent,
       alignItems,
       flexWrap: wrap ? "wrap" : "nowrap",
+      alignSelf,
     } as CSSProperties;
 
     return (

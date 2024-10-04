@@ -10,7 +10,7 @@ export default function FilterCategories() {
   const pathCategory = pathnames[pathnames.length - 1];
 
   return (
-    <Gap direction="vertical">
+    <Gap direction="vertical" alignItems={"flex-start"}>
       {CATEGORIES.map(({ title, category }) => (
         <Link
           href={{

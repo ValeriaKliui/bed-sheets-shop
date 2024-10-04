@@ -1,11 +1,17 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 import { ButtonProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Button({ children, href, ...props }: ButtonProps) {
+export default function Button({
+  children,
+  href,
+  className,
+  ...props
+}: ButtonProps) {
   const Button = (
-    <button className={styles.button} {...props}>
+    <button {...props} className={clsx(styles.button, className)}>
       {children}
     </button>
   );
