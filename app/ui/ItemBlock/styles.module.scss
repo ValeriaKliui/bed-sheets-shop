@@ -1,7 +1,42 @@
+@import '../../breakpoints.module.scss';
+
 .layout {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5em;
+  // gap: 5em;
+  // grid-template-columns: repeat(2, 1fr);
+  // grid-template-areas:
+  //   'slider top'
+  //   'slider bottom';
+  @include xxs {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      'top'
+      'slider'
+      'price'
+      'bottom';
+    gap: 2em;
+  }
+}
+.slider {
+  grid-area: slider;
+}
+.topInfo {
+  grid-area: top;
+}
+.bottomInfo {
+  // grid-area: bottom;
+  @include xxs {
+  }
+}
+.price {
+  @include xxs {
+    order: -2;
+  }
+}
+.characteristics {
+  @include xxs {
+    order: -1;
+  }
 }
 .image {
   width: 100%;

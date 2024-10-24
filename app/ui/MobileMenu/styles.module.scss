@@ -1,5 +1,5 @@
-@use "../../variables.module.scss" as v;
-@import "../../breakpoints.module.scss";
+@use '../../variables.module.scss' as v;
+@import '../../breakpoints.module.scss';
 
 .mobileMenu {
   color: v.$color-text;
@@ -15,10 +15,11 @@
   z-index: 500;
   top: 0;
   left: 0;
-  padding: 100px;
+  padding: 7em 2em 2em;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  overflow: scroll;
 }
 .burger {
   display: flex;
@@ -51,7 +52,4 @@
   &:last-child {
     transform: rotate(-45deg) translate(5px, -6px);
   }
-}
-.networks {
-  align-self: center;
 }

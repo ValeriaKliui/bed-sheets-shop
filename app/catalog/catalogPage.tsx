@@ -43,13 +43,13 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
     "Популярные товары";
 
   return (
-    <div className={clsx(styles.layout)}>
+    <div className={clsx(styles.layout, 'wrapper')}>
       <SidebarFilters searchParams={searchParams} params={params} />
-      <Gap className={styles.divider} direction="vertical" size="large">
-        <div>
+      <Gap className={styles.divider} direction="vertical" size="large" alignItems="flex-start">
+        <Gap direction="vertical" alignItems="flex-start" className={styles.title}>
           <Breadcrumbs />
           <p className="text_big">{title}</p>
-        </div>
+        </Gap>
         <FiltersMobile filters={getFilters()} />
         <div>
           <Sorts />

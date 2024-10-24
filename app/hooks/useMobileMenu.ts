@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 
 export default function useMobileMenu() {
   const [isMenuOpened, setIsOpened] = useState(false);
@@ -8,9 +8,12 @@ export default function useMobileMenu() {
 
   useEffect(() => {
     if (isMenuOpened) {
-      document.body.style.overflowY = "hidden";
-      document.body.style.height = "1px";
-    } else document.body.style.overflowY = "unset";
+      document.body.style.overflowY = 'hidden';
+      document.body.style.height = `${window.innerHeight}px`;
+    } else {
+      document.body.style.overflowY = 'unset';
+      document.body.style.height = 'unset';
+    }
   }, [isMenuOpened]);
 
   return {

@@ -1,4 +1,4 @@
-@import "../breakpoints.module.scss";
+@import '../breakpoints.module.scss';
 
 .photo {
   @include xxs {
@@ -14,10 +14,15 @@
   display: grid;
   @include xxs {
     grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: minmax(100px, 400px);
   }
   @include md {
+    grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+.catalog_wrapper {
+  max-width: 1440px;
 }
 .icon {
   @include xxs {

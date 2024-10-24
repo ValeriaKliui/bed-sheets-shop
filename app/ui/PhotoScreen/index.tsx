@@ -32,6 +32,7 @@ export default function PhotoScreen() {
         className={styles.photo}
         priority
         ref={imgRef}
+
       />
       <DotsLinks imgHeight={imgHeight} />
     </div>

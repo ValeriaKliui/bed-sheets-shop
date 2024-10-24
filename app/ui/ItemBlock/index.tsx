@@ -13,6 +13,7 @@ import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
 import { CatalogItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
+import Cards from "./Cards";
 
 export default function ItemBlock({
   title,
@@ -39,7 +40,7 @@ export default function ItemBlock({
       width={0}
       height={0}
       sizes="100vw"
-      style={{ width: "490px", height: "100%", objectFit: "cover" }}
+      style={{ width: "490px", height: "100%", objectFit: "cover", maxHeight: '90%' }}
       key={src}
       alt={""}
     />
@@ -57,22 +58,24 @@ export default function ItemBlock({
 
   return (
     <div className={clsx("wrapper", styles.layout)}>
-      <VerticalSlider cards={cards} dots={dots} />
-      <Gap direction="vertical" size="medium">
+      <VerticalSlider cards={cards} dots={dots} className={styles.slider} />
+      <Gap direction="vertical" size="medium" className={styles.topInfo} alignItems="flex-start">
         <Breadcrumbs
           extraLinks={[{ title, path: `catalog/${category}/${id}` }]}
         />
-        <p className="text_big">{title}</p>
+        <p className={clsx("text_big",)}>{title}</p>
         <p className="text_secondary">Артикул: {article}</p>
+      </Gap>
+      <Gap direction="vertical" size="medium" className={styles.bottomInfo}>
         <p>
           Наволочка двухсторонняя: светло-серый сатин и шелк с узором
           &quot;волшебный лес&quot; 50*70 см
         </p>
-        <p className={clsx("text_big", "text_primary")}>
+        <p className={clsx("text_big", "text_primary", styles.price)}>
           {price} {CURRENCY}
         </p>
         <ButtonWithCardActions id={id} />
-        <Accordion items={characteristics} />
+        <Accordion items={characteristics} className={styles.characteristics} />
       </Gap>
     </div>
   );

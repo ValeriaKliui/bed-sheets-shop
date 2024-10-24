@@ -2,16 +2,18 @@ import Link from "next/link";
 
 import FoundItem from "./FoundItem";
 import { FoundItemsProps } from "./interfaces";
+import styles from './styles.module.scss'
+import clsx from "clsx";
 
 export default function FoundItems({
   items,
   search,
-  makeFullSearch,
+  closeSearch
 }: FoundItemsProps) {
-  if (!items) return false;
+  if (!items || !search) return false;
 
   return (
-    <div>
+    <div className={styles.container}>
       {items.map(({ title, price, photo, id }) => {
         return <FoundItem title={title} price={price} photo={photo} key={id} />;
       })}
@@ -19,7 +21,8 @@ export default function FoundItems({
       {items.length > 0 ? (
         <Link
           href={{ pathname: "search", query: { search } }}
-          onClick={makeFullSearch}
+          onClick={closeSearch}
+          className={clsx('link', 'text_medium', styles.link)}
         >
           все результаты
         </Link>

@@ -1,7 +1,7 @@
-import { CatalogItem } from "@lib/constants/types";
+import { CatalogItem } from '@lib/constants/types';
 
 export interface FoundItemsProps {
-  items: CatalogItem[];
+  items: CatalogItem[] | null;
   search: string;
-  makeFullSearch: () => void;
+  closeSearch: () => void;
 }

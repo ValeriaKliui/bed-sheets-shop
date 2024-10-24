@@ -1,4 +1,4 @@
-@import "../../breakpoints.module.scss";
+@import '../../breakpoints.module.scss';
 
 .photo {
   background: #343a45;
@@ -6,6 +6,7 @@
   z-index: -1000;
   width: 100%;
   object-fit: contain;
+
   @include xxs {
     height: 545px;
     object-fit: cover;

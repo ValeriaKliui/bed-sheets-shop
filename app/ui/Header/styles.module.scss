@@ -1,5 +1,5 @@
-@use "../../variables.module.scss" as v;
-@import "../../breakpoints.module.scss";
+@use '../../variables.module.scss' as v;
+@import '../../breakpoints.module.scss';
 
 .container {
   position: relative;
@@ -18,7 +18,16 @@
   }
   @include xxs {
     max-width: 300px;
+    width: 100%;
   }
+  @include xs {
+    max-width: unset;
+  }
+}
+.header_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .border {
   border: 1px solid v.$light-lines;

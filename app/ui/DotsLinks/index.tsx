@@ -13,7 +13,7 @@ export default function DotsLinks({ imgHeight }: DotsLinksProps) {
 
   return (
     <NoSSR>
-      {PHOTO_LINKS.map(({ title, x, y, category }) => {
+      <div >{PHOTO_LINKS.map(({ title, x, y, category }) => {
         const xResized = Math.round((width * x) / BASE_WIDTH);
         const yResized = Math.round((imgHeight * y) / BASE_WIDTH);
 
@@ -22,11 +22,11 @@ export default function DotsLinks({ imgHeight }: DotsLinksProps) {
             title={title}
             x={xResized}
             y={yResized}
-            url={{ pathname: "/catalog", query: { category } }}
+            url={`/catalog/${category}`}
             key={title}
           />
         );
-      })}
+      })}</div>
     </NoSSR>
   );
 }

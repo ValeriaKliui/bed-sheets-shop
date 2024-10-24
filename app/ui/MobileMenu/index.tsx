@@ -54,8 +54,8 @@ export default function MobileMenu({
                 Заказать звонок
               </a>
             </Gap>
+            <Networks />
           </Gap>
-          <Networks className={styles.networks} />
         </div>
       )}
     </div>

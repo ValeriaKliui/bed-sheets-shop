@@ -25,38 +25,43 @@ export default function Header() {
       className={clsx(styles.container, !isHomePage && styles.border)}
       style={{ color: textColor }}
     >
-      <div className={clsx("wrapper", styles.header)}>
-        <Gap size="large">
-          <MobileMenu
-            color={textColor}
-            isOpened={isMenuOpened}
-            toggleMenu={toggleMenu}
-          />
-          <Logo
-            fill={textColor}
-            className={clsx(isMenuOpened && styles.logo_opened)}
-            onClick={closeMenu}
-          />
-        </Gap>
-        <Link href="/catalog" replace style={{ color: textColor }}>
-          <h5 className={styles.notMobile}>Каталог</h5>
-        </Link>
-        <Gap size="large">
-          <Gap size="medium">
-            <Link href={"catalog/search"}>
-              <Gap>
-                <SearchIcon fill={textColor} />
-                <h5 className={styles.notMobile}>Поиск</h5>
-              </Gap>
+      <div className={clsx('wrapper', styles.header_wrapper)}>
+        <div className={clsx(styles.header,)}>
+          <Gap size="large">
+            <MobileMenu
+              color={textColor}
+              isOpened={isMenuOpened}
+              toggleMenu={toggleMenu}
+            />
+            <Logo
+              fill={textColor}
+              className={clsx(isMenuOpened && styles.logo_opened)}
+              onClick={closeMenu}
+            />
+            <Link href="/catalog" replace style={{ color: textColor }}>
+              <h5 className={styles.notMobile}>Каталог</h5>
             </Link>
-            <Gap>
-              <BedIcon fill={textColor} />
-              <h5 className={styles.notMobile}>Конструктор</h5>
-            </Gap>
           </Gap>
-          <CardIcon />
-        </Gap>
+
+          <Gap size="large">
+            <Gap size="medium">
+              <Link href={"catalog/search"} replace>
+                <Gap>
+                  <SearchIcon fill={textColor} />
+                  <h5 className={styles.notMobile}>Поиск</h5>
+                </Gap>
+              </Link>
+              <Gap>
+                <BedIcon fill={textColor} />
+                <h5 className={styles.notMobile}>Конструктор</h5>
+              </Gap>
+            </Gap>
+            <CardIcon />
+          </Gap>
+        </div>
       </div>
+
+
     </header>
   );
 }

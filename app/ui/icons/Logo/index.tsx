@@ -1,10 +1,11 @@
 import Link from "next/link";
 
 import { IconProps } from "../interfaces";
+import styles from './styles.module.scss'
 
 export default function Logo({ fill, opacity, className, onClick }: IconProps) {
   return (
-    <Link href="/" onClick={onClick}>
+    <Link href="/" onClick={onClick} className={styles.link}>
       <svg
         width="103"
         height="18"

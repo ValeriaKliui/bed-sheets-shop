@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { SearchedItemsProps } from "./interfaces";
 import SearchedItem from "./SearchedItem";
+import Gap from "@ui/Gap";
 
 export default async function SearchedItems({
   search,
@@ -14,16 +15,18 @@ export default async function SearchedItems({
     limit: 4,
     page,
   });
+  if (!search) return <p>Введите название товара</p>;
 
   return (
-    <div className="wrapper">
+    <Gap direction="vertical"
+      className="wrapper" alignItems="flex-start">
       {searchedItems.length === 0 ? (
         <p>ничего не найдено</p>
       ) : (
         <>
           <h2>Результаты поиска</h2>
           <p>
-            По запросу &quot;{search}&quot; нашлось {pagesAmount} страниц
+            По запросу &quot;{search}&quot; нашлось {pagesAmount} страниц.
           </p>
           {searchedItems.map(({ title, id, photo, category, article }) => (
             <Link href={`/catalog/${category}/${id}`} key={id}>
@@ -39,6 +42,6 @@ export default async function SearchedItems({
           ))}
         </>
       )}
-    </div>
+    </Gap>
   );
 }

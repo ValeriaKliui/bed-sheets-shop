@@ -2,6 +2,7 @@ import { PageProps } from "@lib/constants/types";
 import { fetchAvailableSizes } from "@lib/data";
 
 import Sizes from "./Sizes";
+import Gap from "@ui/Gap";
 
 export default async function FilterSizes({
   searchParams,
@@ -11,9 +12,9 @@ export default async function FilterSizes({
   if (!searchParams.category || !sizes.length) return;
 
   return (
-    <div>
+    <Gap direction="vertical" alignItems="flex-start">
       <p>Размер</p>
       <Sizes sizes={sizes} />
-    </div>
+    </Gap>
   );
 }

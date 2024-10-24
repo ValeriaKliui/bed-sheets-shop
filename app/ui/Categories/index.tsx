@@ -13,9 +13,7 @@ export default function FilterCategories() {
     <Gap direction="vertical" alignItems={"flex-start"}>
       {CATEGORIES.map(({ title, category }) => (
         <Link
-          href={{
-            pathname: `/catalog/${category}`,
-          }}
+          href={`/catalog/${category}`}
           key={category}
         >
           <Gap>

@@ -9,7 +9,7 @@ export default function Layout({ children }: PropsWithChildren) {
   return (
     <div className={clsx("wrapper", styles.layout)}>
       <Gap direction="vertical" size="medium">
-        <Breadcrumbs />
+        <Breadcrumbs className={styles.breadcrumbs} />
         {children}
       </Gap>
     </div>

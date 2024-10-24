@@ -19,13 +19,9 @@ const { text, bg } = colors;
 export default function SearchWindow() {
   const [isLoading, setIsLoading] = useState(false);
   const [foundItems, setFoundItems] = useState<CatalogItem[] | null>(null);
-  const { search, onChange, onClear } = useSearch();
-  const [isFullSearch, setIsFullSearch] = useState(false);
-
-  const makeFullSearch = () => setIsFullSearch(true);
+  const { search, onChange, onClear, isSearchOpened, closeSearch } = useSearch();
 
   const onSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    setIsFullSearch(false);
     onChange(e);
   };
 
@@ -41,16 +37,13 @@ export default function SearchWindow() {
     fetchItemsData();
   }, [search]);
 
-  console.log(isLoading);
-
   return (
-    <div className="wrapper">
-      <Gap className={clsx(styles.window)}>
+    <div className={clsx(styles.container)}>
+      <Gap className={clsx(styles.window, isSearchOpened && styles.window_opened)}>
         <Link
           href={{ pathname: "search", query: { search } }}
-          onClick={makeFullSearch}
         >
-          <SearchIcon fill={text} />
+          <CircledIcon src="/icons/search_black.svg" alt="search" />
         </Link>
         <form className={styles.form}>
           <input
@@ -65,11 +58,11 @@ export default function SearchWindow() {
           <CircledIcon src="/icons/close.svg" alt="clear search" color={bg} />
         </div>
       </Gap>
-      {!isFullSearch && (
+      {!isLoading && isSearchOpened && (
         <FoundItems
-          items={foundItems ?? []}
+          items={foundItems}
           search={search}
-          makeFullSearch={makeFullSearch}
+          closeSearch={closeSearch}
         />
       )}
     </div>

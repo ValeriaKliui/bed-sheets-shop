@@ -14,16 +14,17 @@ const responsive: ResponsiveType = {
   desktop: {
     breakpoint: { max: 3000, min: 0 },
     items: 1,
+    
   },
 };
 
-export default function VerticalSlider({ cards, dots }: SliderProps) {
+export default function VerticalSlider({ cards, dots, className }: SliderProps) {
   const CarouselCustom = () => (
     <Carousel
       arrows
       customDot={<CustomDot items={dots} />}
       infinite
-      containerClass={clsx(styles.container, !dots && "wrapper")}
+      containerClass={clsx(styles.container, !dots && "wrapper", className)}
       responsive={responsive}
       showDots
       slidesToSlide={1}

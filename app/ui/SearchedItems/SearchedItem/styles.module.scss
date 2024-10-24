@@ -1,6 +1,59 @@
-@use "../../../variables.module.scss" as v;
+@use '../../../variables.module.scss' as v;
+@import '../../../breakpoints.module.scss';
 
 .container {
   border-top: 1px solid v.$light-lines;
-  padding: 2em 0;
+
+  &:hover {
+    box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);
+  }
+  @include xxs {
+    padding: 0.5em;
+  }
+  @include sm {
+    padding: 1em;
+    gap: 2em;
+  }
+  @include md {
+    gap: 3em;
+    padding: 2em;
+  }
+}
+.image {
+  @include xxs {
+    width: 70px;
+    height: auto;
+  }
+  @include sm {
+    width: 200px;
+  }
+  @include md {
+    width: 300px;
+    height: 190px;
+  }
+}
+.title {
+  @include xxs {
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+  @include sm {
+    font-weight: 700;
+  }
+}
+.article {
+  @include xxs {
+    display: none;
+  }
+  @include sm {
+    display: block;
+  }
+}
+.gap {
+  @include xxs {
+    gap: 0 0.8em;
+  }
+  @include md {
+    gap: 1em;
+  }
 }

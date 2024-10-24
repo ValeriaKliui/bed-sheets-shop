@@ -102,7 +102,7 @@ export const PHOTO_LINKS = [
   },
   {
     title: "постельное белье",
-    category: "sheets",
+    category: "sheet",
     x: 270,
     y: 557,
   },

@@ -1,5 +1,5 @@
-@use "../variables.module.scss" as v;
-@import "../breakpoints.module.scss";
+@use '../variables.module.scss' as v;
+@import '../breakpoints.module.scss';
 
 .layout {
   display: grid;
@@ -13,6 +13,9 @@
     grid-template-columns: 0.5fr 3fr;
   }
 }
+.title {
+  width: 100%;
+}
 .pagination {
   @include xxs {
     align-self: center;
@@ -24,5 +27,14 @@
       padding-bottom: 1.5em;
       border-bottom: 1px solid v.$color-divider;
     }
+  }
+  @include sm {
+    gap: 1em;
+    & > * {
+      padding-bottom: unset;
+      border-bottom: unset;
+    }
+  }
+  @include md {
   }
 }

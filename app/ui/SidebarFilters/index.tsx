@@ -8,6 +8,7 @@ export default function SidebarFilters({ searchParams, params }: PageProps) {
   return (
     <aside className={styles.aside}>
       <Gap direction="vertical" size="medium" alignItems={"flex-start"}>
+        <h5>Категории</h5>
         <Filters searchParams={searchParams} params={params} />
       </Gap>
     </aside>

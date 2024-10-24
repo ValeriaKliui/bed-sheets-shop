@@ -1,5 +1,5 @@
-@use "variables.module.scss" as v;
-@import "./breakpoints.module.scss";
+@use 'variables.module.scss' as v;
+@import './breakpoints.module.scss';
 
 * {
   box-sizing: border-box;
@@ -55,6 +55,7 @@ h4,
 h5,
 h6,
 .text_big,
+.text_medium,
 input::placeholder {
   font-family: var(--font-orchidea-pro);
   text-transform: uppercase;
@@ -84,7 +85,8 @@ h3 {
   font-size: 1.5em;
   line-height: 2.2em;
 }
-h4 {
+h4,
+.text_medium {
   font-size: 1.1em;
   line-height: 1.6em;
 }
@@ -139,22 +141,22 @@ input {
     max-width: 320px;
   }
   @include xs {
-    max-width: 380px;
+    max-width: 370px;
   }
   @include sm {
-    max-width: map-get($breakpoints, "sm");
+    max-width: map-get($breakpoints, 'sm');
   }
   @include md {
-    max-width: calc(map-get($breakpoints, "md") - 5%);
+    max-width: calc(map-get($breakpoints, 'md') - 5%);
   }
   @include lg {
-    max-width: calc(map-get($breakpoints, "lg") - 5%);
+    max-width: calc(map-get($breakpoints, 'lg') - 5%);
   }
   @include xl {
-    max-width: calc(map-get($breakpoints, "xl") - 10%);
+    max-width: calc(map-get($breakpoints, 'xl') - 10%);
   }
   @include xxl {
-    max-width: calc(map-get($breakpoints, "xxl") - 10%);
+    max-width: calc(map-get($breakpoints, 'xxl') - 10%);
   }
 }
 
@@ -168,19 +170,19 @@ input {
     max-width: 320px;
   }
   @include sm {
-    max-width: map-get($breakpoints, "sm");
+    max-width: map-get($breakpoints, 'sm');
   }
   @include md {
-    max-width: map-get($breakpoints, "md");
+    max-width: map-get($breakpoints, 'md');
   }
   @include lg {
-    max-width: map-get($breakpoints, "lg");
+    max-width: map-get($breakpoints, 'lg');
   }
   @include xl {
-    max-width: map-get($breakpoints, "xl");
+    max-width: map-get($breakpoints, 'xl');
   }
   @include xxl {
-    max-width: map-get($breakpoints, "xxl");
+    max-width: map-get($breakpoints, 'xxl');
   }
 }
 
@@ -199,7 +201,8 @@ input {
   line-height: 0.9em;
 }
 .text_big,
-input::placeholder {
+input::placeholder,
+.text_medium {
   font-weight: 400;
   line-height: 1.5em;
   text-transform: uppercase;
@@ -208,7 +211,7 @@ input::placeholder {
   color: v.$color-primary;
 }
 .mobile-only {
-  @media screen and (max-width: map-get($breakpoints, "md")) {
+  @media screen and (max-width: map-get($breakpoints, 'md')) {
     display: block;
   }
   @include sm {
