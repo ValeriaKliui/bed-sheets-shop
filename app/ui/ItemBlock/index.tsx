@@ -9,11 +9,11 @@ import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
 import Image from "next/image";
 
+import Cards from "./Cards";
 import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
 import { CatalogItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import Cards from "./Cards";
 
 export default function ItemBlock({
   title,

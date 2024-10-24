@@ -21,7 +21,7 @@ import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-export default async function Page({ params: { id } }: PageProps) {
+export default async function ItemPage({ params: { id } }: PageProps) {
   const {
     title,
     article,
@@ -41,7 +41,7 @@ export default async function Page({ params: { id } }: PageProps) {
 
   return (
     <div>
-      <Gap direction="vertical" size="huge" className={styles.layout}>
+      <Gap direction="vertical" size="huge" className={'page_layout'}>
         <ItemBlock
           title={title}
           article={article}

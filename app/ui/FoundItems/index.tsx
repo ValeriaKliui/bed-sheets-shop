@@ -1,9 +1,9 @@
+import clsx from "clsx";
 import Link from "next/link";
 
 import FoundItem from "./FoundItem";
 import { FoundItemsProps } from "./interfaces";
 import styles from './styles.module.scss'
-import clsx from "clsx";
 
 export default function FoundItems({
   items,

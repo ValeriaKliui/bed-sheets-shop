@@ -1,8 +1,8 @@
 import { PageProps } from "@lib/constants/types";
 import { fetchAvailableSizes } from "@lib/data";
+import Gap from "@ui/Gap";
 
 import Sizes from "./Sizes";
-import Gap from "@ui/Gap";
 
 export default async function FilterSizes({
   searchParams,

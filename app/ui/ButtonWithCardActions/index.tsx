@@ -1,6 +1,6 @@
 "use client";
 
-import useCard from "@hooks/useCard";
+import useCard from "@hooks/useCart";
 import ButtonCard from "@ui/ButtonCard";
 
 import { ButtonWithCardActionsProps } from "./interfaces";

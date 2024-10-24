@@ -1,5 +1,6 @@
 export enum PATHS {
   '/' = 'Главная',
+  cart = 'Корзина',
   catalog = 'Каталог',
   sheet = 'Постельное белье',
   clothes = 'Одежда',

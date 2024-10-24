@@ -1,16 +1,16 @@
 "use client";
 
+import breakpoints from "@breakpoints.module.scss";
 import { PATHS, PATHS_KEYS } from "@lib/constants/paths";
+import getNumberFromPx from "@lib/utils/getNumberFromPx";
 import Gap from "@ui/Gap";
+import { useWindowSize } from "@uidotdev/usehooks";
+import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import breakpoints from "@breakpoints.module.scss";
 
 import { BreadcrumbsProps, LinksArray } from "./interfaces";
 import styles from "./styles.module.scss";
-import clsx from "clsx";
-import { useWindowSize } from "@uidotdev/usehooks";
-import getNumberFromPx from "@lib/utils/getNumberFromPx";
 
 export default function Breadcrumbs({ extraLinks, className }: BreadcrumbsProps) {
   const pathname = usePathname();

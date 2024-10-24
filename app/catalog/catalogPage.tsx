@@ -38,12 +38,12 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
     <Filters searchParams={searchParams} params={params} />
   );
 
-  const title =
+  const { title } =
     CATEGORIES.find(({ category: ctg }) => ctg === category)?.title ??
     "Популярные товары";
 
   return (
-    <div className={clsx(styles.layout, 'wrapper')}>
+    <div className={clsx(styles.layout, 'wrapper', 'page_layout')}>
       <SidebarFilters searchParams={searchParams} params={params} />
       <Gap className={styles.divider} direction="vertical" size="large" alignItems="flex-start">
         <Gap direction="vertical" alignItems="flex-start" className={styles.title}>

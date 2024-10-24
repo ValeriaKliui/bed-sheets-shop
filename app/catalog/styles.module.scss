@@ -4,7 +4,6 @@
 .layout {
   display: grid;
   gap: 4em;
-  padding: 4em 0;
 
   @include xxs {
     grid-template-columns: 1fr;

@@ -73,7 +73,7 @@ export const CATEGORIES = [
 
 export const CATEGORIES_LINKS = CATEGORIES.map((category) => ({
   ...category,
-  url: `catalog/${category.category}`,
+  url: `/catalog/${category.category}`,
 }));
 export const OTHER_LINKS = [
   { title: "Размерный гид", url: "" },

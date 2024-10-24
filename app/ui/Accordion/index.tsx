@@ -1,4 +1,5 @@
 import clsx from "clsx";
+
 import AccordionItem from "./AccordionItem";
 import { AccordionProps } from "./interfaces";
 import styles from './styles.module.scss'

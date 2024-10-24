@@ -2,6 +2,7 @@
 
 .container {
   position: absolute;
+  z-index: 1000;
   background: v.$color-text-light;
   width: 100%;
   box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);

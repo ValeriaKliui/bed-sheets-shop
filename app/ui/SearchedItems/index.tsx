@@ -1,9 +1,9 @@
 import { fetchItemsByTitle } from "@lib/fetchItemsByTitle";
+import Gap from "@ui/Gap";
 import Link from "next/link";
 
 import { SearchedItemsProps } from "./interfaces";
 import SearchedItem from "./SearchedItem";
-import Gap from "@ui/Gap";
 
 export default async function SearchedItems({
   search,

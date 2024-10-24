@@ -2,7 +2,7 @@
 
 import useMobileMenu from "@hooks/useMobileMenu";
 import defineHeaderTextColor from "@lib/utils/defineHeaderTextColor";
-import CardIcon from "@ui/CardIcon";
+import CartIcon from "@ui/CartIcon";
 import Gap from "@ui/Gap";
 import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
@@ -45,7 +45,7 @@ export default function Header() {
 
           <Gap size="large">
             <Gap size="medium">
-              <Link href={"catalog/search"} replace>
+              <Link href={"/catalog/search"} replace>
                 <Gap>
                   <SearchIcon fill={textColor} />
                   <h5 className={styles.notMobile}>Поиск</h5>
@@ -56,7 +56,9 @@ export default function Header() {
                 <h5 className={styles.notMobile}>Конструктор</h5>
               </Gap>
             </Gap>
-            <CardIcon />
+            <Link href='/cart'>
+              <CartIcon />
+            </Link>
           </Gap>
         </div>
       </div>
