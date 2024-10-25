@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from "react";
 
-import { CartInfo } from './interfaces';
+import { CartInfo } from "./interfaces";
 
 const getInitialCart = () => {
-  const savedCart = localStorage.getItem('cart');
+  const savedCart = localStorage.getItem("cart");
   if (savedCart) return JSON.parse(savedCart);
 };
 
@@ -16,8 +16,8 @@ export default function useCart() {
 
   useEffect(() => {
     window.dispatchEvent(
-      new StorageEvent('storage', {
-        key: 'cart',
+      new StorageEvent("storage", {
+        key: "cart",
         newValue: JSON.stringify(cartInfo),
       })
     );
@@ -33,7 +33,7 @@ export default function useCart() {
           [clickedID]: itemInCartAmount + 1,
         };
 
-        localStorage.setItem('cart', JSON.stringify(newCart));
+        localStorage.setItem("cart", JSON.stringify(newCart));
 
         return newCart;
       });
@@ -47,7 +47,7 @@ export default function useCart() {
       if (itemInCartAmount)
         setCartInfo((prev) => {
           const newCart = { ...prev, [id]: itemInCartAmount - 1 };
-          localStorage.setItem('cart', JSON.stringify(newCart));
+          localStorage.setItem("cart", JSON.stringify(newCart));
           return newCart;
         });
     },
@@ -65,7 +65,7 @@ export default function useCart() {
 
   const cleanCart = () => {
     setCartInfo({});
-    localStorage.removeItem('cart');
+    localStorage.removeItem("cart");
   };
 
   return {

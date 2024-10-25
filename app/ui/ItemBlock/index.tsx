@@ -3,13 +3,12 @@ import { CURRENCY } from "@lib/constants/catalogItems";
 import repeatArray from "@lib/utils/repeatArray";
 import Accordion from "@ui/Accordion";
 import Breadcrumbs from "@ui/Breadcrumbs";
-import ButtonWithCardActions from "@ui/ButtonWithCardActions";
+import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
 import Image from "next/image";
 
-import Cards from "./Cards";
 import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
 import { CatalogItemProps } from "./interfaces";
@@ -40,7 +39,12 @@ export default function ItemBlock({
       width={0}
       height={0}
       sizes="100vw"
-      style={{ width: "490px", height: "100%", objectFit: "cover", maxHeight: '90%' }}
+      style={{
+        width: "490px",
+        height: "100%",
+        objectFit: "cover",
+        maxHeight: "90%",
+      }}
       key={src}
       alt={""}
     />
@@ -59,11 +63,16 @@ export default function ItemBlock({
   return (
     <div className={clsx("wrapper", styles.layout)}>
       <VerticalSlider cards={cards} dots={dots} className={styles.slider} />
-      <Gap direction="vertical" size="medium" className={styles.topInfo} alignItems="flex-start">
+      <Gap
+        direction="vertical"
+        size="medium"
+        className={styles.topInfo}
+        alignItems="flex-start"
+      >
         <Breadcrumbs
           extraLinks={[{ title, path: `catalog/${category}/${id}` }]}
         />
-        <p className={clsx("text_big",)}>{title}</p>
+        <p className={clsx("text_big")}>{title}</p>
         <p className="text_secondary">Артикул: {article}</p>
       </Gap>
       <Gap direction="vertical" size="medium" className={styles.bottomInfo}>
@@ -74,7 +83,7 @@ export default function ItemBlock({
         <p className={clsx("text_big", "text_primary", styles.price)}>
           {price} {CURRENCY}
         </p>
-        <ButtonWithCardActions id={id} />
+        <ButtonWithCartActions id={id} />
         <Accordion items={characteristics} className={styles.characteristics} />
       </Gap>
     </div>

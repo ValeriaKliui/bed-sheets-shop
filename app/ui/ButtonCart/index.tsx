@@ -2,16 +2,16 @@ import Gap from "@ui/Gap";
 import clsx from "clsx";
 import { MouseEvent } from "react";
 
-import { ButtonCardProps } from "./interface";
+import { ButtonCartProps } from "./interface";
 import styles from "./styles.module.scss";
 
-export default function ButtonCard({
+export default function ButtonCart({
   children,
-  amountInCard,
+  amountInCart,
   onIncreaseClick,
   onDecreaseClick,
   className,
-}: ButtonCardProps) {
+}: ButtonCartProps) {
   const onClick = (e?: MouseEvent<HTMLDivElement>) => e?.preventDefault();
 
   return (
@@ -19,12 +19,12 @@ export default function ButtonCard({
       className={clsx(styles.container, className)}
       justifyContent={"center"}
     >
-      {amountInCard ? (
+      {amountInCart ? (
         <Gap onClick={onClick}>
           <button onClick={onDecreaseClick} className={styles.buttons}>
             -
           </button>
-          <p className={styles.amount}> {amountInCard}</p>
+          <p className={styles.amount}> {amountInCart}</p>
           <button onClick={onIncreaseClick} className={styles.buttons}>
             +
           </button>

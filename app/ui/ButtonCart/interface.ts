@@ -1,8 +1,8 @@
 import { ReactNode } from "react";
 
-export interface ButtonCardProps {
+export interface ButtonCartProps {
   children: ReactNode;
-  amountInCard: number;
+  amountInCart: number;
   onIncreaseClick: () => void;
   onDecreaseClick: () => void;
   className?: string;

@@ -14,11 +14,14 @@ const responsive: ResponsiveType = {
   desktop: {
     breakpoint: { max: 3000, min: 0 },
     items: 1,
-    
   },
 };
 
-export default function VerticalSlider({ cards, dots, className }: SliderProps) {
+export default function VerticalSlider({
+  cards,
+  dots,
+  className,
+}: SliderProps) {
   const CarouselCustom = () => (
     <Carousel
       arrows

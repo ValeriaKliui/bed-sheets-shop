@@ -7,25 +7,23 @@ import styles from "./styles.module.scss";
 const { primary } = colors;
 
 const getTotalAmount = () => {
-  const savedCart = localStorage.getItem('cart');
-  if (savedCart) {
-    const cartInfo = JSON.parse(savedCart) as { [key: string]: number };
-    const cartValues = Object.values(cartInfo);
-    return cartValues.reduce(
-      (acc: number, curr: number) => acc + curr,
-      0
-    )
-  };
+  if (typeof localStorage != "undefined") {
+    const savedCart = localStorage.getItem("cart");
+    if (savedCart) {
+      const cartInfo = JSON.parse(savedCart) as { [key: string]: number };
+      const cartValues = Object.values(cartInfo);
+      return cartValues.reduce((acc: number, curr: number) => acc + curr, 0);
+    }
+  }
   return 0;
 };
-
 
 export default function CartIcon() {
   const [totalAmount, setTotalAmount] = useState(getTotalAmount());
 
   useEffect(() => {
     window.addEventListener("storage", () => {
-      setTotalAmount(getTotalAmount())
+      setTotalAmount(getTotalAmount());
     });
   }, []);
 

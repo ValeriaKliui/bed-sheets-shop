@@ -1,6 +1,6 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
-import ButtonWithCardActions from "@ui/ButtonWithCardActions";
+import ButtonWithCardActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
