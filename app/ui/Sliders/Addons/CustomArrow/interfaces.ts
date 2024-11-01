@@ -1,6 +1,8 @@
 import { ArrowProps } from "react-multi-carousel";
 
+export type Direction = "left" | "right" | "top" | "bottom";
+
 export interface CustomArrowProps extends ArrowProps {
-  direction: "right" | "left";
-  className: string;
+  direction: Direction;
+  className?: string;
 }

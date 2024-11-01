@@ -2,26 +2,27 @@ import CircledIcon from "@ui/CircledIcon";
 import colors from "@variables.module.scss";
 import clsx from "clsx";
 
-import { CustomArrowProps } from "./interfaces";
+import { CustomArrowProps, Direction } from "./interfaces";
 import styles from "./styles.module.scss";
 
 const { lines } = colors;
 
-export default function CustomArrowTop({
+const getClassNameFromDirection = (direction: Direction) => {
+  return styles[direction];
+};
+
+export default function CustomArrow({
   onClick,
-  direction,
   className,
+  direction,
 }: CustomArrowProps) {
   return (
     <CircledIcon
       alt="move slider"
       src="/icons/arrow.svg"
       onClick={onClick}
-      imgClassName={clsx(
-        styles.arrow,
-        direction === "right" ? styles.rightArrow : styles.leftArrow,
-        className
-      )}
+      className={className}
+      imgClassName={clsx(getClassNameFromDirection(direction))}
       borderColor={lines}
     />
   );

@@ -1,3 +1,36 @@
+@import "../../breakpoints.module.scss";
+
 .container {
-  justify-content: center !important;
+  @include xxs {
+    display: grid;
+    gap: 0 2em;
+    grid-template-areas:
+      "image title"
+      "text text";
+    grid-template-rows: repeat(2, 1fr);
+    // padding: 4em 0;
+  }
+  @include sm {
+    grid-template-areas:
+      "image title"
+      "image text";
+  }
+}
+.image {
+  width: 190px;
+  height: 100%;
+  object-fit: cover;
+  grid-area: image;
+}
+.title {
+  grid-area: title;
+  @include xxs {
+    align-self: center;
+  }
+  @include sm {
+    align-self: flex-end;
+  }
+}
+.text {
+  grid-area: text;
 }

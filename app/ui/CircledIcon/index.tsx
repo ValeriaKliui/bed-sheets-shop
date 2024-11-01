@@ -24,7 +24,7 @@ export default function CircledIcon({
         width={20}
         height={20}
         alt={alt}
-        className={clsx(imgClassName, borderColor && styles.bordered)}
+        className={clsx(borderColor && styles.bordered, imgClassName)}
         style={{ border: borderColor && `1px solid ${borderColor}` }}
       />
     </div>

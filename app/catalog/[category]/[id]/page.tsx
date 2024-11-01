@@ -40,90 +40,88 @@ export default async function ItemPage({ params: { id } }: PageProps) {
   ));
 
   return (
-    <div>
-      <Gap direction="vertical" size="huge" className={'page_layout'}>
-        <ItemBlock
-          title={title}
-          article={article}
-          price={price}
-          id={itemID}
-          category={category}
-          sizes={sizes}
-          photo={photo}
+    <Gap direction="vertical" size="huge" className={"page_layout"}>
+      <ItemBlock
+        title={title}
+        article={article}
+        price={price}
+        id={itemID}
+        category={category}
+        sizes={sizes}
+        photo={photo}
+      />
+      <Slider
+        cards={sliderCards.map(({ src, title }, index) => (
+          <PhotoCard info={{ src, title }} key={index} />
+        ))}
+        overflowed
+      />
+      <VerticalSlider cards={persons} isTextSlider />
+      <div className={clsx("wrapper_small", styles.info)}>
+        <p>
+          При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера и
+          передаёте ему сумму за товар в рублях. Курьер предоставляет товар,
+          который можно осмотреть на предмет повреждений, соответствие указанным
+          условиям. Покупатель подписывает товаросопроводительные документы,
+          вносит денежные средства и получает чек. Также оплата наличными
+          доступна при самовывозе из магазина, оплаты по почте или использовании
+          постамата.
+        </p>
+      </div>
+      <InfoPicBlock>
+        <ConstructorPreview
+          title="С этим товаром покупают"
+          imageSrc={"/images/room.png"}
+          buttonLink=""
         />
-        <Slider
-          cards={sliderCards.map(({ src, title }, index) => (
-            <PhotoCard info={{ src, title }} key={index} />
-          ))}
-          overflowed
+        <Catalog<CardShortProps>
+          fetch={fetchLatestItems}
+          Card={({ id, title, category, photo }) => (
+            <CardShort
+              id={id}
+              title={title}
+              category={category}
+              photo={photo}
+            />
+          )}
+          dimensions={{
+            xs: { slider: true },
+            md: {
+              columns: 2,
+            },
+          }}
         />
-        <VerticalSlider cards={persons} />
-        <div className={clsx("wrapper_small", styles.info)}>
-          <p>
-            При выборе варианта оплаты наличными, вы дожидаетесь приезда курьера
-            и передаёте ему сумму за товар в рублях. Курьер предоставляет товар,
-            который можно осмотреть на предмет повреждений, соответствие
-            указанным условиям. Покупатель подписывает товаросопроводительные
-            документы, вносит денежные средства и получает чек. Также оплата
-            наличными доступна при самовывозе из магазина, оплаты по почте или
-            использовании постамата.
-          </p>
-        </div>
-        <InfoPicBlock>
-          <ConstructorPreview
-            title="С этим товаром покупают"
-            imageSrc={"/images/room.png"}
-            buttonLink=""
-          />
-          <Catalog<CardShortProps>
-            fetch={fetchLatestItems}
-            Card={({ id, title, category, photo }) => (
-              <CardShort
-                id={id}
+      </InfoPicBlock>
+      <Gap direction="vertical" className="wrapper">
+        <h5>Другие товары</h5>
+        <Catalog<CardProps>
+          fetch={fetchLatestItems}
+          dimensions={{ xs: { slider: true }, sm: { columns: 4 } }}
+          Card={({ category, id, title, price, photo, article, info }) => (
+            <Link href={`/catalog/${category}/${id}`} key={id}>
+              <Card
                 title={title}
-                category={category}
+                price={price}
                 photo={photo}
+                article={article}
+                info={info}
+                id={id}
+                actionButton={
+                  <Image
+                    src="/icons/logo.svg"
+                    alt="to catalog"
+                    width={0}
+                    height={0}
+                    priority
+                    className={styles.icon}
+                  />
+                }
               />
-            )}
-            dimensions={{
-              xs: { slider: true },
-              md: {
-                columns: 2,
-              },
-            }}
-          />
-        </InfoPicBlock>
-        <Gap direction="vertical" className="wrapper">
-          <h5>Другие товары</h5>
-          <Catalog<CardProps>
-            fetch={fetchLatestItems}
-            dimensions={{ xs: { slider: true }, sm: { columns: 4 } }}
-            Card={({ category, id, title, price, photo, article, info }) => (
-              <Link href={`/catalog/${category}/${id}`} key={id}>
-                <Card
-                  title={title}
-                  price={price}
-                  photo={photo}
-                  article={article}
-                  info={info}
-                  id={id}
-                  actionButton={
-                    <Image
-                      src="/icons/logo.svg"
-                      alt="to catalog"
-                      width={0}
-                      height={0}
-                      priority
-                      className={styles.icon}
-                    />
-                  }
-                />
-              </Link>
-            )}
-          />
-        </Gap>
-        <RecentItems />
+            </Link>
+          )}
+        />
       </Gap>
-    </div>
+      <RecentItems />
+    </Gap>
   );
 }

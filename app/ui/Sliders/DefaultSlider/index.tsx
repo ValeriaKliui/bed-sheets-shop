@@ -5,7 +5,7 @@ import "react-multi-carousel/lib/styles.css";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowBottom from "../Addons/CustomArrowBottom";
+import CustomArrowBottom from "../Addons/CustomArrow";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
 

@@ -5,10 +5,10 @@ import "react-multi-carousel/lib/styles.css";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowTop from "../Addons/CustomArrowTop";
 import CustomDot from "../Addons/CustomDot";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
+import CustomArrow from "../Addons/CustomArrow";
 
 const responsive: ResponsiveType = {
   desktop: {
@@ -21,6 +21,7 @@ export default function VerticalSlider({
   cards,
   dots,
   className,
+  isTextSlider,
 }: SliderProps) {
   const CarouselCustom = () => (
     <Carousel
@@ -31,16 +32,19 @@ export default function VerticalSlider({
       responsive={responsive}
       showDots
       slidesToSlide={1}
-      customRightArrow={
-        <CustomArrowTop
-          direction="right"
-          className={clsx(!dots && styles.centeredDot)}
+      customLeftArrow={
+        <CustomArrow
+          className={clsx(
+            !isTextSlider ? styles.defArrows : styles.textArrows,
+            isTextSlider ? styles.left : styles.top
+          )}
+          direction="left"
         />
       }
-      customLeftArrow={
-        <CustomArrowTop
-          direction="left"
-          className={clsx(!dots && styles.centeredDot)}
+      customRightArrow={
+        <CustomArrow
+          className={clsx(!isTextSlider ? styles.defArrows : styles.textArrows)}
+          direction="right"
         />
       }
       dotListClass={styles.dots}

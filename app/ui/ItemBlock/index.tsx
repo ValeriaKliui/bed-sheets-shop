@@ -13,6 +13,8 @@ import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
 import { CatalogItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
+import ItemSliderCard from "./ItemSliderCard";
+import DotImage from "./DotImage";
 
 export default function ItemBlock({
   title,
@@ -34,31 +36,9 @@ export default function ItemBlock({
   cardsSrc.unshift({ src: photo });
 
   const cards = cardsSrc.map(({ src }) => (
-    <Image
-      src={src}
-      width={0}
-      height={0}
-      sizes="100vw"
-      style={{
-        width: "490px",
-        height: "100%",
-        objectFit: "cover",
-        maxHeight: "90%",
-      }}
-      key={src}
-      alt={""}
-    />
+    <ItemSliderCard src={src} key={src} />
   ));
-  const dots = cardsSrc.map(({ src }) => (
-    <Image
-      key={src}
-      src={src}
-      width={55}
-      height={55}
-      alt=""
-      style={{ display: "block" }}
-    />
-  ));
+  const dots = cardsSrc.map(({ src }) => <DotImage src={src} key={src} />);
 
   return (
     <div className={clsx("wrapper", styles.layout)}>
@@ -75,7 +55,7 @@ export default function ItemBlock({
         <p className={clsx("text_big")}>{title}</p>
         <p className="text_secondary">Артикул: {article}</p>
       </Gap>
-      <Gap direction="vertical" size="medium" className={styles.bottomInfo}>
+      <Gap direction="vertical" size="medium" className={styles.info_container}>
         <p>
           Наволочка двухсторонняя: светло-серый сатин и шелк с узором
           &quot;волшебный лес&quot; 50*70 см

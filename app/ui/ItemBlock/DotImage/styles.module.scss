@@ -1,0 +1,9 @@
+@import "../../../breakpoints.module.scss";
+
+.image {
+  display: block;
+  @include xxs {
+    width: 40px;
+    height: 40px;
+  }
+}
