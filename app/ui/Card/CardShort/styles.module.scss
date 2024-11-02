@@ -1,12 +1,25 @@
+@import '../../../breakpoints.module.scss';
+
 .card {
   display: grid;
-  grid-template-columns: 1fr 1fr;
   padding: 1em;
   align-items: center;
   gap: 1em;
   justify-items: center;
   text-align: unset;
+  @include xxs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include sm {
+    grid-template-columns: 1fr;
+  }
 }
 .title {
-  justify-self: flex-start;
+  @include xxs {
+    justify-self: flex-start;
+  }
+  @include sm {
+    justify-self: center;
+    text-align: center;
+  }
 }

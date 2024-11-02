@@ -1,4 +1,4 @@
-@import "../../../breakpoints.module.scss";
+@import '../../../breakpoints.module.scss';
 
 .container {
   li {
@@ -15,10 +15,17 @@
     gap: 0.8em;
     top: 0;
   }
+  @include md {
+    bottom: 0;
+    top: unset;
+  }
 }
 .inter {
   @include sm {
     padding: 0 0 0 60px;
+  }
+  @include md {
+    padding: 0 0 0 70px;
   }
 }
 

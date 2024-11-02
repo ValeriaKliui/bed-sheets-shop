@@ -7,14 +7,13 @@ import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
-import Image from "next/image";
 
 import CharacteristicBottom from "./CharacteristicBottom";
 import CharacteristicHeader from "./CharacteristicHeader";
-import { CatalogItemProps } from "./interfaces";
-import styles from "./styles.module.scss";
-import ItemSliderCard from "./ItemSliderCard";
 import DotImage from "./DotImage";
+import { CatalogItemProps } from "./interfaces";
+import ItemSliderCard from "./ItemSliderCard";
+import styles from "./styles.module.scss";
 
 export default function ItemBlock({
   title,

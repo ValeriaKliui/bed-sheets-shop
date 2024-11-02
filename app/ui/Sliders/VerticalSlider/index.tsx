@@ -5,10 +5,10 @@ import "react-multi-carousel/lib/styles.css";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
+import CustomArrow from "../Addons/CustomArrow";
 import CustomDot from "../Addons/CustomDot";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
-import CustomArrow from "../Addons/CustomArrow";
 
 const responsive: ResponsiveType = {
   desktop: {

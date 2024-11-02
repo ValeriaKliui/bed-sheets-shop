@@ -1,14 +1,7 @@
-@import "../../breakpoints.module.scss";
+@import '../../breakpoints.module.scss';
 
 .container {
-  display: grid;
-
-  @include xxs {
-    grid-template-columns: repeat(2, minmax(0, 360px));
-    grid-template-rows: repeat(2, 1fr);
-  }
-  @include md {
-    grid-template-columns: repeat(4, minmax(0, 360px));
-    grid-template-rows: unset;
+  @include sm {
+    align-items: flex-start !important;
   }
 }

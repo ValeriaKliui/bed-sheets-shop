@@ -1,4 +1,11 @@
+@import '../../../breakpoints.module.scss';
+
 .info {
   max-width: 40em;
   text-align: start;
+}
+.others {
+  @include sm {
+    align-items: flex-start !important;
+  }
 }

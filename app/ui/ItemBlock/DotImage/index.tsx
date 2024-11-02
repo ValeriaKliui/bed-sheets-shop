@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import { DotImageProps } from "./interfaces";
 import styles from "./styles.module.scss";
 

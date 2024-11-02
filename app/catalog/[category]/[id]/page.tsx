@@ -92,7 +92,7 @@ export default async function ItemPage({ params: { id } }: PageProps) {
           }}
         />
       </InfoPicBlock>
-      <Gap direction="vertical" className="wrapper">
+      <Gap direction="vertical" className={clsx("wrapper", styles.others)}>
         <h5>Другие товары</h5>
         <Catalog<CardProps>
           fetch={fetchLatestItems}

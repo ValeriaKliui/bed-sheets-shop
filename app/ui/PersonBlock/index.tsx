@@ -1,9 +1,8 @@
-import Gap from "@ui/Gap";
+import clsx from "clsx";
 import Image from "next/image";
 
 import { PersonBlockProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import clsx from "clsx";
 
 export default function PersonBlock({ src, title, text }: PersonBlockProps) {
   return (

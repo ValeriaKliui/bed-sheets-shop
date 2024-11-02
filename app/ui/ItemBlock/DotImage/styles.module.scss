@@ -1,9 +1,13 @@
-@import "../../../breakpoints.module.scss";
+@import '../../../breakpoints.module.scss';
 
 .image {
   display: block;
   @include xxs {
     width: 40px;
     height: 40px;
+  }
+  @include sm {
+    width: 50px;
+    height: 50px;
   }
 }
