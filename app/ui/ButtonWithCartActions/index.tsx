@@ -9,9 +9,9 @@ export default function ButtonWithCartActions({
   id,
   className,
 }: ButtonWithCartActionsProps) {
-  const { onIncreaseInCart, getAmountInCart, onDecreaseInCart } = useCart();
+  const { addToCart, getAmountInCart, onDecreaseInCart } = useCart();
 
-  const onIncreaseClick = () => onIncreaseInCart(id);
+  const onIncreaseClick = () => addToCart(id, 'xs');
   const onDecreaseClick = () => onDecreaseInCart(id);
 
   return (

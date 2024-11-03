@@ -1,8 +1,9 @@
 import Image from "next/image";
 
+import { ItemSliderCardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function ItemSliderCard({ src }) {
+export default function ItemSliderCard({ src }: ItemSliderCardProps) {
   return (
     <Image
       src={src}
