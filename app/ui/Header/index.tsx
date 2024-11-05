@@ -8,6 +8,7 @@ import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
 import MobileMenu from "@ui/MobileMenu";
+import NoSSR from "@ui/NoSSR";
 import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -25,8 +26,8 @@ export default function Header() {
       className={clsx(styles.container, !isHomePage && styles.border)}
       style={{ color: textColor }}
     >
-      <div className={clsx('wrapper', styles.header_wrapper)}>
-        <div className={clsx(styles.header,)}>
+      <div className={clsx("wrapper", styles.header_wrapper)}>
+        <div className={clsx(styles.header)}>
           <Gap size="large">
             <MobileMenu
               color={textColor}
@@ -56,14 +57,14 @@ export default function Header() {
                 <h5 className={styles.notMobile}>Конструктор</h5>
               </Gap>
             </Gap>
-            <Link href='/cart'>
-              <CartIcon />
+            <Link href="/cart">
+              <NoSSR>
+                <CartIcon />
+              </NoSSR>
             </Link>
           </Gap>
         </div>
       </div>
-
-
     </header>
   );
 }

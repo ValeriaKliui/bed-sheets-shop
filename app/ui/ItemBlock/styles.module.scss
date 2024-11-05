@@ -36,14 +36,7 @@
     order: unset;
   }
 }
-.characteristics {
-  @include xxs {
-    order: -1;
-  }
-  @include sm {
-    order: unset;
-  }
-}
+
 .image {
   width: 100%;
   height: 654px;

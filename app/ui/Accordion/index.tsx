@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 import AccordionItem from "./AccordionItem";
 import { AccordionProps } from "./interfaces";
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
 export default function Accordion({ items, className }: AccordionProps) {
   return (

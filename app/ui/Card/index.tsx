@@ -1,6 +1,6 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
-import ButtonWithCardActions from "@ui/ButtonWithCartActions";
+import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
@@ -45,7 +45,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           <h4>
             {priceNum.toFixed(1)} {CURRENCY}
           </h4>
-          <ButtonWithCardActions id={id} className={styles.button} />
+          <ButtonWithCartActions id={id} className={styles.button} />
         </Gap>
       </Gap>
     );

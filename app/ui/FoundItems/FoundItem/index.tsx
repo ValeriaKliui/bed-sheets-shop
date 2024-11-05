@@ -12,13 +12,7 @@ export default function FoundItem({
 }: Pick<CatalogItem, "title" | "photo" | "price">) {
   return (
     <Gap className={styles.container}>
-      <Image
-        src={photo}
-        alt={title}
-        width={50}
-        height={50}
-        style={{ objectFit: "cover" }}
-      />{" "}
+      <Image src={photo} alt={title} className={styles.image} />
       <p>{title}</p>
       <p>
         {price} {CURRENCY}

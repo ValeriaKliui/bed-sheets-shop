@@ -8,3 +8,6 @@
 .choosen {
   border: 1px solid v.$color-text;
 }
+.input[type="radio"] {
+  display: none;
+}

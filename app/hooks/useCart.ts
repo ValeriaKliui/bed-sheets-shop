@@ -1,123 +1,98 @@
-import { CartInfo } from '@lib/redux/features/cart/interfaces';
-import { useCallback, useEffect, useState } from 'react';
+import { selectCartInfo } from "@lib/redux/features/cart/cartSelectors";
+import { updateCart as updateCartInStore } from "@lib/redux/features/cart/cartSlice";
+import loopThroughObject from "@lib/utils/loopThroughObject";
+import { useCallback, useEffect } from "react";
 
-// const getInitialCart = () => {
-//   const savedCart = localStorage.getItem('cart');
-//   if (savedCart) return JSON.parse(savedCart);
-// };
+import { useAppDispatch, useAppSelector } from "./hooks";
 
 export default function useCart() {
-  const [cartInfo, setCartInfo] = useState<CartInfo>({});
-
-  const addToCart = useCallback(
-    (clickedID: string, size?: string) => {
-      console.log(cartInfo?.[clickedID], size);
-      if (size) {
-        const itemInCartSize =
-          cartInfo && cartInfo?.[clickedID]?.[size];
-        console.log(
-          'itemInCartSize',
-          cartInfo,
-          cartInfo?.[clickedID],
-          size,
-          itemInCartSize
-        );
-        setCartInfo((prev) => ({
-          ...prev,
-          [clickedID]: {
-            [size]: itemInCartSize ? itemInCartSize + 1 : 1,
-          },
-        }));
-
-        //   {[clickedID]: {
-        //   [size]: itemInCartSize? itemInCartSize+1: 1
-        // }}))
-      }
-
-      // ;
-
-      // if (itemInCart) {
-      //   const isSizeInCart =size&& itemInCart[size]
-      //   setCartInfo((prev) => ({
-      //     ...prev,
-      //     [clickedID]: isSizeInCart ?
-      //   }));
-      // } else {
-      //   setCartInfo((prev) => ({
-      //     ...prev,
-      //     [clickedID]: size ? { [size]: 1 } : 1,
-      //   }));
-      // }
-
-      // if (itemInCart) {
-      //   if (!size) console.log(itemInCart);
-      // } else
-      //
-    },
-    [cartInfo]
-  );
-  console.log(cartInfo);
-
-  // useEffect(() => {
-  //   setCartInfo(getInitialCart());
-  // }, []);
+  const dispatch = useAppDispatch();
+  const cartInfo = useAppSelector(selectCartInfo);
 
   useEffect(() => {
-    window.dispatchEvent(
-      new StorageEvent('storage', {
-        key: 'cart',
-        newValue: JSON.stringify(cartInfo),
-      })
-    );
+    localStorage.setItem("cart", JSON.stringify(cartInfo));
   }, [cartInfo]);
 
-  const onIncreaseInCart = useCallback(
-    (clickedID: string) => {
-      const itemInCartAmount = cartInfo?.[clickedID] ?? 0;
+  const updateCart = (
+    clickedID: string,
+    size?: string,
+    isIncreasing?: boolean
+  ) => {
+    if (size) {
+      const itemInCartSize = cartInfo && cartInfo?.[clickedID]?.[size];
+      const prevSize = cartInfo[clickedID];
 
-      setCartInfo((prev) => {
-        const newCart = {
-          ...prev,
-          [clickedID]: itemInCartAmount + 1,
-        };
+      dispatch(
+        updateCartInStore({
+          ...cartInfo,
+          [clickedID]: {
+            ...prevSize,
+            [size]: itemInCartSize
+              ? itemInCartSize + (isIncreasing ? 1 : -1)
+              : 1,
+          },
+        })
+      );
+    } else {
+      const itemInCartAmount = cartInfo?.[clickedID];
 
-        localStorage.setItem('cart', JSON.stringify(newCart));
+      dispatch(
+        updateCartInStore({
+          ...cartInfo,
+          [clickedID]: itemInCartAmount
+            ? itemInCartAmount + (isIncreasing ? 1 : -1)
+            : 1,
+        })
+      );
+    }
+  };
 
-        return newCart;
-      });
-    },
-    [cartInfo]
-  );
+  const addToCart = (clickedID: string, size?: string) =>
+    updateCart(clickedID, size, true);
 
-  const onDecreaseInCart = useCallback(
+  const removeFromCart = (clickedID: string, size?: string) =>
+    updateCart(clickedID, size);
+
+  const getAmountInCart = useCallback(
     (id: string) => {
       const itemInCartAmount = cartInfo?.[id] ?? 0;
-      if (itemInCartAmount)
-        setCartInfo((prev) => {
-          const newCart = { ...prev, [id]: itemInCartAmount - 1 };
-          localStorage.setItem('cart', JSON.stringify(newCart));
-          return newCart;
-        });
+      return itemInCartAmount;
     },
     [cartInfo]
   );
 
-  const getAmountInCart = useCallback(() => {
-    // const itemInCartAmount = cartInfo?.[id] ?? 0;
-    // return itemInCartAmount;
-  }, []);
+  const getTotalAmountInCart = useCallback(() => {
+    const cartEntries = Object.entries(cartInfo);
+    console.log(cartEntries);
+
+    return cartEntries.reduce((acc, curr) => {
+      if (typeof curr[1] === "number") return (acc += curr[1]);
+      else return (acc += loopThroughObject(curr[1]));
+    }, 0);
+  }, [cartInfo]);
+
+  const getAmountInCartByParams = useCallback(
+    (id: string, { size }) => {
+      const item = cartInfo[id];
+
+      if (!item) return;
+
+      if (typeof item === "number") return cartInfo[id];
+      else return item[size];
+    },
+    [cartInfo]
+  );
 
   const cleanCart = () => {
-    setCartInfo({});
-    localStorage.removeItem('cart');
+    dispatch(updateCartInStore({}));
   };
 
   return {
-    onIncreaseInCart,
+    removeFromCart,
     getAmountInCart,
-    onDecreaseInCart,
-    cartInfo,
-    cleanCart,
+    getTotalAmountInCart,
     addToCart,
+    cleanCart,
+    getAmountInCartByParams,
   };
 }

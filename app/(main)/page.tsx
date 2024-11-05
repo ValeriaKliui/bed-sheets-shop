@@ -36,7 +36,16 @@ export default async function Home() {
           <Catalog<CardProps>
             fetch={fetchLatestItems}
             dimensions={{ xs: { columns: 2 } }}
-            Card={({ category, id, title, price, photo, article, info }) => (
+            Card={({
+              category,
+              id,
+              title,
+              price,
+              photo,
+              article,
+              info,
+              sizes,
+            }) => (
               <Link href={`/catalog/${category}/${id}`} key={id}>
                 <Card
                   title={title}
@@ -45,6 +54,7 @@ export default async function Home() {
                   article={article}
                   info={info}
                   id={id}
+                  sizes={sizes}
                   actionButton={
                     <Image
                       src="/icons/logo.svg"

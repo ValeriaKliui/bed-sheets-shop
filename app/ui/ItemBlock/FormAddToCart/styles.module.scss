@@ -1,0 +1,21 @@
+@import "../../../breakpoints.module.scss";
+
+.form {
+  width: 100%;
+}
+.button {
+  @include xxs {
+    align-self: center;
+  }
+  @include sm {
+    align-self: flex-start;
+  }
+}
+.characteristics {
+  @include xxs {
+    order: -1;
+  }
+  @include sm {
+    order: unset;
+  }
+}

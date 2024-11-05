@@ -34,6 +34,7 @@
     "eslint-plugin-unused-imports": "^4.1.4",
     "glob": "^11.0.0",
     "husky": "^9.1.5",
+    "react-hook-form": "^7.53.1",
     "react-image-size": "^2.4.0",
     "react-multi-carousel": "^2.8.5",
     "sass": "^1.77.8",

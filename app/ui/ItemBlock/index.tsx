@@ -1,16 +1,13 @@
 import { SLIDER_VERTICAL } from "@lib/constants";
 import { CURRENCY } from "@lib/constants/catalogItems";
 import repeatArray from "@lib/utils/repeatArray";
-import Accordion from "@ui/Accordion";
 import Breadcrumbs from "@ui/Breadcrumbs";
-import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import VerticalSlider from "@ui/Sliders/VerticalSlider";
 import clsx from "clsx";
 
-import CharacteristicBottom from "./CharacteristicBottom";
-import CharacteristicHeader from "./CharacteristicHeader";
 import DotImage from "./DotImage";
+import FormAddToCart from "./FormAddToCart";
 import { CatalogItemProps } from "./interfaces";
 import ItemSliderCard from "./ItemSliderCard";
 import styles from "./styles.module.scss";
@@ -24,13 +21,6 @@ export default function ItemBlock({
   sizes,
   photo,
 }: CatalogItemProps) {
-  const characteristics = [
-    {
-      header: <CharacteristicHeader title="Размер" />,
-      bottom: <CharacteristicBottom options={sizes} />,
-    },
-  ];
-
   const cardsSrc = repeatArray(SLIDER_VERTICAL, 2);
   cardsSrc.unshift({ src: photo });
 
@@ -62,8 +52,7 @@ export default function ItemBlock({
         <p className={clsx("text_big", "text_primary", styles.price)}>
           {price} {CURRENCY}
         </p>
-        <ButtonWithCartActions id={id} />
-        <Accordion items={characteristics} className={styles.characteristics} />
+        <FormAddToCart sizes={sizes} id={id} />
       </Gap>
     </div>
   );

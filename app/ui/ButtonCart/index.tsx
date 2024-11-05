@@ -21,11 +21,19 @@ export default function ButtonCart({
     >
       {amountInCart ? (
         <Gap onClick={onClick}>
-          <button onClick={onDecreaseClick} className={styles.buttons}>
+          <button
+            onClick={onDecreaseClick}
+            className={styles.buttons}
+            type="submit"
+          >
             -
           </button>
           <p className={styles.amount}> {amountInCart}</p>
-          <button onClick={onIncreaseClick} className={styles.buttons}>
+          <button
+            onClick={onIncreaseClick}
+            className={styles.buttons}
+            type="submit"
+          >
             +
           </button>
         </Gap>
@@ -33,7 +41,7 @@ export default function ButtonCart({
         false
       )}
 
-      <button className={styles.buttons} onClick={onIncreaseClick}>
+      <button className={styles.buttons} type="submit">
         {children}
       </button>
     </Gap>

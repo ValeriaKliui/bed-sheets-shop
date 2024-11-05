@@ -11,6 +11,7 @@ $color-link: #4e76c6;
 $color-icon: #2c2d2e;
 $color-icon-secondary: #bfc0c7;
 $color-divider: #eceae7;
+$color-error: #ff0040;
 
 $transition: all 0.2s ease-in-out;
 
@@ -20,4 +21,5 @@ $transition: all 0.2s ease-in-out;
   text_light: #{$color-text-light};
   lines: #{$light-lines};
   bg: #{$color-bg};
+  error: #{$color-error};
 }

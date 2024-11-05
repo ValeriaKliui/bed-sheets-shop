@@ -1,10 +1,13 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice } from "@reduxjs/toolkit";
 
-import { cartState } from './interfaces';
+import { cartState } from "./interfaces";
 
 const getInitialCart = () => {
-  const savedCart = localStorage.getItem('cart');
-  if (savedCart) return JSON.parse(savedCart);
+  if (typeof localStorage !== "undefined") {
+    const savedCart = localStorage.getItem("cart");
+    if (savedCart) return JSON.parse(savedCart);
+  }
+
   return {};
 };
 
@@ -13,11 +16,15 @@ const initialState: cartState = {
 };
 
 export const cartSlice = createSlice({
-  name: 'cart',
+  name: "cart",
   initialState,
   reducers: {
-    addToCart: () => {},
+    updateCart: (state, action) => {
+      state.cartInfo = action.payload;
+    },
   },
 });
+
+export const { updateCart } = cartSlice.actions;
 
 export default cartSlice.reducer;
