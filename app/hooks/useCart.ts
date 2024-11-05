@@ -1,16 +1,17 @@
-import { selectCartInfo } from "@lib/redux/features/cart/cartSelectors";
-import { updateCart as updateCartInStore } from "@lib/redux/features/cart/cartSlice";
-import loopThroughObject from "@lib/utils/loopThroughObject";
-import { useCallback, useEffect } from "react";
+import { selectCartInfo } from '@lib/redux/features/cart/cartSelectors';
+import { updateCart as updateCartInStore } from '@lib/redux/features/cart/cartSlice';
+import { ItemsWithSize } from '@lib/redux/features/cart/interfaces';
+import loopThroughObject from '@lib/utils/loopThroughObject';
+import { useCallback, useEffect } from 'react';
 
-import { useAppDispatch, useAppSelector } from "./hooks";
+import { useAppDispatch, useAppSelector } from './hooks';
 
 export default function useCart() {
   const dispatch = useAppDispatch();
   const cartInfo = useAppSelector(selectCartInfo);
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cartInfo));
+    localStorage.setItem('cart', JSON.stringify(cartInfo));
   }, [cartInfo]);
 
   const updateCart = (
@@ -18,9 +19,10 @@ export default function useCart() {
     size?: string,
     isIncreasing?: boolean
   ) => {
-    if (size) {
-      const itemInCartSize = cartInfo && cartInfo?.[clickedID]?.[size];
-      const prevSize = cartInfo[clickedID];
+    const item = cartInfo?.[clickedID];
+    if (size && typeof item !== 'number') {
+      const itemInCartSize = cartInfo && item?.[size];
+      const prevSize = cartInfo[clickedID] as ItemsWithSize;
 
       dispatch(
         updateCartInStore({
@@ -34,7 +36,7 @@ export default function useCart() {
         })
       );
     } else {
-      const itemInCartAmount = cartInfo?.[clickedID];
+      const itemInCartAmount = item as number;
 
       dispatch(
         updateCartInStore({
@@ -66,19 +68,19 @@ export default function useCart() {
     console.log(cartEntries);
 
     return cartEntries.reduce((acc, curr) => {
-      if (typeof curr[1] === "number") return (acc += curr[1]);
+      if (typeof curr[1] === 'number') return (acc += curr[1]);
       else return (acc += loopThroughObject(curr[1]));
     }, 0);
   }, [cartInfo]);
 
   const getAmountInCartByParams = useCallback(
-    (id: string, { size }) => {
+    (id: string, { size }: { size?: string }) => {
       const item = cartInfo[id];
 
-      if (!item) return;
+      if (!item) return 0;
 
-      if (typeof item === "number") return cartInfo[id];
-      else return item[size];
+      if (typeof item === 'number') return cartInfo[id] as number;
+      else return size ? item[size] : 0;
     },
     [cartInfo]
   );

@@ -5,7 +5,7 @@ export type ItemsWithSize = {
 export type ItemsNoSize = number;
 
 export interface CartInfo {
-  [id: string]: ItemsWithSize | ItemsNoSize;
+  [id: string]: number | ItemsWithSize;
 }
 
 export interface cartState {
