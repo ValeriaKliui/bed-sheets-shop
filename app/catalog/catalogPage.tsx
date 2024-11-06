@@ -1,6 +1,6 @@
 import { CATEGORIES } from "@lib/constants";
 import { PageProps } from "@lib/constants/types";
-import { fetchCatalogPages, fetchFilteredCatalogItems } from "@lib/data";
+import { fetchCatalogPages, fetchFilteredCatalogItems } from "@lib/fetch";
 import Breadcrumbs from "@ui/Breadcrumbs";
 import Card from "@ui/Card";
 import { CardProps } from "@ui/Card/interfaces";

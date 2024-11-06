@@ -1,13 +1,8 @@
 import { sql } from "@vercel/postgres";
 
 import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
-import { Availability, CatalogItem } from "./constants/types";
-import {
-  FetchByIDParams,
-  FilterParams,
-  Prices,
-  SizesArray,
-} from "./interfaces";
+import { Availability } from "./constants/types";
+import { FilterParams, Prices, SizesArray } from "./interfaces";
 import getAvailabilityParam from "./utils/getAvailabilityParam";
 import getDefaultField from "./utils/getDefaulttField";
 import getDefaultTitle from "./utils/getDefaultTitle";
@@ -153,19 +148,5 @@ export async function fetchAvailableSizes({
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch the prices.");
-  }
-}
-
-export async function fetchItemByID({ id }: FetchByIDParams) {
-  try {
-    const item = await sql.query<CatalogItem>(
-      `SELECT *
-       FROM ${DB_ITEMS_NAME}
-       WHERE id = '${id}'`
-    );
-    return item.rows[0];
-  } catch (error) {
-    console.error("Database Error:", error);
-    throw new Error("Failed to fetch catalog item.");
   }
 }

@@ -1,6 +1,7 @@
 import { SLIDER_ITEM, SLIDER_PERSONS } from "@lib/constants";
 import { PageProps } from "@lib/constants/types";
-import { fetchItemByID, fetchLatestCatalogItems } from "@lib/data";
+import { fetchLatestCatalogItems } from "@lib/fetch";
+import { fetchItemsByIDs } from "@lib/fetchItemsByIDs";
 import repeatArray from "@lib/utils/repeatArray";
 import Card from "@ui/Card";
 import CardShort from "@ui/Card/CardShort";
@@ -22,15 +23,8 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export default async function ItemPage({ params: { id } }: PageProps) {
-  const {
-    title,
-    article,
-    price,
-    id: itemID,
-    category,
-    sizes,
-    photo,
-  } = await fetchItemByID({ id });
+  const item = await fetchItemsByIDs({ id });
+  const { title, article, price, id: itemID, category, sizes, photo } = item[0];
 
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
   const sliderCards = repeatArray(SLIDER_ITEM, 5);
@@ -113,7 +107,6 @@ export default async function ItemPage({ params: { id } }: PageProps) {
                     width={0}
                     height={0}
                     priority
-                    className={styles.icon}
                   />
                 }
               />

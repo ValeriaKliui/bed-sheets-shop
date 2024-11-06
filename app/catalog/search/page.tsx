@@ -1,5 +1,5 @@
 import { PageProps } from "@lib/constants/types";
-import { fetchCatalogPages } from "@lib/data";
+import { fetchCatalogPages } from "@lib/fetch";
 import Pagination from "@ui/Pagination";
 import SearchedItems from "@ui/SearchedItems";
 import SearchWindow from "@ui/SearchWindow";

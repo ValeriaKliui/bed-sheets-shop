@@ -12,8 +12,7 @@ export default function Sizes({ sizes }: SizesParams) {
   const pathname = usePathname();
   const { replace } = useRouter();
 
-  const onOptChange = (size: string) => {
-    console.log(size);
+  const onOptionChange = (size: string) => {
     const params = new URLSearchParams(searchParams);
     params.set("size", size);
 
@@ -22,7 +21,7 @@ export default function Sizes({ sizes }: SizesParams) {
 
   return (
     <FormProvider {...methods}>
-      <Options options={sizes} name={"sizes"} onOptChange={onOptChange} />
+      <Options options={sizes} name={"sizes"} onChange={onOptionChange} />
     </FormProvider>
   );
 }

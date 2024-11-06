@@ -10,12 +10,12 @@ export default function ButtonWithCartActions({
   id,
   className,
   size,
+  isDisabled,
 }: ButtonWithCartActionsProps) {
   const { getAmountInCartByParams, addToCart, removeFromCart } = useCart();
 
-  const onIncreaseClick = () => addToCart(id, size);
-
-  const onDecreaseClick = () => removeFromCart(id, size);
+  const onIncreaseClick = () => !isDisabled && addToCart(id, size);
+  const onDecreaseClick = () => !isDisabled && removeFromCart(id, size);
 
   const amountInCart = getAmountInCartByParams(id, { size });
 

@@ -23,7 +23,7 @@ export interface SizesArray {
   array: string[];
 }
 export interface FetchByIDParams {
-  id?: string;
+  id?: string | string[];
 }
 export interface FetchByTitleParams
   extends Partial<Pick<CatalogItem, "title">> {

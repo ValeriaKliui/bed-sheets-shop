@@ -1,17 +1,17 @@
-import { selectCartInfo } from '@lib/redux/features/cart/cartSelectors';
-import { updateCart as updateCartInStore } from '@lib/redux/features/cart/cartSlice';
-import { ItemsWithSize } from '@lib/redux/features/cart/interfaces';
-import loopThroughObject from '@lib/utils/loopThroughObject';
-import { useCallback, useEffect } from 'react';
+import { selectCartInfo } from "@lib/redux/features/cart/cartSelectors";
+import { updateCart as updateCartInStore } from "@lib/redux/features/cart/cartSlice";
+import { ItemsWithSize } from "@lib/redux/features/cart/interfaces";
+import loopThroughObject from "@lib/utils/loopThroughObject";
+import { useCallback, useEffect } from "react";
 
-import { useAppDispatch, useAppSelector } from './hooks';
+import { useAppDispatch, useAppSelector } from "./hooks";
 
 export default function useCart() {
   const dispatch = useAppDispatch();
   const cartInfo = useAppSelector(selectCartInfo);
 
   useEffect(() => {
-    localStorage.setItem('cart', JSON.stringify(cartInfo));
+    localStorage.setItem("cart", JSON.stringify(cartInfo));
   }, [cartInfo]);
 
   const updateCart = (
@@ -20,7 +20,7 @@ export default function useCart() {
     isIncreasing?: boolean
   ) => {
     const item = cartInfo?.[clickedID];
-    if (size && typeof item !== 'number') {
+    if (size && typeof item !== "number") {
       const itemInCartSize = cartInfo && item?.[size];
       const prevSize = cartInfo[clickedID] as ItemsWithSize;
 
@@ -55,32 +55,23 @@ export default function useCart() {
   const removeFromCart = (clickedID: string, size?: string) =>
     updateCart(clickedID, size);
 
-  const getAmountInCart = useCallback(
-    (id: string) => {
-      const itemInCartAmount = cartInfo?.[id] ?? 0;
-      return itemInCartAmount;
-    },
-    [cartInfo]
-  );
-
   const getTotalAmountInCart = useCallback(() => {
     const cartEntries = Object.entries(cartInfo);
-    console.log(cartEntries);
 
     return cartEntries.reduce((acc, curr) => {
-      if (typeof curr[1] === 'number') return (acc += curr[1]);
+      if (typeof curr[1] === "number") return (acc += curr[1]);
       else return (acc += loopThroughObject(curr[1]));
     }, 0);
   }, [cartInfo]);
 
   const getAmountInCartByParams = useCallback(
-    (id: string, { size }: { size?: string }) => {
+    (id: string, params: { size?: string }) => {
       const item = cartInfo[id];
 
       if (!item) return 0;
 
-      if (typeof item === 'number') return cartInfo[id] as number;
-      else return size ? item[size] : 0;
+      if (typeof item === "number") return cartInfo[id] as number;
+      else return params?.size ? item[params.size] : 0;
     },
     [cartInfo]
   );
@@ -91,10 +82,10 @@ export default function useCart() {
 
   return {
     removeFromCart,
-    getAmountInCart,
     getTotalAmountInCart,
     addToCart,
     cleanCart,
     getAmountInCartByParams,
+    cartInfo,
   };
 }

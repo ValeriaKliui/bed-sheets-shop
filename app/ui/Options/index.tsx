@@ -6,15 +6,21 @@ import { useFormContext } from "react-hook-form";
 import { OptionsProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Options({ options, name, onOptChange }: OptionsProps) {
+export default function Options({ options, name, onChange }: OptionsProps) {
   const [choosenValue, setChoosen] = useState<null | string>(null);
 
   const { register } = useFormContext();
-  const { onChange, onBlur, name: inputName, ref } = register(name);
+  const {
+    onChange: onFormChange,
+    onBlur,
+    name: inputName,
+    ref,
+  } = register(name);
 
   const onOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onOptChange(e.target.value);
-    onChange(e);
+    onFormChange(e);
+
+    onChange?.(e.target.value);
     setChoosen(e.target.value);
   };
 

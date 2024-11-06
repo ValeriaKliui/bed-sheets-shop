@@ -1,5 +1,5 @@
 import { PageProps } from "@lib/constants/types";
-import { fetchAvailableSizes } from "@lib/data";
+import { fetchAvailableSizes } from "@lib/fetch";
 import Gap from "@ui/Gap";
 
 import Sizes from "./Sizes";

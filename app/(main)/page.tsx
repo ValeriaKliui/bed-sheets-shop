@@ -1,5 +1,5 @@
 import { SLIDER_MAIN } from "@lib/constants";
-import { fetchLatestCatalogItems } from "@lib/data";
+import { fetchLatestCatalogItems } from "@lib/fetch";
 import repeatArray from "@lib/utils/repeatArray";
 import Card from "@ui/Card";
 import { CardProps } from "@ui/Card/interfaces";

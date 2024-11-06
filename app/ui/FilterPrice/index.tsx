@@ -1,6 +1,6 @@
 import { CURRENCY } from "@lib/constants/catalogItems";
 import { PageProps } from "@lib/constants/types";
-import { fetchMinMaxPrices } from "@lib/data";
+import { fetchMinMaxPrices } from "@lib/fetch";
 import Gap from "@ui/Gap";
 import PriceRange from "@ui/PriceRange";
 
