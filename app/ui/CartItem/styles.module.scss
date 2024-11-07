@@ -1,15 +1,44 @@
 @use '../../variables.module.scss' as v;
+@import '../../breakpoints.module.scss';
 
 .container {
-  width: 100%;
+  @include xxs {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-areas: 'photo info' 'button price';
+    gap: 2em;
+    width: 100%;
+  }
+  @include sm {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'photo info button price';
+  }
+}
+.photo {
+  grid-area: photo;
+}
+.info {
+  grid-area: info;
 }
 .buttonAmount {
   background: v.$color-bg;
   color: v.$color-text-secondary;
-  padding: 0.4em;
+  padding: 0.6em;
   border-radius: 60px;
+  grid-area: button;
+  width: min-content;
+  height: min-content;
+  align-self: center;
+
+  @include sm {
+    justify-self: center;
+  }
 
   button {
     color: v.$color-text-secondary;
   }
+}
+.price {
+  grid-area: price;
+  align-self: center;
 }

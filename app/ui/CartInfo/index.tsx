@@ -11,7 +11,7 @@ import { useEffect, useMemo, useState } from "react";
 import CartHeader from "./CartHeader";
 
 export default function CartInfo() {
-  const { cartInfo, getTotalAmountInCart } = useCart();
+  const { cartInfo, getTotalAmountInCart, } = useCart();
 
   const amountInCart = getTotalAmountInCart();
   const cartItemsIDs = useMemo(() => Object.keys(cartInfo), [cartInfo]);
@@ -44,7 +44,7 @@ export default function CartInfo() {
       {isLoading ? (
         <Loader />
       ) : (
-        <Gap direction="vertical">
+        <Gap direction="vertical" size='large'>
           <CartItems cartItems={cartItems} />
         </Gap>
       )}
