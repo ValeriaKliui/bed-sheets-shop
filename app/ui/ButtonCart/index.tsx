@@ -1,9 +1,9 @@
-import Gap from "@ui/Gap";
-import clsx from "clsx";
-import { MouseEvent } from "react";
+import ButtonPlusMinus from '@ui/ButtonPlusMinus';
+import Gap from '@ui/Gap';
+import clsx from 'clsx';
 
-import { ButtonCartProps } from "./interface";
-import styles from "./styles.module.scss";
+import { ButtonCartProps } from './interface';
+import styles from './styles.module.scss';
 
 export default function ButtonCart({
   children,
@@ -12,36 +12,22 @@ export default function ButtonCart({
   onDecreaseClick,
   className,
 }: ButtonCartProps) {
-  const onClick = (e?: MouseEvent<HTMLDivElement>) => e?.preventDefault();
-
   return (
     <Gap
       className={clsx(styles.container, className)}
-      justifyContent={"center"}
+      justifyContent={'center'}
     >
       {amountInCart ? (
-        <Gap onClick={onClick}>
-          <button
-            onClick={onDecreaseClick}
-            className={styles.buttons}
-            type="submit"
-          >
-            -
-          </button>
-          <p className={styles.amount}> {amountInCart}</p>
-          <button
-            onClick={onIncreaseClick}
-            className={styles.buttons}
-            type="submit"
-          >
-            +
-          </button>
-        </Gap>
+        <ButtonPlusMinus
+          onMinusClick={onDecreaseClick}
+          onPlusClick={onIncreaseClick}
+          amount={amountInCart}
+        />
       ) : (
         false
       )}
 
-      <button className={styles.buttons} type="submit">
+      <button className='buttons' type="submit">
         {children}
       </button>
     </Gap>

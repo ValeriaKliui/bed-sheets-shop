@@ -2,8 +2,8 @@
 
 import useCart from "@hooks/useCart";
 import { fetchItemsByIDs } from "@lib/fetchItemsByIDs";
-import CartItem from "@ui/CartItem";
 import { CartItemI } from "@ui/CartItem/interfaces";
+import CartItems from "@ui/CartItems";
 import Gap from "@ui/Gap";
 import Loader from "@ui/Loader";
 import { useEffect, useMemo, useState } from "react";
@@ -45,16 +45,7 @@ export default function CartInfo() {
         <Loader />
       ) : (
         <Gap direction="vertical">
-          {cartItems?.map(({ id, title, price, photo, cartInfo }) => (
-            <CartItem
-              key={id}
-              id={id}
-              title={title}
-              price={price}
-              photo={photo}
-              cartInfo={cartInfo}
-            />
-          ))}
+          <CartItems cartItems={cartItems} />
         </Gap>
       )}
     </>
