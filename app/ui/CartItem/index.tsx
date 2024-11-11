@@ -1,12 +1,12 @@
+import useCart from '@hooks/useCart';
 import formatPrice from '@lib/utils/formatPrice';
 import ButtonPlusMinus from '@ui/ButtonPlusMinus';
 import Gap from '@ui/Gap';
+import clsx from 'clsx';
 import Image from 'next/image';
 
 import { CartItemProps } from './interfaces';
 import styles from './styles.module.scss';
-import useCart from '@hooks/useCart';
-import clsx from 'clsx';
 
 export default function CartItem({
   amount,
