@@ -1,0 +1,16 @@
+@use '../../variables.module.scss' as v;
+@import '../../breakpoints.module.scss';
+
+.container {
+  @include sm {
+    border: 1px solid v.$light-lines;
+    padding: 2em;
+  }
+}
+.cartInfo {
+  width: 100%;
+}
+.orderButton {
+  align-self: center;
+  margin-top: 3em;
+}

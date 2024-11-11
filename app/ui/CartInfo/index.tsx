@@ -11,13 +11,11 @@ import { useEffect, useMemo, useState } from "react";
 import CartHeader from "./CartHeader";
 
 export default function CartInfo() {
-  const { cartInfo, getTotalAmountInCart } = useCart();
-
-  const amountInCart = getTotalAmountInCart();
-  const cartItemsIDs = useMemo(() => Object.keys(cartInfo), [cartInfo]);
-
   const [isLoading, setIsLoading] = useState(true);
   const [cartItems, setCartItems] = useState<CartItemI[] | null>(null);
+  const { cartInfo, getTotalAmountInCart } = useCart(cartItems);
+  const amountInCart = getTotalAmountInCart();
+  const cartItemsIDs = useMemo(() => Object.keys(cartInfo), [cartInfo]);
 
   useEffect(() => {
     setIsLoading(false);
@@ -25,14 +23,18 @@ export default function CartInfo() {
       if (amountInCart > 0) {
         const foundItems = await fetchItemsByIDs({ id: cartItemsIDs });
 
-        const itemsWithSizes = foundItems.map(({ id, ...item }) => ({
-          id,
-          cartInfo: cartInfo[id],
-          ...item,
-        }));
+        const itemsWithSizes = foundItems.map(({ id, ...item }) => {
+          console.log(cartInfo[id])
+          return {
+            id,
+            cartInfo: cartInfo[id],
+            ...item,
+          }
+        });
 
         setCartItems(itemsWithSizes);
       }
+
     };
     fetchItemsData();
   }, [amountInCart, cartItemsIDs, cartInfo]);

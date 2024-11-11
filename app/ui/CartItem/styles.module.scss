@@ -8,6 +8,10 @@
     grid-template-areas: 'photo info' 'button price';
     gap: 2em;
     width: 100%;
+    padding: 2em 0;
+    border: 1px solid v.$light-lines;
+    border-right: none;
+    border-left: none;
   }
   @include sm {
     grid-template-columns: repeat(4, 1fr);
@@ -30,7 +34,11 @@
   height: min-content;
   align-self: center;
 
+  @include xxs {
+    padding: 0.3em 0.7em;
+  }
   @include sm {
+    padding: 0.6em;
     justify-self: center;
   }
 
@@ -41,4 +49,7 @@
 .price {
   grid-area: price;
   align-self: center;
+}
+.deleteIcon {
+  transform: scale(0.8);
 }
