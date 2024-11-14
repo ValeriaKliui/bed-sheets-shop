@@ -1,3 +1,4 @@
 import { RootState } from "../../store";
 
-export const selectCartInfo = (state: RootState) => state.cartReducer.cartInfo;
+export const selectCartItems = (state: RootState) =>
+  state.cartReducer.cartItems;

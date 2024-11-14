@@ -1,9 +1,10 @@
 import formatPrice from '@lib/utils/formatPrice';
+import Button from '@ui/Button';
 import Gap from '@ui/Gap';
 import clsx from 'clsx';
-import styles from './styles.module.scss'
 import Link from 'next/link';
-import Button from '@ui/Button';
+
+import styles from './styles.module.scss'
 
 export default function CartBottom() {
     return (

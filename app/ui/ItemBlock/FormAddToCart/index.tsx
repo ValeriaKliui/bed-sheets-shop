@@ -22,10 +22,14 @@ export default function FormAddToCart({ sizes, id }: FormAddToCartProps) {
   const isSizesExists = sizes && sizes?.length > 0;
   const isSizeChoosen = (isSizesExists && currentSize) || !sizes;
 
-  const onSubmit = (data: FormValues) => {
+  const onSubmit = ({ size }: FormValues) => {
     if (isSizesExists && !currentSize) {
       setIsError(true);
-    } else addToCart(id, data.size);
+    } else
+      addToCart({
+        id,
+        size,
+      });
   };
 
   const resetError = () => setIsError(false);

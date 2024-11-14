@@ -1,87 +1,42 @@
-import { selectCartInfo } from '@lib/redux/features/cart/cartSelectors';
-import { updateCart as updateCartInStore } from '@lib/redux/features/cart/cartSlice';
-import { ItemsWithSize } from '@lib/redux/features/cart/interfaces';
-import loopThroughObject from '@lib/utils/loopThroughObject';
-import { useCallback, useEffect } from 'react';
+import { selectCartItems } from "@lib/redux/features/cart/cartSelectors";
+import {
+  decreaseAmount,
+  increaseAmount,
+  resetCart,
+} from "@lib/redux/features/cart/cartSlice";
+import { CartItem } from "@lib/redux/features/cart/interfaces";
+import getSameItemInCart from "@lib/utils/getSameItemInCart";
+import { useCallback, useEffect } from "react";
 
-import { useAppDispatch, useAppSelector } from './hooks';
+import { useAppDispatch, useAppSelector } from "./hooks";
 
-export default function useCart(cartItems) {
+export default function useCart() {
   const dispatch = useAppDispatch();
-  const cartInfo = useAppSelector(selectCartInfo);
+  const cartItems = useAppSelector(selectCartItems);
 
   useEffect(() => {
-    console.log(JSON.stringify(cartInfo));
-    localStorage.setItem('cart', JSON.stringify(cartInfo));
-  }, [cartInfo]);
+    localStorage.setItem("cartItems", JSON.stringify(cartItems));
+  }, [cartItems]);
 
-  const updateCart = (
-    clickedID: string,
-    size: string = '',
-    isIncreasing?: boolean
-  ) => {
-    const item = cartInfo?.[clickedID];
-    const isOneSizedItem = typeof item === 'number';
+  const addToCart = (itemToAdd: CartItem) =>
+    dispatch(increaseAmount(itemToAdd));
 
-    const itemAmount = isOneSizedItem ? item : item?.[size];
-    const prevItemSize = cartInfo[clickedID] as ItemsWithSize;
-
-    if (itemAmount === 1 && !isIncreasing) {
-      const { [clickedID]: _, cartWithoutItem = {} } = cartInfo;
-
-      dispatch(updateCartInStore(cartWithoutItem));
-    } else {
-      console.log('itemAmount', itemAmount);
-      const updatedCartItem = isOneSizedItem
-        ? {
-            [clickedID]: itemAmount
-              ? itemAmount + (isIncreasing ? 1 : -1)
-              : 0,
-          }
-        : {
-            [clickedID]: {
-              ...prevItemSize,
-              [size]: itemAmount
-                ? itemAmount + (isIncreasing ? 1 : -1)
-                : 1,
-            },
-          };
-
-      dispatch(
-        updateCartInStore({ ...cartInfo, ...updatedCartItem })
-      );
-    }
-  };
-
-  const addToCart = (clickedID: string, size?: string) =>
-    updateCart(clickedID, size, true);
-
-  const removeFromCart = (clickedID: string, size?: string) =>
-    updateCart(clickedID, size);
+  const removeFromCart = (itemToRemove: CartItem, isTotalDelete?: boolean) =>
+    dispatch(decreaseAmount({ itemToRemove, isTotalDelete }));
 
   const getTotalAmountInCart = useCallback(() => {
-    const cartEntries = Object.entries(cartInfo);
-
-    return cartEntries.reduce((acc, curr) => {
-      if (typeof curr[1] === 'number') return (acc += curr[1]);
-      else return (acc += loopThroughObject(curr[1]));
+    return cartItems.reduce((acc, curr) => {
+      return curr.amount ? acc + curr.amount : acc;
     }, 0);
-  }, [cartInfo]);
+  }, [cartItems]);
 
-  const getAmountInCartByParams = useCallback(
-    (id: string, params: { size?: string }) => {
-      const item = cartInfo[id];
-
-      if (!item) return 0;
-
-      if (typeof item === 'number') return cartInfo[id] as number;
-      else return params?.size ? item[params.size] : 0;
-    },
-    [cartInfo]
-  );
+  const getItemAmountInCart = (itemToCheck: CartItem) => {
+    const { amountInCart } = getSameItemInCart(cartItems, itemToCheck);
+    return amountInCart;
+  };
 
   const cleanCart = () => {
-    dispatch(updateCartInStore({}));
+    dispatch(resetCart());
   };
 
   return {
@@ -89,7 +44,7 @@ export default function useCart(cartItems) {
     getTotalAmountInCart,
     addToCart,
     cleanCart,
-    getAmountInCartByParams,
-    cartInfo,
+    cartItems,
+    getItemAmountInCart,
   };
 }
