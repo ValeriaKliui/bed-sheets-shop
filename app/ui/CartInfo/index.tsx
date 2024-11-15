@@ -16,9 +16,6 @@ export default function CartInfo() {
       <Gap direction="vertical" size="large">
         <CartItems cartItems={cartItemsFull} />
       </Gap>
-      {/*
-          <CartItems cartItems={cartItems} />
-        */}
     </>
   );
 }

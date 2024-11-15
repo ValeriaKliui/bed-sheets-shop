@@ -19,10 +19,10 @@ export default function CartProvider({ children }: PropsWithChildren) {
       if (getTotalAmountInCart() > 0) {
         const foundItems = await fetchItemsByIDs({ id: cartItemsIDs });
         const itemsWithSizes = foundItems.map(({ sizes, id, ...item }) => {
-          const amount = sizes?.map((size) => ({
+          const amount = sizes ? sizes?.map((size) => ({
             size,
             amount: getItemAmountInCart({ size, id }),
-          }));
+          })) : getItemAmountInCart({ id });
 
           return { id, sizes, amount, ...item };
         });

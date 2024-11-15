@@ -1,22 +1,14 @@
-import { CatalogItem } from "@lib/constants/types";
-
-export type ItemsWithSize = {
-  [size: string]: number;
-};
+import { CatalogItem } from '@lib/constants/types';
 
 export type ItemsNoSize = number;
 
-export interface CartInfo {
-  [id: string]: number | ItemsWithSize;
-}
-
-export interface CartItemShort extends Pick<CatalogItem, "id"> {
+export interface CartItemShort extends Pick<CatalogItem, 'id'> {
   size?: string;
   amount?: number;
   cartID?: number;
 }
 export interface CartItemFull extends CatalogItem {
-  amount?: { size: string; amount: number }[];
+  amount?: { size: string; amount: number }[] | number;
 }
 
 export interface cartState {

@@ -1,20 +1,23 @@
-import { CartItem } from "@lib/redux/features/cart/interfaces";
+import { CartItemShort } from '@lib/redux/features/cart/interfaces';
 
-import { getSortedAndStringifiedObject } from "./getSortedAndStringifiedObject";
+import { getSortedAndStringifiedObject } from './getSortedAndStringifiedObject';
 
 export default function getSameItemInCart(
-  cartItems: CartItem[],
-  itemToCheck: CartItem
+  cartItems: CartItemShort[],
+  itemToCheck: CartItemShort
 ) {
   let currCartID = null;
   let amountInCart = 0;
-  const sameIDItems = cartItems.filter(({ id }) => id === itemToCheck.id);
+  const sameIDItems = cartItems.filter(
+    ({ id }) => id === itemToCheck.id
+  );
 
   const formattedSameIDs = sameIDItems.map(
     ({ cartID: _, amount: __, ...qualities }) => {
       return getSortedAndStringifiedObject({ ...qualities });
     }
   );
+
   const itemInCartStringified = formattedSameIDs.find(
     (item) => item === getSortedAndStringifiedObject(itemToCheck)
   );
@@ -32,6 +35,9 @@ export default function getSameItemInCart(
       }
     });
   }
+
+  console.log(itemToCheck, amountInCart);
+  console.log(cartItems);
 
   return {
     currCartID,
