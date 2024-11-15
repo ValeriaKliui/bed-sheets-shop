@@ -6,6 +6,7 @@ import {
 } from "@lib/redux/features/cart/cartSlice";
 import { CartItem } from "@lib/redux/features/cart/interfaces";
 import getSameItemInCart from "@lib/utils/getSameItemInCart";
+import sumObjectParam from "@lib/utils/sumObjectParam";
 import { useCallback, useEffect } from "react";
 
 import { useAppDispatch, useAppSelector } from "./hooks";
@@ -18,26 +19,29 @@ export default function useCart() {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
 
-  const addToCart = (itemToAdd: CartItem) =>
-    dispatch(increaseAmount(itemToAdd));
+  const addToCart = useCallback(
+    (itemToAdd: CartItem) => dispatch(increaseAmount(itemToAdd)),
+    [dispatch]
+  );
 
-  const removeFromCart = (itemToRemove: CartItem, isTotalDelete?: boolean) =>
-    dispatch(decreaseAmount({ itemToRemove, isTotalDelete }));
+  const removeFromCart = useCallback(
+    (itemToRemove: CartItem, isTotalDelete?: boolean) =>
+      dispatch(decreaseAmount({ itemToRemove, isTotalDelete })),
+    [dispatch]
+  );
 
-  const getTotalAmountInCart = useCallback(() => {
-    return cartItems.reduce((acc, curr) => {
-      return curr.amount ? acc + curr.amount : acc;
-    }, 0);
-  }, [cartItems]);
+  const getTotalAmountInCart = useCallback(
+    () => sumObjectParam(cartItems, "amount"),
+    [cartItems]
+  );
 
-  const getItemAmountInCart = (itemToCheck: CartItem) => {
-    const { amountInCart } = getSameItemInCart(cartItems, itemToCheck);
-    return amountInCart;
-  };
+  const getItemAmountInCart = useCallback(
+    (itemToCheck: CartItem) =>
+      getSameItemInCart(cartItems, itemToCheck).amountInCart,
+    [cartItems]
+  );
 
-  const cleanCart = () => {
-    dispatch(resetCart());
-  };
+  const cleanCart = useCallback(() => dispatch(resetCart()), [dispatch]);
 
   return {
     removeFromCart,

@@ -2,7 +2,12 @@ import getSameItemInCart from "@lib/utils/getSameItemInCart";
 import { getSortedAndStringifiedObject } from "@lib/utils/getSortedAndStringifiedObject";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-import { CartItem, cartState, DecreasePayload } from "./interfaces";
+import {
+  CartItemFull,
+  CartItemShort,
+  cartState,
+  DecreasePayload,
+} from "./interfaces";
 
 const getInitialCartItems = () => {
   if (typeof localStorage !== "undefined") {
@@ -15,6 +20,7 @@ const getInitialCartItems = () => {
 
 const initialState: cartState = {
   cartItems: getInitialCartItems(),
+  cartItemsFull: [],
 };
 
 export const cartSlice = createSlice({
@@ -23,7 +29,7 @@ export const cartSlice = createSlice({
   reducers: {
     increaseAmount: (
       state,
-      { payload: itemToAdd }: PayloadAction<CartItem>
+      { payload: itemToAdd }: PayloadAction<CartItemShort>
     ) => {
       const { itemInCartStringified, currCartID } = getSameItemInCart(
         state.cartItems,
@@ -82,9 +88,13 @@ export const cartSlice = createSlice({
     resetCart: (state) => {
       state.cartItems = [];
     },
+    setFullCartItems: (state, action: PayloadAction<CartItemFull[]>) => {
+      state.cartItemsFull = action.payload;
+    },
   },
 });
 
-export const { increaseAmount, resetCart, decreaseAmount } = cartSlice.actions;
+export const { increaseAmount, resetCart, decreaseAmount, setFullCartItems } =
+  cartSlice.actions;
 
 export default cartSlice.reducer;

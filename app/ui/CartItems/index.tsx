@@ -8,29 +8,24 @@ const DefaultCartItem = ({ id, ...cartProps }: CartItemProps) => (
 );
 
 export default function CartItems({ cartItems }: CartItemsProps) {
+  console.log(cartItems);
   const cartItemsWithDiffSizes = cartItems?.map(
-    ({ cartInfo, id, ...cartItemProps }) => {
-      if (typeof cartInfo === "number")
-        return (
-          <DefaultCartItem
-            {...cartItemProps}
-            id={id}
-            key={id}
-            amount={cartInfo}
-          />
-        );
+    ({ amount, id, ...cartItemProps }) => {
+      if (!amount)
+        return <DefaultCartItem {...cartItemProps} id={id} key={id} />;
       else {
-        const diffSizes = Object.entries(cartInfo);
+        // const diffSizes = Object.entries(cartInfo);
 
-        return diffSizes.map(([size, amount]) => (
-          <DefaultCartItem
-            {...cartItemProps}
-            size={size}
-            amount={amount}
-            id={id}
-            key={id + size}
-          />
-        ));
+        return <div key={id}>sdfsdf</div>;
+        // diffSizes.map(([size, amount]) => (
+        //   <DefaultCartItem
+        //     {...cartItemProps}
+        //     size={size}
+        //     amount={amount}
+        //     id={id}
+        //     key={id + size}
+        //   />
+        // ));
       }
     }
   );

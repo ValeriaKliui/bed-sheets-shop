@@ -10,16 +10,20 @@ export interface CartInfo {
   [id: string]: number | ItemsWithSize;
 }
 
-export interface CartItem extends Pick<CatalogItem, "id"> {
+export interface CartItemShort extends Pick<CatalogItem, "id"> {
   size?: string;
   amount?: number;
   cartID?: number;
 }
+export interface CartItemFull extends CatalogItem {
+  amount?: { size: string; amount: number }[];
+}
 
 export interface cartState {
-  cartItems: CartItem[];
+  cartItems: CartItemShort[];
+  cartItemsFull: CartItemFull[];
 }
 export interface DecreasePayload {
-  itemToRemove: CartItem;
+  itemToRemove: CartItemShort;
   isTotalDelete?: boolean;
 }

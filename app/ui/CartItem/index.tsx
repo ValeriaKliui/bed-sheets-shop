@@ -13,17 +13,17 @@ import styles from "./styles.module.scss";
 const { bg } = colors;
 
 export default function CartItem({
-  amount,
   photo,
   title,
   price,
   size,
   id,
 }: CartItemProps) {
-  const { addToCart, removeFromCart } = useCart();
+  const { addToCart, removeFromCart, getItemAmountInCart } = useCart();
   const onAddClick = () => addToCart({ id, size });
   const onRemoveClick = () => removeFromCart({ id, size });
 
+  const amount = getItemAmountInCart({ id, size }) || 1;
   const finalPrice = amount * Number(price);
 
   return (

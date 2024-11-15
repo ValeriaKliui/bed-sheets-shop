@@ -1,5 +1,5 @@
-import { CartItemI } from '@ui/CartItem/interfaces';
+import { CartItemFull } from "@lib/redux/features/cart/interfaces";
 
 export interface CartItemsProps {
-  cartItems: CartItemI[] | null;
+  cartItems: CartItemFull[] | null;
 }
