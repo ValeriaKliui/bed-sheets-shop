@@ -54,7 +54,6 @@ export default function FormAddToCart({ sizes, id }: FormAddToCartProps) {
             className={styles.characteristics}
           />
           {isError && <p className="text_error">Пожалуйста, выберите размер</p>}
-          <b>НЕПРАВИЛЬНОЕ КОЛИЧЕСТВО в коризне ЕСЛИ НЕТ РАЗМЕРА</b>
           <ButtonWithCartActions
             id={id}
             className={styles.button}

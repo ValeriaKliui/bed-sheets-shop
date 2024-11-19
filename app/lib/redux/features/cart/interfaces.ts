@@ -1,9 +1,9 @@
-import { CatalogItem } from '@lib/constants/types';
+import { CatalogItem } from "@lib/constants/types";
 
 export type ItemsNoSize = number;
 
-export interface CartItemShort extends Pick<CatalogItem, 'id'> {
-  size?: string;
+export interface CartItemShort extends Pick<CatalogItem, "id"> {
+  size?: string | null;
   amount?: number;
   cartID?: number;
 }

@@ -1,7 +1,6 @@
 import useCart from "@hooks/useCart";
 import formatPrice from "@lib/utils/formatPrice";
 import ButtonPlusMinus from "@ui/ButtonPlusMinus";
-import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import colors from "@variables.module.scss";
@@ -14,7 +13,7 @@ import styles from "./styles.module.scss";
 const { bg } = colors;
 
 export default function CartItem({
-  amount,
+  amount = 1,
   photo,
   title,
   price,
@@ -25,7 +24,6 @@ export default function CartItem({
   const onAddClick = () => addToCart({ id, size });
   const onRemoveClick = () => removeFromCart({ id, size });
 
-  // const amount = getItemAmountInCart({ id, size });
   const finalPrice = amount * Number(price);
 
   return (
@@ -43,14 +41,13 @@ export default function CartItem({
         <h4> {title}</h4>
         <p>{size}</p>
       </Gap>
-      <ButtonWithCartActions id={id} className={styles.button} />
-
-      {/* <ButtonPlusMinus
+      {/* <ButtonWithCartActions id={id} className={styles.button} /> */}
+      <ButtonPlusMinus
         amount={amount}
         onMinusClick={onRemoveClick}
         onPlusClick={onAddClick}
         className={styles.buttonAmount}
-      /> */}
+      />
       <Gap justifyContent="space-between">
         <p className={clsx("text_medium", styles.price)}>
           {formatPrice(finalPrice)}
