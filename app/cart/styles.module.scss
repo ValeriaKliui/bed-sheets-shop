@@ -1,9 +1,19 @@
-@import '../breakpoints.module.scss';
+@import "../breakpoints.module.scss";
 
 .container {
+  @include xxs {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
   @include sm {
     display: grid;
     grid-template-columns: 0.7fr 0.3fr;
     gap: 3em;
   }
+}
+.cartInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
 }

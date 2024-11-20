@@ -20,16 +20,15 @@ export default function CartItem({
   size,
   id,
 }: CartItemProps) {
-  const { addToCart, removeFromCart, getItemAmountInCart } = useCart();
+  const { addToCart, removeFromCart } = useCart();
   const onAddClick = () => addToCart({ id, size });
   const onRemoveClick = () => removeFromCart({ id, size });
+  const onTotalDelete = () => removeFromCart({ id, size }, true);
 
   const finalPrice = amount * Number(price);
 
   return (
     <div className={styles.container}>
-      {id}\\\
-      {getItemAmountInCart({ id, size })}
       <Image
         src={photo}
         width={100}
@@ -41,7 +40,6 @@ export default function CartItem({
         <h4> {title}</h4>
         <p>{size}</p>
       </Gap>
-      {/* <ButtonWithCartActions id={id} className={styles.button} /> */}
       <ButtonPlusMinus
         amount={amount}
         onMinusClick={onRemoveClick}
@@ -57,6 +55,7 @@ export default function CartItem({
           alt={"clean cart"}
           color={bg}
           className={styles.deleteIcon}
+          onClick={onTotalDelete}
         />
       </Gap>
     </div>

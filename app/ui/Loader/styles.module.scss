@@ -9,6 +9,7 @@
   border-right-color: v.$color-primary;
   animation: l15 1s infinite linear;
   margin: 2em;
+  align-self: center;
 }
 .loader::before,
 .loader::after {

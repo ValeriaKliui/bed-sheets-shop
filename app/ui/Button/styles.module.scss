@@ -5,6 +5,9 @@
   background: v.$color-primary;
   border-radius: 50px;
   border: none;
+  width: fit-content;
+  height: fit-content;
+
   @include xxs {
     padding: 2em 4em;
   }

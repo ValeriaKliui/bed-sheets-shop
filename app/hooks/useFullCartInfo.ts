@@ -7,7 +7,8 @@ import useCart from "./useCart";
 
 export default function useFullCartInfo() {
   const [isLoading, setIsLoading] = useState(true);
-  const { getTotalAmountInCart, cartItems, getItemAmountInCart } = useCart();
+  const { getTotalAmountInCart, cartItems, getItemAmountInCart, cleanCart } =
+    useCart();
   const cartItemsIDs = cartItems.map(({ id }) => id);
   const dispatch = useAppDispatch();
 
@@ -26,12 +27,15 @@ export default function useFullCartInfo() {
                   amount,
                 };
               })
-            : getItemAmountInCart({ id });
+            : getItemAmountInCart({ id, size: null });
+
+          console.log(amount);
 
           return { id, sizes, amount, ...item };
         });
+
         dispatch(setFullCartItems(itemsWithSizes));
-      }
+      } else dispatch(setFullCartItems([]));
     };
     fetchItemsData();
   }, [
@@ -40,6 +44,7 @@ export default function useFullCartInfo() {
     cartItemsIDs,
     getTotalAmountInCart,
     dispatch,
+    cleanCart,
   ]);
 
   return { isLoading };
