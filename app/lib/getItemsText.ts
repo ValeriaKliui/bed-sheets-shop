@@ -1,5 +1,11 @@
-// export default function getItemsText(amount) {
-//   //   if (amount === 0 || amount >= 5 ) return "товаров";
-//   //   if (amount === 1) return "товар";
-//   //   if (amount > 1 && amount < 5) return "товара";
-// }
+export default function getItemsText(amount: number) {
+  const amountStr = `${amount}`;
+  const lastNum = Number(amountStr[amountStr.length - 1]);
+
+  if ((amount > 9 && amount < 19) || (lastNum >= 5 && lastNum <= 9))
+    return 'товаров';
+  if (lastNum === 0 || lastNum === 1) return 'товар';
+  if (lastNum > 1 && lastNum < 5) return 'товара';
+
+  return lastNum;
+}

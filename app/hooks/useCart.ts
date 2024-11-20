@@ -40,6 +40,11 @@ export default function useCart() {
     [cartItems]
   );
 
+  const getTotalCart = useCallback(
+    () => sumObjectParam(cartItems, "amount"),
+    [cartItems]
+  );
+
   const getItemAmountInCart = useCallback(
     (itemToCheck: CartItemShort) =>
       getSameItemInCart(cartItems, itemToCheck).amountInCart,
