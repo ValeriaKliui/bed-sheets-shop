@@ -6,7 +6,9 @@
   cursor: pointer;
 }
 .choosen {
-  border: 1px solid v.$color-text;
+  border: 1px solid v.$color-primary;
+  background: rgba(v.$color-primary, 0.1);
+  color: v.$color-text;
 }
 .input[type="radio"] {
   display: none;

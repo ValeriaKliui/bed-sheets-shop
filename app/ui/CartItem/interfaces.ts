@@ -1,9 +1,9 @@
 import { CatalogItem } from "@lib/constants/types";
 
-interface CartItem
-  extends Pick<CatalogItem, "id" | "title" | "photo" | "price"> {
-  size?: string;
-}
+type CartItem = Pick<CatalogItem, "id" | "title" | "photo" | "price"> &
+  Partial<Pick<CatalogItem, "category">> & {
+    size?: string;
+  };
 
 export interface CartItemProps extends CartItem {
   amount?: number;

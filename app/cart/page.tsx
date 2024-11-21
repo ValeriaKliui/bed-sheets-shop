@@ -1,6 +1,6 @@
 import CartProvider from "@providers/CartProvider";
 import Breadcrumbs from "@ui/Breadcrumbs";
-import CartBottom from "@ui/CartBottom";
+import CartBottomNoSSR from "@ui/CartBottom/CartBottomNoSSR";
 import CartInfo from "@ui/CartInfo";
 import clsx from "clsx";
 
@@ -15,7 +15,7 @@ export default async function CartPage() {
           <CartInfo />
         </CartProvider>
       </div>
-      <CartBottom />
+      <CartBottomNoSSR />
     </div>
   );
 }

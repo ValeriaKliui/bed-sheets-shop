@@ -29,8 +29,6 @@ export default function useFullCartInfo() {
               })
             : getItemAmountInCart({ id, size: null });
 
-          console.log(amount);
-
           return { id, sizes, amount, ...item };
         });
 

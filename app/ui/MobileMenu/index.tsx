@@ -42,7 +42,7 @@ export default function MobileMenu({
               <p className="text_secondary">Меню</p>
               <Gap direction="vertical" alignItems={"flex-start"}>
                 {OTHER_LINKS.map(({ title, url }) => (
-                  <Link href={url} key={url} onClick={toggleMenu}>
+                  <Link href={url} key={url + title} onClick={toggleMenu}>
                     <h4> {title}</h4>
                   </Link>
                 ))}
