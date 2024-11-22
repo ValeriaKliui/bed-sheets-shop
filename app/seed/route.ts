@@ -14,15 +14,31 @@ async function seedCatalogItems() {
     info VARCHAR(255) NOT NULL,
     article VARCHAR(255) NOT NULL,
     photo VARCHAR(255) NOT NULL,
-    category VARCHAR(255) NOT NULL
+    category VARCHAR(255) NOT NULL,
+    sizes VARCHAR(255)[][],
+    aromas VARCHAR(255)[][],
+    textiles VARCHAR(255)[][],
+    colors VARCHAR(255)[][]
     );
   `;
 
   const insertedInvoices = await Promise.all(
     CATALOG_ITEMS.map(
-      ({ id, price, title, info, article, photo, category }) => client.sql`
-        INSERT INTO catalog_items (id, title, price, info, article, photo, category)
-        VALUES (${id}, ${title}, ${price}, ${info}, ${article}, ${photo}, ${category})
+      ({
+        id,
+        price,
+        title,
+        info,
+        article,
+        photo,
+        category,
+        sizes,
+        aromas,
+        textiles,
+        colors,
+      }) => client.sql`
+        INSERT INTO catalog_items (id, title, price, info, article, photo, category, sizes, aromas, textiles, colors)
+        VALUES (${id}, ${title}, ${price}, ${info}, ${article}, ${photo}, ${category}, ${sizes}, ${aromas}, ${textiles}, ${colors})
       `
     )
   );

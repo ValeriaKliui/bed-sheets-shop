@@ -24,7 +24,15 @@ import styles from "./styles.module.scss";
 
 export default async function ItemPage({ params: { id } }: PageProps) {
   const item = await fetchItemsByIDs({ id });
-  const { title, article, price, id: itemID, category, sizes, photo } = item[0];
+  const {
+    title,
+    article,
+    price,
+    id: itemID,
+    category,
+    photo,
+    additionalProperties,
+  } = item[0];
 
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
   const sliderCards = repeatArray(SLIDER_ITEM, 5);
@@ -41,8 +49,8 @@ export default async function ItemPage({ params: { id } }: PageProps) {
         price={price}
         id={itemID}
         category={category}
-        sizes={sizes}
         photo={photo}
+        additionalProperties={additionalProperties}
       />
       <Slider
         cards={sliderCards.map(({ src, title }, index) => (

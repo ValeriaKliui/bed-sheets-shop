@@ -22,7 +22,7 @@ export default function CartBottom() {
 
   const itemsText = getItemsText(totalAmount);
 
-  const totalPrice = cartItemsFull.reduce((sum, { amount, price }) => {
+  const totalPrice = cartItemsFull.reduce((sum, { amount = 0, price }) => {
     const priceNum = Number(price);
     if (typeof amount === "number") {
       return sum + amount * priceNum;

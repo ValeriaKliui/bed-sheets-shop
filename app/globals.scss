@@ -1,5 +1,5 @@
-@use 'variables.module.scss' as v;
-@import './breakpoints.module.scss';
+@use "variables.module.scss" as v;
+@import "./breakpoints.module.scss";
 
 * {
   box-sizing: border-box;
@@ -144,19 +144,19 @@ input {
     max-width: 370px;
   }
   @include sm {
-    max-width: map-get($breakpoints, 'sm');
+    max-width: map-get($breakpoints, "sm");
   }
   @include md {
-    max-width: calc(map-get($breakpoints, 'md') - 5%);
+    max-width: calc(map-get($breakpoints, "md") - 5%);
   }
   @include lg {
-    max-width: calc(map-get($breakpoints, 'lg') - 5%);
+    max-width: calc(map-get($breakpoints, "lg") - 5%);
   }
   @include xl {
-    max-width: calc(map-get($breakpoints, 'xl') - 10%);
+    max-width: calc(map-get($breakpoints, "xl") - 10%);
   }
   @include xxl {
-    max-width: calc(map-get($breakpoints, 'xxl') - 10%);
+    max-width: calc(map-get($breakpoints, "xxl") - 10%);
   }
 }
 
@@ -170,19 +170,19 @@ input {
     max-width: 320px;
   }
   @include sm {
-    max-width: map-get($breakpoints, 'sm');
+    max-width: map-get($breakpoints, "sm");
   }
   @include md {
-    max-width: map-get($breakpoints, 'md');
+    max-width: map-get($breakpoints, "md");
   }
   @include lg {
-    max-width: map-get($breakpoints, 'lg');
+    max-width: map-get($breakpoints, "lg");
   }
   @include xl {
-    max-width: map-get($breakpoints, 'xl');
+    max-width: map-get($breakpoints, "xl");
   }
   @include xxl {
-    max-width: map-get($breakpoints, 'xxl');
+    max-width: map-get($breakpoints, "xxl");
   }
 }
 
@@ -214,7 +214,7 @@ input::placeholder,
   color: v.$color-error;
 }
 .mobile-only {
-  @media screen and (max-width: map-get($breakpoints, 'md')) {
+  @media screen and (max-width: map-get($breakpoints, "md")) {
     display: block;
   }
   @include sm {
@@ -222,7 +222,12 @@ input::placeholder,
   }
 }
 .page_layout {
-  padding: 4em 0;
+  @include xxs {
+    padding: 2em 0;
+  }
+  @include sm {
+    padding: 2em 0;
+  }
 }
 .buttons {
   background: transparent;

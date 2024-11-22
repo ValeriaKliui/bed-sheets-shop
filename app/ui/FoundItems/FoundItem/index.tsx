@@ -12,7 +12,14 @@ export default function FoundItem({
 }: Pick<CatalogItem, "title" | "photo" | "price">) {
   return (
     <Gap className={styles.container}>
-      <Image src={photo} alt={title} className={styles.image} />
+      <Image
+        src={photo}
+        alt={title}
+        width={0}
+        height={0}
+        className={styles.image}
+        sizes="100vw"
+      />
       <p>{title}</p>
       <p>
         {price} {CURRENCY}

@@ -1,8 +1,11 @@
-export default function sumObjectParam<T>(array?: T[], key?: string) {
+export default function sumObjectParam<
+  T extends { [key: string]: number | string }
+>(array: T[], key: string) {
   return (
     array?.reduce((acc, curr) => {
-      // @ts-ignore: TODO
-      return curr[key] ? acc + curr[key] : acc;
+      const value = curr[key];
+      if (typeof value === "string") return acc;
+      else return value ? acc + value : acc;
     }, 0) || 0
   );
 }

@@ -1,4 +1,4 @@
-@use '../../variables.module.scss' as v;
+@use "../../variables.module.scss" as v;
 
 .container {
   position: absolute;
@@ -13,7 +13,7 @@
   flex-direction: column;
   align-items: stretch;
 }
-.link {
+.info {
   text-align: center;
   margin-top: 1em;
 }

@@ -26,7 +26,9 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
       >
         <Gap className={styles.top} justifyContent={"space-between"}>
           <Gap direction="vertical">
-            <p className={clsx("text_small", styles.article)}>{article}</p>
+            <p className={clsx("text_small", "text_secondary", styles.article)}>
+              {article}
+            </p>
             <p className="text_small">{info}</p>
           </Gap>
           {actionButton}
@@ -42,9 +44,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         <h5>{title}</h5>
         <Gap direction="vertical">
           <p>{discountInfo}</p>
-          <h4>
-            {formatPrice(price)}
-          </h4>
+          <h4 className="text_primary">{formatPrice(price)}</h4>
           <ButtonWithCartActions id={id} className={styles.button} />
         </Gap>
       </Gap>

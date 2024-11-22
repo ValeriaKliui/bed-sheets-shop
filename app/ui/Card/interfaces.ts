@@ -1,7 +1,7 @@
 import { CatalogItem } from "@lib/constants/types";
 import { ReactNode } from "react";
 
-export type CardProps = Omit<CatalogItem, "category"> &
+export type CardProps = Omit<CatalogItem, "category" | "additionalProperties"> &
   Partial<Pick<CatalogItem, "category">> & {
     actionButton: ReactNode;
   };

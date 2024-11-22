@@ -1,13 +1,14 @@
 import { sql } from "@vercel/postgres";
 
 import { DB_ITEMS_NAME, ITEMS_PER_PAGE } from "./constants";
-import { Availability } from "./constants/types";
+import { Availability, CatalogItemSeeded } from "./constants/types";
 import { FilterParams, Prices, SizesArray } from "./interfaces";
 import getAvailabilityParam from "./utils/getAvailabilityParam";
 import getDefaultField from "./utils/getDefaulttField";
 import getDefaultTitle from "./utils/getDefaultTitle";
 import getSortCondition from "./utils/getSortCondition";
 import sortSizes from "./utils/sortSizes";
+import transformAdditionalProperties from "./utils/transformProperties";
 
 export async function fetchLatestCatalogItems() {
   try {
@@ -16,7 +17,7 @@ export async function fetchLatestCatalogItems() {
        WHERE info = '${Availability.available}'
       LIMIT 4`);
 
-    return data.rows;
+    return transformAdditionalProperties(data.rows);
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch the latest catalog items.");
@@ -43,7 +44,7 @@ export async function fetchFilteredCatalogItems({
     const addSizes = size ? ` AND '${size}' = ANY(sizes)` : "";
     const addSort = getSortCondition(sort);
 
-    const data = await sql.query(
+    const data = await sql.query<CatalogItemSeeded>(
       `
       SELECT * FROM ${DB_ITEMS_NAME}
       WHERE category = ${categoryWithDefault}
@@ -55,7 +56,7 @@ export async function fetchFilteredCatalogItems({
     `
     );
 
-    return data.rows;
+    return transformAdditionalProperties(data.rows);
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch the latest filtered items.");

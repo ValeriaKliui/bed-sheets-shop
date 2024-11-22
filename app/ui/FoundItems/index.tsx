@@ -3,31 +3,33 @@ import Link from "next/link";
 
 import FoundItem from "./FoundItem";
 import { FoundItemsProps } from "./interfaces";
-import styles from './styles.module.scss'
+import styles from "./styles.module.scss";
 
 export default function FoundItems({
   items,
   search,
-  closeSearch
+  closeSearch,
 }: FoundItemsProps) {
   if (!items || !search) return false;
 
   return (
     <div className={styles.container}>
-      {items.map(({ title, price, photo, id }) => {
-        return <FoundItem title={title} price={price} photo={photo} key={id} />;
-      })}
+      {items.map(({ title, price, photo, id, category }) => (
+        <Link href={`/catalog/${category}/${id}`} key={id}>
+          <FoundItem title={title} price={price} photo={photo} key={id} />
+        </Link>
+      ))}
 
       {items.length > 0 ? (
         <Link
           href={{ pathname: "search", query: { search } }}
           onClick={closeSearch}
-          className={clsx('link', 'text_medium', styles.link)}
+          className={clsx("link", "text_medium", styles.info)}
         >
           все результаты
         </Link>
       ) : (
-        <p>Ничего не было найдено</p>
+        <p className={styles.info}>Ничего не было найдено</p>
       )}
     </div>
   );

@@ -5,6 +5,7 @@ import { sql } from "@vercel/postgres";
 import { DB_ITEMS_NAME } from "./constants";
 import { CatalogItem } from "./constants/types";
 import { FetchByIDParams } from "./interfaces";
+import transformAdditionalProperties from "./utils/transformProperties";
 
 export async function fetchItemsByIDs({ id }: FetchByIDParams) {
   try {
@@ -15,7 +16,7 @@ export async function fetchItemsByIDs({ id }: FetchByIDParams) {
            WHERE id = '${id}'
           `
       );
-      return [item.rows[0]];
+      return [transformAdditionalProperties(item.rows)[0]];
     } else {
       const idString = id?.map((id) => `'${id}'`).join(", ");
 
@@ -25,7 +26,7 @@ export async function fetchItemsByIDs({ id }: FetchByIDParams) {
            WHERE id in (${idString})
           `
       );
-      return item.rows;
+      return transformAdditionalProperties(item.rows);
     }
   } catch (error) {
     console.error("Database Error:", error);

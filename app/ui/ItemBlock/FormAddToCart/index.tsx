@@ -4,7 +4,6 @@ import useCart from "@hooks/useCart";
 import Accordion from "@ui/Accordion";
 import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
-import { useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import CharacteristicBottom from "../CharacteristicBottom";
@@ -12,53 +11,53 @@ import CharacteristicHeader from "../CharacteristicHeader";
 import { FormAddToCartProps, FormValues } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function FormAddToCart({ sizes, id }: FormAddToCartProps) {
-  const [isError, setIsError] = useState(false);
-  const methods = useForm<FormValues>();
+export default function FormAddToCart({
+  additionalProperties,
+  id,
+}: FormAddToCartProps) {
+  const { handleSubmit, ...methods } = useForm<FormValues>();
+
+  const { sizes, aromas, colors, textiles } = additionalProperties;
 
   const { addToCart } = useCart();
 
-  const currentSize = methods.watch("size");
-  const isSizesExists = sizes && sizes?.length > 0;
-  const isSizeChoosen = (isSizesExists && currentSize) || !sizes;
-
-  const onSubmit = ({ size }: FormValues) => {
-    if (isSizesExists && !currentSize) {
-      setIsError(true);
-    } else
-      addToCart({
-        id,
-        size,
-      });
+  const onSubmit = (data) => {
+    addToCart({ id, size: null });
   };
-
-  const resetError = () => setIsError(false);
 
   const characteristics = [
     {
-      header: <CharacteristicHeader title="Размер" />,
-      bottom: <CharacteristicBottom options={sizes} name="size" />,
+      header: <CharacteristicHeader title="Размер" name="sizes" />,
+      bottom: <CharacteristicBottom options={sizes} name="sizes" />,
+    },
+    {
+      header: <CharacteristicHeader title="Аромат" name="aromas" />,
+      bottom: <CharacteristicBottom options={aromas} name="aromas" />,
+    },
+    {
+      header: <CharacteristicHeader title="Цвет" name="colors" />,
+      bottom: (
+        <CharacteristicBottom options={colors} name="colors" type="color" />
+      ),
+    },
+    {
+      header: <CharacteristicHeader title="Материал" name="textiles" />,
+      bottom: <CharacteristicBottom options={textiles} name="textiles" />,
     },
   ];
 
   return (
-    <FormProvider {...methods}>
-      <form
-        className={styles.form}
-        onSubmit={methods.handleSubmit(onSubmit)}
-        onChange={resetError}
-      >
+    <FormProvider handleSubmit={handleSubmit} {...methods}>
+      <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
         <Gap direction="vertical" size="medium" alignItems="flex-start">
           <Accordion
             items={characteristics}
             className={styles.characteristics}
           />
-          {isError && <p className="text_error">Пожалуйста, выберите размер</p>}
           <ButtonWithCartActions
             id={id}
             className={styles.button}
-            size={currentSize}
-            isDisabled={!isSizeChoosen}
+            additionalProperties={additionalProperties}
           />
         </Gap>
       </form>

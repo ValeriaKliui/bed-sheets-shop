@@ -6,44 +6,56 @@ import { useFormContext } from "react-hook-form";
 import { OptionsProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Options({ options, name, onChange }: OptionsProps) {
+export default function Options({
+  options,
+  name,
+  onChange,
+  type,
+}: OptionsProps) {
   const [choosenValue, setChoosen] = useState<null | string>(null);
 
-  const { register } = useFormContext();
   const {
-    onChange: onFormChange,
-    onBlur,
-    name: inputName,
-    ref,
-  } = register(name);
+    register,
+    formState: { errors },
+  } = useFormContext();
 
   const onOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onFormChange(e);
-
     onChange?.(e.target.value);
     setChoosen(e.target.value);
   };
 
+  const isColor = type === "color";
+
   return (
-    <Gap wrap>
+    <Gap wrap size={isColor ? "large" : "small"}>
       {options.map((option) => (
-        <label
-          key={option}
-          className={clsx(
-            styles.size,
-            clsx(choosenValue === option && styles.choosen)
+        <label key={option} className={clsx(isColor && styles.colorContainer)}>
+          {isColor && (
+            <div
+              className={clsx(
+                styles.option,
+                choosenValue === option && styles.choosen
+              )}
+              style={{ background: option }}
+            />
           )}
-        >
-          {option}
+          <p
+            className={clsx(
+              !isColor && styles.option,
+              !isColor && choosenValue === option && styles.choosen
+            )}
+          >
+            {option}
+          </p>
           <input
-            onChange={onOptionChange}
-            onBlur={onBlur}
-            name={inputName}
-            ref={ref}
             id={option}
             value={option}
             className={styles.input}
             type="radio"
+            {...register(name, {
+              required: `Необходимо выбрать ${name}`,
+              onChange: onOptionChange,
+            })}
           />
         </label>
       ))}

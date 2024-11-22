@@ -1,8 +1,8 @@
-import { CatalogItem } from "./types";
+import { CatalogItemSeeded } from "./types";
 
 export const CURRENCY = "BYN";
 
-export const CATALOG_ITEMS: CatalogItem[] = [
+export const CATALOG_ITEMS: CatalogItemSeeded[] = [
   {
     id: "2795606755",
     title: "аромат",
@@ -12,6 +12,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5889743546",
@@ -22,6 +23,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2136963260",
@@ -32,6 +34,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6548067304",
@@ -52,6 +56,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1845081072",
@@ -72,6 +77,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6494723586",
@@ -82,6 +88,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8544469450",
@@ -92,6 +99,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5011799301",
@@ -102,6 +110,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7021475543",
@@ -112,6 +121,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5378914728",
@@ -122,6 +132,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5492256343",
@@ -132,6 +143,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7479240961",
@@ -142,6 +154,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5365688996",
@@ -152,6 +165,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9516461441",
@@ -162,6 +176,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6428251744",
@@ -182,6 +197,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1436235235",
@@ -192,6 +208,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7932735491",
@@ -202,6 +219,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6611500626",
@@ -212,6 +230,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5697169957",
@@ -222,6 +241,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4217075162",
@@ -232,6 +252,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3736787200",
@@ -242,6 +263,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1966770502",
@@ -252,6 +274,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2014299315",
@@ -262,6 +285,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8106345912",
@@ -272,6 +296,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3181595780",
@@ -282,6 +307,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6149869547",
@@ -292,6 +318,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5214180209",
@@ -302,6 +329,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5735728180",
@@ -312,6 +340,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3968185447",
@@ -322,6 +351,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3092994515",
@@ -332,6 +362,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3038419516",
@@ -342,6 +373,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6571977761",
@@ -352,6 +384,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8438542263",
@@ -362,6 +396,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6981665956",
@@ -372,6 +408,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9526919432",
@@ -382,6 +419,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0498681955",
@@ -392,6 +430,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2434555179",
@@ -402,6 +441,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7230137721",
@@ -412,6 +452,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3578173258",
@@ -422,6 +463,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5755540578",
@@ -432,6 +474,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7435623709",
@@ -442,6 +485,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9505891016",
@@ -452,6 +496,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7133797070",
@@ -462,6 +507,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0710204701",
@@ -472,6 +518,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2927510350",
@@ -482,6 +529,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6281672925",
@@ -492,6 +540,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0086608428",
@@ -502,6 +551,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1093860847",
@@ -512,6 +562,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4371298516",
@@ -622,6 +673,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4351951915",
@@ -682,6 +734,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8541488810",
@@ -692,6 +745,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0112229417",
@@ -702,6 +756,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7735567146",
@@ -712,6 +768,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8646260739",
@@ -722,6 +779,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3607513449",
@@ -732,6 +791,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2869742444",
@@ -742,6 +803,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2119292566",
@@ -752,6 +815,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2035551978",
@@ -762,6 +826,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6442152251",
@@ -772,6 +837,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8987609863",
@@ -782,6 +848,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2276032669",
@@ -792,6 +859,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6779769452",
@@ -802,6 +870,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0333010647",
@@ -812,6 +881,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1574793071",
@@ -822,6 +892,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8137345671",
@@ -832,6 +903,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3853368719",
@@ -842,6 +914,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1888153563",
@@ -852,6 +925,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7775327901",
@@ -882,6 +956,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8951068234",
@@ -902,6 +978,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4745956142",
@@ -912,6 +989,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5686259232",
@@ -932,6 +1010,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7029654838",
@@ -942,6 +1022,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4274776441",
@@ -962,6 +1043,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0570157536",
@@ -982,6 +1065,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3967972402",
@@ -992,6 +1077,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4293098429",
@@ -1042,6 +1128,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8153690124",
@@ -1052,6 +1140,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5615486287",
@@ -1062,6 +1152,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "3868961011",
@@ -1072,6 +1164,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9055404381",
@@ -1082,6 +1176,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1428099336",
@@ -1092,6 +1188,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2024072542",
@@ -1102,6 +1200,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1418772208",
@@ -1122,6 +1222,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "0342863487",
@@ -1132,6 +1234,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5540447018",
@@ -1142,6 +1246,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8052822106",
@@ -1152,6 +1257,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2832586570",
@@ -1162,6 +1268,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2686302062",
@@ -1172,6 +1279,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8740522601",
@@ -1182,6 +1290,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8359337071",
@@ -1192,6 +1301,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4946299238",
@@ -1202,6 +1313,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6602590081",
@@ -1242,6 +1354,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "1363846868",
@@ -1252,6 +1366,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9365850037",
@@ -1262,6 +1377,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3362580904",
@@ -1272,6 +1388,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3984952104",
@@ -1282,6 +1399,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3708058224",
@@ -1292,6 +1410,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9551635191",
@@ -1302,6 +1421,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9540408490",
@@ -1312,6 +1432,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9924578740",
@@ -1322,6 +1443,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7493465029",
@@ -1332,6 +1454,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5547691321",
@@ -1342,6 +1465,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0023875992",
@@ -1352,6 +1476,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0648080633",
@@ -1362,6 +1487,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2923103793",
@@ -1372,6 +1498,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0568801261",
@@ -1382,6 +1509,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3432148364",
@@ -1402,6 +1530,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3534104579",
@@ -1442,6 +1572,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2295076870",
@@ -1452,6 +1583,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5184791000",
@@ -1462,6 +1594,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9202923337",
@@ -1472,6 +1605,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5465688408",
@@ -1492,6 +1627,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2373937018",
@@ -1512,6 +1649,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3173742702",
@@ -1522,6 +1660,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5946483579",
@@ -1532,6 +1671,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4618877642",
@@ -1542,6 +1682,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8011944576",
@@ -1552,6 +1693,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0686817818",
@@ -1562,6 +1704,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8375562653",
@@ -1572,6 +1715,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7661549530",
@@ -1582,6 +1726,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7434654376",
@@ -1592,6 +1737,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6457624316",
@@ -1602,6 +1748,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2087180601",
@@ -1612,6 +1759,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5737591557",
@@ -1622,6 +1770,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9593077537",
@@ -1632,6 +1781,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4592837134",
@@ -1642,6 +1792,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7829829195",
@@ -1652,6 +1803,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7947654603",
@@ -1662,6 +1814,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3460279168",
@@ -1672,6 +1825,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2835329552",
@@ -1682,6 +1836,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8108062810",
@@ -1692,6 +1847,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6820772114",
@@ -1702,6 +1858,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9265584033",
@@ -1712,6 +1869,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6084557228",
@@ -1722,6 +1880,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2429335972",
@@ -1732,6 +1891,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9650731245",
@@ -1742,6 +1902,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7392252739",
@@ -1752,6 +1913,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8169860555",
@@ -1762,6 +1924,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3246071829",
@@ -1772,6 +1935,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0695067915",
@@ -1782,6 +1946,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5840153842",
@@ -1792,6 +1957,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6018043580",
@@ -1802,6 +1969,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2974934218",
@@ -1812,6 +1980,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9230976172",
@@ -1822,6 +1991,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4300708118",
@@ -1832,6 +2003,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2687690066",
@@ -1842,6 +2014,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7446996684",
@@ -1852,6 +2025,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5922730592",
@@ -1872,6 +2046,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7160318188",
@@ -1882,6 +2057,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6429553167",
@@ -1952,6 +2128,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9531303584",
@@ -1962,6 +2140,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8390517698",
@@ -1982,6 +2162,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8185177813",
@@ -1992,6 +2173,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8823418038",
@@ -2002,6 +2184,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7738367997",
@@ -2012,6 +2195,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7096639462",
@@ -2022,6 +2206,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0964581388",
@@ -2032,6 +2217,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6867449298",
@@ -2042,6 +2228,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0308269632",
@@ -2052,6 +2239,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0026336014",
@@ -2062,6 +2250,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2576211518",
@@ -2072,6 +2262,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4216375790",
@@ -2082,6 +2274,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "9203729488",
@@ -2092,6 +2286,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7600909359",
@@ -2102,6 +2298,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2486942785",
@@ -2112,6 +2310,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0912674490",
@@ -2122,6 +2322,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5531153481",
@@ -2132,6 +2334,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9498282528",
@@ -2142,6 +2345,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9342419607",
@@ -2152,6 +2356,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0398467323",
@@ -2162,6 +2367,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0813377617",
@@ -2172,6 +2379,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5307665474",
@@ -2182,6 +2391,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9900688759",
@@ -2192,6 +2403,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6720132660",
@@ -2212,6 +2425,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7110487954",
@@ -2222,6 +2436,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1469495635",
@@ -2232,6 +2447,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7584838464",
@@ -2242,6 +2458,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3914652810",
@@ -2342,6 +2559,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5311767227",
@@ -2352,6 +2571,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1382839391",
@@ -2362,6 +2583,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3946089011",
@@ -2372,6 +2595,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4977202732",
@@ -2382,6 +2607,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "3335624785",
@@ -2392,6 +2619,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3589813709",
@@ -2402,6 +2630,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0609638564",
@@ -2422,6 +2651,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5432797186",
@@ -2432,6 +2663,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0051790602",
@@ -2442,6 +2674,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5995382330",
@@ -2452,6 +2685,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8948529323",
@@ -2462,6 +2696,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2751915825",
@@ -2482,6 +2717,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6208246121",
@@ -2492,6 +2728,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2654576116",
@@ -2502,6 +2740,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "5084208184",
@@ -2512,6 +2752,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1926191161",
@@ -2522,6 +2763,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0499623126",
@@ -2532,6 +2774,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7928830639",
@@ -2542,6 +2785,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5053734119",
@@ -2552,6 +2796,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6332081686",
@@ -2562,6 +2808,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8865078723",
@@ -2572,6 +2819,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1530492610",
@@ -2582,6 +2831,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6873254924",
@@ -2592,6 +2843,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6791160438",
@@ -2602,6 +2854,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4280065756",
@@ -2612,6 +2865,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9382816313",
@@ -2622,6 +2876,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2526325919",
@@ -2632,6 +2887,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7192198668",
@@ -2642,6 +2898,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5227646074",
@@ -2652,6 +2909,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9065785426",
@@ -2662,6 +2920,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6943187228",
@@ -2692,6 +2951,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8272796988",
@@ -2722,6 +2983,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9925592542",
@@ -2812,6 +3075,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3701747849",
@@ -2832,6 +3096,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8292370641",
@@ -2842,6 +3107,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2574209508",
@@ -2852,6 +3119,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6594717987",
@@ -2862,6 +3131,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1220776521",
@@ -2872,6 +3142,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7931852095",
@@ -2882,6 +3153,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7011532390",
@@ -2902,6 +3174,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4810986578",
@@ -2912,6 +3186,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8329925765",
@@ -2922,6 +3198,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "2079111728",
@@ -2932,6 +3210,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0499815394",
@@ -2942,6 +3222,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5843474569",
@@ -2952,6 +3233,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3599194750",
@@ -2962,6 +3245,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7607036970",
@@ -2972,6 +3257,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4196007880",
@@ -2982,6 +3268,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4831590770",
@@ -2992,6 +3280,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4297938944",
@@ -3002,6 +3291,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2051955492",
@@ -3012,6 +3302,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8122402178",
@@ -3022,6 +3314,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3992847098",
@@ -3032,6 +3325,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8418054069",
@@ -3042,6 +3336,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4242273452",
@@ -3132,6 +3427,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0662896629",
@@ -3142,6 +3438,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4706603552",
@@ -3152,6 +3449,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8016796974",
@@ -3162,6 +3461,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4980193021",
@@ -3182,6 +3483,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7943418336",
@@ -3192,6 +3495,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7416846242",
@@ -3242,6 +3547,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1180505336",
@@ -3252,6 +3558,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7220482779",
@@ -3272,6 +3579,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1053316194",
@@ -3282,6 +3590,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7760158203",
@@ -3292,6 +3601,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9015337756",
@@ -3302,6 +3612,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9230924059",
@@ -3312,6 +3623,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1345747411",
@@ -3322,6 +3635,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4381085620",
@@ -3342,6 +3656,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5931399259",
@@ -3352,6 +3667,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7656405917",
@@ -3362,6 +3678,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2807844405",
@@ -3372,6 +3689,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3351389981",
@@ -3382,6 +3700,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4458809075",
@@ -3392,6 +3712,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4935126000",
@@ -3402,6 +3724,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "3116711445",
@@ -3412,6 +3736,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9487170235",
@@ -3422,6 +3748,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6954855308",
@@ -3432,6 +3760,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7883206397",
@@ -3442,6 +3771,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9647115725",
@@ -3452,6 +3783,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8165837222",
@@ -3462,6 +3794,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3350881963",
@@ -3472,6 +3805,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5332314493",
@@ -3482,6 +3816,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6191891644",
@@ -3552,6 +3887,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1013887166",
@@ -3562,6 +3898,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3482385661",
@@ -3572,6 +3909,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9323821535",
@@ -3582,6 +3920,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2097369774",
@@ -3592,6 +3931,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0930879678",
@@ -3602,6 +3942,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4512630783",
@@ -3612,6 +3953,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6763719914",
@@ -3622,6 +3964,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5453801301",
@@ -3632,6 +3975,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2603751611",
@@ -3642,6 +3987,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0757882919",
@@ -3652,6 +3998,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2842756835",
@@ -3662,6 +4009,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1569526990",
@@ -3672,6 +4021,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4067548710",
@@ -3682,6 +4033,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2242079794",
@@ -3692,6 +4045,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1217576320",
@@ -3702,6 +4057,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "6980970984",
@@ -3712,6 +4069,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7057745761",
@@ -3722,6 +4081,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9532131329",
@@ -3732,6 +4093,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9898884630",
@@ -3742,6 +4105,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2347493582",
@@ -3752,6 +4116,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5239325642",
@@ -3762,6 +4128,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "5901154533",
@@ -3772,6 +4140,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4634388952",
@@ -3782,6 +4151,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8608992949",
@@ -3792,6 +4163,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0562431586",
@@ -3802,6 +4174,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8014279360",
@@ -3822,6 +4195,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6473309039",
@@ -3872,6 +4246,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0970803281",
@@ -3892,6 +4267,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7753938045",
@@ -3912,6 +4288,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9704313594",
@@ -3922,6 +4300,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6752362165",
@@ -3932,6 +4312,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2039620095",
@@ -3942,6 +4324,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7885943844",
@@ -3952,6 +4336,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2400459746",
@@ -3982,6 +4368,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4199356622",
@@ -3992,6 +4379,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3109388243",
@@ -4002,6 +4390,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6376804799",
@@ -4012,6 +4401,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0178654965",
@@ -4022,6 +4412,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0234957786",
@@ -4032,6 +4423,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0753169452",
@@ -4042,6 +4435,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1606068830",
@@ -4052,6 +4447,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8519404154",
@@ -4062,6 +4458,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4958536450",
@@ -4072,6 +4469,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4172291902",
@@ -4082,6 +4480,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8033336137",
@@ -4092,6 +4492,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1009669087",
@@ -4102,6 +4504,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9391465935",
@@ -4112,6 +4516,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5593349312",
@@ -4122,6 +4528,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8923351385",
@@ -4132,6 +4539,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9205147125",
@@ -4142,6 +4551,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9239978119",
@@ -4152,6 +4563,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7484333212",
@@ -4162,6 +4574,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0969703244",
@@ -4172,6 +4585,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2385527499",
@@ -4182,6 +4596,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1672457777",
@@ -4192,6 +4607,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0563067934",
@@ -4202,6 +4618,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9542729081",
@@ -4212,6 +4629,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9404474649",
@@ -4222,6 +4640,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2743565594",
@@ -4292,6 +4711,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7251799162",
@@ -4302,6 +4723,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7659929372",
@@ -4312,6 +4735,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2892846234",
@@ -4322,6 +4746,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0130403733",
@@ -4332,6 +4757,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9900984285",
@@ -4342,6 +4768,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6843027202",
@@ -4352,6 +4780,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3949828206",
@@ -4362,6 +4792,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5208511002",
@@ -4372,6 +4803,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5320840993",
@@ -4392,6 +4824,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4607033723",
@@ -4402,6 +4835,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9270347362",
@@ -4412,6 +4847,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2916479511",
@@ -4422,6 +4859,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3055919580",
@@ -4432,6 +4870,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0303345292",
@@ -4442,6 +4882,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3372191854",
@@ -4452,6 +4894,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4823398513",
@@ -4462,6 +4906,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8927457293",
@@ -4472,6 +4918,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9722870726",
@@ -4482,6 +4930,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "3520463024",
@@ -4492,6 +4942,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9018869643",
@@ -4502,6 +4953,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6128083439",
@@ -4512,6 +4964,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4864067147",
@@ -4522,6 +4975,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5473868525",
@@ -4532,6 +4986,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2364386179",
@@ -4622,6 +5077,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6969190528",
@@ -4632,6 +5089,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7122212122",
@@ -4642,6 +5101,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2474379819",
@@ -4652,6 +5112,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3913162100",
@@ -4662,6 +5123,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4728239152",
@@ -4672,6 +5135,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8710037586",
@@ -4682,6 +5146,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7460109495",
@@ -4692,6 +5157,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8976077385",
@@ -4702,6 +5168,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8329258149",
@@ -4712,6 +5179,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1981353593",
@@ -4722,6 +5190,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6064508795",
@@ -4732,6 +5201,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2395351342",
@@ -4742,6 +5212,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1471164608",
@@ -4752,6 +5224,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9660317816",
@@ -4762,6 +5236,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7038652966",
@@ -4772,6 +5248,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6682323727",
@@ -4782,6 +5260,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8854664855",
@@ -4792,6 +5272,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1987225031",
@@ -4802,6 +5283,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9930717501",
@@ -4812,6 +5294,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6210546455",
@@ -4822,6 +5306,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9748127389",
@@ -4832,6 +5317,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0084154292",
@@ -4842,6 +5329,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0019205791",
@@ -4852,6 +5340,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3447223391",
@@ -4862,6 +5352,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4904083172",
@@ -4872,6 +5363,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8748958999",
@@ -4882,6 +5375,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2152896866",
@@ -4892,6 +5386,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7513741654",
@@ -4942,6 +5437,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8977473802",
@@ -4992,6 +5489,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9487548874",
@@ -5002,6 +5501,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8176564621",
@@ -5012,6 +5512,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1712810081",
@@ -5022,6 +5524,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2125718391",
@@ -5042,6 +5545,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7075753134",
@@ -5052,6 +5556,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1483665038",
@@ -5062,6 +5567,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5262174779",
@@ -5072,6 +5578,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3308960990",
@@ -5092,6 +5599,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9310402415",
@@ -5102,6 +5611,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7139799504",
@@ -5112,6 +5623,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5911580918",
@@ -5122,6 +5634,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7782320844",
@@ -5132,6 +5646,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5662465665",
@@ -5152,6 +5668,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9866053601",
@@ -5162,6 +5680,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5124692413",
@@ -5172,6 +5692,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1268423033",
@@ -5182,6 +5704,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2810524467",
@@ -5192,6 +5716,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7897766756",
@@ -5202,6 +5727,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2949998917",
@@ -5222,6 +5748,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3947776020",
@@ -5232,6 +5759,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9340483154",
@@ -5242,6 +5770,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9197078158",
@@ -5252,6 +5781,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4728862356",
@@ -5262,6 +5792,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2285584733",
@@ -5272,6 +5803,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0623980894",
@@ -5282,6 +5814,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8302815667",
@@ -5292,6 +5825,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5848008981",
@@ -5302,6 +5837,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3736979649",
@@ -5312,6 +5849,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4150321647",
@@ -5382,6 +5921,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7079934370",
@@ -5392,6 +5932,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9497550243",
@@ -5402,6 +5943,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9477231983",
@@ -5412,6 +5954,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8910912294",
@@ -5422,6 +5966,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3235715312",
@@ -5432,6 +5978,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5637543771",
@@ -5442,6 +5990,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4241735541",
@@ -5452,6 +6002,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4658221713",
@@ -5462,6 +6013,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4003641752",
@@ -5472,6 +6025,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2076952969",
@@ -5482,6 +6036,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4897630304",
@@ -5492,6 +6047,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8139588210",
@@ -5502,6 +6058,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8750155636",
@@ -5512,6 +6069,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9111794011",
@@ -5522,6 +6080,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7360775256",
@@ -5532,6 +6091,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4345884470",
@@ -5542,6 +6102,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0756780152",
@@ -5552,6 +6113,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1348117893",
@@ -5562,6 +6124,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "3677119138",
@@ -5572,6 +6136,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3688150112",
@@ -5592,6 +6157,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6658364079",
@@ -5632,6 +6199,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0204537118",
@@ -5662,6 +6231,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2854330749",
@@ -5672,6 +6243,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8084737368",
@@ -5682,6 +6254,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8463033725",
@@ -5692,6 +6265,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4949121898",
@@ -5702,6 +6276,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1490577084",
@@ -5712,6 +6287,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7932222575",
@@ -5722,6 +6298,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6750675700",
@@ -5732,6 +6310,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0658287508",
@@ -5742,6 +6321,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8158058353",
@@ -5752,6 +6332,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3063177997",
@@ -5762,6 +6343,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9390171407",
@@ -5772,6 +6354,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9535286153",
@@ -5782,6 +6365,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7012239700",
@@ -5792,6 +6376,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3597118631",
@@ -5812,6 +6397,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1670212165",
@@ -5842,6 +6429,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2729136916",
@@ -5852,6 +6441,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5081690902",
@@ -5862,6 +6453,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7036904801",
@@ -5872,6 +6465,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9102738449",
@@ -5882,6 +6477,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6056284220",
@@ -5892,6 +6489,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4761980478",
@@ -5902,6 +6500,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4880946184",
@@ -5912,6 +6511,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4498411099",
@@ -5922,6 +6522,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5426008353",
@@ -5932,6 +6533,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8556282571",
@@ -5942,6 +6544,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9945985086",
@@ -5952,6 +6555,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3555992112",
@@ -5962,6 +6567,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6073754779",
@@ -5972,6 +6578,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1414248792",
@@ -5982,6 +6589,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1087182476",
@@ -5992,6 +6600,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7678415702",
@@ -6032,6 +6641,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9094305585",
@@ -6042,6 +6653,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8109432093",
@@ -6052,6 +6665,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9787001919",
@@ -6062,6 +6677,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6679280397",
@@ -6072,6 +6689,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0753886065",
@@ -6082,6 +6700,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6178980329",
@@ -6092,6 +6711,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2589529880",
@@ -6102,6 +6723,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8001545873",
@@ -6112,6 +6735,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9295224183",
@@ -6122,6 +6746,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0861841948",
@@ -6132,6 +6757,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2328561845",
@@ -6142,6 +6769,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6518883596",
@@ -6152,6 +6781,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8953301564",
@@ -6162,6 +6793,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4685127862",
@@ -6172,6 +6804,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9800783725",
@@ -6182,6 +6816,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5805861607",
@@ -6192,6 +6828,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6988201246",
@@ -6202,6 +6840,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6673940174",
@@ -6212,6 +6852,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7434098163",
@@ -6222,6 +6864,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4645079565",
@@ -6232,6 +6876,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5217884843",
@@ -6242,6 +6888,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3488174638",
@@ -6252,6 +6900,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0162259743",
@@ -6282,6 +6932,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7201045571",
@@ -6302,6 +6954,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5959173166",
@@ -6332,6 +6986,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0284584606",
@@ -6342,6 +6997,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6847007664",
@@ -6352,6 +7008,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7292119360",
@@ -6362,6 +7019,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5311531894",
@@ -6372,6 +7030,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7379072110",
@@ -6382,6 +7041,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7380968440",
@@ -6392,6 +7052,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2922361241",
@@ -6432,6 +7093,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5557675604",
@@ -6442,6 +7105,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6667579619",
@@ -6452,6 +7117,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5380459137",
@@ -6482,6 +7148,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9663235551",
@@ -6492,6 +7160,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0234520221",
@@ -6502,6 +7171,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7298345567",
@@ -6512,6 +7183,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4798045829",
@@ -6532,6 +7204,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0742871169",
@@ -6552,6 +7225,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8042610750",
@@ -6562,6 +7237,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3668517738",
@@ -6582,6 +7259,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7601351270",
@@ -6592,6 +7270,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9457329392",
@@ -6602,6 +7282,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8377615150",
@@ -6612,6 +7294,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7402327272",
@@ -6622,6 +7306,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0986137170",
@@ -6632,6 +7318,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0042513979",
@@ -6642,6 +7330,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "0516126709",
@@ -6682,6 +7372,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2938117434",
@@ -6702,6 +7393,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1963043499",
@@ -6712,6 +7404,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5405488240",
@@ -6722,6 +7415,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1896863469",
@@ -6762,6 +7456,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8568238971",
@@ -6772,6 +7467,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7439338359",
@@ -6782,6 +7478,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4983722513",
@@ -6792,6 +7490,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3108108360",
@@ -6802,6 +7501,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7180097578",
@@ -6812,6 +7513,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1531569064",
@@ -6822,6 +7524,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8410407868",
@@ -6832,6 +7536,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1858005159",
@@ -6842,6 +7548,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7837286979",
@@ -6852,6 +7560,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0509300936",
@@ -6862,6 +7572,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3541246030",
@@ -6872,6 +7584,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4805945745",
@@ -6882,6 +7596,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8748564788",
@@ -6892,6 +7608,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2659122318",
@@ -6902,6 +7620,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7118901156",
@@ -6912,6 +7632,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8864514007",
@@ -6922,6 +7644,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6952255095",
@@ -6932,6 +7656,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3893104348",
@@ -6942,6 +7668,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "6723576314",
@@ -6952,6 +7680,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "4201500934",
@@ -6962,6 +7692,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0246087153",
@@ -6972,6 +7704,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0741113759",
@@ -6982,6 +7715,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6196360582",
@@ -7002,6 +7736,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9885797793",
@@ -7012,6 +7747,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7130133767",
@@ -7022,6 +7758,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4631516771",
@@ -7032,6 +7769,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5203202516",
@@ -7092,6 +7831,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9291487589",
@@ -7102,6 +7843,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8516358550",
@@ -7112,6 +7854,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6830806356",
@@ -7122,6 +7866,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0664886787",
@@ -7132,6 +7877,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9241257466",
@@ -7142,6 +7889,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5862908846",
@@ -7152,6 +7901,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5723829572",
@@ -7162,6 +7913,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9140668576",
@@ -7172,6 +7925,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7747263597",
@@ -7182,6 +7937,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "1794568441",
@@ -7192,6 +7949,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7628148301",
@@ -7202,6 +7960,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6717387149",
@@ -7232,6 +7991,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6404814528",
@@ -7242,6 +8003,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "5156072488",
@@ -7272,6 +8035,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5906446052",
@@ -7282,6 +8047,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8429989692",
@@ -7292,6 +8059,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3625971399",
@@ -7302,6 +8071,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "5506354231",
@@ -7312,6 +8083,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5853015370",
@@ -7332,6 +8105,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5780676054",
@@ -7342,6 +8116,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9168934645",
@@ -7352,6 +8127,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2456719131",
@@ -7372,6 +8149,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0994880499",
@@ -7382,6 +8160,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0007622821",
@@ -7432,6 +8212,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1026518423",
@@ -7442,6 +8224,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4425423720",
@@ -7452,6 +8235,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4324109664",
@@ -7462,6 +8246,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2452499439",
@@ -7472,6 +8258,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7747077017",
@@ -7482,6 +8270,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1530521815",
@@ -7492,6 +8281,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3131430907",
@@ -7502,6 +8293,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3848148285",
@@ -7512,6 +8305,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8443016159",
@@ -7522,6 +8317,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5966005389",
@@ -7532,6 +8329,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8998566613",
@@ -7542,6 +8341,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "2291581821",
@@ -7552,6 +8353,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9887967602",
@@ -7562,6 +8365,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7110374270",
@@ -7572,6 +8377,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5184461914",
@@ -7582,6 +8389,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7476050789",
@@ -7612,6 +8421,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3034627653",
@@ -7622,6 +8433,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4186854440",
@@ -7632,6 +8445,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3551176949",
@@ -7672,6 +8487,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5687310584",
@@ -7712,6 +8529,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2002928401",
@@ -7722,6 +8540,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7864611710",
@@ -7732,6 +8551,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9059407717",
@@ -7742,6 +8562,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0360940447",
@@ -7752,6 +8573,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1963419065",
@@ -7762,6 +8584,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7863723531",
@@ -7792,6 +8615,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2242283731",
@@ -7802,6 +8627,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7418412622",
@@ -7812,6 +8638,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1441016880",
@@ -7822,6 +8649,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5263889348",
@@ -7832,6 +8660,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6256786157",
@@ -7842,6 +8672,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8761933325",
@@ -7852,6 +8683,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4363498455",
@@ -7862,6 +8694,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7184400704",
@@ -7872,6 +8706,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0017881390",
@@ -7882,6 +8718,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3403868710",
@@ -7892,6 +8730,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9860835330",
@@ -7902,6 +8741,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8802326622",
@@ -7912,6 +8752,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0945264224",
@@ -7922,6 +8763,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8910921242",
@@ -7932,6 +8774,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6807001657",
@@ -7942,6 +8786,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7897703088",
@@ -7952,6 +8797,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6891254183",
@@ -7962,6 +8809,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "0515418129",
@@ -7972,6 +8821,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3404910303",
@@ -7982,6 +8833,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8679869988",
@@ -8102,6 +8955,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1297066170",
@@ -8112,6 +8967,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1396605010",
@@ -8122,6 +8979,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3364788839",
@@ -8132,6 +8991,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3498620096",
@@ -8142,6 +9003,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2859469834",
@@ -8152,6 +9014,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0344588432",
@@ -8162,6 +9025,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4792727898",
@@ -8172,6 +9036,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5469945170",
@@ -8182,6 +9047,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5507195684",
@@ -8192,6 +9058,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8757804214",
@@ -8202,6 +9069,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8854839469",
@@ -8212,6 +9081,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2309094986",
@@ -8222,6 +9092,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1290190135",
@@ -8232,6 +9104,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7349965125",
@@ -8242,6 +9115,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6510708434",
@@ -8252,6 +9126,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6762132871",
@@ -8262,6 +9137,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5555126778",
@@ -8272,6 +9148,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3233739249",
@@ -8292,6 +9169,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9014092202",
@@ -8302,6 +9180,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2680926463",
@@ -8312,6 +9191,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6725202012",
@@ -8322,6 +9202,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0923017879",
@@ -8332,6 +9213,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1230679863",
@@ -8342,6 +9224,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5818593762",
@@ -8352,6 +9235,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3866974493",
@@ -8362,6 +9246,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4037767716",
@@ -8372,6 +9257,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8388065831",
@@ -8382,6 +9268,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0680623450",
@@ -8392,6 +9279,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8141028693",
@@ -8402,6 +9290,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5250469906",
@@ -8412,6 +9301,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4748925221",
@@ -8422,6 +9312,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8720885911",
@@ -8432,6 +9323,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9789887116",
@@ -8442,6 +9334,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2073596088",
@@ -8452,6 +9345,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7269028710",
@@ -8462,6 +9356,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8368165636",
@@ -8472,6 +9367,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2417551667",
@@ -8482,6 +9378,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2870402732",
@@ -8492,6 +9389,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7993672562",
@@ -8502,6 +9400,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0959669612",
@@ -8512,6 +9411,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7102603819",
@@ -8522,6 +9422,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0990724778",
@@ -8532,6 +9433,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9519908412",
@@ -8542,6 +9444,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/top.png",
     category: "clothes",
     sizes: ["xs", "s", "m", "l", "xl", "xxl"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1183053789",
@@ -8552,6 +9455,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9279841696",
@@ -8562,6 +9467,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "1071797360",
@@ -8572,6 +9479,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9500287560",
@@ -8582,6 +9491,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9700161935",
@@ -8592,6 +9503,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7221213054",
@@ -8602,6 +9514,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1101273402",
@@ -8612,6 +9526,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3328107436",
@@ -8622,6 +9538,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "50ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9216560851",
@@ -8632,6 +9549,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5783637475",
@@ -8642,6 +9561,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6281369114",
@@ -8652,6 +9572,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9075870272",
@@ -8672,6 +9593,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7234957170",
@@ -8682,6 +9605,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "1138035009",
@@ -8692,6 +9617,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2078753777",
@@ -8702,6 +9629,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2486260501",
@@ -8712,6 +9641,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9395648309",
@@ -8722,6 +9653,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9391578373",
@@ -8732,6 +9665,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9879390393",
@@ -8752,6 +9687,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5868960130",
@@ -8762,6 +9699,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0877220174",
@@ -8772,6 +9711,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3441906217",
@@ -8842,6 +9783,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "7471873183",
@@ -8852,6 +9794,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "3325181651",
@@ -8862,6 +9805,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6916812508",
@@ -8872,6 +9816,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "2055077767",
@@ -8882,6 +9827,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5423046807",
@@ -8902,6 +9848,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8020085920",
@@ -8922,6 +9870,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "2000699189",
@@ -8962,6 +9912,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "2537062167",
@@ -8972,6 +9924,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9480462621",
@@ -8982,6 +9936,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "9388698444",
@@ -9002,6 +9958,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8520623204",
@@ -9012,6 +9970,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6237409149",
@@ -9022,6 +9982,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7917076148",
@@ -9032,6 +9994,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9162845047",
@@ -9042,6 +10006,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "9887121398",
@@ -9052,6 +10018,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8421310127",
@@ -9062,6 +10030,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9682774950",
@@ -9072,6 +10042,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1754625789",
@@ -9112,6 +10084,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8178251582",
@@ -9122,6 +10096,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "4912951382",
@@ -9142,6 +10118,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5926764645",
@@ -9152,6 +10130,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0119197820",
@@ -9182,6 +10162,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "3979108317",
@@ -9202,6 +10184,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "5137657905",
@@ -9212,6 +10195,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9435268145",
@@ -9222,6 +10206,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9108211620",
@@ -9232,6 +10217,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6276564087",
@@ -9242,6 +10228,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "9752202241",
@@ -9252,6 +10239,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7053149250",
@@ -9262,6 +10251,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1735835013",
@@ -9272,6 +10262,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "6512312155",
@@ -9292,6 +10283,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6607946925",
@@ -9302,6 +10295,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9172746599",
@@ -9312,6 +10307,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1579195660",
@@ -9322,6 +10319,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8457008102",
@@ -9332,6 +10331,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: null,
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3574624522",
@@ -9402,6 +10403,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4647077535",
@@ -9412,6 +10415,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8193829808",
@@ -9422,6 +10427,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "1505437334",
@@ -9432,6 +10439,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8456796360",
@@ -9442,6 +10451,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7837945379",
@@ -9452,6 +10463,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "6858492445",
@@ -9462,6 +10475,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "1766497233",
@@ -9472,6 +10487,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9459006221",
@@ -9482,6 +10499,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8701227297",
@@ -9492,6 +10511,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5710468444",
@@ -9502,6 +10523,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4530761959",
@@ -9512,6 +10534,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5589866723",
@@ -9532,6 +10556,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "8244585838",
@@ -9542,6 +10567,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "4603675410",
@@ -9552,6 +10578,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1793699321",
@@ -9562,6 +10589,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "0234498242",
@@ -9572,6 +10600,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/aromas.png",
     category: "aromas",
     sizes: ["25ml", "40ml", "75ml"],
+    aromas: ["ваниль", "табак", "роза"],
   },
   {
     id: "1265001316",
@@ -9592,6 +10621,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7199025971",
@@ -9612,6 +10643,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5603613238",
@@ -9622,6 +10655,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["30*40", "50*70", "60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9612727686",
@@ -9642,6 +10677,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8695581691",
@@ -9652,6 +10689,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8270824275",
@@ -9692,6 +10731,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "7551013784",
@@ -9702,6 +10743,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "4207116648",
@@ -9712,6 +10755,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "1123215820",
@@ -9722,6 +10767,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6419136113",
@@ -9732,6 +10779,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8826783136",
@@ -9742,6 +10791,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "0033853347",
@@ -9752,6 +10803,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "0890240051",
@@ -9782,6 +10835,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "9451649530",
@@ -9812,6 +10867,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "3686284677",
@@ -9822,6 +10879,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "8935864226",
@@ -9832,6 +10891,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "8489165610",
@@ -9842,6 +10903,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "8544339115",
@@ -9852,6 +10915,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "5015032471",
@@ -9862,6 +10927,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "6776370303",
@@ -9882,6 +10949,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "2036910386",
@@ -9902,6 +10971,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "7692258368",
@@ -9922,6 +10993,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5606501945",
@@ -9942,6 +11015,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
   {
     id: "7730124963",
@@ -9952,6 +11027,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "9834110413",
@@ -9982,6 +11059,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: ["red", "white", "black"],
   },
   {
     id: "5541921147",
@@ -9992,6 +11071,8 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: ["шелк", "лен", "трикотаж"],
+    colors: null,
   },
   {
     id: "2983428591",
@@ -10002,5 +11083,7 @@ export const CATALOG_ITEMS: CatalogItem[] = [
     photo: "/images/sofa.png",
     category: "sheet",
     sizes: ["60*70", "90*120"],
+    textiles: null,
+    colors: ["red", "white", "black"],
   },
 ];

@@ -18,8 +18,8 @@ export default function ItemBlock({
   price,
   id,
   category,
-  sizes,
   photo,
+  additionalProperties,
 }: CatalogItemProps) {
   const cardsSrc = repeatArray(SLIDER_VERTICAL, 2);
   cardsSrc.unshift({ src: photo });
@@ -52,7 +52,7 @@ export default function ItemBlock({
         <p className={clsx("text_big", "text_primary", styles.price)}>
           {price} {CURRENCY}
         </p>
-        <FormAddToCart sizes={sizes} id={id} />
+        <FormAddToCart additionalProperties={additionalProperties} id={id} />
       </Gap>
     </div>
   );

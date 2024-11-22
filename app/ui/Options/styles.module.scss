@@ -1,9 +1,12 @@
 @use "../../variables.module.scss" as v;
 
-.size {
+.option {
   padding: 0.1em 0.8em;
   border: 1px solid v.$light-lines;
   cursor: pointer;
+  min-width: 3em;
+  min-height: 1.5em;
+  text-align: center;
 }
 .choosen {
   border: 1px solid v.$color-primary;
@@ -12,4 +15,8 @@
 }
 .input[type="radio"] {
   display: none;
+}
+.colorContainer {
+  display: flex;
+  gap: 1em;
 }
