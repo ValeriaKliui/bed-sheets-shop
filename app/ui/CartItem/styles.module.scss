@@ -12,6 +12,7 @@
     border: 1px solid v.$light-lines;
     border-right: none;
     border-left: none;
+    padding: 2em;
   }
   @include sm {
     grid-template-columns: repeat(4, 1fr);

@@ -21,7 +21,7 @@ export default async function SearchedItems({
     <Gap direction="vertical"
       className="wrapper" alignItems="flex-start">
       {searchedItems.length === 0 ? (
-        <p>ничего не найдено</p>
+        <p>Ничего не найдено</p>
       ) : (
         <>
           <h2>Результаты поиска</h2>

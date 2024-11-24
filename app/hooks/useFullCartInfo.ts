@@ -1,14 +1,18 @@
-import { fetchItemsByIDs } from "@lib/fetchItemsByIDs";
-import { setFullCartItems } from "@lib/redux/features/cart/cartSlice";
-import { useEffect, useState } from "react";
+import { fetchItemsByIDs } from '@lib/fetchItemsByIDs';
+import { setFullCartItems } from '@lib/redux/features/cart/cartSlice';
+import { useEffect, useState } from 'react';
 
-import { useAppDispatch } from "./hooks";
-import useCart from "./useCart";
+import { useAppDispatch } from './hooks';
+import useCart from './useCart';
 
 export default function useFullCartInfo() {
   const [isLoading, setIsLoading] = useState(true);
-  const { getTotalAmountInCart, cartItems, getItemAmountInCart, cleanCart } =
-    useCart();
+  const {
+    getTotalAmountInCart,
+    cartItems,
+    getItemAmountInCart,
+    cleanCart,
+  } = useCart();
   const cartItemsIDs = cartItems.map(({ id }) => id);
   const dispatch = useAppDispatch();
 
@@ -16,23 +20,17 @@ export default function useFullCartInfo() {
     setIsLoading(false);
     const fetchItemsData = async () => {
       if (getTotalAmountInCart() > 0) {
-        const foundItems = await fetchItemsByIDs({ id: cartItemsIDs });
-        const itemsWithSizes = foundItems.map(({ sizes, id, ...item }) => {
-          const amount = sizes
-            ? sizes?.flatMap((size) => {
-                const amount = getItemAmountInCart({ size, id });
-                if (!amount) return [];
-                return {
-                  size,
-                  amount,
-                };
-              })
-            : getItemAmountInCart({ id, size: null });
-
-          return { id, sizes, amount, ...item };
+        const foundItems = await fetchItemsByIDs({
+          id: cartItemsIDs,
         });
 
-        dispatch(setFullCartItems(itemsWithSizes));
+        const itemsFullInfo = cartItems.map(({ id, ...item }) => {
+          const { additionalProperties, ...foundItem } =
+            foundItems.find(({ id: itemID }) => id === itemID);
+          return { ...item, ...foundItem };
+        });
+
+        dispatch(setFullCartItems(itemsFullInfo));
       } else dispatch(setFullCartItems([]));
     };
     fetchItemsData();

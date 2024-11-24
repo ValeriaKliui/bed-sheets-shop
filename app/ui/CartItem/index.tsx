@@ -6,6 +6,7 @@ import Gap from "@ui/Gap";
 import colors from "@variables.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
+import Link from "next/link";
 
 import { CartItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -17,28 +18,36 @@ export default function CartItem({
   photo,
   title,
   price,
-  size,
-  id,
+  additionalProperties,
+  id, category
 }: CartItemProps) {
+  const { sizes, aromas, textiles, colors } = additionalProperties
   const { addToCart, removeFromCart } = useCart();
-  const onAddClick = () => addToCart({ id, size });
-  const onRemoveClick = () => removeFromCart({ id, size });
-  const onTotalDelete = () => removeFromCart({ id, size }, true);
+  const onAddClick = () => addToCart({ id, additionalProperties });
+  const onRemoveClick = () => removeFromCart({ id, additionalProperties });
+  const onTotalDelete = () => removeFromCart({ id, additionalProperties }, true)
 
   const finalPrice = amount * Number(price);
 
   return (
     <div className={styles.container}>
-      <Image
-        src={photo}
-        width={100}
-        height={60}
-        alt={title}
-        className={styles.photo}
-      />
+      <Link href={`/catalog/${category}/${id}`} >
+        <Image
+          src={photo}
+          width={100}
+          height={60}
+          alt={title}
+          className={styles.photo}
+        />
+      </Link>
       <Gap className={styles.info} direction="vertical" alignItems="flex-start">
-        <h4> {title}</h4>
-        <p>{size}</p>
+        <Link href={`/catalog/${category}/${id}`} >
+          <h4> {title}</h4>
+        </Link>
+        <p>{sizes}</p>
+        <p>{aromas}</p>
+        <p>{textiles}</p>
+        <p>{colors}</p>
       </Gap>
       <ButtonPlusMinus
         amount={amount}

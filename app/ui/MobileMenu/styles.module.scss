@@ -3,6 +3,7 @@
 
 .mobileMenu {
   color: v.$color-text;
+  margin-left: 2em;
   @include sm {
     display: none;
   }

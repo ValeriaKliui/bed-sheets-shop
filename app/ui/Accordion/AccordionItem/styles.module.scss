@@ -1,14 +1,14 @@
-@use "../../../variables.module.scss" as v;
+@use '../../../variables.module.scss' as v;
 
 .container {
   border-bottom: 1px solid v.$light-lines;
-  cursor: pointer;
 }
 .header {
   display: flex;
   justify-content: space-between;
   padding: 1em 0;
   height: 100%;
+  cursor: pointer;
 }
 .bottom {
   padding: 1em 0 0 0;

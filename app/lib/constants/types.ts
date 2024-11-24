@@ -1,21 +1,20 @@
 export enum Availability {
-  unavailable = "нет в наличии",
-  available = "в наличии",
+  unavailable = 'нет в наличии',
+  available = 'в наличии',
 }
 
-export enum CHARACTERISTICS {
-  sizes = "Размер",
-  aromas = "Аромат",
-  colors = "Цвет",
-  textiles = "Материал",
+export enum ADDITIONAL_PROPERTIES {
+  sizes = 'размер',
+  aromas = 'аромат',
+  colors = 'цвет',
+  textiles = 'материал',
 }
+export type AdditionalPropertiesKeys =
+  keyof typeof ADDITIONAL_PROPERTIES;
 
-export interface AdditionalProperties {
-  sizes?: string[] | null;
-  aromas?: string[] | null;
-  textiles?: string[] | null;
-  colors?: string[] | null;
-}
+export type AdditionalProperties = {
+  [key in AdditionalPropertiesKeys]?: string[] | null;
+};
 
 export interface CatalogItemSeeded extends AdditionalProperties {
   article: string;
@@ -46,7 +45,7 @@ export interface SearchParams {
   minPrice?: number;
   maxPrice?: number;
   size?: string;
-  inStock?: "false" | "true";
+  inStock?: 'false' | 'true';
   sort?: string;
   search?: string;
 }

@@ -1,6 +1,5 @@
 import formatPrice from "@lib/utils/formatPrice";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
-import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
@@ -11,7 +10,7 @@ import styles from "./styles.module.scss";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
   (
-    { article, info, photo, price, title, actionButton, id }: CardProps,
+    { article, info, photo, price, title, actionButton, }: CardProps,
     ref
   ) => {
     const priceNum = Number(price);
@@ -45,7 +44,6 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         <Gap direction="vertical">
           <p>{discountInfo}</p>
           <h4 className="text_primary">{formatPrice(price)}</h4>
-          <ButtonWithCartActions id={id} className={styles.button} />
         </Gap>
       </Gap>
     );

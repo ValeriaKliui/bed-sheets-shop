@@ -3,7 +3,6 @@
 import Options from "@ui/Options";
 
 import { CharacteristicBottomProps } from "./intefaces";
-import { useFormContext } from "react-hook-form";
 
 export default function CharacteristicBottom({
   options,

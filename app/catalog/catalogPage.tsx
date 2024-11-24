@@ -60,7 +60,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
           <p className="text_big">{title}</p>
         </Gap>
         <FiltersMobile filters={getFilters()} />
-        <div>
+        <Gap direction="vertical" className={styles.container}>
           <Sorts />
           <Catalog<CardProps>
             fetch={fetchByCategory}
@@ -91,8 +91,8 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
               </Link>
             )}
           />
-        </div>
-        <Gap direction="vertical" size="large">
+        </Gap>
+        <Gap direction="vertical" size="large" className={styles.paginationRecent}>
           <Pagination
             totalItems={totalItems}
             currentPage={currentPage}

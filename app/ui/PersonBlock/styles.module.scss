@@ -1,19 +1,17 @@
-@import "../../breakpoints.module.scss";
+@import '../../breakpoints.module.scss';
 
 .container {
   @include xxs {
     display: grid;
-    gap: 0 2em;
+    gap: 2em;
     grid-template-areas:
-      "image title"
-      "text text";
-    grid-template-rows: repeat(2, 1fr);
-    // padding: 4em 0;
+      'image title'
+      'text text';
   }
   @include sm {
     grid-template-areas:
-      "image title"
-      "image text";
+      'image title'
+      'image text';
   }
 }
 .image {

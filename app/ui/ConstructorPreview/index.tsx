@@ -1,4 +1,4 @@
-import LinkButton from "@ui/LinkButton";
+import ButtonLink from "@ui/ButtonLink";
 import clsx from "clsx";
 import Image from "next/image";
 
@@ -24,7 +24,7 @@ export default function ConstructorPreview({
       />
       {buttonLink && (
         <div className={styles.button}>
-          <LinkButton href={buttonLink}>собрать</LinkButton>
+          <ButtonLink href={buttonLink}>собрать</ButtonLink>
         </div>
       )}
     </div>

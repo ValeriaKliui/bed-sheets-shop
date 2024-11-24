@@ -9,6 +9,7 @@ import CartHeader from "./CartHeader";
 export default function CartInfo() {
   const cartItemsFull = useAppSelector(selectFullCartItems);
 
+
   return (
     <>
       <CartHeader />

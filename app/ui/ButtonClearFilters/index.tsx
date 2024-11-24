@@ -1,6 +1,6 @@
 "use client";
 
-import LinkButton from "@ui/LinkButton";
+import ButtonLink from "@ui/ButtonLink";
 import { usePathname, useSearchParams } from "next/navigation";
 
 export default function ButtonClearFilters() {
@@ -11,5 +11,5 @@ export default function ButtonClearFilters() {
 
   if (!isFilterExists) return;
 
-  return <LinkButton href={pathname}>Очистить фильтры</LinkButton>;
+  return <ButtonLink href={pathname}>Очистить фильтры</ButtonLink>;
 }

@@ -4,8 +4,7 @@ import { useAppSelector } from "@hooks/hooks";
 import useCart from "@hooks/useCart";
 import getItemsText from "@lib/getItemsText";
 import { selectFullCartItems } from "@lib/redux/features/cart/cartSelectors";
-import formatPrice from "@lib/utils/formatPrice";
-import sumObjectParam from "@lib/utils/sumObjectParam";
+import getTotalPriceOfCart from "@lib/utils/getTotalPriceOfCart";
 import Button from "@ui/Button";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
@@ -22,15 +21,8 @@ export default function CartBottom() {
 
   const itemsText = getItemsText(totalAmount);
 
-  const totalPrice = cartItemsFull.reduce((sum, { amount = 0, price }) => {
-    const priceNum = Number(price);
-    if (typeof amount === "number") {
-      return sum + amount * priceNum;
-    } else {
-      const itemAmount = sumObjectParam(amount, "amount");
-      return sum + itemAmount * priceNum;
-    }
-  }, 0);
+
+  const totalPrice = getTotalPriceOfCart(cartItemsFull)
 
   return (
     <Gap
@@ -40,7 +32,7 @@ export default function CartBottom() {
     >
       <p> Итого</p>
       <p className={clsx("text_primary", "text_big")}>
-        {formatPrice(totalPrice)}
+        {(totalPrice)}
       </p>
       <Gap size="large" direction="vertical" className={styles.cartInfo}>
         <Gap
@@ -55,7 +47,7 @@ export default function CartBottom() {
               </span>
               {itemsText} на сумму
             </p>
-            <p> {formatPrice(totalPrice)}</p>
+            <p> {totalPrice}</p>
           </Gap>
           <Link className="link" href="#">
             Информация о доставке

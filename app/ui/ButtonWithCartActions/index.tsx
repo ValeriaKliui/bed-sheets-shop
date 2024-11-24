@@ -9,16 +9,14 @@ import { ButtonWithCartActionsProps } from "./interfaces";
 export default function ButtonWithCartActions({
   id,
   className,
-  size,
   isDisabled,
   additionalProperties,
 }: ButtonWithCartActionsProps) {
   const { getItemAmountInCart, addToCart, removeFromCart } = useCart();
+  const onIncreaseClick = () => !isDisabled && addToCart({ id, additionalProperties });
+  const onDecreaseClick = () => !isDisabled && removeFromCart({ id, additionalProperties });
 
-  const onIncreaseClick = () => !isDisabled && addToCart({ id, size });
-  const onDecreaseClick = () => !isDisabled && removeFromCart({ id, size });
-
-  const amountInCart = getItemAmountInCart({ id, size });
+  const amountInCart = getItemAmountInCart({ id, additionalProperties });
 
   return (
     <NoSSR>

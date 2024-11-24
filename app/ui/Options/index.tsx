@@ -1,3 +1,4 @@
+import { ADDITIONAL_PROPERTIES } from "@lib/constants/types";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import { ChangeEvent, useState } from "react";
@@ -16,7 +17,6 @@ export default function Options({
 
   const {
     register,
-    formState: { errors },
   } = useFormContext();
 
   const onOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -39,21 +39,21 @@ export default function Options({
               style={{ background: option }}
             />
           )}
-          <p
+          {!isColor && <p
             className={clsx(
-              !isColor && styles.option,
-              !isColor && choosenValue === option && styles.choosen
+              styles.option,
+              choosenValue === option && styles.choosen
             )}
           >
             {option}
-          </p>
+          </p>}
           <input
             id={option}
             value={option}
             className={styles.input}
             type="radio"
             {...register(name, {
-              required: `Необходимо выбрать ${name}`,
+              required: `Необходимо выбрать ${ADDITIONAL_PROPERTIES[name]}`,
               onChange: onOptionChange,
             })}
           />

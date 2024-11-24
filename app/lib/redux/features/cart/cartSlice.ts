@@ -1,18 +1,18 @@
-import getFreeIndex from "@lib/utils/getFreeIndex";
-import getSameItemInCart from "@lib/utils/getSameItemInCart";
-import { getSortedAndStringifiedObject } from "@lib/utils/getSortedAndStringifiedObject";
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import getFreeIndex from '@lib/utils/getFreeIndex';
+import getSameItemInCart from '@lib/utils/getSameItemInCart';
+import { getSortedAndStringifiedObject } from '@lib/utils/getSortedAndStringifiedObject';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
 import {
   CartItemFull,
   CartItemShort,
   cartState,
   DecreasePayload,
-} from "./interfaces";
+} from './interfaces';
 
 const getInitialCartItems = () => {
-  if (typeof localStorage !== "undefined") {
-    const savedCart = localStorage.getItem("cartItems");
+  if (typeof localStorage !== 'undefined') {
+    const savedCart = localStorage.getItem('cartItems');
     if (savedCart) return JSON.parse(savedCart);
   }
 
@@ -25,7 +25,7 @@ const initialState: cartState = {
 };
 
 export const cartSlice = createSlice({
-  name: "cart",
+  name: 'cart',
   initialState,
   reducers: {
     increaseAmount: (
@@ -39,7 +39,11 @@ export const cartSlice = createSlice({
 
       if (itemInCartStringified) {
         state.cartItems.find((cartItem) => {
-          const { amount: _, cartID, ...cartItemOnlyOptions } = cartItem;
+          const {
+            amount: _,
+            cartID,
+            ...cartItemOnlyOptions
+          } = cartItem;
 
           if (
             getSortedAndStringifiedObject(cartItemOnlyOptions) ===
@@ -70,7 +74,10 @@ export const cartSlice = createSlice({
         payload: { itemToRemove, isTotalDelete },
       }: PayloadAction<DecreasePayload>
     ) => {
-      const { currCartID } = getSameItemInCart(state.cartItems, itemToRemove);
+      const { currCartID } = getSameItemInCart(
+        state.cartItems,
+        itemToRemove
+      );
 
       const totallyDelete = () =>
         (state.cartItems = state.cartItems.filter(
@@ -94,13 +101,20 @@ export const cartSlice = createSlice({
     resetCart: (state) => {
       state.cartItems = [];
     },
-    setFullCartItems: (state, action: PayloadAction<CartItemFull[]>) => {
+    setFullCartItems: (
+      state,
+      action: PayloadAction<CartItemFull[]>
+    ) => {
       state.cartItemsFull = action.payload;
     },
   },
 });
 
-export const { increaseAmount, resetCart, decreaseAmount, setFullCartItems } =
-  cartSlice.actions;
+export const {
+  increaseAmount,
+  resetCart,
+  decreaseAmount,
+  setFullCartItems,
+} = cartSlice.actions;
 
 export default cartSlice.reducer;
