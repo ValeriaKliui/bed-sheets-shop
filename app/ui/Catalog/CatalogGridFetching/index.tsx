@@ -9,6 +9,7 @@ export default async function CatalogGridFetching<T>({
 }: CatalogProps<T>) {
   const cards = await fetch();
   const cardItems = cards.map(({ id, ...props }) => (
+    // @ts-ignore: TODO
     <Card {...props} key={id} id={id} />
   ));
 

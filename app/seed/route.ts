@@ -36,9 +36,13 @@ async function seedCatalogItems() {
         aromas,
         textiles,
         colors,
-      }) => client.sql`
+      }) =>
+        client.sql`
         INSERT INTO catalog_items (id, title, price, info, article, photo, category, sizes, aromas, textiles, colors)
-        VALUES (${id}, ${title}, ${price}, ${info}, ${article}, ${photo}, ${category}, ${sizes}, ${aromas}, ${textiles}, ${colors})
+        VALUES (${id}, ${title}, ${price}, ${info}, ${article}, ${photo}, ${category}, ${
+          // @ts-ignore: TODO
+          sizes
+        }, ${aromas}, ${textiles}, ${colors})
       `
     )
   );

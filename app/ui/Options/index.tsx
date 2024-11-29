@@ -1,11 +1,10 @@
 import { ADDITIONAL_PROPERTIES } from "@lib/constants/types";
 import Gap from "@ui/Gap";
-import clsx from "clsx";
+import Option from "@ui/Option";
 import { ChangeEvent, useState } from "react";
 import { useFormContext } from "react-hook-form";
 
 import { OptionsProps } from "./interfaces";
-import styles from "./styles.module.scss";
 
 export default function Options({
   options,
@@ -13,51 +12,28 @@ export default function Options({
   onChange,
   type,
 }: OptionsProps) {
-  const [choosenValue, setChoosen] = useState<null | string>(null);
+  const [choosenOption, chooseOption] = useState<null | string>(null);
 
-  const {
-    register,
-  } = useFormContext();
+  const { register } = useFormContext();
 
   const onOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange?.(e.target.value);
-    setChoosen(e.target.value);
+    chooseOption(e.target.value);
   };
 
-  const isColor = type === "color";
-
   return (
-    <Gap wrap size={isColor ? "large" : "small"}>
+    <Gap wrap>
       {options.map((option) => (
-        <label key={option} className={clsx(isColor && styles.colorContainer)}>
-          {isColor && (
-            <div
-              className={clsx(
-                styles.option,
-                choosenValue === option && styles.choosen
-              )}
-              style={{ background: option }}
-            />
-          )}
-          {!isColor && <p
-            className={clsx(
-              styles.option,
-              choosenValue === option && styles.choosen
-            )}
-          >
-            {option}
-          </p>}
-          <input
-            id={option}
-            value={option}
-            className={styles.input}
-            type="radio"
-            {...register(name, {
-              required: `Необходимо выбрать ${ADDITIONAL_PROPERTIES[name]}`,
-              onChange: onOptionChange,
-            })}
-          />
-        </label>
+        <Option
+          onChange={onOptionChange}
+          isChoosen={choosenOption === option}
+          required={`Необходимо выбрать ${ADDITIONAL_PROPERTIES[name]}`}
+          register={register}
+          type={type}
+          option={option}
+          key={option}
+          name={name}
+        />
       ))}
     </Gap>
   );

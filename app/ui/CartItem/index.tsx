@@ -3,10 +3,12 @@ import formatPrice from "@lib/utils/formatPrice";
 import ButtonPlusMinus from "@ui/ButtonPlusMinus";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
+import Option from "@ui/Option";
 import colors from "@variables.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 
 import { CartItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
@@ -19,19 +21,25 @@ export default function CartItem({
   title,
   price,
   additionalProperties,
-  id, category
+  id,
+  category,
 }: CartItemProps) {
-  const { sizes, aromas, textiles, colors } = additionalProperties
+  const { sizes, aromas, textiles, colors } = additionalProperties || {};
+
+  console.log(additionalProperties);
+
   const { addToCart, removeFromCart } = useCart();
   const onAddClick = () => addToCart({ id, additionalProperties });
   const onRemoveClick = () => removeFromCart({ id, additionalProperties });
-  const onTotalDelete = () => removeFromCart({ id, additionalProperties }, true)
+  const onTotalDelete = () =>
+    removeFromCart({ id, additionalProperties }, true);
+  const { register } = useForm();
 
   const finalPrice = amount * Number(price);
 
   return (
     <div className={styles.container}>
-      <Link href={`/catalog/${category}/${id}`} >
+      <Link href={`/catalog/${category}/${id}`}>
         <Image
           src={photo}
           width={100}
@@ -41,13 +49,22 @@ export default function CartItem({
         />
       </Link>
       <Gap className={styles.info} direction="vertical" alignItems="flex-start">
-        <Link href={`/catalog/${category}/${id}`} >
+        <Link href={`/catalog/${category}/${id}`}>
           <h4> {title}</h4>
         </Link>
-        <p>{sizes}</p>
-        <p>{aromas}</p>
-        <p>{textiles}</p>
-        <p>{colors}</p>
+        <Gap>
+          {sizes && <Option option={sizes} register={register} name="sizes" />}
+          {colors && (
+            <Option
+              option={colors}
+              register={register}
+              name="colors"
+              type="color"
+            />
+          )}
+          <p className="text_bold">{aromas}</p>
+          <p className="text_bold">{textiles}</p>
+        </Gap>
       </Gap>
       <ButtonPlusMinus
         amount={amount}

@@ -1,0 +1,11 @@
+@use "../../variables.module.scss" as v;
+
+.disabled {
+  background: v.$color-text-secondary;
+  * {
+    cursor: default;
+  }
+  *:hover {
+    font-weight: 400;
+  }
+}

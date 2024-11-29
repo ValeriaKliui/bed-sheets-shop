@@ -32,6 +32,7 @@ export default async function ItemPage({ params: { id } }: PageProps) {
     category,
     photo,
     additionalProperties,
+    info,
   } = item[0];
 
   const fetchLatestItems = async () => await fetchLatestCatalogItems();
@@ -51,6 +52,7 @@ export default async function ItemPage({ params: { id } }: PageProps) {
         category={category}
         photo={photo}
         additionalProperties={additionalProperties}
+        info={info}
       />
       <Slider
         cards={sliderCards.map(({ src, title }, index) => (

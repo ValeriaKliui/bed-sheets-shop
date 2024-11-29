@@ -5,10 +5,13 @@ export interface FilterParams {
   category?: string;
   minPrice?: number;
   maxPrice?: number;
-  size?: string;
+  sizes?: string;
   inStock?: "false" | "true";
   sort?: string;
   title?: string;
+  colors?: string;
+  textiles?: string;
+  aromas?: string;
 }
 
 export interface Prices {

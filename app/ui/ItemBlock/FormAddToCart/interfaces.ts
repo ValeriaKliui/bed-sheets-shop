@@ -1,4 +1,6 @@
-import { CatalogItem } from '@lib/constants/types';
+import { CatalogItem } from "@lib/constants/types";
 
 export interface FormAddToCartProps
-  extends Pick<CatalogItem, 'additionalProperties' | 'id'> {}
+  extends Pick<CatalogItem, "additionalProperties" | "id"> {
+  isAvailable: boolean;
+}

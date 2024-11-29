@@ -1,5 +1,6 @@
 import { SLIDER_VERTICAL } from "@lib/constants";
 import { CURRENCY } from "@lib/constants/catalogItems";
+import { Availability } from "@lib/constants/types";
 import repeatArray from "@lib/utils/repeatArray";
 import Breadcrumbs from "@ui/Breadcrumbs";
 import Gap from "@ui/Gap";
@@ -20,7 +21,10 @@ export default function ItemBlock({
   category,
   photo,
   additionalProperties,
+  info,
 }: CatalogItemProps) {
+  const isAvailable = info === Availability.available;
+
   const cardsSrc = repeatArray(SLIDER_VERTICAL, 2);
   cardsSrc.unshift({ src: photo });
 
@@ -52,7 +56,11 @@ export default function ItemBlock({
         <p className={clsx("text_big", "text_primary", styles.price)}>
           {price} {CURRENCY}
         </p>
-        <FormAddToCart additionalProperties={additionalProperties} id={id} />
+        <FormAddToCart
+          additionalProperties={additionalProperties}
+          id={id}
+          isAvailable={isAvailable}
+        />
       </Gap>
     </div>
   );

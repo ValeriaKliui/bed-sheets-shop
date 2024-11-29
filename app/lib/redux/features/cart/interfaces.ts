@@ -1,16 +1,19 @@
-import { CatalogItem } from '@lib/constants/types';
+import { AdditionalPropertiesChoosen, CatalogItem } from "@lib/constants/types";
 
 export type ItemsNoSize = number;
 
-export interface CartItemShort
-  extends Pick<CatalogItem, 'id' | 'additionalProperties'> {
+export interface CartItemShort extends Pick<CatalogItem, "id"> {
   amount?: number;
   cartID?: number;
+  additionalProperties: AdditionalPropertiesChoosen;
 }
-export interface CartItemFull extends CatalogItem {
-  amount?: number;
-  cartID: number;
-}
+
+export type CartItemFull = Omit<CatalogItem, "additionalProperties"> &
+  Partial<Omit<CatalogItem, "additionalProperties">> & {
+    amount?: number;
+    cartID?: number;
+    additionalProperties: AdditionalPropertiesChoosen;
+  };
 
 export interface cartState {
   cartItems: CartItemShort[];

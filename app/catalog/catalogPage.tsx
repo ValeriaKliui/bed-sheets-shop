@@ -19,7 +19,17 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 
 export default async function CatalogPage({ params, searchParams }: PageProps) {
-  const { minPrice, maxPrice, page, size, inStock, sort } = searchParams;
+  const {
+    minPrice,
+    maxPrice,
+    page,
+    sizes,
+    inStock,
+    sort,
+    aromas,
+    textiles,
+    colors,
+  } = searchParams;
   const { category } = params;
   const totalItems = await fetchCatalogPages({ ...searchParams, ...params });
   const currentPage = Number(searchParams?.page) || 1;
@@ -29,9 +39,12 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
       minPrice,
       maxPrice,
       page,
-      size,
+      sizes,
       inStock,
       sort,
+      aromas,
+      textiles,
+      colors,
     });
 
   const getFilters = () => (
@@ -92,7 +105,11 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
             )}
           />
         </Gap>
-        <Gap direction="vertical" size="large" className={styles.paginationRecent}>
+        <Gap
+          direction="vertical"
+          size="large"
+          className={styles.paginationRecent}
+        >
           <Pagination
             totalItems={totalItems}
             currentPage={currentPage}

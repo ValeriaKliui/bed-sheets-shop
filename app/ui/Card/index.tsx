@@ -9,10 +9,7 @@ import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
-  (
-    { article, info, photo, price, title, actionButton, }: CardProps,
-    ref
-  ) => {
+  ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
 
@@ -24,7 +21,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
         ref={ref}
       >
         <Gap className={styles.top} justifyContent={"space-between"}>
-          <Gap direction="vertical">
+          <Gap direction="vertical" alignItems="flex-start">
             <p className={clsx("text_small", "text_secondary", styles.article)}>
               {article}
             </p>

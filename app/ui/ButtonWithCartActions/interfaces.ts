@@ -1,8 +1,8 @@
-import { CatalogItem } from '@lib/constants/types';
+import { AdditionalPropertiesChoosen, CatalogItem } from "@lib/constants/types";
 
-export interface ButtonWithCartActionsProps
-  extends Pick<CatalogItem, 'id' | 'additionalProperties'> {
+export type ButtonWithCartActionsProps = Pick<CatalogItem, "id"> & {
   className?: string;
   size?: string;
+  additionalProperties: AdditionalPropertiesChoosen;
   isDisabled?: boolean;
-}
+};

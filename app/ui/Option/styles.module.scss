@@ -1,5 +1,9 @@
 @use "../../variables.module.scss" as v;
 
+.colorContainer {
+  display: flex;
+  gap: 1em;
+}
 .option {
   padding: 0.1em 0.8em;
   border: 1px solid v.$light-lines;
@@ -15,8 +19,4 @@
 }
 .input[type="radio"] {
   display: none;
-}
-.colorContainer {
-  display: flex;
-  gap: 1em;
 }

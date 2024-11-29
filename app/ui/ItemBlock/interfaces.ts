@@ -1,13 +1,3 @@
 import { CatalogItem } from "@lib/constants/types";
 
-export interface CatalogItemProps
-  extends Pick<
-    CatalogItem,
-    | "title"
-    | "article"
-    | "price"
-    | "id"
-    | "category"
-    | "additionalProperties"
-    | "photo"
-  > {}
+export interface CatalogItemProps extends CatalogItem {}

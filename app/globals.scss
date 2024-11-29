@@ -185,7 +185,9 @@ input {
     max-width: map-get($breakpoints, "xxl");
   }
 }
-
+.text_bold {
+  font-weight: 700;
+}
 .text_secondary {
   color: v.$color-text-secondary;
 

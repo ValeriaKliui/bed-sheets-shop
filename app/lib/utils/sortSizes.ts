@@ -1,5 +1,5 @@
-export default function sortSizes(sizes: string[]) {
-  return sizes.sort((a, b) => {
+const sortProperties = (properties: string[]) =>
+  properties.sort((a, b) => {
     const aNum = a.match(/(\d+)/);
     const bNum = b.match(/(\d+)/);
     const isNumFirst = aNum && aNum?.length > 0;
@@ -8,4 +8,13 @@ export default function sortSizes(sizes: string[]) {
     }
     return a.localeCompare(b);
   });
+
+export default function getSortedProperties(properties: string[][]) {
+  const propertiesArr = Object.entries(properties)
+    .filter(([_, values]) => values.length)
+    .map(([property, values]) => {
+      return [property, sortProperties(values)];
+    });
+
+  return propertiesArr;
 }

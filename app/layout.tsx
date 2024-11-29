@@ -4,7 +4,9 @@ import StoreProvider from "@lib/redux/storeProvider";
 import { fontCirce, fontOrchidea } from "@ui/fonts";
 import Footer from "@ui/Footer";
 import Header from "@ui/Header";
+import NavigationEvents from "@ui/NavigationEvents";
 import type { Metadata } from "next";
+import { Suspense } from "react";
 
 const fonts = [fontOrchidea, fontCirce];
 const fontsClassName = fonts.map((font) => font.variable).join(" ");
@@ -27,6 +29,9 @@ export default async function RootLayout({
         <body className={fontsClassName}>
           <Header />
           <main>{children}</main>
+          <Suspense fallback={null}>
+            <NavigationEvents />
+          </Suspense>
           <Footer />
         </body>
       </html>
