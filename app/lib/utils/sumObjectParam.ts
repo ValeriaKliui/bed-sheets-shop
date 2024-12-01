@@ -4,7 +4,7 @@ export default function sumObjectParam<
   return (
     array?.reduce((acc, curr) => {
       const value = curr[key];
-      if (typeof value === "string") return acc;
+      if (typeof value === 'string') return acc;
       else return value ? acc + value : acc;
     }, 0) || 0
   );

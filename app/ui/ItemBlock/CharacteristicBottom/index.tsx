@@ -1,14 +1,15 @@
 "use client";
 
+import { AdditionalPropertiesKeys } from "@lib/constants/types";
 import Options from "@ui/Options";
 
 import { CharacteristicBottomProps } from "./intefaces";
 
-export default function CharacteristicBottom({
+export default function CharacteristicBottom<T extends AdditionalPropertiesKeys>({
   options,
   name,
   type,
-}: CharacteristicBottomProps) {
+}: CharacteristicBottomProps<T>) {
   if (!options) return false;
 
   return (

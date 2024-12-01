@@ -1,14 +1,18 @@
-import { fetchItemsByIDs } from "@lib/fetchItemsByIDs";
-import { setFullCartItems } from "@lib/redux/features/cart/cartSlice";
-import { useEffect, useState } from "react";
+import { fetchItemsByIDs } from '@lib/fetchItemsByIDs';
+import { setFullCartItems } from '@lib/redux/features/cart/cartSlice';
+import { useEffect, useState } from 'react';
 
-import { useAppDispatch } from "./hooks";
-import useCart from "./useCart";
+import { useAppDispatch } from './hooks';
+import useCart from './useCart';
 
 export default function useFullCartInfo() {
   const [isLoading, setIsLoading] = useState(true);
-  const { getTotalAmountInCart, cartItems, getItemAmountInCart, cleanCart } =
-    useCart();
+  const {
+    getTotalAmountInCart,
+    cartItems,
+    getItemAmountInCart,
+    cleanCart,
+  } = useCart();
   const cartItemsIDs = cartItems.map(({ id }) => id);
   const dispatch = useAppDispatch();
 
@@ -20,13 +24,18 @@ export default function useFullCartInfo() {
           id: cartItemsIDs,
         });
 
-        const itemsFullInfo = cartItems.map(({ id, ...item }) => {
-          const { additionalProperties, ...foundItem } =
-            foundItems.find(({ id: itemID }) => id === itemID) || {};
-          return { ...item, ...foundItem };
+        const itemsFullInfo = cartItems.flatMap(({ id, ...item }) => {
+          const foundItem = foundItems.find(
+            ({ id: itemID }) => id === itemID
+          );
+
+          if (foundItem) {
+            const { additionalProperties, ...itemWithoutProperties } =
+              foundItem;
+            return { ...item, ...itemWithoutProperties };
+          } else return [];
         });
 
-        // @ts-ignore: TODO
         dispatch(setFullCartItems(itemsFullInfo));
       } else dispatch(setFullCartItems([]));
     };

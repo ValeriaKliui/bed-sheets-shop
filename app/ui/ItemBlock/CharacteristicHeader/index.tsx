@@ -3,15 +3,15 @@ import { useFormContext } from "react-hook-form";
 
 import { CharacteristicHeaderProps } from "./interfaces";
 
-export default function CharacteristicHeader({
+export default function CharacteristicHeader<T extends string>({
   title,
   name,
-}: CharacteristicHeaderProps) {
+}: CharacteristicHeaderProps<T>) {
   const {
     formState: { errors },
   } = useFormContext();
 
-  const errorMessage = errors && errors[name]?.message;
+  const errorMessage = errors && errors[name]?.message?.toString();
 
   return (
     <Gap>

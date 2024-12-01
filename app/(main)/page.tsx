@@ -1,8 +1,8 @@
 import { SLIDER_MAIN } from "@lib/constants";
+import { CatalogItem } from "@lib/constants/types";
 import { fetchLatestCatalogItems } from "@lib/fetch";
 import repeatArray from "@lib/utils/repeatArray";
 import Card from "@ui/Card";
-import { CardProps } from "@ui/Card/interfaces";
 import Catalog from "@ui/Catalog";
 import ConstructorPreview from "@ui/ConstructorPreview";
 import Gap from "@ui/Gap";
@@ -33,7 +33,7 @@ export default async function Home() {
             buttonLink="#"
             imageSrc="/images/bed.png"
           />
-          <Catalog<CardProps>
+          <Catalog<CatalogItem>
             fetch={fetchLatestItems}
             dimensions={{ xs: { columns: 2 } }}
             Card={({ category, id, title, price, photo, article, info }) => (

@@ -1,3 +1,5 @@
+import { AdditionalPropertiesKeys } from '@lib/constants/types';
+
 const sortProperties = (properties: string[]) =>
   properties.sort((a, b) => {
     const aNum = a.match(/(\d+)/);
@@ -9,12 +11,17 @@ const sortProperties = (properties: string[]) =>
     return a.localeCompare(b);
   });
 
-export default function getSortedProperties(properties: string[][]) {
+export default function getSortedProperties<
+  T extends string
+>(properties: {
+  [key in AdditionalPropertiesKeys]: string[];
+}) {
   const propertiesArr = Object.entries(properties)
     .filter(([_, values]) => values.length)
-    .map(([property, values]) => {
-      return [property, sortProperties(values)];
-    });
+    .map(([property, values]) => [
+      property,
+      sortProperties(values),
+    ]) as [T, string[]][];
 
   return propertiesArr;
 }

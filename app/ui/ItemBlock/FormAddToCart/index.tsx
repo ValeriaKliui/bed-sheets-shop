@@ -2,7 +2,6 @@
 
 import useCart from "@hooks/useCart";
 import {
-  AdditionalProperties,
   AdditionalPropertiesChoosen,
 } from "@lib/constants/types";
 import Accordion from "@ui/Accordion";
@@ -22,7 +21,7 @@ export default function FormAddToCart({
   isAvailable,
 }: FormAddToCartProps) {
   const { handleSubmit, ...methods } = useForm<AdditionalPropertiesChoosen>();
-  const [choosenProperties, chooseProperties] = useState<AdditionalProperties>(
+  const [choosenProperties, chooseProperties] = useState<AdditionalPropertiesChoosen>(
     {}
   );
 

@@ -1,9 +1,8 @@
 import { CATEGORIES } from "@lib/constants";
-import { PageProps } from "@lib/constants/types";
+import { CatalogItem, PageProps } from "@lib/constants/types";
 import { fetchCatalogPages, fetchFilteredCatalogItems } from "@lib/fetch";
 import Breadcrumbs from "@ui/Breadcrumbs";
 import Card from "@ui/Card";
-import { CardProps } from "@ui/Card/interfaces";
 import Catalog from "@ui/Catalog";
 import Filters from "@ui/Filters";
 import FiltersMobile from "@ui/FiltersMobile";
@@ -33,7 +32,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
   const { category } = params;
   const totalItems = await fetchCatalogPages({ ...searchParams, ...params });
   const currentPage = Number(searchParams?.page) || 1;
-  const fetchByCategory = async () =>
+  const fetchByCategory = async (): Promise<CatalogItem[]> =>
     await fetchFilteredCatalogItems({
       category,
       minPrice,
@@ -75,7 +74,7 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
         <FiltersMobile filters={getFilters()} />
         <Gap direction="vertical" className={styles.container}>
           <Sorts />
-          <Catalog<CardProps>
+          <Catalog<CatalogItem>
             fetch={fetchByCategory}
             dimensions={{
               xs: { columns: 2 },

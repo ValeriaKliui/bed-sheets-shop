@@ -1,5 +1,5 @@
-export interface CharacteristicBottomProps {
+export interface CharacteristicBottomProps<T> {
   options?: string[] | null;
-  name: string;
-  type?: "color";
+  name: T;
+  type?: 'color';
 }

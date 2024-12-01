@@ -26,8 +26,6 @@ export default function CartItem({
 }: CartItemProps) {
   const { sizes, aromas, textiles, colors } = additionalProperties || {};
 
-  console.log(additionalProperties);
-
   const { addToCart, removeFromCart } = useCart();
   const onAddClick = () => addToCart({ id, additionalProperties });
   const onRemoveClick = () => removeFromCart({ id, additionalProperties });

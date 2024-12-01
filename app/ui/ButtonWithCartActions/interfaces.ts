@@ -1,6 +1,9 @@
-import { AdditionalPropertiesChoosen, CatalogItem } from "@lib/constants/types";
+import {
+  AdditionalPropertiesChoosen,
+  CatalogItem,
+} from '@lib/constants/types';
 
-export type ButtonWithCartActionsProps = Pick<CatalogItem, "id"> & {
+export type ButtonWithCartActionsProps = Pick<CatalogItem, 'id'> & {
   className?: string;
   size?: string;
   additionalProperties: AdditionalPropertiesChoosen;

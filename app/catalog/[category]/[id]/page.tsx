@@ -1,11 +1,11 @@
 import { SLIDER_ITEM, SLIDER_PERSONS } from "@lib/constants";
-import { PageProps } from "@lib/constants/types";
+import { CatalogItem, PageProps } from "@lib/constants/types";
 import { fetchLatestCatalogItems } from "@lib/fetch";
 import { fetchItemsByIDs } from "@lib/fetchItemsByIDs";
 import repeatArray from "@lib/utils/repeatArray";
 import Card from "@ui/Card";
 import CardShort from "@ui/Card/CardShort";
-import { CardProps, CardShortProps } from "@ui/Card/interfaces";
+import { CardShortProps } from "@ui/Card/interfaces";
 import Catalog from "@ui/Catalog";
 import ConstructorPreview from "@ui/ConstructorPreview";
 import Gap from "@ui/Gap";
@@ -98,7 +98,7 @@ export default async function ItemPage({ params: { id } }: PageProps) {
       </InfoPicBlock>
       <Gap direction="vertical" className={clsx("wrapper", styles.others)}>
         <h5>Другие товары</h5>
-        <Catalog<CardProps>
+        <Catalog<CatalogItem>
           fetch={fetchLatestItems}
           dimensions={{ xs: { slider: true }, sm: { columns: 4 } }}
           Card={({ category, id, title, price, photo, article, info }) => (
