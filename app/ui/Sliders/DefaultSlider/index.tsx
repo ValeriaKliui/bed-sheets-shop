@@ -42,13 +42,14 @@ export default function Slider({
   withArrows = false,
   beforeChange,
   afterChange,
+  withArrowsMobile,
 }: SliderProps) {
   return (
     <div>
       <Carousel
         responsive={responsive}
         draggable={true}
-        arrows={withArrows}
+        arrows={withArrows || withArrowsMobile}
         partialVisible
         containerClass={clsx(
           "wrapper_small",
@@ -62,7 +63,10 @@ export default function Slider({
         afterChange={afterChange}
         customRightArrow={<CustomArrowBottom direction="right" />}
         customLeftArrow={<CustomArrowBottom direction="left" />}
-        itemClass={styles.item}
+        itemClass={clsx(
+          styles.item,
+          withArrowsMobile && styles.withArrowsMobile
+        )}
       >
         {cards}
       </Carousel>

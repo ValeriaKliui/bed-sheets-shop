@@ -1,12 +1,19 @@
+.left,
+.right {
+  position: absolute;
+  bottom: 0;
+}
 .right {
   transform: rotate(180deg);
+  right: calc(4% + 1px);
 }
 .left {
   transform: rotate(0);
+  left: calc(4% + 1px);
 }
 .top {
   transform: rotate(0);
 }
 .bottom {
-  transform: rotate(0);
+  transform: rotate(180deg);
 }

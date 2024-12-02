@@ -1,12 +1,13 @@
-@import '../../../breakpoints.module.scss';
+@import "../../../breakpoints.module.scss";
 
 .card {
   display: grid;
-  padding: 1em;
   align-items: center;
   gap: 1em;
   justify-items: center;
   text-align: unset;
+  padding: 1em 2em;
+
   @include xxs {
     grid-template-columns: repeat(2, 1fr);
   }

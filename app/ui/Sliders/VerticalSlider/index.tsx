@@ -36,15 +36,15 @@ export default function VerticalSlider({
         <CustomArrow
           className={clsx(
             !isTextSlider ? styles.defArrows : styles.textArrows,
-            isTextSlider ? styles.left : styles.top
+            isTextSlider && styles.left
           )}
-          direction="left"
+          direction="top"
         />
       }
       customRightArrow={
         <CustomArrow
           className={clsx(!isTextSlider ? styles.defArrows : styles.textArrows)}
-          direction="right"
+          direction="bottom"
         />
       }
       dotListClass={styles.dots}
