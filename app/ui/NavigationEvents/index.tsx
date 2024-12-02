@@ -1,5 +1,6 @@
 "use client";
 
+import useFreezeScroll from "@hooks/useFreezeScroll";
 import Loader from "@ui/Loader";
 import { useRouter } from "next/navigation";
 import { useEffect, useOptimistic } from "react";
@@ -9,6 +10,7 @@ import styles from "./styles.module.scss";
 export default function NavigationEvents() {
   const router = useRouter();
   const [loading, setLoading] = useOptimistic(false);
+  useFreezeScroll(loading)
 
   useEffect(() => {
     if (router.push.name === "patched") return;

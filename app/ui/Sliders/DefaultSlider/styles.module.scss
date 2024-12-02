@@ -1,9 +1,9 @@
-@import "../../../breakpoints.module.scss";
+@import '../../../breakpoints.module.scss';
 
 .container {
   cursor: grabbing;
 }
-.overflowed {
+.notOverflowed {
   overflow: unset;
 }
 .withArrows {
@@ -22,6 +22,9 @@
     height: 700px;
   }
 }
+.withoutArrows {
+  position: relative;
+}
 .item {
   @include md {
     max-width: 330px;
@@ -34,5 +37,5 @@
 }
 .withArrowsMobile {
   margin-left: 0;
-  position: absolute;
+  position: unset;
 }

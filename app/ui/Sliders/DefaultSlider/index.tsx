@@ -1,13 +1,14 @@
-"use client";
+'use client';
 
-import "react-multi-carousel/lib/styles.css";
+import 'react-multi-carousel/lib/styles.css';
 
-import clsx from "clsx";
-import Carousel, { ResponsiveType } from "react-multi-carousel";
+import clsx from 'clsx';
+import React, { useRef } from 'react';
+import Carousel, { ResponsiveType } from 'react-multi-carousel';
 
-import CustomArrowBottom from "../Addons/CustomArrow";
-import { SliderProps } from "../interfaces";
-import styles from "./styles.module.scss";
+import CustomArrowBottom from '../Addons/CustomArrow';
+import { SliderProps } from '../interfaces';
+import styles from './styles.module.scss';
 
 const responsive: ResponsiveType = {
   xsl: {
@@ -44,31 +45,50 @@ export default function Slider({
   afterChange,
   withArrowsMobile,
 }: SliderProps) {
+  const isOverflowUnset = overflowed || withArrowsMobile;
+  const hasArrows = withArrows || withArrowsMobile
+
+  const oneItem = useRef<HTMLDivElement>(<></>)
+
+  console.log(oneItem.current.offsetWidth)
+
   return (
     <div>
       <Carousel
         responsive={responsive}
         draggable={true}
-        arrows={withArrows || withArrowsMobile}
+        arrows={hasArrows}
         partialVisible
         containerClass={clsx(
-          "wrapper_small",
+          'wrapper_small',
           styles.container,
-          overflowed && styles.overflowed,
+          isOverflowUnset && styles.notOverflowed,
           withArrows && styles.withArrows
         )}
         rewindWithAnimation
         renderArrowsWhenDisabled
         beforeChange={beforeChange}
         afterChange={afterChange}
-        customRightArrow={<CustomArrowBottom direction="right" />}
-        customLeftArrow={<CustomArrowBottom direction="left" />}
+        customRightArrow={
+          <CustomArrowBottom
+            direction="right"
+            className={clsx(!hasArrows && styles.withoutArrows)}
+          />
+        }
+        customLeftArrow={
+          <CustomArrowBottom
+            direction="left"
+            className={clsx(!hasArrows && styles.withoutArrows)}
+          />
+        }
         itemClass={clsx(
           styles.item,
           withArrowsMobile && styles.withArrowsMobile
         )}
       >
-        {cards}
+        {cards.map((item, index) => {
+          return <div ref={oneItem} key={index}>{item}</div>
+        })}
       </Carousel>
     </div>
   );
