@@ -20,7 +20,6 @@ export default function CallFormField({
           {...register(name)}
           className={styles.textarea}
           placeholder={placeholder}
-          minLength={20}
         />
       ) : (
         <input

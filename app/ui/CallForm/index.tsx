@@ -3,21 +3,21 @@ import Button from "@ui/Button";
 import Gap from "@ui/Gap";
 import { useForm } from "react-hook-form";
 
-import styles from ".//styles.module.scss";
 import CallFormField from "./CallFormField";
 
-export default function CallForm() {
+export default function CallForm({ onSubmit }) {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => console.log(data, errors);
+  const onFormSubmit = (data) => {
+    console.log(data)
+    onSubmit()
+  }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onFormSubmit)}>
       <Gap direction="vertical" size="medium" alignItems="flex-start">
         <Gap direction="vertical">
           {CALL_FORM_DATA.map(
@@ -40,7 +40,6 @@ export default function CallForm() {
             {...register("isAgreePersonal")}
             id="isAgreePersonal"
             type="checkbox"
-            value="true"
           />
           <label htmlFor="isAgreePersonal">
             Я согласен на обработку персональных данных

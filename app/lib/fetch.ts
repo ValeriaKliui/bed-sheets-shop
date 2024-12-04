@@ -26,7 +26,7 @@ export async function fetchLatestCatalogItems() {
     return transformAdditionalProperties(data.rows);
   } catch (error) {
     console.error('Database Error:', error);
-    throw new Error('Failed to fetch the latest catalog items.');
+    throw new Error('Failed to fetch latest catalog items.');
   }
 }
 
