@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
+import { PropsWithChildren, ReactNode } from "react";
 
-export interface NoSSRProps {
-  children: ReactNode;
+export interface NoSSRProps extends PropsWithChildren {
   defer?: boolean;
   fallback?: ReactNode;
 }

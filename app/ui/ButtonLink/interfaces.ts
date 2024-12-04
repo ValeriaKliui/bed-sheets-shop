@@ -1,6 +1,5 @@
-import { ReactNode } from 'react';
+import { PropsWithChildren } from "react";
 
-export interface ButtonLinkProps {
-  children: ReactNode;
+export interface ButtonLinkProps extends PropsWithChildren {
   href: string;
 }

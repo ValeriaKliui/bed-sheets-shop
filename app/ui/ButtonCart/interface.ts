@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-export interface ButtonCartProps {
-  children: ReactNode;
+export interface ButtonCartProps extends PropsWithChildren {
   amountInCart: number;
   onIncreaseClick: () => void;
   onDecreaseClick: () => void;

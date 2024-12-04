@@ -1,10 +1,9 @@
-import { MouseEvent, ReactNode } from "react";
+import { MouseEvent, PropsWithChildren } from "react";
 
 type Direction = "vertical" | "horizontal";
 type Size = "small" | "medium" | "large" | "huge";
 
-export interface GapProps {
-  children: ReactNode;
+export interface GapProps extends PropsWithChildren {
   size?: Size;
   direction?: Direction;
   justifyContent?: string;

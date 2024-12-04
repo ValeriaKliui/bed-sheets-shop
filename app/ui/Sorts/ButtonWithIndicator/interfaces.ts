@@ -1,7 +1,6 @@
-import { ReactNode } from "react";
+import { PropsWithChildren } from "react";
 
-export interface ButtonWithIndicatorProps {
-  children: ReactNode;
+export interface ButtonWithIndicatorProps extends PropsWithChildren {
   onClick: () => void;
   isPressed: boolean | null;
 }

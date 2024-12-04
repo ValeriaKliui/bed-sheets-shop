@@ -1,4 +1,5 @@
 import { LINKS } from "@lib/constants";
+import CallLinkModal from "@ui/CallLinkModal";
 import Logo from "@ui/icons/Logo";
 import Networks from "@ui/Networks";
 import colors from "@variables.module.scss";
@@ -33,10 +34,7 @@ export default function Footer() {
       </div>
       <div className={styles.column}>
         <div className={styles.column}>
-          <h4>8 800 222 22 22</h4>
-          <a href="tel:88002222222" className="link">
-            Заказать звонок
-          </a>
+          <CallLinkModal />
         </div>
         <Networks />
       </div>

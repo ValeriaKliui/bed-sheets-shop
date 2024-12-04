@@ -119,3 +119,21 @@ export const PHOTO_LINKS = [
     y: 239,
   },
 ];
+
+export const CALL_FORM_DATA = [
+  { name: "name", label: "Имя", required: "Введите имя", placeholder: "Иван" },
+  {
+    name: "phone",
+    label: "Телефон",
+    required: true,
+    placeholder: "+ 375 (____)  _________  -  _____  -  _____",
+    pattern: `^[+]?375\\d{9}`,
+  },
+  {
+    name: "comment",
+    label: "Комментарий",
+    required: false,
+    placeholder: "Напишите, какой вопрос у вас возник",
+    type: "textarea",
+  },
+];

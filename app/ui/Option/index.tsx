@@ -15,7 +15,10 @@ export default function Option({
   const isColor = type === "color";
 
   return (
-    <label key={option} className={clsx(isColor && styles.colorContainer)}>
+    <label
+      key={option}
+      className={clsx("label_radio", isColor && styles.colorContainer)}
+    >
       {isColor && (
         <div
           className={clsx(styles.option, isChoosen && styles.choosen)}

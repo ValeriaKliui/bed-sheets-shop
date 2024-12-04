@@ -9,15 +9,7 @@ import transformAdditionalProperties from "./utils/transformProperties";
 
 export async function fetchItemsByIDs({ id }: FetchByIDParams) {
   try {
-    if (typeof id === "string") {
-      const item = await sql.query<CatalogItem>(
-        `SELECT *
-           FROM ${DB_ITEMS_NAME}
-           WHERE id = '${id}'
-          `
-      );
-      return [transformAdditionalProperties(item.rows)[0]];
-    } else {
+    if (Array.isArray(id)) {
       const idString = id?.map((id) => `'${id}'`).join(", ");
 
       const item = await sql.query<CatalogItem>(
@@ -27,7 +19,16 @@ export async function fetchItemsByIDs({ id }: FetchByIDParams) {
           `
       );
       return transformAdditionalProperties(item.rows);
+    } else if (typeof id === "string") {
+      const item = await sql.query<CatalogItem>(
+        `SELECT *
+           FROM ${DB_ITEMS_NAME}
+           WHERE id = '${id}'
+          `
+      );
+      return [transformAdditionalProperties(item.rows)[0]];
     }
+    return [];
   } catch (error) {
     console.error("Database Error:", error);
     throw new Error("Failed to fetch item by id.");

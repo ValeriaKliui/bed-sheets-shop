@@ -1,0 +1,25 @@
+@use "../../../variables.module.scss" as v;
+
+.field {
+  border-bottom: 1px solid v.$light-lines;
+  display: grid;
+  grid-template-columns: 0.3fr 0.7fr;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.input,
+.textarea {
+  border: none;
+  min-width: 450px;
+
+  &::placeholder {
+    color: v.$color-text-secondary;
+    font-weight: 400;
+    font-family: var(--font-circe);
+    text-transform: capitalize;
+  }
+}
+.input {
+  field-sizing: content;
+}

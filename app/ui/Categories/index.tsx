@@ -12,10 +12,7 @@ export default function FilterCategories() {
   return (
     <Gap direction="vertical" alignItems={"flex-start"}>
       {CATEGORIES.map(({ title, category }) => (
-        <Link
-          href={`/catalog/${category}`}
-          key={category}
-        >
+        <Link href={`/catalog/${category}`} key={category}>
           <Gap>
             <input
               type="radio"
@@ -23,7 +20,9 @@ export default function FilterCategories() {
               id={category}
               defaultChecked={pathCategory === category}
             />
-            <label htmlFor={category}>{title}</label>
+            <label htmlFor={category} className="label_radio">
+              {title}
+            </label>
           </Gap>
         </Link>
       ))}

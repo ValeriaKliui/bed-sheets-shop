@@ -119,14 +119,15 @@ a {
   }
 }
 
-label {
+.label_radio {
   color: v.$color-primary;
 }
 button,
 label {
   cursor: pointer;
 }
-input {
+input,
+textarea {
   padding: 2em;
 }
 
