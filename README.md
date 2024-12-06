@@ -38,3 +38,10 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 3. Use the "Add to Cart" button to add items to your shopping cart.
 4. Navigate to the cart page to review your selected items.
 5. Proceed to checkout when ready.
+
+## TODO
+
+1. Unify buttons
+2. Change success modal
+3. Change checkbox design
+4. Shadow unavailable items

@@ -5,7 +5,6 @@ interface CustomSliderProps {
   cards: JSX.Element[];
   overflowed?: boolean;
   withArrows?: boolean;
-  withArrowsMobile?: boolean;
 }
 
 export type SliderProps = CustomSliderProps &

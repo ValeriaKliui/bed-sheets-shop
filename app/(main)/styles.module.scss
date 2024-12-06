@@ -1,4 +1,4 @@
-@import '../breakpoints.module.scss';
+@import "../breakpoints.module.scss";
 
 .photo {
   @include xxs {
@@ -33,4 +33,7 @@
     width: 30px;
     height: 30px;
   }
+}
+.slider {
+  margin-bottom: 3em;
 }

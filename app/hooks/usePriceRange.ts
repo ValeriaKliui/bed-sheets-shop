@@ -27,13 +27,17 @@ export default function usePriceRange({ min, max }: PricesNum) {
       const valueNum = Number(value);
       const params = new URLSearchParams(searchParams);
 
-      if (name === "minPrice") setCurrMin(valueNum);
-      else setCurrMax(valueNum);
+      const isItMin = name === "minPrice";
 
-      params.set(name, value);
-      replace(`${pathname}?${params.toString()}`);
+      if ((valueNum >= min && valueNum <= max) || valueNum === 0) {
+        if (isItMin) setCurrMin(valueNum);
+        else setCurrMax(valueNum);
+
+        params.set(name, value);
+        replace(`${pathname}?${params.toString()}`);
+      }
     },
-    [pathname, replace, searchParams]
+    [pathname, replace, searchParams, min, max]
   );
 
   useEffect(() => {

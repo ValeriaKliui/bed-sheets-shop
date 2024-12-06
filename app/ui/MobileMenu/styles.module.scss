@@ -1,9 +1,8 @@
-@use '../../variables.module.scss' as v;
-@import '../../breakpoints.module.scss';
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .mobileMenu {
   color: v.$color-text;
-  margin-left: 2em;
   @include sm {
     display: none;
   }

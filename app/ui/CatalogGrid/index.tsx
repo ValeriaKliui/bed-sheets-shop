@@ -16,7 +16,7 @@ export default function CatalogGrid<T extends Pick<CatalogItem, "id">>({
   return (
     <>
       {currStyles && currStyles.slider ? (
-        <Slider cards={cardItems} withArrowsMobile />
+        <Slider cards={cardItems} />
       ) : (
         <div className={styles.container} style={gridStyle}>
           {cardItems}

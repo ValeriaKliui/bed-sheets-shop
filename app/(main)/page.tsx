@@ -26,7 +26,11 @@ export default async function Home() {
     <div>
       <PhotoScreen />
       <Gap direction="vertical" size="large">
-        <SliderWithLinks sliderCards={sliderCards} overflowed withArrows />
+        <SliderWithLinks
+          sliderCards={sliderCards}
+          overflowed
+          className={styles.slider}
+        />
         <div className={clsx(styles.container, styles.catalog_wrapper)}>
           <ConstructorPreview
             title="Собери свой комплект на конструкторе"

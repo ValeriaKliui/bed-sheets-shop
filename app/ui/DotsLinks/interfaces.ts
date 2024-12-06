@@ -1,3 +1,4 @@
 export interface DotsLinksProps {
-  imgHeight: number;
+  photoHeight: number;
+  photoWidth: number;
 }

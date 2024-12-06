@@ -1,14 +1,15 @@
+import { CallFormFieldProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
 export default function CallFormField({
-  name,
+  name = "",
   label,
   required,
   placeholder,
   register,
   pattern,
   type,
-}) {
+}: CallFormFieldProps) {
   return (
     <div className={styles.field}>
       <label htmlFor={name}>

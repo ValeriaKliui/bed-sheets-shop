@@ -1,8 +1,9 @@
-@use '../../variables.module.scss' as v;
-@import '../../breakpoints.module.scss';
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .container {
   border: 1px solid v.$light-lines;
+  margin: 0 -1px -1px 0;
   transition: v.$transition;
   height: 100%;
   cursor: pointer;

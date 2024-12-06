@@ -56,7 +56,8 @@ h5,
 h6,
 .text_big,
 .text_medium,
-input::placeholder {
+input::placeholder,
+input {
   font-family: var(--font-orchidea-pro);
   text-transform: uppercase;
   color: v.$color-text;

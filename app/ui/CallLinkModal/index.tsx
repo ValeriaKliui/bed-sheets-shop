@@ -1,15 +1,13 @@
-'use client';
+"use client";
 
-import CallForm from '@ui/CallForm';
-import Gap from '@ui/Gap';
-import Modal from '@ui/Modal';
-import clsx from 'clsx';
-import { useState } from 'react';
+import useModal from "@hooks/useModal";
+import CallForm from "@ui/CallForm";
+import Gap from "@ui/Gap";
+import Modal from "@ui/Modal";
+import SuccessInfo from "@ui/SuccessModal";
+import clsx from "clsx";
 
-import styles from './styles.module.scss';
-import CircledIcon from '@ui/CircledIcon';
-import useModal from '@hooks/useModal';
-import SuccessInfo from '@ui/SuccessModal';
+import styles from "./styles.module.scss";
 
 export default function CallLinkModal() {
   const {
@@ -31,34 +29,20 @@ export default function CallLinkModal() {
   return (
     <>
       <h4>8 800 222 22 22</h4>
-      <a
-        className={clsx('link', styles.link)}
-        onClick={openFormModal}
-      >
+      <a className={clsx("link", styles.link)} onClick={openFormModal}>
         Заказать звонок
       </a>
-      {isFormModalOpen && (
-        <Modal closeModal={closeFormModal}>
-          <Gap
-            direction="vertical"
-            alignItems="flex-start"
-            size="medium"
-          >
-            <Gap
-              justifyContent="space-between"
-              className={styles.header}
-            >
-              <h3>Заказать звонок</h3>
-            </Gap>
-            <CallForm onSubmit={onFormSubmit} />
+      <Modal closeModal={closeFormModal} isOpened={isFormModalOpen}>
+        <Gap direction="vertical" alignItems="flex-start" size="medium">
+          <Gap justifyContent="space-between" className={styles.header}>
+            <h3>Заказать звонок</h3>
           </Gap>
-        </Modal>
-      )}
-      {isSuccessModalOpen && (
-        <Modal closeModal={closeSuccessModal}>
-          <SuccessInfo onAgree={closeSuccessModal} />
-        </Modal>
-      )}
+          <CallForm onSubmit={onFormSubmit} />
+        </Gap>
+      </Modal>
+      <Modal closeModal={closeSuccessModal} isOpened={isSuccessModalOpen}>
+        <SuccessInfo onAgree={closeSuccessModal} />
+      </Modal>
     </>
   );
 }

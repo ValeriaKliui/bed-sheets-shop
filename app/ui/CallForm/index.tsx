@@ -4,17 +4,14 @@ import Gap from "@ui/Gap";
 import { useForm } from "react-hook-form";
 
 import CallFormField from "./CallFormField";
+import { CallFormProps } from "./interfaces";
 
-export default function CallForm({ onSubmit }) {
-  const {
-    register,
-    handleSubmit,
-  } = useForm();
+export default function CallForm({ onSubmit }: CallFormProps) {
+  const { register, handleSubmit } = useForm();
 
-  const onFormSubmit = (data) => {
-    console.log(data)
-    onSubmit()
-  }
+  const onFormSubmit = () => {
+    onSubmit();
+  };
 
   return (
     <form onSubmit={handleSubmit(onFormSubmit)}>

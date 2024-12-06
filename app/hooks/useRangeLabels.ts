@@ -1,3 +1,4 @@
+import { useWindowSize } from "@uidotdev/usehooks";
 import { useEffect, useRef, useState } from "react";
 
 import { RangeLabelsProps } from "./interfaces";
@@ -11,6 +12,8 @@ export default function useRangeLabels({
   const [leftTextOffset, setLeftOffset] = useState(0);
   const [rightTextOffset, setRightOffset] = useState(0);
 
+  const { width } = useWindowSize();
+
   useEffect(() => {
     if (containerRef.current) {
       const widthContainer = containerRef.current.offsetWidth;
@@ -18,7 +21,7 @@ export default function useRangeLabels({
       setLeftOffset(0.8 * Math.round((widthContainer * currMin) / max));
       setRightOffset(0.8 * Math.round((widthContainer * currMax) / max));
     }
-  }, [currMin, max, currMax]);
+  }, [currMin, max, currMax, width]);
 
-  return { containerRef, leftTextOffset, rightTextOffset };
+  return { containerRef, leftTextOffset, rightTextOffset, width };
 }

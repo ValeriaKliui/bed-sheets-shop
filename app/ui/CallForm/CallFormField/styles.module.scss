@@ -1,4 +1,5 @@
 @use "../../../variables.module.scss" as v;
+@import "../../../breakpoints.module.scss";
 
 .field {
   border-bottom: 1px solid v.$light-lines;
@@ -11,7 +12,7 @@
 .input,
 .textarea {
   border: none;
-  min-width: 450px;
+  field-sizing: content;
 
   &::placeholder {
     color: v.$color-text-secondary;
@@ -19,7 +20,14 @@
     font-family: var(--font-circe);
     text-transform: capitalize;
   }
-}
-.input {
-  field-sizing: content;
+
+  @include xxs {
+    min-width: 220px;
+  }
+  @include xs {
+    min-width: 270px;
+  }
+  @include sm {
+    min-width: 450px;
+  }
 }

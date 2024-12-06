@@ -26,7 +26,7 @@ export default function SliderWithLinks({
           }}
           target="_blank"
           draggable={false}
-          href="#sfd"
+          href="#"
           key={index}
         >
           <PhotoCard info={{ src, title }} />

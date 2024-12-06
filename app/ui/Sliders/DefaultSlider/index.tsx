@@ -3,7 +3,7 @@
 import "react-multi-carousel/lib/styles.css";
 
 import clsx from "clsx";
-import React, { useRef } from "react";
+import React from "react";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
 import CustomArrowBottom from "../Addons/CustomArrow";
@@ -43,26 +43,19 @@ export default function Slider({
   withArrows = false,
   beforeChange,
   afterChange,
-  withArrowsMobile,
+  className,
 }: SliderProps) {
-  const isOverflowUnset = overflowed || withArrowsMobile;
-  const hasArrows = withArrows || withArrowsMobile;
-
-  const oneItem = useRef<HTMLDivElement>(<></>);
-
-  console.log(oneItem.current.offsetWidth);
-
   return (
-    <div>
+    <div className={className}>
       <Carousel
         responsive={responsive}
         draggable={true}
-        arrows={hasArrows}
+        arrows={withArrows}
         partialVisible
         containerClass={clsx(
           "wrapper_small",
           styles.container,
-          isOverflowUnset && styles.notOverflowed,
+          overflowed && styles.notOverflowed,
           withArrows && styles.withArrows
         )}
         rewindWithAnimation
@@ -72,27 +65,18 @@ export default function Slider({
         customRightArrow={
           <CustomArrowBottom
             direction="right"
-            className={clsx(!hasArrows && styles.withoutArrows)}
+            className={clsx(!withArrows && styles.withoutArrows)}
           />
         }
         customLeftArrow={
           <CustomArrowBottom
             direction="left"
-            className={clsx(!hasArrows && styles.withoutArrows)}
+            className={clsx(!withArrows && styles.withoutArrows)}
           />
         }
-        itemClass={clsx(
-          styles.item,
-          withArrowsMobile && styles.withArrowsMobile
-        )}
+        itemClass={clsx(styles.item)}
       >
-        {cards.map((item, index) => {
-          return (
-            <div ref={oneItem} key={index}>
-              {item}
-            </div>
-          );
-        })}
+        {cards}
       </Carousel>
     </div>
   );

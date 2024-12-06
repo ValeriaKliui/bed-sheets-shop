@@ -5,6 +5,8 @@ import tg from "../../../public/icons/tg.svg";
 import vk from "../../../public/icons/vk.svg";
 import yt from "../../../public/icons/yt.svg";
 
+export const BASE_SCREEN_WIDTH = 1440;
+
 export const DEFAULT_PAGES = 3;
 export const ITEMS_PER_PAGE = 9;
 
@@ -121,7 +123,7 @@ export const PHOTO_LINKS = [
 ];
 
 export const CALL_FORM_DATA = [
-  { name: "name", label: "Имя", required: "Введите имя", placeholder: "Иван" },
+  { name: "name", label: "Имя", required: true, placeholder: "Иван" },
   {
     name: "phone",
     label: "Телефон",

@@ -1,0 +1,22 @@
+@import "../../breakpoints.module.scss";
+
+.container {
+  width: 100%;
+  @include xxs {
+    justify-content: space-between;
+  }
+}
+.link {
+  width: 100%;
+}
+.category {
+  @include xxs {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+  }
+  @include sm {
+    flex-direction: row;
+    justify-content: normal !important;
+  }
+}

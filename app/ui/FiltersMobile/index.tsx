@@ -27,6 +27,7 @@ export default function FiltersMobile({ filters }: FiltersMobileProps) {
           className={clsx(styles.filters)}
           direction="vertical"
           alignItems={"flex-start"}
+          size="medium"
         >
           <Gap justifyContent={"space-between"} className={styles.header}>
             <h3 className="mobile-only">Фильтры</h3>

@@ -5,15 +5,25 @@ import Gap from "@ui/Gap";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import styles from "./styles.module.scss";
+
 export default function FilterCategories() {
   const pathnames = usePathname().split("/");
   const pathCategory = pathnames[pathnames.length - 1];
 
   return (
-    <Gap direction="vertical" alignItems={"flex-start"}>
+    <Gap
+      direction="vertical"
+      alignItems={"flex-start"}
+      className={styles.container}
+    >
       {CATEGORIES.map(({ title, category }) => (
-        <Link href={`/catalog/${category}`} key={category}>
-          <Gap>
+        <Link
+          href={`/catalog/${category}`}
+          className={styles.link}
+          key={category}
+        >
+          <Gap className={styles.category} justifyContent="space-between">
             <input
               type="radio"
               name="category"
