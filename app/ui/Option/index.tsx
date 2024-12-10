@@ -21,7 +21,7 @@ export default function Option({
     >
       {isColor && (
         <div
-          className={clsx(styles.option, isChoosen && styles.choosen)}
+          className={clsx(styles.option, isChoosen && styles.choosen, isColor && styles.optionColor)}
           style={{ background: option }}
         />
       )}

@@ -38,6 +38,7 @@
     top: 0;
     right: 0;
     z-index: 1000;
+    transform: scale(0.8);
   }
   @include sm {
     left: 0;
@@ -46,7 +47,7 @@
 }
 .left {
   @include xxs {
-    right: 5em;
+    right: 4em;
   }
   @include sm {
     margin-top: 5em;

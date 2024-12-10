@@ -7,7 +7,7 @@ export const sortObjectKeys = (object: {
     const key = keyValue[0];
     const value = keyValue[1];
 
-    if (typeof value === "object") {
+    if (typeof value === 'object') {
       const sortedKeysOfValue = Object.keys(value).sort((a, b) =>
         a.localeCompare(b)
       );

@@ -11,7 +11,7 @@ export default function useFullCartInfo() {
     getTotalAmountInCart,
     cartItems,
     getItemAmountInCart,
-    cleanCart,
+    clearCart,
   } = useCart();
   const cartItemsIDs = cartItems.map(({ id }) => id);
   const dispatch = useAppDispatch();
@@ -46,7 +46,7 @@ export default function useFullCartInfo() {
     cartItemsIDs,
     getTotalAmountInCart,
     dispatch,
-    cleanCart,
+    clearCart,
   ]);
 
   return { isLoading };

@@ -13,14 +13,13 @@ export default function getSameItemInCart(
   );
 
   const formattedSameIDs = sameIDItems.map(
-    ({ cartID: _, amount: __, ...qualities }) => {
-      return getSortedAndStringifiedObject({ ...qualities });
-    }
+    ({ cartID: _, amount: __, ...qualities }) =>
+      getSortedAndStringifiedObject({ ...qualities })
   );
 
-  const itemInCartStringified = formattedSameIDs.find(
-    (item) => item === getSortedAndStringifiedObject(itemToCheck)
-  );
+  const itemInCartStringified = formattedSameIDs.find((item) => {
+    return item === getSortedAndStringifiedObject(itemToCheck);
+  });
 
   if (itemInCartStringified) {
     cartItems.find((cartItem) => {

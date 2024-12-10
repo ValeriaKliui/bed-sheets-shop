@@ -29,7 +29,7 @@ export default function CallLinkModal() {
   return (
     <>
       <h4>8 800 222 22 22</h4>
-      <a className={clsx("link", styles.link)} onClick={openFormModal}>
+      <a className={clsx("link", 'pointer')} onClick={openFormModal}>
         Заказать звонок
       </a>
       <Modal closeModal={closeFormModal} isOpened={isFormModalOpen}>

@@ -43,7 +43,7 @@ export default function useCart() {
     [cartItems]
   );
 
-  const cleanCart = useCallback(
+  const clearCart = useCallback(
     () => dispatch(resetCart()),
     [dispatch]
   );
@@ -52,7 +52,7 @@ export default function useCart() {
     removeFromCart,
     getTotalAmountInCart,
     addToCart,
-    cleanCart,
+    clearCart,
     cartItems,
     getItemAmountInCart,
   };

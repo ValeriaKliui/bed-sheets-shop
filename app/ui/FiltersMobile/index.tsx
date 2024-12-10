@@ -40,7 +40,7 @@ export default function FiltersMobile({ filters }: FiltersMobileProps) {
           </Gap>
           <h5>Категории</h5>
           {filters}
-          <Button onClick={toggleMenu} className={styles.show}>
+          <Button onClick={toggleMenu} className={clsx(styles.show, 'pointer')}>
             Показать
           </Button>
         </Gap>

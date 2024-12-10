@@ -7,15 +7,17 @@ import { forwardRef } from "react";
 
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
+import { Availability } from "@lib/constants/types";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
+    const isAvailable = info === Availability.available
 
     return (
       <Gap
-        className={styles.container}
+        className={clsx(styles.container, !isAvailable && styles.unavailable)}
         direction="vertical"
         justifyContent={"space-between"}
         ref={ref}

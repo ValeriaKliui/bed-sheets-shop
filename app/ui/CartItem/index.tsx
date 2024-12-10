@@ -35,6 +35,8 @@ export default function CartItem({
 
   const finalPrice = amount * Number(price);
 
+
+
   return (
     <div className={styles.container}>
       <Link href={`/catalog/${category}/${id}`}>
@@ -60,8 +62,8 @@ export default function CartItem({
               type="color"
             />
           )}
-          <p className="text_bold">{aromas}</p>
-          <p className="text_bold">{textiles}</p>
+          {aromas && <p className="text_bold">{aromas}</p>}
+          {textiles && <p className="text_bold">{textiles}</p>}
         </Gap>
       </Gap>
       <ButtonPlusMinus

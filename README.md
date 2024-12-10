@@ -42,4 +42,4 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 ## TODO
 
 2. Change success modal
-3. Shadow unavailable items
+3. Change slider for mobiles

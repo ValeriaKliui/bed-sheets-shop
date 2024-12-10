@@ -1,4 +1,4 @@
-@use "../../variables.module.scss" as v;
+@use '../../variables.module.scss' as v;
 
 .filters {
   position: absolute;
@@ -10,9 +10,7 @@
   width: 100%;
   height: 100%;
 }
-.button {
-  cursor: pointer;
-}
+
 .header {
   width: 100%;
 }

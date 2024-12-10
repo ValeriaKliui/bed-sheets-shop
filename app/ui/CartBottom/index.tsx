@@ -11,9 +11,16 @@ import clsx from "clsx";
 import Link from "next/link";
 
 import styles from "./styles.module.scss";
+import { useState } from "react";
+import Modal from "@ui/Modal";
+import useModal from "@hooks/useModal";
+import CallForm from "@ui/CallForm";
+import CallLinkModal from "@ui/CallLinkModal";
 
 export default function CartBottom() {
-  const { getTotalAmountInCart } = useCart();
+  const [isPurchased, setIsPurchased] = useState(false)
+  const { getTotalAmountInCart, clearCart } = useCart();
+  const { closeModal } = useModal()
   const totalAmount = getTotalAmountInCart();
   const cartItemsFull = useAppSelector(selectFullCartItems);
 
@@ -21,8 +28,12 @@ export default function CartBottom() {
 
   const itemsText = getItemsText(totalAmount);
 
-
   const totalPrice = getTotalPriceOfCart(cartItemsFull)
+
+  const onPurchase = () => {
+    setIsPurchased(true)
+    // clearCart()
+  }
 
   return (
     <Gap
@@ -53,7 +64,8 @@ export default function CartBottom() {
             Информация о доставке
           </Link>
         </Gap>
-        <Button className={styles.orderButton}>Оформить заказ</Button>
+        <Button className={styles.orderButton} onClick={onPurchase}>Оформить заказ</Button>
+        {isPurchased && <CallLinkModal />}
       </Gap>
     </Gap>
   );

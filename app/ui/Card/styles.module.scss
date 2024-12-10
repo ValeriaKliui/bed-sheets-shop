@@ -1,5 +1,5 @@
-@use "../../variables.module.scss" as v;
-@import "../../breakpoints.module.scss";
+@use '../../variables.module.scss' as v;
+@import '../../breakpoints.module.scss';
 
 .container {
   border: 1px solid v.$light-lines;
@@ -31,4 +31,7 @@
 }
 .top {
   width: 100%;
+}
+.unavailable {
+  filter: grayscale(100%);
 }

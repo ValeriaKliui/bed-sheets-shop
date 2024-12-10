@@ -1,4 +1,4 @@
-@use "../../variables.module.scss" as v;
+@use '../../variables.module.scss' as v;
 
 .colorContainer {
   display: flex;
@@ -12,11 +12,18 @@
   min-height: 1.5em;
   text-align: center;
 }
+.optionColor {
+  width: 2em;
+  height: 2em;
+  min-width: unset;
+  min-height: unset;
+  border-radius: 6px;
+}
 .choosen {
   border: 1px solid v.$color-primary;
   background: rgba(v.$color-primary, 0.1);
   color: v.$color-text;
 }
-.input[type="radio"] {
+.input[type='radio'] {
   display: none;
 }
