@@ -119,6 +119,34 @@ a {
     color: v.$color-primary;
   }
 }
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  min-width: 20px;
+  min-height: 20px;
+  padding: 0;
+  border: 2px solid v.$light-lines;
+  border-radius: 25px;
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  top: -1px;
+  position: relative;
+}
+
+input[type="radio"] {
+  &:not(:disabled):checked {
+    border: 6px solid v.$color-primary;
+  }
+}
+input[type="checkbox"] {
+  &:not(:disabled):checked {
+    border: 2px solid v.$color-primary;
+    background: url("../public/icons/check.svg") v.$color-primary no-repeat
+      center;
+  }
+}
 
 .label_radio {
   color: v.$color-primary;

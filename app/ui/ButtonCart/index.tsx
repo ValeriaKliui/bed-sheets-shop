@@ -1,9 +1,9 @@
-import ButtonPlusMinus from '@ui/ButtonPlusMinus';
-import Gap from '@ui/Gap';
-import clsx from 'clsx';
+import ButtonPlusMinus from "@ui/ButtonPlusMinus";
+import Gap from "@ui/Gap";
+import clsx from "clsx";
 
-import { ButtonCartProps } from './interface';
-import styles from './styles.module.scss';
+import { ButtonCartProps } from "./interface";
+import styles from "./styles.module.scss";
 
 export default function ButtonCart({
   children,
@@ -15,7 +15,7 @@ export default function ButtonCart({
   return (
     <Gap
       className={clsx(styles.container, className)}
-      justifyContent={'center'}
+      justifyContent={"center"}
     >
       {amountInCart ? (
         <ButtonPlusMinus
@@ -27,7 +27,7 @@ export default function ButtonCart({
         false
       )}
 
-      <button className='buttons' type="submit">
+      <button className="buttons" type="submit">
         {children}
       </button>
     </Gap>

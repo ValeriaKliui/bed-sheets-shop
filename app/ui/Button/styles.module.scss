@@ -9,12 +9,11 @@
   height: fit-content;
 
   @include xxs {
-    padding: 2em 4em;
+    min-width: 16em;
+    min-height: 4em;
   }
   @include sm {
-    padding: 2em 6em;
-  }
-  @include md {
-    padding: 2em 8em;
+    min-width: 18em;
+    min-height: 5em;
   }
 }

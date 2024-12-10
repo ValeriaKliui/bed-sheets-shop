@@ -41,7 +41,5 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 ## TODO
 
-1. Unify buttons
 2. Change success modal
-3. Change checkbox design
-4. Shadow unavailable items
+3. Shadow unavailable items

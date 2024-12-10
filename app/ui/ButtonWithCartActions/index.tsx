@@ -15,6 +15,7 @@ export default function ButtonWithCartActions({
   additionalProperties,
 }: ButtonWithCartActionsProps) {
   const { getItemAmountInCart, addToCart, removeFromCart } = useCart();
+
   const onIncreaseClick = () =>
     !isDisabled && addToCart({ id, additionalProperties });
   const onDecreaseClick = () =>
