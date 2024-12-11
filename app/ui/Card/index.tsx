@@ -1,3 +1,4 @@
+import { Availability } from "@lib/constants/types";
 import formatPrice from "@lib/utils/formatPrice";
 import { getDiscountInfo } from "@lib/utils/getDiscountInfo";
 import Gap from "@ui/Gap";
@@ -7,7 +8,6 @@ import { forwardRef } from "react";
 
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
-import { Availability } from "@lib/constants/types";
 
 const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {

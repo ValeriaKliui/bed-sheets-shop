@@ -10,9 +10,7 @@ export default function ButtonWithIndicator({
   onClick,
   isPressed,
 }: ButtonWithIndicatorProps) {
-  const togglePressed = () => {
-    onClick();
-  };
+  const togglePressed = () => onClick();
 
   return (
     <button onClick={togglePressed} className={clsx(styles.button)}>

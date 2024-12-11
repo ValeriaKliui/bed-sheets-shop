@@ -44,6 +44,7 @@ export default function Slider({
   beforeChange,
   afterChange,
   className,
+  containerClass,
 }: SliderProps) {
   return (
     <div className={className}>
@@ -56,7 +57,7 @@ export default function Slider({
           "wrapper_small",
           styles.container,
           overflowed && styles.notOverflowed,
-          withArrows && styles.withArrows
+          containerClass
         )}
         rewindWithAnimation
         renderArrowsWhenDisabled

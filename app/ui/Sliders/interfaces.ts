@@ -12,4 +12,5 @@ export type SliderProps = CustomSliderProps &
     dots?: ReactNode[];
     className?: string;
     isTextSlider?: boolean;
+    containerClass?: string;
   };

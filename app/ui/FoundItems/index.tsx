@@ -14,9 +14,9 @@ export default function FoundItems({
 
   return (
     <div className={styles.container}>
-      {items.map(({ title, price, photo, id, category }) => (
+      {items.map(({ title, photo, id, category }) => (
         <Link href={`/catalog/${category}/${id}`} key={id}>
-          <FoundItem title={title} price={price} photo={photo} key={id} />
+          <FoundItem title={title} photo={photo} search={search} />
         </Link>
       ))}
 

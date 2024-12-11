@@ -1,0 +1,11 @@
+@import "../../breakpoints.module.scss";
+
+.container {
+  @include xxs {
+    margin-top: 20em;
+    text-align: center;
+  }
+  @include sm {
+    margin-top: unset;
+  }
+}

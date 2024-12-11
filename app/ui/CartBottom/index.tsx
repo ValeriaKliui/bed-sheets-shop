@@ -2,25 +2,21 @@
 
 import { useAppSelector } from "@hooks/hooks";
 import useCart from "@hooks/useCart";
+import useModal from "@hooks/useModal";
 import getItemsText from "@lib/getItemsText";
 import { selectFullCartItems } from "@lib/redux/features/cart/cartSelectors";
 import getTotalPriceOfCart from "@lib/utils/getTotalPriceOfCart";
 import Button from "@ui/Button";
+import CallModal from "@ui/CallModal";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Link from "next/link";
 
 import styles from "./styles.module.scss";
-import { useState } from "react";
-import Modal from "@ui/Modal";
-import useModal from "@hooks/useModal";
-import CallForm from "@ui/CallForm";
-import CallLinkModal from "@ui/CallLinkModal";
 
 export default function CartBottom() {
-  const [isPurchased, setIsPurchased] = useState(false)
   const { getTotalAmountInCart, clearCart } = useCart();
-  const { closeModal } = useModal()
+  const { closeModal, openModal, isModalOpen } = useModal();
   const totalAmount = getTotalAmountInCart();
   const cartItemsFull = useAppSelector(selectFullCartItems);
 
@@ -28,12 +24,16 @@ export default function CartBottom() {
 
   const itemsText = getItemsText(totalAmount);
 
-  const totalPrice = getTotalPriceOfCart(cartItemsFull)
+  const totalPrice = getTotalPriceOfCart(cartItemsFull);
 
   const onPurchase = () => {
-    setIsPurchased(true)
-    // clearCart()
-  }
+    clearCart();
+  };
+
+  const onClose = () => {
+    onPurchase();
+    closeModal();
+  };
 
   return (
     <Gap
@@ -42,9 +42,7 @@ export default function CartBottom() {
       className={styles.container}
     >
       <p> Итого</p>
-      <p className={clsx("text_primary", "text_big")}>
-        {(totalPrice)}
-      </p>
+      <p className={clsx("text_primary", "text_big")}>{totalPrice}</p>
       <Gap size="large" direction="vertical" className={styles.cartInfo}>
         <Gap
           direction="vertical"
@@ -64,8 +62,16 @@ export default function CartBottom() {
             Информация о доставке
           </Link>
         </Gap>
-        <Button className={styles.orderButton} onClick={onPurchase}>Оформить заказ</Button>
-        {isPurchased && <CallLinkModal />}
+        <Button className={styles.orderButton} onClick={openModal}>
+          Оформить заказ
+        </Button>
+        <CallModal
+          isOpened={isModalOpen}
+          closeModal={onClose}
+          title="Оформить заказ"
+          onSuccess={onPurchase}
+          successText="Ваш заказ успешно оформлен!"
+        />
       </Gap>
     </Gap>
   );

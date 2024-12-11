@@ -18,7 +18,7 @@ export async function fetchItemsByTitle({
     const item = await sql.query<CatalogItem>(
       `SELECT *
          FROM ${DB_ITEMS_NAME}
-         WHERE title like '${title}%'
+         WHERE title like '%${title}%'
          LIMIT ${limitIfNoTitle} OFFSET ${offset}
          `
     );

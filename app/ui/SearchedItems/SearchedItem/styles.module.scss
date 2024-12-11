@@ -1,5 +1,5 @@
-@use '../../../variables.module.scss' as v;
-@import '../../../breakpoints.module.scss';
+@use "../../../variables.module.scss" as v;
+@import "../../../breakpoints.module.scss";
 
 .container {
   border-top: 1px solid v.$light-lines;
@@ -8,7 +8,7 @@
     box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);
   }
   @include xxs {
-    padding: 0.5em;
+    padding: 0.5em 0.5em 1.5em;
   }
   @include sm {
     padding: 1em;
@@ -36,6 +36,7 @@
   @include xxs {
     font-weight: 400;
     text-transform: capitalize;
+    font-size: 1.5em;
   }
   @include sm {
     font-weight: 700;
@@ -47,13 +48,5 @@
   }
   @include sm {
     display: block;
-  }
-}
-.gap {
-  @include xxs {
-    gap: 0 0.8em;
-  }
-  @include md {
-    gap: 1em;
   }
 }

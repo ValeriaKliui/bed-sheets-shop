@@ -35,8 +35,6 @@ export default function CartItem({
 
   const finalPrice = amount * Number(price);
 
-
-
   return (
     <div className={styles.container}>
       <Link href={`/catalog/${category}/${id}`}>
@@ -62,8 +60,12 @@ export default function CartItem({
               type="color"
             />
           )}
-          {aromas && <p className="text_bold">{aromas}</p>}
-          {textiles && <p className="text_bold">{textiles}</p>}
+          {aromas && (
+            <Option option={aromas} register={register} name="aromas" />
+          )}
+          {textiles && (
+            <Option option={textiles} register={register} name="textiles" />
+          )}
         </Gap>
       </Gap>
       <ButtonPlusMinus

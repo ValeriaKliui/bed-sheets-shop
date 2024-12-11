@@ -30,6 +30,8 @@ export default async function Home() {
           sliderCards={sliderCards}
           overflowed
           className={styles.slider}
+          withArrows
+          containerClass={styles.withArrows}
         />
         <div className={clsx(styles.container, styles.catalog_wrapper)}>
           <ConstructorPreview

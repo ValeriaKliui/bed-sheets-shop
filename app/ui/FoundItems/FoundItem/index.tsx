@@ -1,15 +1,13 @@
-import { CURRENCY } from "@lib/constants/catalogItems";
-import { CatalogItem } from "@lib/constants/types";
+import getMatchedPart from "@lib/utils/getMatchedPart";
 import Gap from "@ui/Gap";
 import Image from "next/image";
 
+import { FoundItemProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function FoundItem({
-  title,
-  price,
-  photo,
-}: Pick<CatalogItem, "title" | "photo" | "price">) {
+export default function FoundItem({ title, photo, search }: FoundItemProps) {
+  const { match, startWord, endWord } = getMatchedPart(title, search);
+
   return (
     <Gap className={styles.container}>
       <Image
@@ -20,10 +18,18 @@ export default function FoundItem({
         className={styles.image}
         sizes="100vw"
       />
-      <p>{title}</p>
-      <p>
-        {price} {CURRENCY}
-      </p>
+      <Gap direction="vertical" alignItems="flex-start">
+        <div className={styles.titleContainer}>
+          <p>{startWord}</p>
+          <mark> {match}</mark>
+          <p>{endWord}</p>
+        </div>
+
+        <p>
+          Mollen – магазин нижнего белья, который скоро откроется и начнет
+          продавать постельное белье.
+        </p>
+      </Gap>
     </Gap>
   );
 }

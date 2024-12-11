@@ -18,8 +18,7 @@ export default async function SearchedItems({
   if (!search) return <p>Введите название товара</p>;
 
   return (
-    <Gap direction="vertical"
-      className="wrapper" alignItems="flex-start">
+    <Gap direction="vertical" className="wrapper" alignItems="flex-start">
       {searchedItems.length === 0 ? (
         <p>Ничего не найдено</p>
       ) : (
@@ -28,18 +27,19 @@ export default async function SearchedItems({
           <p>
             По запросу &quot;{search}&quot; нашлось {pagesAmount} страниц.
           </p>
-          {searchedItems.map(({ title, id, photo, category, article }) => (
-            <Link href={`/catalog/${category}/${id}`} key={id}>
-              <SearchedItem
-                title={title}
-                id={id}
-                photo={photo}
-                category={category}
-                key={id}
-                article={article}
-              />
-            </Link>
-          ))}
+          <div>
+            {searchedItems.map(({ title, id, photo, category }) => (
+              <Link href={`/catalog/${category}/${id}`} key={id}>
+                <SearchedItem
+                  title={title}
+                  id={id}
+                  photo={photo}
+                  category={category}
+                  key={id}
+                />
+              </Link>
+            ))}
+          </div>
         </>
       )}
     </Gap>

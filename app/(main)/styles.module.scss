@@ -37,3 +37,19 @@
 .slider {
   margin-bottom: 3em;
 }
+.withArrows {
+  align-items: flex-start;
+
+  @include xxs {
+    height: 400px;
+  }
+  @include md {
+    height: 500px;
+  }
+  @include lg {
+    height: 550px;
+  }
+  @include xl {
+    height: 700px;
+  }
+}

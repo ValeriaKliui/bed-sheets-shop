@@ -1,4 +1,4 @@
-@import '../../../breakpoints.module.scss';
+@import "../../../breakpoints.module.scss";
 
 .container {
   cursor: grabbing;
@@ -6,22 +6,7 @@
 .notOverflowed {
   overflow: unset;
 }
-.withArrows {
-  align-items: flex-start;
 
-  @include xxs {
-    height: 400px;
-  }
-  @include md {
-    height: 500px;
-  }
-  @include lg {
-    height: 550px;
-  }
-  @include xl {
-    height: 700px;
-  }
-}
 .withoutArrows {
   position: relative;
 }

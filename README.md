@@ -41,5 +41,5 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 ## TODO
 
-2. Change success modal
-3. Change slider for mobiles
+1. Add animation
+2. Change mobile slider

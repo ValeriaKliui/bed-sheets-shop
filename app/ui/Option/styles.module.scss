@@ -1,11 +1,11 @@
-@use '../../variables.module.scss' as v;
+@use "../../variables.module.scss" as v;
 
 .colorContainer {
   display: flex;
   gap: 1em;
 }
 .option {
-  padding: 0.1em 0.8em;
+  padding: 0.6em 1.4em;
   border: 1px solid v.$light-lines;
   cursor: pointer;
   min-width: 3em;
@@ -13,8 +13,8 @@
   text-align: center;
 }
 .optionColor {
-  width: 2em;
-  height: 2em;
+  width: 3em;
+  height: 3em;
   min-width: unset;
   min-height: unset;
   border-radius: 6px;
@@ -24,6 +24,6 @@
   background: rgba(v.$color-primary, 0.1);
   color: v.$color-text;
 }
-.input[type='radio'] {
+.input[type="radio"] {
   display: none;
 }

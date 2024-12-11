@@ -1,5 +1,5 @@
 import { LINKS } from "@lib/constants";
-import CallLinkModal from "@ui/CallLinkModal";
+import CallLinkWithModal from "@ui/CallLinkWithModal";
 import Logo from "@ui/icons/Logo";
 import Networks from "@ui/Networks";
 import colors from "@variables.module.scss";
@@ -34,7 +34,7 @@ export default function Footer() {
       </div>
       <div className={styles.column}>
         <div className={styles.column}>
-          <CallLinkModal />
+          <CallLinkWithModal />
         </div>
         <Networks />
       </div>
