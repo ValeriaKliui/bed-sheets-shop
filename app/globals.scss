@@ -1,5 +1,5 @@
-@use "variables.module.scss" as v;
-@import "./breakpoints.module.scss";
+@use 'variables.module.scss' as v;
+@import './breakpoints.module.scss';
 
 * {
   box-sizing: border-box;
@@ -38,17 +38,12 @@ body {
 main {
   flex-grow: 1;
 }
-
-.react-multi-carousel-item {
-  margin-left: 20px;
-}
 button {
   color: v.$color-text-light;
   text-transform: uppercase;
   font-family: var(--font-orchidea-pro);
   font-weight: 600;
 }
-
 h1,
 h2,
 h3,
@@ -129,8 +124,8 @@ a {
     color: v.$color-primary;
   }
 }
-input[type="radio"],
-input[type="checkbox"] {
+input[type='radio'],
+input[type='checkbox'] {
   box-sizing: border-box;
   min-width: 20px;
   min-height: 20px;
@@ -145,16 +140,16 @@ input[type="checkbox"] {
   position: relative;
 }
 
-input[type="radio"] {
+input[type='radio'] {
   &:not(:disabled):checked {
     border: 6px solid v.$color-primary;
   }
 }
-input[type="checkbox"] {
+input[type='checkbox'] {
   &:not(:disabled):checked {
     border: 2px solid v.$color-primary;
-    background: url("../public/icons/check.svg") v.$color-primary no-repeat
-      center;
+    background: url('../public/icons/check.svg') v.$color-primary
+      no-repeat center;
   }
 }
 
@@ -191,19 +186,19 @@ mark {
     max-width: 370px;
   }
   @include sm {
-    max-width: map-get($breakpoints, "sm");
+    max-width: map-get($breakpoints, 'sm');
   }
   @include md {
-    max-width: calc(map-get($breakpoints, "md") - 5%);
+    max-width: calc(map-get($breakpoints, 'md') - 5%);
   }
   @include lg {
-    max-width: calc(map-get($breakpoints, "lg") - 5%);
+    max-width: calc(map-get($breakpoints, 'lg') - 5%);
   }
   @include xl {
-    max-width: calc(map-get($breakpoints, "xl") - 10%);
+    max-width: calc(map-get($breakpoints, 'xl') - 10%);
   }
   @include xxl {
-    max-width: calc(map-get($breakpoints, "xxl") - 10%);
+    max-width: calc(map-get($breakpoints, 'xxl') - 10%);
   }
 }
 
@@ -217,19 +212,19 @@ mark {
     max-width: 320px;
   }
   @include sm {
-    max-width: map-get($breakpoints, "sm");
+    max-width: map-get($breakpoints, 'sm');
   }
   @include md {
-    max-width: map-get($breakpoints, "md");
+    max-width: map-get($breakpoints, 'md');
   }
   @include lg {
-    max-width: map-get($breakpoints, "lg");
+    max-width: map-get($breakpoints, 'lg');
   }
   @include xl {
-    max-width: map-get($breakpoints, "xl");
+    max-width: map-get($breakpoints, 'xl');
   }
   @include xxl {
-    max-width: map-get($breakpoints, "xxl");
+    max-width: map-get($breakpoints, 'xxl');
   }
 }
 .text_bold {
@@ -263,7 +258,7 @@ input::placeholder,
   color: v.$color-error;
 }
 .mobile-only {
-  @media screen and (max-width: map-get($breakpoints, "md")) {
+  @media screen and (max-width: map-get($breakpoints, 'md')) {
     display: block;
   }
   @include sm {

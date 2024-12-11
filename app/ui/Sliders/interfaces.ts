@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import { CarouselProps } from "react-multi-carousel";
+import { ReactNode } from 'react';
+import { CarouselProps } from 'react-multi-carousel';
 
 interface CustomSliderProps {
   cards: JSX.Element[];
@@ -8,9 +8,19 @@ interface CustomSliderProps {
 }
 
 export type SliderProps = CustomSliderProps &
-  Partial<Pick<CarouselProps, "beforeChange" | "afterChange">> & {
+  Partial<
+    Pick<
+      CarouselProps,
+      | 'beforeChange'
+      | 'afterChange'
+      | 'renderButtonGroupOutside'
+      | 'customButtonGroup'
+      | 'partialVisible'
+    >
+  > & {
     dots?: ReactNode[];
     className?: string;
     isTextSlider?: boolean;
     containerClass?: string;
+    gapped?: boolean;
   };

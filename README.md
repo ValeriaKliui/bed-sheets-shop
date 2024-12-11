@@ -42,4 +42,4 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 ## TODO
 
 1. Add animation
-2. Change mobile slider
+2. Change arrows renderArrowsWhenDisabled={true}

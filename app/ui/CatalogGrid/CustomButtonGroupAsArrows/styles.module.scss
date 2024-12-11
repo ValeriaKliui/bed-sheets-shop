@@ -1,0 +1,13 @@
+.next,
+.prev {
+  position: absolute;
+  top: 50%;
+}
+.next {
+  right: -14px;
+  transform: translateY(-50%) rotate(180deg);
+}
+.prev {
+  left: -14px;
+  transform: translateY(-50%);
+}

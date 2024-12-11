@@ -1,4 +1,4 @@
-@import "../../../breakpoints.module.scss";
+@import '../../../breakpoints.module.scss';
 
 .container {
   cursor: grabbing;
@@ -19,6 +19,9 @@
     max-width: 430px;
     min-width: 430px;
   }
+}
+.gapped {
+  margin-left: 20px;
 }
 .withArrowsMobile {
   margin-left: 0;

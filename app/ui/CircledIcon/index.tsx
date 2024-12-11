@@ -1,11 +1,11 @@
-import clsx from "clsx";
-import Image from "next/image";
+import clsx from 'clsx';
+import Image from 'next/image';
 
-import { CircledIconProps } from "./interfaces";
-import styles from "./styles.module.scss";
+import { CircledIconProps } from './interfaces';
+import styles from './styles.module.scss';
 
 export default function CircledIcon({
-  color = "transparent",
+  color = 'transparent',
   src,
   alt,
   className,
@@ -17,15 +17,17 @@ export default function CircledIcon({
     <div
       className={clsx(styles.circled, className)}
       onClick={onClick}
-      style={{ background: color }}
+      style={{
+        background: color,
+        border: borderColor && `1px solid ${borderColor}`,
+      }}
     >
       <Image
         src={src}
         width={20}
         height={20}
         alt={alt}
-        className={clsx(borderColor && styles.bordered, imgClassName)}
-        style={{ border: borderColor && `1px solid ${borderColor}`, }}
+        className={clsx(imgClassName)}
       />
     </div>
   );
