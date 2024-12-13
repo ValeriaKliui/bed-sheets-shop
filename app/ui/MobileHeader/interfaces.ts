@@ -1,4 +1,4 @@
-export interface MobileMenuProps {
+export interface MobileHeaderProps {
   color: string;
   toggleMenu: () => void;
   isOpened: boolean;

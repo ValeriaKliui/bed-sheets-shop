@@ -44,3 +44,5 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 1. Add animation
 2. Freeze scroll fix
 3. Make price range more adaptive (not to overlay, stop when min = max)
+4. Fix removing from cart
+5. Success Window isnt showing

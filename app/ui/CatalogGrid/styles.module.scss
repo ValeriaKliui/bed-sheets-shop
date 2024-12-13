@@ -1,4 +1,7 @@
-.container {
+.containerEmpty {
+  min-height: 300px;
+}
+.containerItems {
   display: grid;
 }
 .containerSlider {

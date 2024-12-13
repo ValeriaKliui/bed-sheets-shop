@@ -25,8 +25,8 @@ export default function CallModal({
   };
 
   const onAgree = () => {
-    closeSuccessModal();
     onSuccess?.();
+    closeSuccessModal();
   };
 
   return (

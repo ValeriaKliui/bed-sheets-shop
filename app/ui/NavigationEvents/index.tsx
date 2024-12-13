@@ -1,5 +1,6 @@
 "use client";
 
+import useFreezeScroll from "@hooks/useFreezeScroll";
 import Loader from "@ui/Loader";
 import { useRouter } from "next/navigation";
 import { useEffect, useOptimistic } from "react";
@@ -19,6 +20,7 @@ export default function NavigationEvents() {
     };
   }, [router, setLoading]);
 
+  useFreezeScroll(loading);
   if (!loading) return false;
 
   return <div className={styles.container}>{<Loader />}</div>;

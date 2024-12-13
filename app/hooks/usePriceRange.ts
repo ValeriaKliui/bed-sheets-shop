@@ -23,6 +23,8 @@ export default function usePriceRange({ min, max }: PricesNum) {
 
   const onRangeChange = useCallback(
     ({ target }: ChangeEvent<HTMLInputElement>) => {
+      const params = new URLSearchParams(searchParams);
+
       const updateParams = () => {
         params.set(name, value);
         replace(`${pathname}?${params.toString()}`);
@@ -30,18 +32,17 @@ export default function usePriceRange({ min, max }: PricesNum) {
 
       const { name, value } = target;
       const valueNum = Number(value);
-      const params = new URLSearchParams(searchParams);
-
       const isItMin = name === "minPrice";
+
       const isInRange = (valueNum >= min && valueNum <= max) || valueNum === 0;
 
       if (isInRange) {
         if (isItMin) setCurrMin(valueNum);
-        else setCurrMax(valueNum);
+        if (!isItMin) setCurrMax(valueNum);
       }
       updateParams();
     },
-    [pathname, replace, searchParams, min, max]
+    [min, max, pathname, replace, searchParams]
   );
 
   useEffect(() => {

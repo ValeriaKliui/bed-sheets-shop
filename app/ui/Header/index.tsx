@@ -7,7 +7,7 @@ import Gap from "@ui/Gap";
 import BedIcon from "@ui/icons/BedIcon";
 import Logo from "@ui/icons/Logo";
 import SearchIcon from "@ui/icons/SearchIcon";
-import MobileMenu from "@ui/MobileMenu";
+import MobileHeader from "@ui/MobileHeader";
 import NoSSR from "@ui/NoSSR";
 import clsx from "clsx";
 import Link from "next/link";
@@ -29,7 +29,7 @@ export default function Header() {
       <div className={clsx("wrapper", styles.header_wrapper)}>
         <div className={clsx(styles.header)}>
           <Gap size="large">
-            <MobileMenu
+            <MobileHeader
               color={textColor}
               isOpened={isMenuOpened}
               toggleMenu={toggleMenu}

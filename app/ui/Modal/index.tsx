@@ -1,26 +1,28 @@
 "use client";
 
+import useFreezeScroll from "@hooks/useFreezeScroll";
 import useOnClickOutside from "@hooks/useOnClickOutside";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import Portal from "@ui/Portal";
-import { useLockBodyScroll } from "@uidotdev/usehooks";
 import colors from "@variables.module.scss";
 import { useRef } from "react";
 
 import { ModalProps } from "./interfaces";
 import styles from "./styles.module.scss";
+
 const { bg } = colors;
+
 export default function Modal({
   children,
   closeModal,
   isOpened = false,
 }: ModalProps) {
   const modalContainerRef = useRef(null);
-  useLockBodyScroll();
 
   useOnClickOutside(modalContainerRef, closeModal);
-  // useFreezeScroll();
+
+  useFreezeScroll(isOpened);
 
   if (!isOpened) return false;
 
