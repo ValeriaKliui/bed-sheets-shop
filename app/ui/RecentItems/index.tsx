@@ -7,7 +7,7 @@ import Gap from "@ui/Gap";
 import Loader from "@ui/Loader";
 import clsx from "clsx";
 
-import styles from './styles.module.scss';
+import styles from "./styles.module.scss";
 
 export default function RecentItems() {
   const { isLoading, recentItems } = useRecentItems();
@@ -29,7 +29,7 @@ export default function RecentItems() {
       <h5>Недавно смотрели</h5>
       <CatalogGrid
         cardItems={cardItems ?? []}
-        dimensions={{ xs: { slider: true }, md: { columns: 4 } }}
+        dimensions={{ xs: { slider: true }, sm: { columns: 4 } }}
       />
     </Gap>
   );

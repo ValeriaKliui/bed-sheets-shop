@@ -20,7 +20,7 @@ export default function DotsLinks({ photoHeight, photoWidth }: DotsLinksProps) {
               x={xResized}
               y={yResized}
               url={`/catalog/${category}`}
-              key={title}
+              key={category}
             />
           );
         })}

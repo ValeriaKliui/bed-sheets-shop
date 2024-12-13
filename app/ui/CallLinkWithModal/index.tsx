@@ -17,6 +17,7 @@ export default function CallLinkWithModal() {
         isOpened={isModalOpen}
         closeModal={closeModal}
         title="Заказать звонок"
+        successText="Спасибо, мы с вами свяжемся!"
       />
     </>
   );

@@ -10,6 +10,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "-": "^0.0.1",
     "@reduxjs/toolkit": "^2.3.0",
     "@vercel/postgres": "^0.9.0",
     "next": "14.2.5",

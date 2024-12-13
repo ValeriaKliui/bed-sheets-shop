@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
-import { CarouselProps } from 'react-multi-carousel';
+import { ReactNode } from "react";
+import { CarouselProps } from "react-multi-carousel";
 
 interface CustomSliderProps {
   cards: JSX.Element[];
@@ -11,11 +11,12 @@ export type SliderProps = CustomSliderProps &
   Partial<
     Pick<
       CarouselProps,
-      | 'beforeChange'
-      | 'afterChange'
-      | 'renderButtonGroupOutside'
-      | 'customButtonGroup'
-      | 'partialVisible'
+      | "beforeChange"
+      | "afterChange"
+      | "renderButtonGroupOutside"
+      | "customButtonGroup"
+      | "partialVisible"
+      | "renderArrowsWhenDisabled"
     >
   > & {
     dots?: ReactNode[];

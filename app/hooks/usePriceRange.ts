@@ -23,19 +23,23 @@ export default function usePriceRange({ min, max }: PricesNum) {
 
   const onRangeChange = useCallback(
     ({ target }: ChangeEvent<HTMLInputElement>) => {
+      const updateParams = () => {
+        params.set(name, value);
+        replace(`${pathname}?${params.toString()}`);
+      };
+
       const { name, value } = target;
       const valueNum = Number(value);
       const params = new URLSearchParams(searchParams);
 
       const isItMin = name === "minPrice";
+      const isInRange = (valueNum >= min && valueNum <= max) || valueNum === 0;
 
-      if ((valueNum >= min && valueNum <= max) || valueNum === 0) {
+      if (isInRange) {
         if (isItMin) setCurrMin(valueNum);
         else setCurrMax(valueNum);
-
-        params.set(name, value);
-        replace(`${pathname}?${params.toString()}`);
       }
+      updateParams();
     },
     [pathname, replace, searchParams, min, max]
   );

@@ -1,14 +1,14 @@
-'use client';
+"use client";
 
-import 'react-multi-carousel/lib/styles.css';
+import "react-multi-carousel/lib/styles.css";
 
-import clsx from 'clsx';
-import React from 'react';
-import Carousel, { ResponsiveType } from 'react-multi-carousel';
+import clsx from "clsx";
+import React from "react";
+import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowBottom from '../Addons/CustomArrow';
-import { SliderProps } from '../interfaces';
-import styles from './styles.module.scss';
+import CustomArrowBottom from "../Addons/CustomArrow";
+import { SliderProps } from "../interfaces";
+import styles from "./styles.module.scss";
 
 const responsive: ResponsiveType = {
   xsl: {
@@ -46,7 +46,10 @@ export default function Slider({
   className,
   containerClass,
   renderButtonGroupOutside,
-  customButtonGroup, gapped = true, partialVisible
+  customButtonGroup,
+  gapped = true,
+  partialVisible = true,
+  renderArrowsWhenDisabled = false,
 }: SliderProps) {
   return (
     <div className={className}>
@@ -57,8 +60,9 @@ export default function Slider({
         partialVisible={partialVisible}
         renderButtonGroupOutside={renderButtonGroupOutside}
         customButtonGroup={customButtonGroup}
+        renderArrowsWhenDisabled={renderArrowsWhenDisabled}
         containerClass={clsx(
-          'wrapper_small',
+          "wrapper_small",
           styles.container,
           overflowed && styles.notOverflowed,
           containerClass

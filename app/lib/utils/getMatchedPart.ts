@@ -6,10 +6,6 @@ export default function getMatchedPart(word: string, search: string) {
   const matchIndexStart = word.indexOf(search);
   const matchIndexFinish = globalRegex.lastIndex;
 
-  console.log(matchIndexStart);
-
-  console.log(matchIndexFinish);
-
   return {
     startWord: word.slice(0, matchIndexStart),
     endWord: word.slice(matchIndexFinish),

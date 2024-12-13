@@ -21,6 +21,10 @@
   flex-direction: column;
   overflow: scroll;
 }
+.header {
+  position: absolute;
+  left: 3em;
+}
 .burger {
   display: flex;
   flex-direction: column;
@@ -52,4 +56,7 @@
   &:last-child {
     transform: rotate(-45deg) translate(5px, -6px);
   }
+}
+.logo {
+  z-index: 1000;
 }

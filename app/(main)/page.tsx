@@ -32,6 +32,7 @@ export default async function Home() {
           className={styles.slider}
           withArrows
           containerClass={styles.withArrows}
+          renderArrowsWhenDisabled={true}
         />
         <div className={clsx(styles.container, styles.catalog_wrapper)}>
           <ConstructorPreview

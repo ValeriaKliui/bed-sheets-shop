@@ -1,6 +1,5 @@
-import { useState } from 'react';
-
-import useFreezeScroll from './useFreezeScroll';
+import { useLockBodyScroll } from "@uidotdev/usehooks";
+import { useState } from "react";
 
 export default function useMobileMenu() {
   const [isMenuOpened, setIsOpened] = useState(false);
@@ -8,7 +7,8 @@ export default function useMobileMenu() {
 
   const closeMenu = () => setIsOpened(false);
 
-  useFreezeScroll(isMenuOpened);
+  useLockBodyScroll();
+  // useFreezeScroll();
 
   return {
     isMenuOpened,

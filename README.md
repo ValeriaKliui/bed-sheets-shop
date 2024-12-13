@@ -42,4 +42,5 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 ## TODO
 
 1. Add animation
-2. Change arrows renderArrowsWhenDisabled={true}
+2. Freeze scroll fix
+3. Make price range more adaptive (not to overlay, stop when min = max)

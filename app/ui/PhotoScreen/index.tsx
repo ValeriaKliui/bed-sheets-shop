@@ -2,7 +2,7 @@
 
 import DotsLinks from "@ui/DotsLinks";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 import ImageSrc from "../../../public/images/big_screen.png";
 import styles from "./styles.module.scss";
@@ -14,7 +14,7 @@ export default function PhotoScreen() {
     height: 0,
   });
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const photo = photoRef.current;
     if (!photo) return;
 

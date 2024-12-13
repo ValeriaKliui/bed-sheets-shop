@@ -1,5 +1,8 @@
+import useModal from "@hooks/useModal";
 import { CATEGORIES_LINKS, OTHER_LINKS } from "@lib/constants";
+import CallModal from "@ui/CallModal";
 import Gap from "@ui/Gap";
+import Logo from "@ui/icons/Logo";
 import Networks from "@ui/Networks";
 import clsx from "clsx";
 import Link from "next/link";
@@ -12,19 +15,24 @@ export default function MobileMenu({
   toggleMenu,
   isOpened,
 }: MobileMenuProps) {
+  const { openModal: openFormModal, isModalOpen, closeModal } = useModal();
+
   return (
     <div className={styles.mobileMenu}>
-      <div className={clsx(styles.burger)} onClick={toggleMenu}>
-        {Array(3)
-          .fill(1)
-          .map((_, index) => (
-            <span
-              key={index}
-              className={clsx(styles.dot, isOpened && styles.dot_opened)}
-              style={{ background: !isOpened ? color : "" }}
-            />
-          ))}
-      </div>
+      <Gap className={clsx(isOpened && styles.header)}>
+        <div className={clsx(styles.burger)} onClick={toggleMenu}>
+          {Array(3)
+            .fill(1)
+            .map((_, index) => (
+              <span
+                key={index}
+                className={clsx(styles.dot, isOpened && styles.dot_opened)}
+                style={{ background: !isOpened ? color : "" }}
+              />
+            ))}
+        </div>
+        {isOpened && <Logo fill={"black"} className={styles.logo} />}
+      </Gap>
       {isOpened && (
         <div className={styles.menu}>
           <Gap size="huge" direction="vertical" alignItems={"flex-start"}>
@@ -50,9 +58,15 @@ export default function MobileMenu({
             </Gap>
             <Gap direction="vertical" alignItems={"flex-start"}>
               <h4>8 800 222 22 22</h4>
-              <a href="tel:88002222222" className="link">
+              <a className={clsx("link", "pointer")} onClick={openFormModal}>
                 Заказать звонок
               </a>
+              <CallModal
+                isOpened={isModalOpen}
+                closeModal={closeModal}
+                title="Заказать звонок"
+                successText="Спасибо, мы с вами свяжемся!"
+              />
             </Gap>
             <Networks />
           </Gap>

@@ -1,5 +1,5 @@
 import { useWindowSize } from "@uidotdev/usehooks";
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 
 import { RangeLabelsProps } from "./interfaces";
 
@@ -14,7 +14,7 @@ export default function useRangeLabels({
 
   const { width } = useWindowSize();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (containerRef.current) {
       const widthContainer = containerRef.current.offsetWidth;
 

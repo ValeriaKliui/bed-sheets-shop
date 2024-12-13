@@ -1,16 +1,22 @@
 @use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .colorContainer {
   display: flex;
   gap: 1em;
 }
 .option {
-  padding: 0.6em 1.4em;
-  border: 1px solid v.$light-lines;
-  cursor: pointer;
-  min-width: 3em;
-  min-height: 1.5em;
-  text-align: center;
+  @include xxs {
+    padding: 0.6em 1.4em;
+    border: 1px solid v.$light-lines;
+    cursor: pointer;
+    min-width: 3em;
+    min-height: 1.5em;
+    text-align: center;
+  }
+  @include sm {
+    padding: 0.3em 0.52em;
+  }
 }
 .optionColor {
   width: 3em;

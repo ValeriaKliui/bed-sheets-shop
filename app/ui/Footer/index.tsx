@@ -8,9 +8,9 @@ import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-export default function Footer() {
-  const { text } = colors;
+const { text } = colors;
 
+export default function Footer() {
   return (
     <footer className={clsx("wrapper", styles.footer)}>
       <div className={clsx(styles.links_grid, "text_secondary")}>

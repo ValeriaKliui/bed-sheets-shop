@@ -54,12 +54,5 @@ export default function VerticalSlider({
     </Carousel>
   );
 
-  if (!dots)
-    return (
-      <div>
-        <CarouselCustom />
-      </div>
-    );
-
   return <CarouselCustom />;
 }

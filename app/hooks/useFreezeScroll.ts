@@ -1,13 +1,13 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
-export default function useFreezeScroll(isFreezed: boolean) {
-  useEffect(() => {
-    if (isFreezed) {
-      document.body.style.overflowY = "hidden";
-      document.body.style.height = `${window.innerHeight}px`;
-    } else {
-      document.body.style.overflowY = "unset";
+export default function useFreezeScroll() {
+  useLayoutEffect(() => {
+    const originalStyle = window.getComputedStyle(document.body).overflowY;
+    document.body.style.overflowY = "hidden";
+    document.body.style.height = `${window.innerHeight}px`;
+    return () => {
+      document.body.style.overflowY = originalStyle;
       document.body.style.height = "unset";
-    }
-  }, [isFreezed]);
+    };
+  }, []);
 }

@@ -3,7 +3,9 @@
 }
 .containerSlider {
   position: relative;
+  align-self: flex-start;
 }
 .containerClass {
-  padding: 0;
+  padding: 0.03rem;
+  margin: unset;
 }

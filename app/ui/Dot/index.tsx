@@ -7,13 +7,14 @@ export default function Dot({ title, x, y, url }: DotProps) {
   if (!y) return;
 
   return (
-    <div className={styles.dot_item} style={{ top: y, left: x }}>
-      <div className={styles.dot_container}>
-        <div className={styles.dot} />
-      </div>
-      <Link href={url}>
+    <Link href={url}>
+      <div className={styles.dot_item} style={{ top: y, left: x }}>
+        <div className={styles.dot_container}>
+          <div className={styles.dot} />
+        </div>
+
         <h4 className={styles.title}>{title}</h4>
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }

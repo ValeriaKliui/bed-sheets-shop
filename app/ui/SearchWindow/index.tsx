@@ -12,9 +12,7 @@ import Link from "next/link";
 import { ChangeEvent, useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
-
 const { bg } = colors;
-
 export default function SearchWindow() {
   const [isLoading, setIsLoading] = useState(false);
   const [foundItems, setFoundItems] = useState<CatalogItem[] | null>(null);

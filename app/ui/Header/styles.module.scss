@@ -1,5 +1,5 @@
-@use '../../variables.module.scss' as v;
-@import '../../breakpoints.module.scss';
+@use "../../variables.module.scss" as v;
+@import "../../breakpoints.module.scss";
 
 .container {
   position: relative;
@@ -35,19 +35,6 @@
 .notMobile {
   @include xxs {
     display: none;
-  }
-  @include sm {
-    display: block;
-  }
-}
-
-.logo_opened {
-  @include xxs {
-    z-index: 1000;
-    position: relative;
-    path {
-      fill: black;
-    }
   }
   @include sm {
     display: block;

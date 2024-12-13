@@ -1,4 +1,4 @@
-@import '../../../breakpoints.module.scss';
+@import "../../../breakpoints.module.scss";
 
 .container {
   li {
@@ -43,6 +43,7 @@
   @include sm {
     left: 0;
     justify-content: flex-start;
+    width: fit-content;
   }
 }
 .left {
@@ -51,5 +52,6 @@
   }
   @include sm {
     margin-top: 5em;
+    right: 0;
   }
 }

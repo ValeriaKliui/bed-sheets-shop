@@ -10,7 +10,6 @@ import Image from "next/image";
 
 import { FiltersMobileProps } from "./interfaces";
 import styles from "./styles.module.scss";
-
 const { bg } = colors;
 
 export default function FiltersMobile({ filters }: FiltersMobileProps) {
@@ -18,7 +17,7 @@ export default function FiltersMobile({ filters }: FiltersMobileProps) {
 
   return (
     <Gap className={clsx("mobile-only", "wrapper")} alignSelf="flex-start">
-      <Gap className={styles.button} onClick={toggleMenu}>
+      <Gap onClick={toggleMenu} className="pointer">
         <Image width={20} height={20} src="/icons/filters.svg" alt="Фильтры" />
         <h5>Фильтры</h5>
       </Gap>
@@ -40,7 +39,7 @@ export default function FiltersMobile({ filters }: FiltersMobileProps) {
           </Gap>
           <h5>Категории</h5>
           {filters}
-          <Button onClick={toggleMenu} className={clsx(styles.show, 'pointer')}>
+          <Button onClick={toggleMenu} className={clsx(styles.show, "pointer")}>
             Показать
           </Button>
         </Gap>

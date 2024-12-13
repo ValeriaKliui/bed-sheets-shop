@@ -1,4 +1,4 @@
-import { PATHS } from '@lib/constants/paths';
+import { PATHS } from "@lib/constants/paths";
 
 export type LinksArray = { title: `${PATHS}`; path: string }[];
 

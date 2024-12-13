@@ -1,24 +1,29 @@
-@import '../../breakpoints.module.scss';
+@import "../../breakpoints.module.scss";
 
 .container {
   @include xxs {
     display: grid;
     gap: 1em;
     grid-template-areas:
-      'image title'
-      'text text';
+      "image title"
+      "text text";
   }
   @include sm {
     grid-template-areas:
-      'image title'
-      'image text';
+      "image title"
+      "image text";
   }
 }
 .image {
-  width: 190px;
-  height: 100%;
-  object-fit: cover;
-  grid-area: image;
+  @include xxs {
+    width: 190px;
+    height: 100%;
+    object-fit: cover;
+    grid-area: image;
+  }
+  @include lg {
+    width: 380px;
+  }
 }
 .title {
   grid-area: title;
@@ -32,4 +37,7 @@
 }
 .text {
   grid-area: text;
+  @include lg {
+    max-width: 700px;
+  }
 }
