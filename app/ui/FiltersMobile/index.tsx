@@ -4,7 +4,7 @@ import useMobileMenu from "@hooks/useMobileMenu";
 import Button from "@ui/Button";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
-import colors from "@variables.module.scss";
+import colors from "@lib/styles/variables.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
 

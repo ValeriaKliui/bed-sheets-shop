@@ -1,4 +1,5 @@
-@use '../../variables.module.scss' as v;
+@use '../../lib/styles/variables.module.scss' as v;
+@import '../../lib/styles/mixins/animations.module.scss';
 
 .dot_item {
   position: absolute;
@@ -12,6 +13,7 @@
       height: 90%;
     }
   }
+  @include scale-animation-on-hover;
 }
 .dot_container {
   width: 50px;

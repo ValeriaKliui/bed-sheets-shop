@@ -1,5 +1,5 @@
-@use "../variables.module.scss" as v;
-@import "../breakpoints.module.scss";
+@use '../variables.module.scss' as v;
+@import './lib/styles/mixins/breakpoints.module.scss';
 
 .layout {
   display: grid;

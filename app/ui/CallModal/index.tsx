@@ -10,8 +10,8 @@ export default function CallModal({
   closeModal: closeFormModal,
   isOpened: isFormModalOpen,
   title,
-  onSuccess,
   successText,
+  onSubmit
 }: CallModalProps) {
   const {
     openModal: openSuccessModal,
@@ -20,12 +20,12 @@ export default function CallModal({
   } = useModal();
 
   const onFormSubmit = () => {
+    onSubmit?.()
     closeFormModal();
     openSuccessModal();
   };
 
   const onAgree = () => {
-    onSuccess?.();
     closeSuccessModal();
   };
 

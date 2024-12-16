@@ -1,5 +1,5 @@
 @use 'variables.module.scss' as v;
-@import './breakpoints.module.scss';
+@import './mixins/breakpoints.module.scss';
 
 * {
   box-sizing: border-box;
@@ -148,8 +148,8 @@ input[type='radio'] {
 input[type='checkbox'] {
   &:not(:disabled):checked {
     border: 2px solid v.$color-primary;
-    background: url('../public/icons/check.svg') v.$color-primary
-      no-repeat center;
+    background: url('../../../public/icons/check.svg')
+      v.$color-primary no-repeat center;
   }
 }
 

@@ -1,5 +1,5 @@
-@use "../../variables.module.scss" as v;
-@import "../../breakpoints.module.scss";
+@@use '../../lib/styles/variables.module.scss' as v;.module.scss' as v;
+@import '../../lib/styles/mixins/breakpoints.module.scss';
 
 .aside {
   @include xxs {

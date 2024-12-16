@@ -14,26 +14,26 @@ import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-export default function CartBottom() {
+export default function
+  () {
   const { getTotalAmountInCart, clearCart } = useCart();
   const { closeModal, openModal, isModalOpen } = useModal();
   const totalAmount = getTotalAmountInCart();
   const cartItemsFull = useAppSelector(selectFullCartItems);
-
-  if (!totalAmount) return false;
 
   const itemsText = getItemsText(totalAmount);
 
   const totalPrice = getTotalPriceOfCart(cartItemsFull);
 
   const onPurchase = () => {
-    clearCart();
+    setTimeout(() => clearCart(), 2000)
   };
 
   const onClose = () => {
-    onPurchase();
     closeModal();
   };
+
+  if (!totalAmount || !totalPrice) return false;
 
   return (
     <Gap
@@ -69,7 +69,7 @@ export default function CartBottom() {
           isOpened={isModalOpen}
           closeModal={onClose}
           title="Оформить заказ"
-          onSuccess={onPurchase}
+          onSubmit={onPurchase}
           successText="Ваш заказ успешно оформлен!"
         />
       </Gap>

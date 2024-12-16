@@ -1,17 +1,17 @@
-@import "../../breakpoints.module.scss";
+@import '../../lib/styles/mixins/breakpoints.module.scss';
 
 .container {
   @include xxs {
     display: grid;
     gap: 1em;
     grid-template-areas:
-      "image title"
-      "text text";
+      'image title'
+      'text text';
   }
   @include sm {
     grid-template-areas:
-      "image title"
-      "image text";
+      'image title'
+      'image text';
   }
 }
 .image {

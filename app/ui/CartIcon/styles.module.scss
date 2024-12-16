@@ -1,7 +1,9 @@
-@use "../../variables.module.scss" as v;
+@use '../../lib/styles/variables.module.scss' as v;
+@import '../../lib/styles/mixins/animations.module.scss';
 
 .container {
   position: relative;
+  @include scale-animation-on-hover;
 }
 .amount {
   display: flex;

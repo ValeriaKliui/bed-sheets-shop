@@ -6,7 +6,7 @@ import { fetchItemsByTitle } from "@lib/fetchItemsByTitle";
 import CircledIcon from "@ui/CircledIcon";
 import FoundItems from "@ui/FoundItems";
 import Gap from "@ui/Gap";
-import colors from "@variables.module.scss";
+import colors from "@lib/styles/variables.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
 import { ChangeEvent, useEffect, useState } from "react";

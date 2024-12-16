@@ -6,7 +6,8 @@ import CartItems from "@ui/CartItems";
 
 import CartHeader from "./CartHeader";
 
-export default function CartInfo() {
+export default function 
+() {
   const cartItemsFull = useAppSelector(selectFullCartItems);
 
   return (

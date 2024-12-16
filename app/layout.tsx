@@ -1,4 +1,4 @@
-import "./globals.scss";
+import "@lib/styles/globals.scss";
 
 import StoreProvider from "@lib/redux/storeProvider";
 import { fontCirce, fontOrchidea } from "@ui/fonts";

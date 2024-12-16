@@ -3,7 +3,7 @@ import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Image from "next/image";
 
-import styles from "./not-found.module.scss";
+import styles from "@lib/styles/not-found.module.scss";
 
 export default function NotFound() {
   return (

@@ -1,7 +1,7 @@
 import useCart from "@hooks/useCart";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
-import colors from "@variables.module.scss";
+import colors from "@lib/styles/variables.module.scss";
 
 const { bg } = colors;
 

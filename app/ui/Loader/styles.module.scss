@@ -1,4 +1,4 @@
-@use "../../variables.module.scss" as v;
+@use '../../lib/styles/variables.module.scss' as v;
 
 .loader {
   width: 50px;
@@ -13,7 +13,7 @@
 }
 .loader::before,
 .loader::after {
-  content: "";
+  content: '';
   grid-area: 1/1;
   margin: 2px;
   border: inherit;

@@ -4,7 +4,7 @@ import ButtonPlusMinus from "@ui/ButtonPlusMinus";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import Option from "@ui/Option";
-import colors from "@variables.module.scss";
+import colors from "@lib/styles/variables.module.scss";
 import clsx from "clsx";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,4 +1,4 @@
-@import "../../breakpoints.module.scss";
+@import '../../lib/styles/mixins/breakpoints.module.scss';
 
 .layout {
   display: grid;
@@ -6,18 +6,18 @@
   @include xxs {
     grid-template-columns: repeat(1, 1fr);
     grid-template-areas:
-      "top"
-      "slider"
-      "price"
-      "bottom";
+      'top'
+      'slider'
+      'price'
+      'bottom';
     gap: 2em;
   }
   @include sm {
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
-      "slider top"
-      "slider price"
-      "slider bottom";
+      'slider top'
+      'slider price'
+      'slider bottom';
     gap: 0 5em;
   }
 }

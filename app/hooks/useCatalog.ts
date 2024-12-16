@@ -1,4 +1,4 @@
-import breakpoints from '@breakpoints.module.scss';
+import breakpoints from '@lib/styles/mixins/breakpoints.module.scss';
 import generateStyleForGrid from '@lib/utils/generateStyleForGrid';
 import getNumberFromPx from '@lib/utils/getNumberFromPx';
 import { Dimension } from '@ui/Catalog/interfaces';
