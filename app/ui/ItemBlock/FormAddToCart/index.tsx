@@ -1,13 +1,11 @@
 "use client";
 
 import useCart from "@hooks/useCart";
-import {
-  AdditionalPropertiesChoosen,
-} from "@lib/constants/types";
+import { AdditionalPropertiesChoosen } from "@lib/constants/types";
 import Accordion from "@ui/Accordion";
 import ButtonWithCartActions from "@ui/ButtonWithCartActions";
 import Gap from "@ui/Gap";
-import { ChangeEvent, useState } from "react";
+import { ChangeEvent, useCallback, useState } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import CharacteristicBottom from "../CharacteristicBottom";
@@ -21,9 +19,8 @@ export default function FormAddToCart({
   isAvailable,
 }: FormAddToCartProps) {
   const { handleSubmit, ...methods } = useForm<AdditionalPropertiesChoosen>();
-  const [choosenProperties, chooseProperties] = useState<AdditionalPropertiesChoosen>(
-    {}
-  );
+  const [choosenProperties, chooseProperties] =
+    useState<AdditionalPropertiesChoosen>({});
 
   const { sizes, aromas, colors, textiles } = additionalProperties;
 
@@ -33,11 +30,12 @@ export default function FormAddToCart({
     isAvailable && addToCart({ id, additionalProperties: data });
   };
 
-  const onChange = ({
-    target: { name, value },
-  }: ChangeEvent<HTMLFormElement>) => {
-    chooseProperties((prev) => ({ ...prev, [name]: value }));
-  };
+  const onChange = useCallback(
+    ({ target: { name, value } }: ChangeEvent<HTMLFormElement>) => {
+      chooseProperties((prev) => ({ ...prev, [name]: value }));
+    },
+    []
+  );
 
   const characteristics = [
     {

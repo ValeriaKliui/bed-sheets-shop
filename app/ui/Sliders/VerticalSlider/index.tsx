@@ -2,10 +2,10 @@
 
 import "react-multi-carousel/lib/styles.css";
 
+import Arrow from "@ui/Arrow";
 import clsx from "clsx";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrow from "../Addons/CustomArrow";
 import CustomDot from "../Addons/CustomDot";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
@@ -33,7 +33,7 @@ export default function VerticalSlider({
       showDots
       slidesToSlide={1}
       customLeftArrow={
-        <CustomArrow
+        <Arrow
           className={clsx(
             !isTextSlider ? styles.defArrows : styles.textArrows,
             isTextSlider && styles.left
@@ -42,7 +42,7 @@ export default function VerticalSlider({
         />
       }
       customRightArrow={
-        <CustomArrow
+        <Arrow
           className={clsx(!isTextSlider ? styles.defArrows : styles.textArrows)}
           direction="bottom"
         />

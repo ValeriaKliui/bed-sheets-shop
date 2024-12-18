@@ -11,10 +11,11 @@ const getClassNameFromDirection = (direction: Direction) => {
   return styles[direction];
 };
 
-export default function CustomArrow({
+export default function Arrow({
   onClick,
   className,
   direction,
+  imgClassName,
 }: CustomArrowProps) {
   return (
     <CircledIcon
@@ -22,7 +23,7 @@ export default function CustomArrow({
       src="/icons/arrow.svg"
       onClick={onClick}
       className={className}
-      imgClassName={clsx(getClassNameFromDirection(direction))}
+      imgClassName={clsx(getClassNameFromDirection(direction), imgClassName)}
       borderColor={lines}
     />
   );

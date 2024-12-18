@@ -11,7 +11,7 @@ export default function InfoCatalog() {
         <h2>Каталог Mollen</h2>
         <ul className={styles.categories}>
           {CATEGORIES.map(({ title, category }) => (
-            <li key={title}>
+            <li key={title} className="link">
               <Link href={{ pathname: "/catalog", query: { category } }}>
                 <h5>{title}</h5>
               </Link>

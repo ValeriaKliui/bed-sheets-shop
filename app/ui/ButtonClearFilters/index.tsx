@@ -1,6 +1,6 @@
 "use client";
 
-import ButtonLink from "@ui/ButtonLink";
+import clsx from "clsx";
 import { usePathname, useSearchParams } from "next/navigation";
 
 export default function ButtonClearFilters() {
@@ -11,5 +11,9 @@ export default function ButtonClearFilters() {
 
   if (!isFilterExists) return;
 
-  return <ButtonLink href={pathname}>Очистить фильтры</ButtonLink>;
+  return (
+    <a href={pathname} className={clsx("link")}>
+      <p>Очистить фильтры</p>
+    </a>
+  );
 }

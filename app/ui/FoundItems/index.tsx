@@ -24,7 +24,7 @@ export default function FoundItems({
         <Link
           href={{ pathname: "search", query: { search } }}
           onClick={closeSearch}
-          className={clsx("link", "text_medium", styles.info)}
+          className={clsx("link_primary", "text_medium", styles.info)}
         >
           все результаты
         </Link>

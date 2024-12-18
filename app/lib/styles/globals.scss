@@ -117,6 +117,15 @@ a {
 }
 
 .link {
+  line-height: 1;
+  transition: 0.2s ease;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link_primary {
   color: v.$color-link;
   line-height: 1;
 

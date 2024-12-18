@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 export default function useMobileMenu() {
   const [isMenuOpened, setIsOpened] = useState(false);
-  const toggleMenu = () => setIsOpened((prev) => !prev);
 
-  const closeMenu = () => setIsOpened(false);
+  const toggleMenu = useCallback(() => setIsOpened((prev) => !prev), []);
+
+  const closeMenu = useCallback(() => setIsOpened(false), []);
 
   return {
     isMenuOpened,

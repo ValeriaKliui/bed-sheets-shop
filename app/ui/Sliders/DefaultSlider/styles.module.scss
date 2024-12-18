@@ -27,3 +27,13 @@
   margin-left: 0;
   position: unset;
 }
+.arrows {
+  position: absolute;
+  bottom: 0;
+}
+.left {
+  left: calc(4% + 1px);
+}
+.right {
+  right: calc(4% + 1px);
+}

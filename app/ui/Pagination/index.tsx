@@ -1,6 +1,7 @@
 "use client";
 
 import generatePagination from "@lib/utils/generatePagination";
+import Arrow from "@ui/Arrow";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
@@ -35,12 +36,12 @@ export default function Pagination({
   return (
     <Gap className={className}>
       {isLeftArrow && (
-        <Link href={getUrlForPage(currentPage - 1)}>
+        <Link href={getUrlForPage(currentPage - 1)} className={styles.arrows}>
           <CircledIcon src="/icons/arrow.svg" alt="to previous page" />
         </Link>
       )}
       {pages.map((page) => (
-        <Link href={getUrlForPage(page)} key={page}>
+        <Link href={getUrlForPage(page)} key={page} className={styles.hover}>
           <div
             className={clsx(
               styles.page,
@@ -52,12 +53,13 @@ export default function Pagination({
         </Link>
       ))}
       {isRightArrow && (
-        <Link href={getUrlForPage(currentPage + 1)}>
-          <CircledIcon
+        <Link href={getUrlForPage(currentPage + 1)} className={styles.arrows}>
+          <Arrow direction="right" />
+          {/* <CircledIcon
             src="/icons/arrow.svg"
             alt="to next page"
             className={styles.rightArrow}
-          />
+          /> */}
         </Link>
       )}
     </Gap>

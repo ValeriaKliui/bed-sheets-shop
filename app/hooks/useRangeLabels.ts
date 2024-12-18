@@ -1,5 +1,12 @@
+import getOneOfMultipleRefs from "@lib/utils/getOneOfMultipleRefs";
 import { useWindowSize } from "@uidotdev/usehooks";
-import { useEffect, useLayoutEffect, useRef, useState } from "react";
+import {
+  useCallback,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
 
 import { RangeLabelsProps } from "./interfaces";
 
@@ -11,14 +18,8 @@ export default function useRangeLabels({
   const containerRef = useRef<HTMLDivElement>(null);
   const inputsRef = useRef(null);
 
-  const inputRef = (node) => {
-    const map = getMap();
-    map.set(node?.name, node);
-
-    return () => {
-      map.delete(node?.name);
-    };
-  };
+  const inputRef = (node: HTMLInputElement) =>
+    getOneOfMultipleRefs<HTMLInputElement>(node, inputsRef);
 
   const [styleMin, setStyleMin] = useState({ zIndex: 1 });
   const [styleMax, setStyleMax] = useState({ zIndex: 1 });
@@ -26,16 +27,10 @@ export default function useRangeLabels({
 
   const { width } = useWindowSize();
 
-  const onStyleChange = (name: string) => {
-    setCurrInputName(name);
-  };
-
-  function getMap() {
-    if (!inputsRef.current) {
-      inputsRef.current = new Map();
-    }
-    return inputsRef.current;
-  }
+  const onStyleChange = useCallback(
+    (name: string) => setCurrInputName(name),
+    []
+  );
 
   useEffect(() => {
     if (currInputName === "minPrice") {

@@ -1,8 +1,8 @@
 @use "@lib/styles/variables.module.scss" as v;
 
 .dot {
-  width: 9em;
-  height: 3em;
+  min-width: 9em;
+  min-height: 3em;
   border-radius: 60px;
   background-color: transparent;
   background-image: radial-gradient(
@@ -10,9 +10,19 @@
     transparent 4px,
     v.$color-text-light 0
   );
-
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 1em;
+
+  &:hover {
+    background-image: radial-gradient(
+      circle at 2em 50%,
+      transparent 4px,
+      v.$color-primary 0
+    );
+    * {
+      color: v.$color-text-light;
+    }
+  }
 }

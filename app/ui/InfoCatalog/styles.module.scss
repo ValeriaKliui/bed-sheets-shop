@@ -20,7 +20,7 @@
     gap: 1em;
   }
   @include lg {
-    gap: 2em 1em;
+    gap: 2em;
     grid-template-columns: repeat(2, 1fr);
   }
 }

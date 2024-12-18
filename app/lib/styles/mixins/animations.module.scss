@@ -1,4 +1,4 @@
-@mixin scale-animation-on-hover {
+@mixin scale-animation-on-hover($value: 1.05) {
   transition: 0.2s ease;
 
   &:hover {

@@ -2,6 +2,7 @@ import { ADDITIONAL_PROPERTIES } from "@lib/constants/types";
 import Gap from "@ui/Gap";
 import Option from "@ui/Option";
 import { ChangeEvent, useState } from "react";
+import { useCallback } from "react";
 import { useFormContext } from "react-hook-form";
 
 import { OptionsProps } from "./interfaces";
@@ -16,10 +17,13 @@ export default function Options({
 
   const { register } = useFormContext();
 
-  const onOptionChange = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange?.(e.target.value);
-    chooseOption(e.target.value);
-  };
+  const onOptionChange = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => {
+      onChange?.(e.target.value);
+      chooseOption(e.target.value);
+    },
+    [onChange]
+  );
 
   return (
     <Gap wrap>

@@ -36,7 +36,7 @@ export default function Header() {
             />
             <Logo fill={textColor} onClick={closeMenu} />
             <Link href="/catalog" replace style={{ color: textColor }}>
-              <h5 className={styles.notMobile}>Каталог</h5>
+              <h5 className={clsx(styles.notMobile, "link")}>Каталог</h5>
             </Link>
           </Gap>
           <Gap size="large">
@@ -44,7 +44,7 @@ export default function Header() {
               <Link href={"/catalog/search"} replace>
                 <Gap>
                   <SearchIcon fill={textColor} />
-                  <h5 className={styles.notMobile}>Поиск</h5>
+                  <h5 className={clsx(styles.notMobile, "link")}>Поиск</h5>
                 </Gap>
               </Link>
               <Gap>

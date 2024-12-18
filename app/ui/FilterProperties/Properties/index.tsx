@@ -7,6 +7,7 @@ import {
 import Gap from "@ui/Gap";
 import Options from "@ui/Options";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
+import { useCallback } from "react";
 import { FormProvider, useForm } from "react-hook-form";
 
 import { PropertiesParams } from "./interfaces";
@@ -17,13 +18,15 @@ export default function Properties({ availableProperties }: PropertiesParams) {
   const pathname = usePathname();
   const { replace } = useRouter();
 
-  const onOptionChange =
+  const onOptionChange = useCallback(
     (property: AdditionalPropertiesKeys) => (value: string) => {
       const params = new URLSearchParams(searchParams);
       params.set(property, value);
 
       replace(`${pathname}?${params.toString()}`);
-    };
+    },
+    [pathname, replace, searchParams]
+  );
 
   return (
     <FormProvider {...methods}>

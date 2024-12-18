@@ -1,11 +1,11 @@
-import clsx from 'clsx';
-import Image from 'next/image';
+import clsx from "clsx";
+import Image from "next/image";
 
-import { CircledIconProps } from './interfaces';
-import styles from './styles.module.scss';
+import { CircledIconProps } from "./interfaces";
+import styles from "./styles.module.scss";
 
 export default function CircledIcon({
-  color = 'transparent',
+  color = "transparent",
   src,
   alt,
   className,

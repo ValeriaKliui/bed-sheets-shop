@@ -57,7 +57,7 @@ export default function CardBottom() {
             </p>
             <p> {totalPrice}</p>
           </Gap>
-          <Link className="link" href="#">
+          <Link className="link_primary" href="#">
             Информация о доставке
           </Link>
         </Gap>

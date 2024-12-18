@@ -1,0 +1,10 @@
+@import "@lib/styles/mixins/animations.module.scss";
+
+.right,
+.bottom {
+  transform: rotate(180deg);
+}
+.left,
+.top {
+  transform: rotate(0);
+}

@@ -4,7 +4,7 @@ import usePriceRange from "@hooks/usePriceRange";
 import useRangeLabels from "@hooks/useRangeLabels";
 import useRangeURLParams from "@hooks/useRangeURLParams";
 import { PricesNum } from "@lib/interfaces";
-import { ChangeEvent } from "react";
+import { ChangeEvent, useCallback } from "react";
 
 import styles from "./styles.module.scss";
 
@@ -23,10 +23,13 @@ export default function PriceRange({ min, max }: PricesNum) {
       max,
     });
 
-  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
-    onRangeChange(event);
-    onStyleChange(event.target.name);
-  };
+  const onChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      onRangeChange(event);
+      onStyleChange(event.target.name);
+    },
+    [onRangeChange, onStyleChange]
+  );
 
   return (
     <div className={styles.container} ref={containerRef}>

@@ -42,7 +42,7 @@ export default function MobileMenu({ isOpened, toggleMenu }: MobileMenuProps) {
         </Gap>
         <Gap direction="vertical" alignItems={"flex-start"}>
           <h4>8 800 222 22 22</h4>
-          <a className={clsx("link", "pointer")} onClick={openModal}>
+          <a className={clsx("link_primary", "pointer")} onClick={openModal}>
             Заказать звонок
           </a>
           <CallModal

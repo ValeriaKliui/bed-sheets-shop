@@ -2,11 +2,11 @@
 
 import "react-multi-carousel/lib/styles.css";
 
+import Arrow from "@ui/Arrow";
 import clsx from "clsx";
 import React from "react";
 import Carousel, { ResponsiveType } from "react-multi-carousel";
 
-import CustomArrowBottom from "../Addons/CustomArrow";
 import { SliderProps } from "../interfaces";
 import styles from "./styles.module.scss";
 
@@ -71,15 +71,17 @@ export default function Slider({
         beforeChange={beforeChange}
         afterChange={afterChange}
         customRightArrow={
-          <CustomArrowBottom
+          <Arrow
             direction="right"
             className={clsx(!withArrows && styles.withoutArrows)}
+            imgClassName={clsx(styles.arrows, styles.right)}
           />
         }
         customLeftArrow={
-          <CustomArrowBottom
+          <Arrow
             direction="left"
             className={clsx(!withArrows && styles.withoutArrows)}
+            imgClassName={clsx(styles.arrows, styles.left)}
           />
         }
         itemClass={clsx(styles.item, gapped && styles.gapped)}

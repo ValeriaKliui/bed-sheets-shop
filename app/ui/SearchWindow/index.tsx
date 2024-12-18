@@ -9,7 +9,7 @@ import FoundItems from "@ui/FoundItems";
 import Gap from "@ui/Gap";
 import clsx from "clsx";
 import Link from "next/link";
-import { ChangeEvent, useEffect, useState } from "react";
+import { ChangeEvent, useCallback, useEffect, useState } from "react";
 
 import styles from "./styles.module.scss";
 const { bg } = colors;
@@ -19,9 +19,10 @@ export default function SearchWindow() {
   const { search, onChange, onClear, isSearchOpened, closeSearch } =
     useSearch();
 
-  const onSearch = (e: ChangeEvent<HTMLInputElement>) => {
-    onChange(e);
-  };
+  const onSearch = useCallback(
+    (e: ChangeEvent<HTMLInputElement>) => onChange(e),
+    [onChange]
+  );
 
   useEffect(() => {
     const fetchItemsData = async () => {

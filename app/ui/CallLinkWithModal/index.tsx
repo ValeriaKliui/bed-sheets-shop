@@ -10,7 +10,7 @@ export default function CallLinkWithModal() {
   return (
     <>
       <h4>8 800 222 22 22</h4>
-      <a className={clsx("link", "pointer")} onClick={openFormModal}>
+      <a className={clsx("link_primary", "pointer")} onClick={openFormModal}>
         Заказать звонок
       </a>
       <CallModal

@@ -44,3 +44,4 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 3. Add animation
 4. Fix multiple requests
+5. Add skeletons for catalog

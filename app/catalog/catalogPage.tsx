@@ -96,7 +96,6 @@ export default async function CatalogPage({ params, searchParams }: PageProps) {
                       width={0}
                       height={0}
                       priority
-                      className={styles.icon}
                     />
                   }
                 />

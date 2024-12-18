@@ -5,4 +5,5 @@ export type Direction = "left" | "right" | "top" | "bottom";
 export interface CustomArrowProps extends ArrowProps {
   direction: Direction;
   className?: string;
+  imgClassName?: string;
 }
