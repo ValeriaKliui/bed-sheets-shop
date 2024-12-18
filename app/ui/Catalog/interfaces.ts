@@ -1,5 +1,5 @@
-import breakpoints from '@breakpoints.module.scss';
-import { CatalogItem } from '@lib/constants/types';
+import { CatalogItem } from "@lib/constants/types";
+import breakpoints from "@lib/styles/mixins/breakpoints.module.scss";
 
 type Only<T, U> = {
   [P in keyof T]: T[P];
@@ -24,7 +24,7 @@ export type Dimension = {
   [key in Breakpoints]?: DimensionValue;
 };
 
-export interface CatalogProps<T extends Pick<CatalogItem, 'id'>> {
+export interface CatalogProps<T extends Pick<CatalogItem, "id">> {
   fetch: () => Promise<T[]>;
   dimensions: Dimension;
   Card: (props: T) => JSX.Element;

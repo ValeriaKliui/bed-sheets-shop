@@ -2,10 +2,10 @@
 
 import useFreezeScroll from "@hooks/useFreezeScroll";
 import useOnClickOutside from "@hooks/useOnClickOutside";
+import colors from "@lib/styles/variables.module.scss";
 import CircledIcon from "@ui/CircledIcon";
 import Gap from "@ui/Gap";
 import Portal from "@ui/Portal";
-import colors from "@lib/styles/variables.module.scss";
 import { useRef } from "react";
 
 import { ModalProps } from "./interfaces";
@@ -32,8 +32,7 @@ export default function Modal({
         <Gap
           className={styles.container}
           ref={modalContainerRef}
-          direction="vertical"
-          size="medium"
+          alignItems="center"
         >
           <CircledIcon
             src="/icons/close.svg"
@@ -42,9 +41,13 @@ export default function Modal({
             onClick={closeModal}
             className={styles.closeIcon}
           />
-          <div style={{ position: 'relative' }}>{children}</div>
+          {children}
         </Gap>
+        {/* <Gap className={styles.container} ref={modalContainerRef}>
+          <div className={styles.content}></div>
+          
+        </Gap> */}
       </div>
-    </Portal >
+    </Portal>
   );
 }

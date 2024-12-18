@@ -3,10 +3,10 @@
 import useSearch from "@hooks/useSearch";
 import { CatalogItem } from "@lib/constants/types";
 import { fetchItemsByTitle } from "@lib/fetchItemsByTitle";
+import colors from "@lib/styles/variables.module.scss";
 import CircledIcon from "@ui/CircledIcon";
 import FoundItems from "@ui/FoundItems";
 import Gap from "@ui/Gap";
-import colors from "@lib/styles/variables.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
 import { ChangeEvent, useEffect, useState } from "react";

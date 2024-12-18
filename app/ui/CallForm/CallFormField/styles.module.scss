@@ -1,5 +1,5 @@
-@use '../../../lib/styles/variables.module.scss' as v;
-@import '../../../lib/styles/mixins/breakpoints.module.scss';
+@use "@lib/styles/variables.module.scss" as v;
+@import "@lib/styles/mixins/breakpoints.module.scss";
 
 .field {
   border-bottom: 1px solid v.$light-lines;

@@ -1,8 +1,8 @@
 import { LINKS } from "@lib/constants";
+import colors from "@lib/styles/variables.module.scss";
 import CallLinkWithModal from "@ui/CallLinkWithModal";
 import Logo from "@ui/icons/Logo";
 import Networks from "@ui/Networks";
-import colors from "@lib/styles/variables.module.scss";
 import clsx from "clsx";
 import Link from "next/link";
 

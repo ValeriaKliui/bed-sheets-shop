@@ -1,42 +1,54 @@
 "use client";
 
 import usePriceRange from "@hooks/usePriceRange";
+import useRangeLabels from "@hooks/useRangeLabels";
+import useRangeURLParams from "@hooks/useRangeURLParams";
 import { PricesNum } from "@lib/interfaces";
+import { ChangeEvent } from "react";
 
 import styles from "./styles.module.scss";
 
 export default function PriceRange({ min, max }: PricesNum) {
-  const {
-    onRangeChange,
-    containerRef,
-    leftTextOffset,
-    rightTextOffset,
-    currMax,
-    currMin,
-  } = usePriceRange({
+  const { onValueChange } = useRangeURLParams();
+  const { onRangeChange, currMax, currMin } = usePriceRange({
     min,
     max,
+    onValueChange,
   });
+
+  const { containerRef, styleMax, styleMin, onStyleChange, inputRef } =
+    useRangeLabels({
+      currMax,
+      currMin,
+      max,
+    });
+
+  const onChange = (event: ChangeEvent<HTMLInputElement>) => {
+    onRangeChange(event);
+    onStyleChange(event.target.name);
+  };
 
   return (
     <div className={styles.container} ref={containerRef}>
       <input
         value={currMin}
-        onChange={onRangeChange}
-        style={{ left: `${leftTextOffset}px` }}
+        onChange={onChange}
+        style={styleMin}
         className={styles.price}
         type="number"
         name="minPrice"
         min={min}
+        ref={inputRef}
       />
       <input
         value={currMax}
-        onChange={onRangeChange}
-        style={{ left: `${rightTextOffset}px` }}
+        onChange={onChange}
+        style={styleMax}
         type="number"
         max={max}
         name="maxPrice"
         className={styles.price}
+        ref={inputRef}
       />
       <div className={styles.slider} />
       <div className={styles.range_input}>
@@ -46,7 +58,7 @@ export default function PriceRange({ min, max }: PricesNum) {
           min={min}
           max={max}
           value={currMin}
-          onChange={onRangeChange}
+          onChange={onChange}
         />
         <input
           type="range"
@@ -54,7 +66,7 @@ export default function PriceRange({ min, max }: PricesNum) {
           name="maxPrice"
           min={min}
           max={max}
-          onChange={onRangeChange}
+          onChange={onChange}
         />
       </div>
     </div>

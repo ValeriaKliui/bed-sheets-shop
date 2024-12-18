@@ -4,6 +4,7 @@ import useCatalog from "@hooks/useCatalog";
 import { CatalogItem } from "@lib/constants/types";
 import Gap from "@ui/Gap";
 import Slider from "@ui/Sliders/DefaultSlider";
+import clsx from "clsx";
 
 import { CustomButtonGroupAsArrows } from "./CustomButtonGroupAsArrows";
 import { CatalogGridProps } from "./interaces";
@@ -18,7 +19,7 @@ export default function CatalogGrid<T extends Pick<CatalogItem, "id">>({
   if (!cardItems.length)
     return (
       <Gap className={styles.containerEmpty}>
-        <p className="text_medium">
+        <p className={clsx("text_medium", styles.textEmpty)}>
           Товары с заданными параметрами в каталоге отсутствуют.
         </p>
       </Gap>

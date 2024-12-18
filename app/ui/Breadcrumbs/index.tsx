@@ -1,7 +1,7 @@
 "use client";
 
-import breakpoints from "@breakpoints.module.scss";
 import { PATHS, PATHS_KEYS } from "@lib/constants/paths";
+import breakpoints from "@lib/styles/mixins/breakpoints.module.scss";
 import getNumberFromPx from "@lib/utils/getNumberFromPx";
 import Gap from "@ui/Gap";
 import { useWindowSize } from "@uidotdev/usehooks";
@@ -12,12 +12,15 @@ import { usePathname } from "next/navigation";
 import { BreadcrumbsProps, LinksArray } from "./interfaces";
 import styles from "./styles.module.scss";
 
-export default function Breadcrumbs({ extraLinks, className }: BreadcrumbsProps) {
+export default function Breadcrumbs({
+  extraLinks,
+  className,
+}: BreadcrumbsProps) {
   const pathname = usePathname();
   const linksElements: LinksArray = [];
   const pathnames = pathname.split("/") as [];
   const { width } = useWindowSize();
-  const isSmallDevices = width && width <= getNumberFromPx(breakpoints.sm)
+  const isSmallDevices = width && width <= getNumberFromPx(breakpoints.sm);
 
   pathnames.reduce((path, currPath: PATHS_KEYS & "") => {
     const titleExists = PATHS[currPath];
@@ -39,13 +42,13 @@ export default function Breadcrumbs({ extraLinks, className }: BreadcrumbsProps)
   }, "");
 
   if (isSmallDevices) {
-    const prevLink = linksElements[linksElements.length - 1].path
+    const prevLink = linksElements[linksElements.length - 1].path;
 
     if (extraLinks && extraLinks?.length > 0) {
-
       linksElements.splice(1, linksElements.length, {
-        path: prevLink, title: '...'
-      })
+        path: prevLink,
+        title: "...",
+      });
     }
   }
 

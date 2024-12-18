@@ -1,6 +1,6 @@
 import useCart from "@hooks/useCart";
-import CircledIcon from "@ui/CircledIcon";
 import colors from "@lib/styles/variables.module.scss";
+import CircledIcon from "@ui/CircledIcon";
 
 import styles from "./styles.module.scss";
 

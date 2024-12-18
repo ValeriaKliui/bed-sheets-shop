@@ -26,6 +26,7 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 - **React**: A JavaScript library for building user interfaces.
 - **Redux**: A state management library for JavaScript apps.
+- **Next.JS**: For Server-Side Rendering.
 - **TypeScript**: A superset of JavaScript that adds static types.
 - **SCSS**: For styling the application.
 - **React Router**: For navigation between different views.
@@ -41,9 +42,5 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 ## TODO
 
-1. Add animation
-2. Freeze scroll fix
-3. Make price range more adaptive (not to overlay, stop when min = max)
-4. Fix removing from cart
-5. Success Window isnt showing
-6. Find aliases for scss
+3. Add animation
+4. Fix multiple requests

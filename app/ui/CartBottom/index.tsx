@@ -14,8 +14,7 @@ import Link from "next/link";
 
 import styles from "./styles.module.scss";
 
-export default function
-  () {
+export default function CardBottom() {
   const { getTotalAmountInCart, clearCart } = useCart();
   const { closeModal, openModal, isModalOpen } = useModal();
   const totalAmount = getTotalAmountInCart();
@@ -26,7 +25,7 @@ export default function
   const totalPrice = getTotalPriceOfCart(cartItemsFull);
 
   const onPurchase = () => {
-    setTimeout(() => clearCart(), 2000)
+    setTimeout(() => clearCart(), 2000);
   };
 
   const onClose = () => {

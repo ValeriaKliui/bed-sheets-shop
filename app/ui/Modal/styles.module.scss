@@ -1,4 +1,4 @@
-@import '../../lib/styles/mixins/breakpoints.module.scss';
+@import "@lib/styles/mixins/breakpoints.module.scss";
 
 .backdrop {
   position: fixed;
@@ -26,17 +26,14 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    align-items: flex-end !important;
+    // align-items: flex-end !important;
   }
 }
 .closeIcon {
-  position: relative;
-  @include xxs {
-    align-self: flex-end;
-    right: 2em;
-  }
-  @include sm {
-    align-self: unset;
-    right: unset;
-  }
+  position: absolute;
+  right: 2em;
+  align-self: flex-start;
+}
+.content {
+  color: red;
 }

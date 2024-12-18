@@ -1,63 +1,72 @@
-import { PricesNum } from "@lib/interfaces";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { ChangeEvent, useCallback, useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
+import { ChangeEvent, useCallback, useState } from "react";
 
-import useRangeLabels from "./useRangeLabels";
-
-export default function usePriceRange({ min, max }: PricesNum) {
+export default function usePriceRange({
+  min,
+  max,
+  onValueChange,
+}: {
+  min: number;
+  max: number;
+  onValueChange: (
+    event: ChangeEvent<HTMLInputElement>,
+    currValValidated: number
+  ) => void;
+}) {
   const searchParams = useSearchParams();
-  const minPriceFromParams = Number(searchParams.get("minPrice"));
-  const maxPriceFromParams = Number(searchParams.get("maxPrice"));
-
-  const [currMin, setCurrMin] = useState(minPriceFromParams ?? min);
-  const [currMax, setCurrMax] = useState(maxPriceFromParams ?? max);
-
-  const pathname = usePathname();
-  const { replace } = useRouter();
-
-  const { containerRef, leftTextOffset, rightTextOffset } = useRangeLabels({
-    currMax,
-    currMin,
-    max,
-  });
-
-  const onRangeChange = useCallback(
-    ({ target }: ChangeEvent<HTMLInputElement>) => {
-      const params = new URLSearchParams(searchParams);
-
-      const updateParams = () => {
-        params.set(name, value);
-        replace(`${pathname}?${params.toString()}`);
-      };
-
-      const { name, value } = target;
-      const valueNum = Number(value);
-      const isItMin = name === "minPrice";
-
-      const isInRange = (valueNum >= min && valueNum <= max) || valueNum === 0;
-
-      if (isInRange) {
-        if (isItMin) setCurrMin(valueNum);
-        if (!isItMin) setCurrMax(valueNum);
-      }
-      updateParams();
-    },
-    [min, max, pathname, replace, searchParams]
+  const [currMin, setCurrMin] = useState(
+    min || Number(searchParams.get("minPrice"))
+  );
+  const [currMax, setCurrMax] = useState(
+    max || Number(searchParams.get("minPrice"))
   );
 
-  useEffect(() => {
-    if (minPriceFromParams === 0) setCurrMin(min);
-  }, [minPriceFromParams, min]);
+  const onRangeChange = useCallback(
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const rangeGap = max / 10;
 
-  useEffect(() => {
-    if (maxPriceFromParams === 0) setCurrMax(max);
-  }, [maxPriceFromParams, max]);
+      const { name, value, type } = event.target;
+      const valueNum = Number(value);
+
+      const isRange = type === "range";
+      const isInRange = (valueNum >= min && valueNum <= max) || valueNum === 0;
+
+      if (isInRange)
+        switch (name) {
+          case "minPrice":
+            if (isRange) {
+              if (valueNum < currMax - rangeGap) {
+                setCurrMin(valueNum);
+                onValueChange(event, valueNum);
+              } else onValueChange(event, currMin);
+            } else {
+              if (valueNum >= currMax) {
+                setCurrMin(currMin);
+                onValueChange(event, currMin);
+              } else {
+                setCurrMin(valueNum);
+                onValueChange(event, valueNum);
+              }
+            }
+            break;
+          case "maxPrice":
+            if (isRange) {
+              if (valueNum > currMin + rangeGap) {
+                setCurrMax(valueNum);
+                onValueChange(event, valueNum);
+              } else onValueChange(event, currMax);
+            } else {
+              setCurrMax(valueNum);
+              onValueChange(event, valueNum);
+            }
+            break;
+        }
+    },
+    [currMax, currMin, min, max, onValueChange]
+  );
 
   return {
     onRangeChange,
-    containerRef,
-    leftTextOffset,
-    rightTextOffset,
     currMax,
     currMin,
   };

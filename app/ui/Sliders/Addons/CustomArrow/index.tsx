@@ -1,5 +1,5 @@
-import CircledIcon from "@ui/CircledIcon";
 import colors from "@lib/styles/variables.module.scss";
+import CircledIcon from "@ui/CircledIcon";
 import clsx from "clsx";
 
 import { CustomArrowProps, Direction } from "./interfaces";

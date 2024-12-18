@@ -1,5 +1,5 @@
-@use '../../lib/styles/variables.module.scss' as v;
-@import '../../lib/styles/mixins/breakpoints.module.scss';
+@use "@lib/styles/variables.module.scss" as v;
+@import "@lib/styles/mixins/breakpoints.module.scss";
 
 .mobileMenu {
   color: v.$color-text;
@@ -7,20 +7,7 @@
     display: none;
   }
 }
-.menu {
-  background: v.$color-text-light;
-  position: absolute;
-  width: 100%;
-  height: 100vh;
-  z-index: 500;
-  top: 0;
-  left: 0;
-  padding: 7em 2em 2em;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  overflow: scroll;
-}
+
 .header {
   position: absolute;
   left: 3em;

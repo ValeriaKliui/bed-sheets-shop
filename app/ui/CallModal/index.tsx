@@ -11,7 +11,7 @@ export default function CallModal({
   isOpened: isFormModalOpen,
   title,
   successText,
-  onSubmit
+  onSubmit,
 }: CallModalProps) {
   const {
     openModal: openSuccessModal,
@@ -20,7 +20,7 @@ export default function CallModal({
   } = useModal();
 
   const onFormSubmit = () => {
-    onSubmit?.()
+    onSubmit?.();
     closeFormModal();
     openSuccessModal();
   };
