@@ -22,8 +22,7 @@
 }
 .hover {
   div {
-    transition: 0.2s ease;
-    &:hover {
+    @include animation-on-hover {
       background: v.$color-primary;
       border: 1px solid v.$color-text;
       h5 {

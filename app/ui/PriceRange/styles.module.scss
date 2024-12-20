@@ -36,6 +36,9 @@
   pointer-events: auto;
   -webkit-appearance: none;
   appearance: none;
+  &:hover {
+  background: v.$color-primary
+  }
 }
 .price {
   position: absolute;

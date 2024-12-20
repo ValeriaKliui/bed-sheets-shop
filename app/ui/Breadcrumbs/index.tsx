@@ -56,12 +56,12 @@ export default function Breadcrumbs({
     <Gap className={clsx(styles.container, className)} size="small">
       {linksElements.map(({ path, title }) => (
         <Link href={path} key={path} className={styles.breadcrumb}>
-          <p key={path}>{title}</p>
+          <p className={styles.title}>{title}</p>
         </Link>
       ))}
       {extraLinks?.map(({ path, title }) => (
         <Link href={"/" + path} key={path} className={styles.breadcrumb}>
-          <p key={path}>{title[0].toUpperCase() + title.slice(1)}</p>
+          <p className={styles.title}>{title[0].toUpperCase() + title.slice(1)}</p>
         </Link>
       ))}
     </Gap>

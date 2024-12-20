@@ -43,10 +43,6 @@ export default function Modal({
           />
           {children}
         </Gap>
-        {/* <Gap className={styles.container} ref={modalContainerRef}>
-          <div className={styles.content}></div>
-          
-        </Gap> */}
       </div>
     </Portal>
   );

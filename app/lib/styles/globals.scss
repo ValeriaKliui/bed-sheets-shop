@@ -1,5 +1,6 @@
 @use "variables.module.scss" as v;
 @import "./mixins/breakpoints.module.scss";
+@import "./mixins/animations.module.scss";
 
 * {
   box-sizing: border-box;
@@ -11,12 +12,15 @@ html,
 body,
 button {
   line-height: 1.3em;
+
   @include xxs {
     font-size: 12px;
   }
+
   @include md {
     font-size: 14px;
   }
+
   @include xl {
     font-size: 18px;
   }
@@ -35,15 +39,21 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+
 main {
   flex-grow: 1;
 }
+
 button {
   color: v.$color-text-light;
   text-transform: uppercase;
   font-family: var(--font-orchidea-pro);
   font-weight: 600;
+  @include animation-on-hover {
+    background-color: v.$hover;
+  }
 }
+
 h1,
 h2,
 h3,
@@ -58,9 +68,16 @@ input::placeholder {
   text-transform: uppercase;
   color: v.$color-text;
 }
+
 input {
   font-family: var(--font-orchidea-pro);
   color: v.$color-text;
+}
+
+input[type="radio"] + label {
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .option {
@@ -72,34 +89,42 @@ h1 {
   font-size: 3.3em;
   line-height: 3.8em;
 }
+
 h2,
 .text_big {
   @include xxs {
     font-size: 2em;
   }
+
   @include sm {
     font-size: 2.3em;
   }
 }
+
 h2 {
   line-height: 2.8em;
+
   @include xxs {
     line-height: 1.5em;
   }
 }
+
 h3 {
   font-size: 1.5em;
   line-height: 2.2em;
 }
+
 h4,
 .text_medium {
   font-size: 1.1em;
   line-height: 1.6em;
 }
+
 h5 {
   font-size: 0.8em;
   line-height: 1.2em;
 }
+
 h1,
 h2,
 h3 {
@@ -118,9 +143,8 @@ a {
 
 .link {
   line-height: 1;
-  transition: 0.2s ease;
 
-  &:hover {
+  @include animation-on-hover {
     text-decoration: underline;
   }
 }
@@ -133,6 +157,7 @@ a {
     color: v.$color-primary;
   }
 }
+
 input[type="radio"],
 input[type="checkbox"] {
   box-sizing: border-box;
@@ -154,6 +179,7 @@ input[type="radio"] {
     border: 6px solid v.$color-primary;
   }
 }
+
 input[type="checkbox"] {
   &:not(:disabled):checked {
     border: 2px solid v.$color-primary;
@@ -169,6 +195,7 @@ button,
 label {
   cursor: pointer;
 }
+
 input,
 textarea {
   padding: 2em;
@@ -190,21 +217,27 @@ mark {
   @include xxs {
     max-width: 320px;
   }
+
   @include xs {
     max-width: 370px;
   }
+
   @include sm {
     max-width: map-get($breakpoints, "sm");
   }
+
   @include md {
     max-width: calc(map-get($breakpoints, "md") - 5%);
   }
+
   @include lg {
     max-width: calc(map-get($breakpoints, "lg") - 5%);
   }
+
   @include xl {
     max-width: calc(map-get($breakpoints, "xl") - 10%);
   }
+
   @include xxl {
     max-width: calc(map-get($breakpoints, "xxl") - 10%);
   }
@@ -219,25 +252,32 @@ mark {
   @include xxs {
     max-width: 320px;
   }
+
   @include sm {
     max-width: map-get($breakpoints, "sm");
   }
+
   @include md {
     max-width: map-get($breakpoints, "md");
   }
+
   @include lg {
     max-width: map-get($breakpoints, "lg");
   }
+
   @include xl {
     max-width: map-get($breakpoints, "xl");
   }
+
   @include xxl {
     max-width: map-get($breakpoints, "xxl");
   }
 }
+
 .text_bold {
   font-weight: 700;
 }
+
 .text_secondary {
   color: v.$color-text-secondary;
 
@@ -245,13 +285,16 @@ mark {
     color: v.$color-text;
   }
 }
+
 .text_light {
   color: v.$color-text-light;
 }
+
 .text_small {
   font-size: 0.8em;
   line-height: 0.9em;
 }
+
 .text_big,
 input::placeholder,
 .text_medium {
@@ -259,36 +302,46 @@ input::placeholder,
   line-height: 1.5em;
   text-transform: uppercase;
 }
+
 .text_primary {
   color: v.$color-primary;
 }
+
 .text_error {
   color: v.$color-error;
 }
+
 .mobile-only {
   @media screen and (max-width: map-get($breakpoints, "md")) {
     display: block;
   }
+
   @include sm {
     display: none !important;
   }
 }
+
 .page_layout {
   @include xxs {
     padding: 2em 0;
   }
+
   @include sm {
     padding: 2em 0;
   }
 }
+
 .buttons {
   background: transparent;
   border: none;
   user-select: none;
-  &:hover {
+
+  @include animation-on-hover {
     font-weight: 700;
   }
+  @include scale-animation-on-hover(1.3);
 }
+
 .pointer {
   cursor: pointer;
 }

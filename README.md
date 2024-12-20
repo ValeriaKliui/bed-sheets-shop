@@ -42,6 +42,6 @@ Welcome to the Online Bed Linen Shop! This application allows users to browse a 
 
 ## TODO
 
-3. Add animation
-4. Fix multiple requests
 5. Add skeletons for catalog
+6. Finish arrows
+7. Forbid purchasing withous submition (checkbox)

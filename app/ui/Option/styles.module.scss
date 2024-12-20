@@ -6,6 +6,9 @@
   gap: 1em;
 }
 .option {
+  &:hover {
+    border:1px solid v.$color-primary
+  }
   @include xxs {
     padding: 0.6em 1.4em;
     border: 1px solid v.$light-lines;

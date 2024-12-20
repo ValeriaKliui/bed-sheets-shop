@@ -24,7 +24,7 @@ export default function MobileMenu({ isOpened, toggleMenu }: MobileMenuProps) {
           <p className="text_secondary">Категории Mollen</p>
           <Gap direction="vertical" alignItems={"flex-start"}>
             {CATEGORIES_LINKS.map(({ title, url }) => (
-              <Link href={url} key={url} replace onClick={toggleMenu}>
+              <Link href={url} key={url} replace onClick={toggleMenu} className={styles.link}>
                 <h4> {title}</h4>
               </Link>
             ))}
@@ -34,7 +34,7 @@ export default function MobileMenu({ isOpened, toggleMenu }: MobileMenuProps) {
           <p className="text_secondary">Меню</p>
           <Gap direction="vertical" alignItems={"flex-start"}>
             {OTHER_LINKS.map(({ title, url }) => (
-              <Link href={url} key={url + title} onClick={toggleMenu}>
+              <Link href={url} key={url + title} onClick={toggleMenu}className={styles.link}>
                 <h4> {title}</h4>
               </Link>
             ))}

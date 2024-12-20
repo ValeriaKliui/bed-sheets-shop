@@ -1,4 +1,5 @@
 @use "@lib/styles/variables.module.scss" as v;
+@import "@lib/styles/mixins/animations.module.scss";
 
 .menu {
   background: v.$color-text-light;
@@ -13,4 +14,9 @@
   justify-content: space-between;
   flex-direction: column;
   overflow: scroll;
+}
+.link {
+  @include animation-on-hover {
+    text-decoration: underline;
+  }
 }

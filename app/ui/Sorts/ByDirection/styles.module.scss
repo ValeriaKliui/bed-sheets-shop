@@ -1,3 +1,6 @@
+.container {
+  &:hover {font-weight: 700;}
+}
 .asc {
   transform: rotate(180deg);
 }

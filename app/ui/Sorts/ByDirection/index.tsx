@@ -34,7 +34,7 @@ export default function ByDirection({ title, value }: ByDirectionProps) {
   };
 
   return (
-    <Gap onClick={onSort} className={'pointer'}>
+    <Gap onClick={onSort} className={clsx('pointer', styles.container)}>
       <p>{title}</p>
       {direction && (
         <Image

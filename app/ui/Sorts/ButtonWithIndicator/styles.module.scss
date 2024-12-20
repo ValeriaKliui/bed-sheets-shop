@@ -8,6 +8,10 @@
   gap: 0.5em;
   color: v.$color-text;
   font-weight: 400;
+  &:hover {
+    font-weight: 700;
+    background: inherit;
+  }
 }
 .dot {
   display: block;

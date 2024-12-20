@@ -1,7 +1,11 @@
 @use "@lib/styles/variables.module.scss" as v;
+@import "@lib/styles/mixins/animations.module.scss";
 
 .container {
   border-bottom: 1px solid v.$light-lines;
+  &:hover {
+    border-bottom: 1px solid v.$color-text-secondary;
+  }
 }
 .header {
   display: flex;
@@ -16,7 +20,7 @@
 
 .arrow {
   transform: rotate(-90deg);
-  transition: 0.1s ease-in-out all;
+  @include animation-on-hover;
 }
 .arrow_opened {
   transform: rotate(90deg);
@@ -38,7 +42,7 @@
     opacity: 0;
   }
 
-  0.001% {
+  0.01% {
     display: block;
     opacity: 0;
   }

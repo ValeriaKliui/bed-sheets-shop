@@ -47,7 +47,7 @@ export default function CartItem({
         />
       </Link>
       <Gap className={styles.info} direction="vertical" alignItems="flex-start">
-        <Link href={`/catalog/${category}/${id}`}>
+        <Link href={`/catalog/${category}/${id}`} className="link">
           <h4> {title}</h4>
         </Link>
         <Gap>

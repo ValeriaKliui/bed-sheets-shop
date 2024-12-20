@@ -25,7 +25,7 @@ export default function MobileHeader({
               />
             ))}
         </div>
-        {isOpened && <Logo fill={"black"} className={styles.logo} />}
+        {isOpened && <Logo fill={"black"} className={styles.logo} onClick={toggleMenu} />}
       </Gap>
       {isOpened && <MobileMenu toggleMenu={toggleMenu} isOpened={isOpened} />}
     </div>

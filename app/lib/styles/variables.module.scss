@@ -1,7 +1,7 @@
 $color-primary: #4e76c6;
 $light-lines: #eceae7;
 $color-bg: #f5f3f0;
-$hover: #426bbd;
+$hover: #3a5ca1;
 $click: #3e64b0;
 $press: #000000;
 $color-text: #1e1e1e;
@@ -12,8 +12,6 @@ $color-icon: #2c2d2e;
 $color-icon-secondary: #bfc0c7;
 $color-divider: #eceae7;
 $color-error: #ff0040;
-
-$transition: all 0.2s ease-in-out;
 
 :export {
   primary: #{$color-primary};

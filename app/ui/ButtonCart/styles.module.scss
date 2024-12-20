@@ -1,5 +1,6 @@
 @use "@lib/styles/variables.module.scss" as v;
 @import "@lib/styles/mixins/breakpoints.module.scss";
+@import "@lib/styles/mixins/animations.module.scss";
 
 .container {
   background: v.$color-primary;
@@ -8,4 +9,7 @@
   color: v.$color-text-light;
   gap: 1.3em;
   width: 14em;
+  @include animation-on-hover {
+    background: v.$hover;
+  }
 }

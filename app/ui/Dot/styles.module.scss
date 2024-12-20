@@ -30,7 +30,7 @@
   height: 8px;
   border-radius: 50%;
   background: v.$color-text-light;
-  transition: v.$transition;
+  @include animation-on-hover;
 }
 .title {
   color: v.$color-text-light;

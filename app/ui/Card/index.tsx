@@ -6,6 +6,7 @@ import clsx from "clsx";
 import Image from "next/image";
 import { forwardRef } from "react";
 
+import CardBase from "./CardBase";
 import { CardProps } from "./interfaces";
 import styles from "./styles.module.scss";
 
@@ -13,14 +14,12 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
   ({ article, info, photo, price, title, actionButton }: CardProps, ref) => {
     const priceNum = Number(price);
     const discountInfo = getDiscountInfo(priceNum);
-    const isAvailable = info === Availability.available
+    const isAvailable = info === Availability.available;
 
     return (
-      <Gap
-        className={clsx(styles.container, !isAvailable && styles.unavailable)}
-        direction="vertical"
-        justifyContent={"space-between"}
+      <CardBase
         ref={ref}
+        containerClassName={clsx(!isAvailable && styles.unavailable)}
       >
         <Gap className={styles.top} justifyContent={"space-between"}>
           <Gap direction="vertical" alignItems="flex-start">
@@ -44,7 +43,7 @@ const Card = forwardRef<HTMLDivElement, CardProps>(
           <p>{discountInfo}</p>
           <h4 className="text_primary">{formatPrice(price)}</h4>
         </Gap>
-      </Gap>
+      </CardBase>
     );
   }
 );

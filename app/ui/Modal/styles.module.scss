@@ -1,4 +1,5 @@
 @import "@lib/styles/mixins/breakpoints.module.scss";
+@import "@lib/styles/mixins/animations.module.scss";
 
 .backdrop {
   position: fixed;
@@ -26,13 +27,13 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    // align-items: flex-end !important;
   }
 }
 .closeIcon {
   position: absolute;
   right: 2em;
   align-self: flex-start;
+  @include scale-animation-on-hover;
 }
 .content {
   color: red;

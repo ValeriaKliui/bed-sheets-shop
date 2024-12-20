@@ -1,7 +1,9 @@
 import Gap from '@ui/Gap';
+import clsx from 'clsx';
 import { MouseEvent } from 'react';
 
 import { ButtonPlusMinusProps } from './interfaces';
+import styles from './styles.module.scss'
 
 export default function ButtonPlusMinus({
     onMinusClick,
@@ -16,7 +18,7 @@ export default function ButtonPlusMinus({
         <Gap onClick={onClick} className={className}>
             <button
                 onClick={onMinusClick}
-                className='buttons'
+                className={clsx('buttons', styles.button)}
                 type="submit"
             >
                 -
@@ -24,7 +26,7 @@ export default function ButtonPlusMinus({
             <p > {amount}</p>
             <button
                 onClick={onPlusClick}
-                className='buttons'
+                className={clsx('buttons', styles.button)}
                 type="submit"
             >
                 +

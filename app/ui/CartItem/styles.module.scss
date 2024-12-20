@@ -1,5 +1,6 @@
 @use "@lib/styles/variables.module.scss" as v;
 @import "@lib/styles/mixins/breakpoints.module.scss";
+@import "@lib/styles/mixins/animations.module.scss";
 
 .container {
   @include xxs {
@@ -21,6 +22,7 @@
 }
 .photo {
   grid-area: photo;
+  @include scale-animation-on-hover;
 }
 .info {
   grid-area: info;
@@ -53,4 +55,5 @@
 }
 .deleteIcon {
   transform: scale(0.8);
+  @include scale-animation-on-hover;
 }

@@ -1,30 +1,6 @@
 @use "@lib/styles/variables.module.scss" as v;
 @import "@lib/styles/mixins/breakpoints.module.scss";
-
-.container {
-  border: 1px solid v.$light-lines;
-  margin: 0 -1px -1px 0;
-  transition: v.$transition;
-  height: 100%;
-  cursor: pointer;
-  text-align: center;
-  align-items: center;
-
-  &:hover {
-    box-shadow: 0 4px 24px 0 rgba(46, 67, 108, 0.15);
-
-    button {
-      display: block;
-    }
-  }
-
-  @include xxs {
-    padding: 1em;
-  }
-  @include lg {
-    padding: 2.2em;
-  }
-}
+@import "@lib/styles/mixins/animations.module.scss";
 
 .article {
   text-transform: uppercase;

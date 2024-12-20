@@ -1,7 +1,13 @@
-@mixin scale-animation-on-hover($value: 1.05) {
+@mixin animation-on-hover {
   transition: 0.2s ease;
 
   &:hover {
-    transform: scale(1.05);
+    @content;
+  }
+}
+
+@mixin scale-animation-on-hover($value: 1.05) {
+  @include animation-on-hover {
+    transform: scale($value);
   }
 }
